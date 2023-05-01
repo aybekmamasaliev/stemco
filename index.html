@@ -9,10 +9,15 @@
     <title>Document</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-md navbar-light bg-light py-3">
+    <nav class="navbar navbar-expand navbar-light bg-light py-2">
       <div class="container-fluid">
-        <a class="navbar-brand border-end pe-4 ps-1" href="#">
-          <img alt="" src="./media/stemco_logo.svg" />
+        <a class="navbar-brand border_none_sm pe-4 ps-1" href="#">
+          <img alt="" src="./media/logo.svg" />
+          <img
+            alt=""
+            src="./media/logo_txt.svg"
+            class="pt-2 d-none d-md-inline"
+          />
         </a>
         <button
           class="navbar-toggler"
@@ -29,7 +34,7 @@
           <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto pt-2">
             <li class="nav-item">
               <a
-                class="nav-link active text-md-center active_color"
+                class="nav-link active text-center active_color"
                 aria-current="page"
                 href="#"
                 ><img alt="" src="./media/dashboard.svg" class="mb-1 me-1" />
@@ -37,39 +42,33 @@
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link text-md-center" href="#"
+              <a class="nav-link text-center" href="#"
                 ><img alt="" src="./media/lightning.svg" class="mb-1 me-1" />
                 Achievments</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link text-md-center" href="#">
+              <a class="nav-link text-center" href="#">
                 <img alt="" src="./media/cupa_nav.svg" class="mb-1 me-1" />
                 Leaderboards</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link text-md-center" href="#"
+              <a class="nav-link text-center" href="#"
                 ><img alt="" src="./media/brain.svg" class="mb-1 me-1" />
                 Practice</a
               >
             </li>
           </ul>
           <div class="d-flex">
-            <div
-              class="px-3 d-flex border-start border-end"
-              style="padding-bottom: 0"
-            >
-              <img
-                alt=""
-                src="./media/Seasons.svg"
-                class="d-block"
-                style="width: 32px"
-              />
+            <div class="px-3 d-none d-md-flex  border-start   border-end ">
+              <img alt="" src="./media/Seasons.svg" class="d-block" />
               <div class="d-flex align-items-center">
-                <div class="d_none_900 ps-2">
+                <div class="d_none_1000 ps-2">
                   <p>SUMMER 2023</p>
-                  <p class="fs_12 fw_400">1&nbsp;June&nbsp;2023&nbsp;-&nbsp;31&nbsp;August&nbsp;2023</p>
+                  <p class="fs_12 fw_400">
+                    1&nbsp;June&nbsp;2023&nbsp;-&nbsp;31&nbsp;August&nbsp;2023
+                  </p>
                 </div>
               </div>
             </div>
@@ -77,13 +76,13 @@
               <img
                 alt=""
                 src="./media/notification.svg"
-                class="border p-2 rounded-3"
+                class="border p-2 rounded-3 d-none d-md-inline"
               />
             </div>
 
-            <div class="px-2 d-flex me-1 text-end border-start">
-              <div style="width: 110px" class="d_none_1090">
-                <p class="fs_12 me-2">Akhmetov Timur</p>
+            <div class="px-2 d-flex me-1 text-end border_s">
+              <div class="d_none_1090">
+                <p class="fs_12 me-2">Akhmetov&nbsp;Timur</p>
                 <p class="fs_12 me-2 fw_400">Student</p>
               </div>
               <img alt="" src="./media/student_nav.svg" />
@@ -94,53 +93,61 @@
     </nav>
     <div class="container-xxl mt-2">
       <div class="row">
-        <div class="col-7 p-3 ">
-          <div class=" d-flex justify-content-between">
-            <img alt="" src="./media/timur.svg" class="d-block col-2 img-fluid" />
+        <div class="col-12 col-sm-7 p-3">
+          <div class="d-flex justify-content-between">
+            <img
+              alt=""
+              src="./media/timur.svg"
+              class="d-block col-2 img-fluid"
+            />
             <div class="col-10 ps-4">
               <p>Akhmetov Timur</p>
               <p>
-                akhmetovtimur@gmail.com • Kazakhstan.&nbsp;Almaty&nbsp;<img alt="" src="./media/mini_flag.svg" />&nbsp;
+                akhmetovtimur@gmail.com • Kazakhstan.&nbsp;Almaty&nbsp;<img
+                  alt=""
+                  src="./media/mini_flag.svg"
+                />&nbsp;
               </p>
               <hr class="color_hr" />
               <div class="d-flex">
-                <p class="fs-20 pe-1 color_gold">
+                <p class="fs-20 pe-1 color_gold text-center">
                   1 <img alt="" src="./media/gold.svg" />
                 </p>
-                <p class="fs-20 ps-3 color_silver pe-1 border-end border-start">
+                <p class="fs-20 ps-3 color_silver pe-1 text-center border-end border-start">
                   0 <img alt="" src="./media/silver.svg" />
                 </p>
-                <p class="fs-20 ps-3 color_bronze">
+                <p class="fs-20 ps-3 text-center color_bronze">
                   1 <img alt="" src="./media/bronze.svg" />
                 </p>
               </div>
             </div>
           </div>
         </div>
-        <div class="col-5 p-3">
-          <div class="border p-2">
-            <p class="fs_14 fw_400">School</p>
-            <div class="fs_14 d-flex align-items-center  mt-1">
-              <img alt="" src="./media/tree4040.svg" class="d-block " />
+        <div class="col-12 col-sm-5 p-3 ">
+          <div class="border p-2 ps_rel">
+            <p class="fs_14 fw_400">School <span></span></p>
+            <p class="ps_abs_r15_t5">Edit</p>
+            <p class="ps_abs_r15_t30">Verified </p>
+            <div class="fs_14 d-flex align-items-center mt-1">
+              <img alt="" src="./media/tree4040.svg" class="d-block" />
               <p class="py-auto pt-2 ps-3">Nazarbayev Intellectual School</p>
             </div>
-            <hr class="color_hr"/>
+            <hr class="color_hr" />
             <p class="fs_12">Students: <span class="ms-2">543</span></p>
 
             <div class="d-flex align-items-center">
               <p class="fs_12 pt-1">Awards:</p>
-              <p class="ms-4">
+              <p class="ms-4 text-center">
                 <img alt="" src="./media/gold_award.svg" />
                 <span class="fs_12">28</span>
               </p>
-              <p class="ms-3 border-end border-start px-2">
+              <p class="ms-3 text-center border-end border-start px-2">
                 <img alt="" src="./media/silver_award.svg" />
                 <span class="fs_12">31</span>
               </p>
-              <p class="ms-3">
+              <p class="ms-3 text-center">
                 <img alt="" src="./media/bronze_award.svg" />
-                <span class="fs_12">53</span
-                >
+                <span class="fs_12">53</span>
               </p>
             </div>
           </div>
@@ -448,7 +455,7 @@
                           class="d-block"
                         />
                         <div class="ms-3">
-                          <p class="fs_12">Ahror Mamatqulov</p>
+                          <p class="fs_12  text-start">Ahror Mamatqulov</p>
                           <p class="fs_12 clr_grey">
                             <img alt="flag" src="./media/country_flag.svg" />
                             Presidential School in Gulistan
@@ -477,7 +484,7 @@
                           class="d-block"
                         />
                         <div class="ms-3">
-                          <p class="fs_12">Ahror Mamatqulov</p>
+                          <p class="fs_12  text-start">Ahror Mamatqulov</p>
                           <p class="fs_12 clr_grey">
                             <img alt="flag" src="./media/country_flag.svg" />
                             Presidential School in Gulistan
@@ -506,7 +513,7 @@
                           class="d-block"
                         />
                         <div class="ms-3">
-                          <p class="fs_12">Ahror Mamatqulov</p>
+                          <p class="fs_12  text-start">Ahror Mamatqulov</p>
                           <p class="fs_12 clr_grey">
                             <img alt="flag" src="./media/country_flag.svg" />
                             Presidential School in Gulistan
@@ -535,7 +542,7 @@
                           class="d-block"
                         />
                         <div class="ms-3">
-                          <p class="fs_12">Ahror Mamatqulov</p>
+                          <p class="fs_12  text-start">Ahror Mamatqulov</p>
                           <p class="fs_12 clr_grey">
                             <img alt="flag" src="./media/country_flag.svg" />
                             Presidential School in Gulistan
@@ -564,7 +571,7 @@
                           class="d-block"
                         />
                         <div class="ms-3">
-                          <p class="fs_12">Ahror Mamatqulov</p>
+                          <p class="fs_12  text-start">Ahror Mamatqulov</p>
                           <p class="fs_12 clr_grey">
                             <img alt="flag" src="./media/country_flag.svg" />
                             Presidential School in Gulistan
@@ -593,7 +600,7 @@
                           class="d-block"
                         />
                         <div class="ms-3">
-                          <p class="fs_12">Ahror Mamatqulov</p>
+                          <p class="fs_12  text-start">Ahror Mamatqulov</p>
                           <p class="fs_12 clr_grey">
                             <img alt="flag" src="./media/country_flag.svg" />
                             Presidential School in Gulistan
@@ -622,7 +629,7 @@
                           class="d-block"
                         />
                         <div class="ms-3">
-                          <p class="fs_12">Ahror Mamatqulov</p>
+                          <p class="fs_12  text-start">Ahror Mamatqulov</p>
                           <p class="fs_12 clr_grey">
                             <img alt="flag" src="./media/country_flag.svg" />
                             Presidential School in Gulistan
@@ -651,7 +658,7 @@
                           class="d-block"
                         />
                         <div class="ms-3">
-                          <p class="fs_12">Ahror Mamatqulov</p>
+                          <p class="fs_12  text-start">Ahror Mamatqulov</p>
                           <p class="fs_12 clr_grey">
                             <img alt="flag" src="./media/country_flag.svg" />
                             Presidential School in Gulistan
@@ -680,7 +687,7 @@
                           class="d-block"
                         />
                         <div class="ms-3">
-                          <p class="fs_12">Ahror Mamatqulov</p>
+                          <p class="fs_12  text-start">Ahror Mamatqulov</p>
                           <p class="fs_12 clr_grey">
                             <img alt="flag" src="./media/country_flag.svg" />
                             Presidential School in Gulistan
@@ -709,7 +716,7 @@
                           class="d-block"
                         />
                         <div class="ms-3">
-                          <p class="fs_12">Ahror Mamatqulov</p>
+                          <p class="fs_12  text-start">Ahror Mamatqulov</p>
                           <p class="fs_12 clr_grey">
                             <img alt="flag" src="./media/country_flag.svg" />
                             Presidential School in Gulistan
@@ -738,7 +745,7 @@
                           class="d-block"
                         />
                         <div class="ms-3">
-                          <p class="fs_12">Ahror Mamatqulov</p>
+                          <p class="fs_12  text-start">Ahror Mamatqulov</p>
                           <p class="fs_12 clr_grey">
                             <img alt="flag" src="./media/country_flag.svg" />
                             Presidential School in Gulistan
@@ -767,7 +774,7 @@
                           class="d-block"
                         />
                         <div class="ms-3">
-                          <p class="fs_12">Ahror Mamatqulov</p>
+                          <p class="fs_12  text-start">Ahror Mamatqulov</p>
                           <p class="fs_12 clr_grey">
                             <img alt="flag" src="./media/country_flag.svg" />
                             Presidential School in Gulistan
@@ -796,7 +803,7 @@
                           class="d-block"
                         />
                         <div class="ms-3">
-                          <p class="fs_12">Ahror Mamatqulov</p>
+                          <p class="fs_12  text-start">Ahror Mamatqulov</p>
                           <p class="fs_12 clr_grey">
                             <img alt="flag" src="./media/country_flag.svg" />
                             Presidential School in Gulistan
@@ -825,7 +832,7 @@
                           class="d-block"
                         />
                         <div class="ms-3">
-                          <p class="fs_12">Ahror Mamatqulov</p>
+                          <p class="fs_12  text-start">Ahror Mamatqulov</p>
                           <p class="fs_12 clr_grey">
                             <img alt="flag" src="./media/country_flag.svg" />
                             Presidential School in Gulistan
@@ -854,7 +861,7 @@
                           class="d-block"
                         />
                         <div class="ms-3">
-                          <p class="fs_12">Ahror Mamatqulov</p>
+                          <p class="fs_12  text-start">Ahror Mamatqulov</p>
                           <p class="fs_12 clr_grey">
                             <img alt="flag" src="./media/country_flag.svg" />
                             Presidential School in Gulistan
@@ -883,7 +890,7 @@
                           class="d-block"
                         />
                         <div class="ms-3">
-                          <p class="fs_12">Ahror Mamatqulov</p>
+                          <p class="fs_12  text-start">Ahror Mamatqulov</p>
                           <p class="fs_12 clr_grey">
                             <img alt="flag" src="./media/country_flag.svg" />
                             Presidential School in Gulistan
@@ -912,7 +919,7 @@
                           class="d-block"
                         />
                         <div class="ms-3">
-                          <p class="fs_12">Ahror Mamatqulov</p>
+                          <p class="fs_12  text-start">Ahror Mamatqulov</p>
                           <p class="fs_12 clr_grey">
                             <img alt="flag" src="./media/country_flag.svg" />
                             Presidential School in Gulistan
@@ -941,7 +948,7 @@
                           class="d-block"
                         />
                         <div class="ms-3">
-                          <p class="fs_12">Ahror Mamatqulov</p>
+                          <p class="fs_12  text-start">Ahror Mamatqulov</p>
                           <p class="fs_12 clr_grey">
                             <img alt="flag" src="./media/country_flag.svg" />
                             Presidential School in Gulistan
@@ -970,7 +977,7 @@
                           class="d-block"
                         />
                         <div class="ms-3">
-                          <p class="fs_12">Ahror Mamatqulov</p>
+                          <p class="fs_12  text-start">Ahror Mamatqulov</p>
                           <p class="fs_12 clr_grey">
                             <img alt="flag" src="./media/country_flag.svg" />
                             Presidential School in Gulistan
