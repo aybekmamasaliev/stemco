@@ -9,9 +9,14 @@
     <title>Document</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand navbar-light bg-light py-2 bg-white">
+    <nav
+      class="navbar navbar2 navbar-expand navbar-light bg-light py-2 bg-white"
+    >
       <div class="container-fluid">
-        <a class="navbar-brand border_none_sm pe-4 ps-1" href="#">
+        <a
+          class="navbar-brand border_none_sm d-none d-md-block pe-4 ps-1"
+          href="#"
+        >
           <img alt="" src="./media/logo.svg" />
           <img
             alt=""
@@ -81,7 +86,7 @@
               />
             </div>
 
-            <div class="px-2 d-flex me-1 text-end border_s">
+            <div class="px-2 d-flex me-1 d-none d-md-block text-end border_s">
               <div class="d_none_1090">
                 <p class="fs_12 me-2">Akhmetov&nbsp;Timur</p>
                 <p class="fs_12 me-2 fw_400">Student</p>
@@ -92,6 +97,50 @@
         </div>
       </div>
     </nav>
+    <div class="navbar navbar-expand navbar-light d-block d-md-none bg-light py-2 bg-white">
+      <div class="container-fluid">
+        <a class="navbar-brand border_none_sm pe-4 ps-1" href="#">
+          <img alt="" src="./media/logo.svg" />
+          <img
+            alt=""
+            src="./media/logo_txt.svg"
+            class="pt-2 d-inline"
+          />
+        </a>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mb-2 mb-lg-0 mx-auto pt-2"></ul>
+          <div class="d-flex">
+            <div class="px-3  d-flex border-start border-end">
+              <img alt="" src="./media/Seasons.svg" class="d-block" />
+              <div class="d-flex align-items-center">
+                <div class="d_none_1000 ps-2">
+                  <p>SUMMER 2023</p>
+                  <p class="fs_12 fw_400">
+                    1&nbsp;June&nbsp;2023&nbsp;-&nbsp;31&nbsp;August&nbsp;2023
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="px-1 mt-1 mx-2 d-block ps_rel">
+              <img alt="" src="./media/notif_sing.svg" class="ps_abs_t5_r5" />
+              <img
+                alt=""
+                src="./media/notification.svg"
+                class="border p-2 rounded-3"
+              />
+            </div>
+
+            <div class="px-2 d-flex me-1 text-end border_s">
+              <div class="d_none_1090">
+                <p class="fs_12 me-2">Akhmetov&nbsp;Timur</p>
+                <p class="fs_12 me-2 fw_400">Student</p>
+              </div>
+              <img alt="" src="./media/student_nav.svg" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <section class="bg-white border_b_E2E7EB">
       <div class="container-xxl py-2">
         <div class="row">
@@ -416,7 +465,7 @@
           </div>
 
           <div class="col-12 col-md-7 ps-2 rounded-3">
-            <div class="tbl bg-white border px-2 py-3 ">
+            <div class="tbl bg-white border px-2 py-3">
               <nav
                 class="d-flex nav-pills justify-content-between align-items-center mb-3"
               >
@@ -428,10 +477,10 @@
                       type="button"
                       role="tab"
                       aria-disabled="true"
-                      style="padding-left: 0 ; padding-right: 5px;"
+                      style="padding-left: 0; padding-right: 5px"
                     >
                       Seasonal
-                  </div>
+                    </div>
                     <button
                       class="nav-link active fs_14"
                       id="nav-home-tab"
@@ -1123,7 +1172,7 @@
                           <th class="col-2 text-center">Total</th>
                         </tr>
                       </thead>
-                      <tbody >
+                      <tbody>
                         <tr>
                           <th class="text-center">1</th>
                           <td>

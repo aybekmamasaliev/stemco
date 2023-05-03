@@ -475,11 +475,11 @@ td {
   }
 }
 
-@media (max-width: 776px) {
+@media (max-width: 767px) {
   .border_none_sm {
     border-right: none !important;
   }
-  .navbar {
+  .navbar2 {
     position: fixed;
     bottom: 0;
     z-index: 99;
@@ -489,6 +489,12 @@ td {
   body {
     padding-bottom: 50px;
   }
+
+ 
+  .border_s {
+    border: none;
+  }
+
 }
 
 @media (max-width: 1165px) {
@@ -503,11 +509,3 @@ td {
   }
 }
 
-@media (max-width: 764px) {
-  .d_none_700 {
-    display: none !important;
-  }
-  .border_s {
-    border: none;
-  }
-}
