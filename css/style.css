@@ -147,6 +147,12 @@ p {
   text-transform: uppercase;
 }
 
+.fs_24_600_inter{
+  font-size: 24px;
+  font-weight: 600;
+  font-family: "Inter";
+}
+
 .c1F55A6 {
   color: #1f55a6;
 }
@@ -385,7 +391,7 @@ td {
 }
 
 .tbl_overf_s::-webkit-scrollbar-thumb {
-  background-color: red;
+  background: #90A0AA;
   border-radius: 10px;
   height: 10px;
 }
