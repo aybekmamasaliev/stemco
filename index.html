@@ -9,7 +9,9 @@
     <title>Document</title>
   </head>
   <body>
-    <nav class="navbar navbar2 navbar-expand navbar-light bg-light py-2 px-2 bg-white">
+    <nav
+      class="navbar navbar2 navbar-expand navbar-light bg-light py-2 px-1 bg-white"
+    >
       <div class="container-xxl">
         <a
           class="navbar-brand border_none_sm d-none d-md-block pe-4 ps-1"
@@ -100,7 +102,8 @@
       </div>
     </nav>
     <div
-      class="navbar navbar-expand navbar-light d-block d-md-none bg-light px-2 py-2 bg-white">
+      class="navbar navbar-expand navbar-light d-block d-md-none bg-light px-1 py-2 bg-white"
+    >
       <div class="container-fluid">
         <a class="navbar-brand border_none_sm pe-4 ps-1" href="#">
           <img alt="" src="./media/logo.svg" />
@@ -140,7 +143,7 @@
         </div>
       </div>
     </div>
-    <section class="bg-white border_b_E2E7EB px-2">
+    <section class="bg-white border_b_E2E7EB px-1">
       <div class="container-xxl py-2">
         <div class="row">
           <div class="col-12 col-sm-7 p-3">
@@ -214,7 +217,7 @@
         </div>
       </div>
     </section>
-    <section class="px-2">
+    <section class="px-1">
       <div class="container-xxl main_design_challenges pt-4">
         <div class="d-flex flex-wrap">
           <div class="me-3 my-1">
@@ -465,8 +468,10 @@
 
           <div class="col-12 col-md-7 ps-0 ps-md-2 rounded-3">
             <div class="tbl bg-white border px-2 py-3">
-              <div class="d-block  d-sm-none">
-                <div class="fs_16_600 d-flex justify-content-between color_1A1A1A bg-white">
+              <div class="d-block d-sm-none">
+                <div
+                  class="fs_16_600 d-flex justify-content-between color_1A1A1A bg-white"
+                >
                   <p class="d-flex align-items-center px-2">Seasonal</p>
                   <p class="p-2 fs_12 clr_grey">
                     <img
@@ -478,59 +483,52 @@
                   </p>
                 </div>
               </div>
-              <nav
-                class="d-flex nav-pills justify-content-between align-items-center mb-3"
-              >
-                <div class="bg_nav_tabs rounded-3 p-1">
-                  <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                    <div
-                      class="nav-link fs_16_600 color_1A1A1A bg-white none_hover d-none d-sm-block"
-                      id="nav-home-tab_disabled"
-                      type="button"
-                      role="tab"
-                      aria-disabled="true"
-                      style="padding-left: 0; padding-right: 5px"
-                    >
-                      Seasonal
-                    </div>
-                    <button
-                      class="nav-link active fs_14"
-                      id="nav-home-tab"
-                      data-bs-toggle="tab"
-                      data-bs-target="#nav-home"
-                      type="button"
-                      role="tab"
-                      aria-controls="nav-home"
-                      aria-selected="true"
-                    >
-                      Global
-                    </button>
-                    <button
-                      class="nav-link fs_14"
-                      id="nav-profile-tab"
-                      data-bs-toggle="tab"
-                      data-bs-target="#nav-profile"
-                      type="button"
-                      role="tab"
-                      aria-controls="nav-profile"
-                      aria-selected="false"
-                    >
-                      Country
-                    </button>
-                    <div
-                      class="nav-link fs_14 d-flex align-items-end "
-                      id="nav-contact-tab"
-                      data-bs-toggle="tab"
-                      data-bs-target="#nav-contact"
-                      type="button"
-                      role="tab"
-                      aria-controls="nav-contact"
-                      aria-selected="false"
-                    >
-                      School
+
+              <nav class="d-flex nav-pills justify-content-between align-items-center mb-3 ps_rel">
+                <div class="d-flex align-items-center">
+                  <div class="ps-1 pe-3 pu-2">Seasonal</div>
+                  <div class="bg_nav_tabs rounded-3 p-1">
+                    <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                      <button
+                        class="nav-link active fs_14"
+                        id="nav-home-tab"
+                        data-bs-toggle="tab"
+                        data-bs-target="#nav-home"
+                        type="button"
+                        role="tab"
+                        aria-controls="nav-home"
+                        aria-selected="true"
+                      >
+                        Global
+                      </button>
+                      <button
+                        class="nav-link fs_14"
+                        id="nav-profile-tab"
+                        data-bs-toggle="tab"
+                        data-bs-target="#nav-profile"
+                        type="button"
+                        role="tab"
+                        aria-controls="nav-profile"
+                        aria-selected="false"
+                      >
+                        Country
+                      </button>
+                      <button
+                        class="nav-link fs_14 d-flex align-items-end"
+                        id="nav-contact-tab"
+                        data-bs-toggle="tab"
+                        data-bs-target="#nav-contact"
+                        type="button"
+                        role="tab"
+                        aria-controls="nav-contact"
+                        aria-selected="false"
+                      >
+                        School
+                      </button>
                     </div>
                   </div>
                 </div>
+
                 <p class="p-2 fs_12 clr_grey w_50_700">
                   <img
                     alt=""
@@ -540,6 +538,7 @@
                   Update after 00:06:23
                 </p>
               </nav>
+
               <div class="tab-content" id="nav-tabContent">
                 <div
                   class="tab-pane fade show active"
