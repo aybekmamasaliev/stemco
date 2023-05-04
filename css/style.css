@@ -515,3 +515,8 @@ td {
   }
 }
 
+@media (max-width:500px) {
+  .fs_sm_12{
+    font-size: 12px !important;
+  }
+}
