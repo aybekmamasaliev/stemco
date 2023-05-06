@@ -196,8 +196,22 @@ p {
   top: 9px;
 }
 
-.verified_color {
+.verified_sticker {
   background: rgba(70, 190, 82, 0.1);
+  font-size: 14px;
+  color: #4D956A;
+}
+
+.color_green{
+  color: #4D956A;
+}
+
+.bg_green{
+  background: #4D956A;
+}
+
+.border_r_16{
+  border-radius: 16px;
 }
 
 .rounded_div {
@@ -275,17 +289,17 @@ p {
   right: 9px;
 }
 
-.ps_abs_r15_t5 {
+.ps_abs_r12_t8 {
   position: absolute;
-  right: 15px;
-  top: 5px;
+  right: 12px;
+  top: 8px;
   font-family: "Inter";
 }
 
-.ps_abs_r15_t30 {
+.ps_abs_r12_t43 {
   position: absolute;
-  right: 15px;
-  top: 38px;
+  right: 12px;
+  top: 43px;
 }
 
 .ps_rel {
