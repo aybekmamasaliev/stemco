@@ -306,9 +306,34 @@ p {
   position: relative;
 }
 
-.w_20 {
-  width: 20px;
-  height: 20px;
+.w_60 {
+  /* background-color: red; */
+  width: 50px;
+  text-align: center;
+  white-space: nowrap; 
+  
+}
+
+.my_animation{
+  animation: example 3s linear infinite;
+}
+
+@keyframes example {
+  0%{
+    transform: translate(90%, 0);
+  }
+  25%{
+    transform: translate(10%, 0);
+  }
+  50%{
+    transform: translate(-70, 0);
+  }
+  75%{
+    transform: translate(-150%, 0);
+  }
+  100%{
+    transform: translate(-230%, 0);
+  }
 }
 
 .ps_sticky_t_1 {
