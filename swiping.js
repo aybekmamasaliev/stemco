@@ -6,7 +6,7 @@ let weeks = [
   "1 Week",
   "2 season spring 2024",
   "3 Week",
-  "4 Week cdscnjdknj",
+  "4 Week",
   "5 Week",
   "6 Week",
   "7 Week",
@@ -27,7 +27,6 @@ const swipingRight = () => {
       test.classList.remove("my_animation")
     }
     test.innerHTML = weeks[count];
-    console.log(weeks[count].length)
   } else {
     count = weeks.length-1;
     if(weeks[count].length>7){
