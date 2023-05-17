@@ -7,6 +7,7 @@
 }
 
 :root{
+  --font_family: 'Inter';
   --gold_bg:#fef0ae;
   --silver_bg: #E6E6E6;
   --bronze_bg:#FFE5CF;
@@ -16,16 +17,45 @@
   --muted_text: #90A0AA;
   --black_text_light: #36454F;
   --black_text: #1A1A1A;
+  --full_black:#000;
   --student_text: #7792AB;
   --blue_text:#1f55a6;
   --green_text: #4d956a;
+  /* --green_active: #198754; */
+  --green_active: #48BB77;
+  --physics_purple: #D90F7E;
+  --chemstry_orange: #F5821F;
+  --sciense_orange: #FDB71C;
+  --light_grey: #FAFBFD;
+  --active_txt:#f4364c;
+  --danger_bg:#df0c25;
   --table_bg:#e2e7eb;
+  --warning_bg:#ffc107;
+  --info_color:#0dcaf0;
+  --white_txt:#fff;
   --green_bg_verif_stick: rgba(70, 190, 82, 0.1);
+
+  --font_regular_1: 400 12px var(--font_family);
+  --font_regular_2: 400 14px var(--font_family);
+  --font_regular_3: 400 16px var(--font_family);
+
+  --font_bold_1: 500 12px var(--font_family);
+  --font_bold_2: 500 14px var(--font_family);
+  --font_bold_3: 500 16px var(--font_family);
+  --font_bold_4: 500 20px var(--font_family);
+  --font_bold_5: 600 12px var(--font_family);
+  --font_bold_6: 600 14px var(--font_family);
+  --font_bold_7: 600 16px var(--font_family);
+  --font_bold_8: 600 20px var(--font_family); 
+  --font_bold_9: 600 24px var(--font_family);
+  --font_bold_10: 600 30px var(--font_family);
+  --font_bold_11: 700 14px var(--font_family);
+  --font_bold_12: 700 20px var(--font_family);
 }
 
 body {
   background: #fafbfd;
-  font-family: "Inter" !important;
+  font-family: var(--font_family) !important;
 }
 
 p {
@@ -80,6 +110,14 @@ p {
   background-color: var(--bronze_bg);
 }
 
+.bg_light_grey{
+  background-color: var(--light_grey);
+}
+
+.border_light_grey{
+  border: 1px solid var(--light_grey);
+}
+
 .price_icon{
   position: absolute;
   top:50%;
@@ -91,9 +129,33 @@ p {
   color:var(--muted_text)
 }
 
+.bio_green{
+  color:var(--green_active)
+}
+
+.physics_purple{
+  color: var(--physics_purple)
+}
+
+.chemstry_orange{
+  color: var(--chemstry_orange);
+}
+
+.sciense_orange{
+  color:var(--sciense_orange);
+}
+
+.font_bold_2{
+  font: var(--font_bold_2);
+}
+
+.font_bold_12{
+  font: var(--font_bold_12)
+}
+
 
 .active_nav_item{
-  color: #f4364c !important;
+  color: var(--active_txt) !important;
 }
 
 .bg_nav_tabs {
@@ -108,6 +170,15 @@ p {
 
 .color_black_light {
   color: var(--black_text_light) !important;
+}
+
+
+.border_light_grey{
+  border:1px solid var(--light_grey);
+}
+
+.border_black_light {
+  border: 1px solid var(--black_text_light) !important;
 }
 
 .color_gold {
@@ -131,14 +202,189 @@ p {
   font-weight: 600;
 }
 
-.color_green {
+.color_primary {
   color: var(--green_text);
 }
 
-.bg_green {
+.btn_primary{
+  background-color: var(--green_text);
+  border: 1px solid var(--green_text);
+  color: var(--white_txt);
+}
+
+.btn_primary:hover{
+  background-color: var(--green_active);
+  border: 1px solid var(--green_active);
+}
+
+.btn_secondary{
+  background-color: var(--black_text_light);
+  border: 1px solid var(--black_text_light);
+  color: var(--white_txt);
+}
+
+.btn_secondary:hover{
+  opacity: 0.8;
+}
+
+.btn_light{
+  background-color: var(--light_grey);
+  border: 1px solid var(--light_grey);
+  color: var(--black_text_light);
+}
+
+.btn_disabled{
+  background-color: var(--black_text_light);
+  border: 1px solid var(--black_text_light);
+  opacity: 0.2;
+  color: var(--white_txt);
+}
+
+.btn_danger{
+  background-color: var(--active_txt);
+  border: 1px solid var(--active_txt);
+  color: var(--white_txt);
+}
+
+.btn_danger:hover{
+  background-color: var(--danger_bg);
+  border: 1px solid var(--danger_bg);
+}
+
+.btn_warning{
+  background-color: var(--warning_bg);
+  border:1px solid var(--warning_bg);
+  color:var(--full_black);
+}
+
+.btn_warning:hover{
+  opacity: 0.8;
+}
+
+.btn_info{
+  background-color: var(--info_color);
+  border:1px solid var(--info_color);
+  color:var(--full_black);
+}
+
+.btn_info:hover{
+  opacity: 0.8;
+}
+
+
+
+.outline_btn_primary{
+  border: 1px solid var(--green_text);
+  background-color: var(--white_txt);
+  color: var(--green_text);
+  transition-duration: 0.3s;
+}
+
+.outline_btn_primary:hover{
+  background-color: var(--green_active);
+  color:var(--white_txt);
+}
+
+.outline_btn_secondary{
+  background-color: var(--white_txt);
+  border: 1px solid var(--black_text_light);
+  color:var(--black_text_light);
+  transition-duration: 0.3s;
+}
+
+.outline_btn_secondary:hover{
+  background-color: var(--black_text_light);
+  color:white
+}
+
+.outline_btn_info{
+  background-color: var(--white_txt);
+  border: 1px solid var(--info_color);
+  color:var(--info_color);
+  transition-duration: 0.3s;
+}
+
+.outline_btn_info:hover{
+  background-color: var(--info_color);
+  color:var(--full_black)
+}
+
+.outline_btn_danger{
+  background-color: var(--white_txt);
+  border: 1px solid var(--danger_bg);
+  color:var(--danger_bg);
+  transition-duration: 0.3s;
+}
+
+.outline_btn_danger:hover{
+  background-color: var(--danger_bg);
+  border: 1px solid var(--danger_bg);
+  color:var(--white_txt);
+}
+
+.outline_btn_light{
+  background-color: var(--white_txt);
+  border: 1px solid var(--light_grey);
+  color: var(--white_txt);
+  transition-duration: 0.3s;
+}
+
+.outline_btn_light:hover{
+  background-color: var(--light_grey);
+  border: 1px solid var(--light_grey);
+  color: var(--full_black);
+}
+
+.outline_btn_warning{
+  background-color: var(--white_txt);
+  border: 1px solid var(--warning_bg);
+  color: var(--warning_bg);
+  transition-duration: 0.3s;
+}
+
+.outline_btn_warning:hover{
+  background-color: var(--warning_bg);
+  color: var(--full_black);
+}
+
+.outline_btn_disabled{
+  background-color: var(--white_txt);
+  border: 1px solid var(--black_text_light);
+  color: var(--black_text_light);
+  opacity: 0.2;
+}
+
+
+.outline_btn_danger:hover{
+  background-color: var(--danger_bg);
+  border: 1px solid var(--danger_bg);
+  color:var(--white_txt);
+}
+
+.bg_primary {
   background: var(--green_text);
 }
 
+.border_primary{
+  border:1px solid var(--green_text);
+}
+
+.bg_default{
+  background-color: var(--black_text_light);
+}
+
+.border_default{
+  border:1px solid var(--black_text_light)
+}
+
+.btn_stc{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font:var(--font_bold_2);
+  border-radius: 4px;
+  padding: 8px 16px !important;
+}
 
 .count_silver{
   color:var(--count_silver);
@@ -149,8 +395,6 @@ p {
   color:var(--count_bronze);
   font-weight: 600;
 }
-
-
 
 .navbar,
 .border_b_E2E7EB {
