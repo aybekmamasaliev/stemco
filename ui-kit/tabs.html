@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../bootstrap-5.0.2-dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>Document</title>
+    <style>
+      ul>li>a{
+        text-decoration: none;
+      }
+
+      ul{
+        list-style-type: none;
+      }
+    </style>
+  </head>
+  <body style="background-color: white; padding: 20px; padding-left: 50px; padding-top: 50px;">
+    <div class="d-flex">
+      <div>
+        <ul>
+          <li>
+            <a href="./buttons.html">Button</a>
+          </li>
+          <li>
+            <a href="./button.html">Outline Buttons</a>
+          </li>
+          <li>
+            <a href="./subjects.html">Subjects</a>
+          </li>
+          <li>
+            <a href="./tabs.html">Tabs</a>
+          </li>
+          <li>
+            <a href="./weekly_challenges.html">Button</a>
+          </li>
+         
+        </ul>
+      </div>
+      <div class="ms-5">
+        <nav
+          class="d-flex nav-pills justify-content-between align-items-center ps_rel"
+        >
+          <div class="d-flex align-items-center">
+            <div class="bg_nav_tabs rounded-3 p-1">
+              <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                <button
+                  class="nav-link active fs_14 fw_500"
+                  id="nav-home-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#nav-home"
+                  type="button"
+                  role="tab"
+                  aria-controls="nav-home"
+                  aria-selected="true"
+                >
+                  First
+                </button>
+                <button
+                  class="nav-link fs_14 fw_500"
+                  id="nav-profile-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#nav-profile"
+                  type="button"
+                  role="tab"
+                  aria-controls="nav-profile"
+                  aria-selected="false"
+                >
+                  Second
+                </button>
+                <button
+                  class="nav-link fs_14 fw_500 d-flex align-items-end"
+                  id="nav-contact-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#nav-contact"
+                  type="button"
+                  role="tab"
+                  aria-controls="nav-contact"
+                  aria-selected="false"
+                >
+                  Third
+                </button>
+              </div>
+            </div>
+          </div>
+        </nav>
+        <div class="nav-content d-flex ps_rel" id="nav-Content">
+          <div
+            class="tab-pane fade show active ps_abs"
+            id="nav-home"
+            role="tabpanel"
+            aria-labelledby="nav-home-tab"
+          >
+            <p>First</p>
+          </div>
+          <div
+            class="tab-pane fade ps_abs"
+            id="nav-profile"
+            role="tabpanel"
+            aria-labelledby="nav-home-tab"
+          >
+            <p>Second</p>
+          </div>
+          <div
+            class="tab-pane fade ps_abs"
+            id="nav-contact"
+            role="tabpanel"
+            aria-labelledby="nav-home-tab"
+          >
+            <p>Third</p>
+          </div>
+        </div>
+    
+        <pre>
+    
+            &lt;nav class="d-flex nav-pills justify-content-between align-items-center ps_rel"&gt;
+              &lt;div class="d-flex align-items-center"&gt;
+                &lt;div class="bg_nav_tabs rounded-3 p-1"&gt;
+                  &lt;div class="nav nav-tabs" id="nav-tab" role="tablist"&gt;
+                    &lt;button
+                      class="nav-link active fs_14 fw_500"
+                      id="nav-home-tab"
+                      data-bs-toggle="tab"
+                      data-bs-target="#nav-home"
+                      type="button"
+                      role="tab"
+                      aria-controls="nav-home"
+                      aria-selected="true"
+                    &gt;
+                      First
+                    &lt;/button&gt;
+                    &lt;button
+                      class="nav-link fs_14 fw_500"
+                      id="nav-profile-tab"
+                      data-bs-toggle="tab"
+                      data-bs-target="#nav-profile"
+                      type="button"
+                      role="tab"
+                      aria-controls="nav-profile"
+                      aria-selected="false"
+                    &gt;
+                      Second
+                    &lt;/button&gt;
+                    &lt;button
+                      class="nav-link fs_14 fw_500 d-flex align-items-end"
+                      id="nav-contact-tab"
+                      data-bs-toggle="tab"
+                      data-bs-target="#nav-contact"
+                      type="button"
+                      role="tab"
+                      aria-controls="nav-contact"
+                      aria-selected="false"
+                    &gt;
+                      Third
+                    &lt;/button&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+            &lt;/nav&gt;
+    
+            &lt;div class="nav-content d-flex ps_rel" id="nav-Content"&gt;
+                &lt;div
+                  class="tab-pane fade show active ps_abs"
+                  id="nav-home"
+                  role="tabpanel"
+                  aria-labelledby="nav-home-tab"
+                &gt;
+                &lt;p&gt;First&lt;/p&gt;
+                &lt;/div&gt;
+                  &lt;div
+                    class="tab-pane fade ps_abs"
+                    id="nav-profile"
+                    role="tabpanel"
+                    aria-labelledby="nav-home-tab"
+                  &gt;
+                  &lt;p&gt;Second&lt;/p&gt;
+                &lt;/div&gt;
+                  &lt;div
+                    class="tab-pane fade ps_abs"
+                    id="nav-contact"
+                    role="tabpanel"
+                    aria-labelledby="nav-home-tab"
+                  &gt;
+                  &lt;p&gt;Third&lt;/p&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        </pre>
+      </div>
+
+    </div>
+   
+
+    <script src="../bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+    <script src="./swiping.js"></script>
+  </body>
+</html>
