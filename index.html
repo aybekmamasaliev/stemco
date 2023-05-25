@@ -224,10 +224,13 @@
           </div>
           <div class="col-12 col-sm-5 stmc_card">
             <div class="border p-2 ps_rel rounded-3">
-              <p class="fs_14 fw_500 muted_txt">School</p>
-              <p class="ps_abs_r12_t8 fs_12">Edit</p>
+              <div class="d-flex justify-content-between">
+                <p class="font_bold_2 muted_txt">School</p>
+                <p class="font_bold_1 d-flex align-items-center">Edit</p>
+              </div>
+              
               <div
-                class="fs_14 fw_500 d-flex align-items-center mt-1 justify-content-between"
+                class="font_bold_2 d-flex align-items-center mt-2 justify-content-between"
               >
                 <div class="d-flex align-items-center justify-content-between">
                   <img
@@ -242,7 +245,7 @@
                     class="d-block ms-2"
                   />
                 </div>
-                <div class="p-1 d-flex rounded-3">
+                <div class=" d-flex rounded-3">
                   <img alt="" src="./media/subscribed.svg" class="d-block" />
                   <span class="ms-2 d_none_750">Subscribed</span>
                 </div>
@@ -398,48 +401,47 @@
         <div class="d-flex flex-wrap mt-5 justify-content-between">
           <div class="col-12 col-md-5 pe-0 pe-md-2">
             <div>
-              <div class="border stmc_card ps_rel bg-white">
-                <p class="ps_abs fw-bold">Weekly Challenges</p>
-                <p class="fs_24 fw-bold text-uppercase blue_text mt-2">
+              <div class="border stmc_card bg-white">
+                <div class="d-flex justify-content-between align-items-center">
+                  <p class="font_bold_6">Weekly Challenges</p>
+                  <div class="d-flex">
+                    <button
+                      class="rounded-circle border-0 me-1"
+                      onClick="swipingLeft()"
+                    >
+                      <img
+                        alt="left"
+                        src="./media/left.svg"
+                        class="rounded-circle"
+                      />
+                    </button>
+                    <div class="d-flex align-items-center overflow_x_h">
+                      <p class="my-auto w_60 font_bold_2" id="test"></p>
+                    </div>
+  
+                    <button
+                      class="border-0 ms-1 rounded-circle"
+                      onClick="swipingRight()"
+                    >
+                      <img
+                        alt="right"
+                        src="./media/left.svg"
+                        class="rotateimg180"
+                      />
+                    </button>
+                  </div>
+                </div>
+                
+                
+                <p class="font_bold_8 text-uppercase blue_text mt-3">
                   Challange name
                 </p>
-                <div class="d-flex border-bottom pb-3 mt-1">
+                <div class="d-flex border-bottom pb-3 mt-2">
                   <p class="me-1 px-2 py-1 b_rds_20 fs_12 topic_bg">heat</p>
                   <p class="me-1 px-2 py-1 b_rds_20 fs_12 topic_bg">kinetics</p>
                   <p class="me-1 px-2 py-1 b_rds_20 fs_12 topic_bg">dynamics</p>
                 </div>
-                <div class="ps_abs_r_t d-flex">
-                  <button
-                    class="rounded-circle border-0 me-1"
-                    onClick="swipingLeft()"
-                  >
-                    <img
-                      alt="left"
-                      src="./media/left.svg"
-                      class="rounded-circle"
-                    />
-                  </button>
-                  <div
-                    style="
-                      display: flex;
-                      align-items: center;
-                      overflow-x: hidden;
-                    "
-                  >
-                    <p class="my-auto w_60 fs_14 fw_500" id="test"></p>
-                  </div>
-
-                  <button
-                    class="border-0 ms-1 rounded-circle"
-                    onClick="swipingRight()"
-                  >
-                    <img
-                      alt="right"
-                      src="./media/left.svg"
-                      class="rotateimg180"
-                    />
-                  </button>
-                </div>
+               
                 <div class="mt-4">
                   <p>Until the end</p>
                   <p class="muted_txt mt-1">
@@ -472,12 +474,6 @@
                       <img alt="" src="./media/play.svg" class="me-2" />
                       Let’s Start
                     </button>
-                    <!-- <button
-                      class="btn_stc bg_primary border_primary text-white"
-                    >
-                      <img alt="" src="./media/play.svg" class="me-2" />
-                      Let’s Start
-                    </button> -->
                     <button
                       type="button"
                       class="btn_stc outline_btn_primary ms-2"
@@ -492,6 +488,7 @@
                   />
                 </div>
               </div>
+           
               <div class="border my-4 stmc_card bg-white">
                 <div class="d-flex justify-content-between">
                   <p>Season competiton</p>
@@ -511,9 +508,8 @@
                     <p class="font_bold_2 muted_txt mt-1">League:&nbsp;Beginner</p>
                   </div>
                 </div>
-                <hr class="mt-4" />
 
-                <div class="d-flex justify-content-between flex-wrap">
+                <div class="d-flex justify-content-between flex-wrap mt-4">
                   <p class="my-auto fs_14 fw_500">Available:</p>
                   <div class="d-flex justify-content-around">
                     <div class="ps-2">
@@ -569,7 +565,7 @@
               </div>
 
               <nav
-                class="d-flex nav-pills justify-content-between align-items-center mb-3 ps_rel"
+                class="d-flex nav-pills align-items-center mb-4"
               >
                 <div class="d-flex align-items-center">
                   <div class="bg_nav_tabs rounded-3 p-1">
