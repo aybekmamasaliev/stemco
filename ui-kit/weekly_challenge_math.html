@@ -321,11 +321,24 @@
                 </div>
                 <div class="d-flex flex-row-reverse">
                   <div class="ps_rel">
-                    <div class="score_icon text-center color_primary">
-                      <p class="font_bold_7">38.4</p>
-                      <p class="font_regular_1">max.40</p>
+                    <div class="div_of_circle">
+                      <p class="score_in_name">BY!P:</p>
+                      <p class="score_in_percents">
+                        <span class="score_in_points">76.49</span><span>%</span>
+                      </p>
+                      <img alt="" src="./media/ellipse.svg" class="ellipse" />
+                      <svg class="progress-ring" width="91" height="91">
+                        <circle
+                          class="progress-ring__circle"
+                          stroke="#4D956A"
+                          stroke-width="4"
+                          cx="46"
+                          cy="46"
+                          r="43"
+                          fill="transparent"
+                        />
+                      </svg>
                     </div>
-                    <img alt="" src="./media/score_graph.svg" class="img-fluid" />
                   </div>
                 </div>
               </div>
@@ -737,7 +750,25 @@
 
     </div>
    
+      <script>
+        const circle = document.querySelector(".progress-ring__circle");
+        const radius = circle.r.baseVal.value;
+        const circumference = 2 * Math.PI * radius;
+        const score_in_points = document.querySelector(".score_in_points");
+        score_in_points.addEventListener("change", function () {
+          setProgress(score_in_points);
+        });
 
+        circle.style.strokeDasharray = `${circumference} ${circumference}`;
+        circle.style.strokeDashoffset = circumference;
+
+        function setProgress(percent) {
+          const offset = circumference - (percent / 100) * circumference;
+          circle.style.strokeDashoffset = offset;
+        }
+
+        setProgress(score_in_points.textContent);
+    </script>
     <script src="../bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
     <script src="./swiping.js"></script>
   </body>
