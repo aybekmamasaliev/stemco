@@ -8,16 +8,23 @@
     <link rel="stylesheet" href="../css/style.css" />
     <title>Document</title>
     <style>
-      ul>li>a{
+      ul > li > a {
         text-decoration: none;
       }
 
-      ul{
+      ul {
         list-style-type: none;
       }
     </style>
   </head>
-  <body style="background-color: white; padding: 20px; padding-left: 50px; padding-top:50px;">
+  <body
+    style="
+      background-color: white;
+      padding: 20px;
+      padding-left: 50px;
+      padding-top: 50px;
+    "
+  >
     <div class="d-flex">
       <div>
         <ul>
@@ -40,7 +47,9 @@
             <a href="./season_competition_bio.html">Competition Bio</a>
           </li>
           <li>
-            <a href="./season_competition_chemstry.html">Competition Chemstry</a>
+            <a href="./season_competition_chemstry.html"
+              >Competition Chemstry</a
+            >
           </li>
           <li>
             <a href="./season_competition_his.html">Competition Science</a>
@@ -70,54 +79,90 @@
       </div>
       <div class="ms-5">
         <h1>Progress Bar</h1>
-        <div class="container_progress">
-          <div class="progress" style="--i:85; --clr:green">
-              <h3>85<span>%</span></h3>
-              <h4 class="font_regular_1 mt-1">Html</h4>
-          </div>
-          <div class="progress" style="--i:62; --clr:purple">
-              <h3>62<span>%</span></h3>
-              <h4 class="font_regular_1 mt-1">CSS</h4>
-          </div>
-          <div class="progress less" style="--i:35; --clr: orange">
-              <h3>35<span>%</span></h3>
-              <h4 class="font_regular_1 mt-1">JavaScript</h4>
-          </div>
-          <div class="progress" style="--i:78; --clr:red">
-              <h3>78<span>%</span></h3>
-              <h4 class="font_regular_1 mt-1">Photoshop</h4>
-          </div>
-      </div>
-    
+        <div class="div_of_circle">
+          <p class="score_in_name">BY!P:</p>
+          <p class="score_in_percents">
+            <span class="score_in_points">76.49</span><span>%</span>
+          </p>
+          <img alt="" src="./media/ellipse.svg" class="ellipse" />
+          <svg class="progress-ring" width="91" height="91">
+            <circle
+              class="progress-ring__circle"
+              stroke="#4D956A"
+              stroke-width="4"
+              cx="46"
+              cy="46"
+              r="43"
+              fill="transparent"
+            />
+          </svg>
+        </div>
         <pre>
 
 
-&lt;div class="container_progress"&gt;
-    &lt;div class="progress" style="--i:85; --clr:green"&gt;
-        &lt;h3&gt;85&lt;span&gt;%&lt;/span&gt;&lt;/h3&gt;
-        &lt;h4 class="font_regular_1 mt-1"&gt;Html&lt;/h4&gt;
-    &lt;/div&gt;
-    &lt;div class="progress" style="--i:62; --clr:purple"&gt;
-        &lt;h3&gt;62&lt;span&gt;%&lt;/span&gt;&lt;/h3&gt;
-        &lt;h4 class="font_regular_1 mt-1"&gt;CSS&lt;/h4&gt;
-    &lt;/div&gt;
-    &lt;div class="progress less" style="--i:35; --clr: orange"&gt;
-        &lt;h3&gt;35&lt;span&gt;%&lt;/span&gt;&lt;/h3&gt;
-        &lt;h4 class="font_regular_1 mt-1"&gt;JavaScript&lt;/h4&gt;
-    &lt;/div&gt;
-    &lt;div class="progress" style="--i:78; --clr:red"&gt;
-        &lt;h3&gt;78&lt;span&gt;%&lt;/span&gt;&lt;/h3&gt;
-        &lt;h4 class="font_regular_1 mt-1"&gt;Photoshop&lt;/h4&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
+        &lt;div class="div_of_circle"&gt;
+          &lt;p class="score_in_name"&gt;BY!P:&lt;/p&gt;
+          &lt;p class="score_in_percents"&gt;
+            &lt;span class="score_in_points"&gt;76.49&lt;/span&gt;&lt;span&gt;%&lt;/span&gt;
+          &lt;/p&gt;
+          &lt;img alt="" src="./media/ellipse.svg" class="ellipse" /&gt;
+          &lt;svg class="progress-ring" width="91" height="91"&gt;
+            &lt;circle
+              class="progress-ring__circle"
+              stroke="#4D956A"
+              stroke-width="4"
+              cx="46"
+              cy="46"
+              r="43"
+              fill="transparent"
+            /&gt;
+          &lt;/svg&gt;
+        &lt;/div&gt;
     
         </pre>
-    
+
+        <pre>
+          &lt;script&gt;
+              const circle = document.querySelector(".progress-ring__circle");
+              const radius = circle.r.baseVal.value;
+              const circumference = 2 * Math.PI * radius;
+              const score_in_points = document.querySelector(".score_in_points");
+              score_in_points.addEventListener("change", function () {
+                setProgress(score_in_points);
+              });
+
+              circle.style.strokeDasharray = `${circumference} ${circumference}`;
+              circle.style.strokeDashoffset = circumference;
+
+              function setProgress(percent) {
+                const offset = circumference - (percent / 100) * circumference;
+                circle.style.strokeDashoffset = offset;
+              }
+
+              setProgress(score_in_points.textContent);
+          &lt;/script&gt;
+        </pre>
       </div>
-
     </div>
-   
+    <script>
+      const circle = document.querySelector(".progress-ring__circle");
+      const radius = circle.r.baseVal.value;
+      const circumference = 2 * Math.PI * radius;
+      const score_in_points = document.querySelector(".score_in_points");
+      score_in_points.addEventListener("change", function () {
+        setProgress(score_in_points);
+      });
 
+      circle.style.strokeDasharray = `${circumference} ${circumference}`;
+      circle.style.strokeDashoffset = circumference;
+
+      function setProgress(percent) {
+        const offset = circumference - (percent / 100) * circumference;
+        circle.style.strokeDashoffset = offset;
+      }
+
+      setProgress(score_in_points.textContent);
+    </script>
     <script src="../bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
     <script src="./swiping.js"></script>
   </body>

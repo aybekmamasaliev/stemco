@@ -1,18 +1,19 @@
-&lt;div class="container_progress"&gt;
-    &lt;div class="progress" style="--i:85; --clr:green"&gt;
-        &lt;h3&gt;85&lt;span&gt;%&lt;/span&gt;&lt;/h3&gt;
-        &lt;h4 class="font_regular_1 mt-1"&gt;Html&lt;/h4&gt;
-    &lt;/div&gt;
-    &lt;div class="progress" style="--i:62; --clr:purple"&gt;
-        &lt;h3&gt;62&lt;span&gt;%&lt;/span&gt;&lt;/h3&gt;
-        &lt;h4 class="font_regular_1 mt-1"&gt;CSS&lt;/h4&gt;
-    &lt;/div&gt;
-    &lt;div class="progress less" style="--i:35; --clr: orange"&gt;
-        &lt;h3&gt;35&lt;span&gt;%&lt;/span&gt;&lt;/h3&gt;
-        &lt;h4 class="font_regular_1 mt-1"&gt;JavaScript&lt;/h4&gt;
-    &lt;/div&gt;
-    &lt;div class="progress" style="--i:78; --clr:red"&gt;
-        &lt;h3&gt;78&lt;span&gt;%&lt;/span&gt;&lt;/h3&gt;
-        &lt;h4 class="font_regular_1 mt-1"&gt;Photoshop&lt;/h4&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
+&lt;script&gt;
+    const circle = document.querySelector(".progress-ring__circle");
+    const radius = circle.r.baseVal.value;
+    const circumference = 2 * Math.PI * radius;
+    const score_in_points = document.querySelector(".score_in_points");
+    score_in_points.addEventListener("change", function () {
+      setProgress(score_in_points);
+    });
+
+    circle.style.strokeDasharray = `${circumference} ${circumference}`;
+    circle.style.strokeDashoffset = circumference;
+
+    function setProgress(percent) {
+      const offset = circumference - (percent / 100) * circumference;
+      circle.style.strokeDashoffset = offset;
+    }
+
+    setProgress(score_in_points.textContent);
+  &lt;/script&gt;
