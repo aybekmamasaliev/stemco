@@ -1,16 +1,9 @@
-*{
+/* *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* body{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background-color: #222;
-} */ */
 
 .container_progress{
     position: relative;
@@ -63,7 +56,6 @@
     margin-left: 50%;
     transform-origin: left;
     border-radius: 0 100% 100% 0/50%;
-    /* position: absolute; */
 }
 
 .container_progress .progress::after{
@@ -82,4 +74,4 @@
 .container_progress .progress.less::before{
     background-color: #444;
     transform: rotate(calc((var(--i) - 0) * 0.01turn)); 
-}
+} */
