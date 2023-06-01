@@ -178,6 +178,10 @@ p {
   font: var(--font_bold_6);
 }
 
+.font_bold_8{
+  font: var(--font_bold_8);
+}
+
 .font_bold_12 {
   font: var(--font_bold_12);
 }
@@ -319,6 +323,7 @@ p {
 
 .outline_btn_primary:hover {
   background-color: var(--green_active);
+  border: 1px solid var(--green_active);
   color: var(--white_txt);
 }
 
@@ -810,33 +815,9 @@ td {
   transition: stroke-dashoffset 0.3s;
 }
 
-.div_of_circle{
+.circle_chart{
   position: relative;
   width: fit-content;
-}
-
-.score_in_percents {
-  position: absolute;
-  top: 60%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: #4d956a;
-  font-weight: 600;
-  font-size: 16px;
-}
-.score_in_name {
-  position: absolute;
-  top: 35%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: #4d956a;
-  font-weight: 400;
-  font-size: 12px;
-}
-
-.ellipse{
-  position: absolute;
-  left: 1px;
 }
 
 
