@@ -1,0 +1,840 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="./fontawesome-free-6.4.0-web (1)/fontawesome-free-6.4.0-web/css/all.css"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <nav
+      class="navbar navbar2 navbar-expand navbar-light bg-light py-2 px-1 bg-white"
+    >
+      <div class="container-xxl">
+        <a
+          class="navbar-brand border_none_sm d-none d-md-block pe-4 ps-1"
+          href="#"
+        >
+          <img alt="" src="./media/logo.svg" />
+          <img
+            alt=""
+            src="./media/logo_txt.svg"
+            class="pt-2 d-none d-md-inline"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul
+            class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto pt-2 color_black_light"
+          >
+            <li class="me-1">
+              <a
+                class="nav-link text-center fs_14 fw_400 fs_sm_12"
+                href="./index.html"
+              >
+                <i class="fa-solid fa-table-columns me-1"></i>
+                Dashboard
+              </a>
+            </li>
+            <li class="me-1">
+              <a class="nav-link text-center fs_14 fw_400 fs_sm_12" href="#">
+                <i class="fa-solid fa-brain me-1"></i> Practice
+              </a>
+            </li>
+            <li class="me-1">
+              <a
+                class="nav-link text-center active active_nav_item fs_14 fw_400 fs_sm_12"
+                href="./achievements.html"
+              >
+                <i class="fa-solid fa-bolt me-1"></i>Achievements
+              </a>
+            </li>
+            <li class="me-1">
+              <a class="nav-link text-center fs_14 fw_400 fs_sm_12" href="#">
+                <i class="fa-solid fa-chart-simple me-1"></i> Leaderboard
+              </a>
+            </li>
+          </ul>
+          <div class="d-flex">
+            <div class="px-3 d-none d-md-flex border-start border-end">
+              <img alt="" src="./media/Seasons.svg" class="d-block" />
+              <div class="d-flex align-items-center">
+                <div class="d_none_1000 ps-2">
+                  <p>SUMMER 2023</p>
+                  <p class="fs_12 muted_txt">
+                    1&nbsp;June&nbsp;2023&nbsp;-&nbsp;31&nbsp;August&nbsp;2023
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div
+              class="px-1 mt-1 mx-2 d-none d-md-flex align-items-center ps_rel"
+            >
+              <img alt="" src="./media/notif_sing.svg" class="ps_abs_t5_r5" />
+              <img
+                alt=""
+                src="./media/notification.svg"
+                class="border p-2 rounded-3"
+              />
+            </div>
+
+            <div
+              class="px-2 d-flex me-1 d-none d-md-flex align-items-center text-end border_s"
+            >
+              <div class="d_none_1090">
+                <p class="fs_12 me-2">Akhmetov&nbsp;Timur</p>
+                <p class="fs_12 me-2 muted_txt">Student</p>
+              </div>
+              <img alt="" src="./media/student_nav.svg" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div
+      class="navbar navbar-expand navbar-light d-block d-md-none bg-light px-1 py-2 bg-white"
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand border_none_sm pe-4 ps-1" href="#">
+          <img alt="" src="./media/logo.svg" />
+          <img alt="" src="./media/logo_txt.svg" class="pt-2 d-inline" />
+        </a>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mb-2 mb-lg-0 mx-auto pt-2"></ul>
+          <div class="d-flex">
+            <div class="px-3 d-flex border-start border-end">
+              <img alt="" src="./media/Seasons.svg" class="d-block" />
+              <div class="d-flex align-items-center">
+                <div class="d_none_1000 ps-2">
+                  <p>SUMMER 2023</p>
+                  <p class="fs_12 muted_txt">
+                    1&nbsp;June&nbsp;2023&nbsp;-&nbsp;31&nbsp;August&nbsp;2023
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="px-1 mt-1 mx-2 d-block ps_rel">
+              <img alt="" src="./media/notif_sing.svg" class="ps_abs_t5_r5" />
+              <img
+                alt=""
+                src="./media/notification.svg"
+                class="border p-2 rounded-3"
+              />
+            </div>
+
+            <div class="px-2 d-flex me-1 text-end border_s">
+              <div class="d_none_1090">
+                <p class="fs_12 me-2">Akhmetov&nbsp;Timur</p>
+                <p class="fs_12 me-2 muted_txt">Student</p>
+              </div>
+              <img alt="" src="./media/student_nav.svg" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white border_b">
+      <div class="container-xxl">
+        <ul class="nav nav-pills nav-fill subject_tabs">
+          <li class="nav-item active">
+            <a class="nav-link" aria-current="page" href="#">Mathematics</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#">Physics</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#">Chemistry</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#">Biology</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Science</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="container-xxl mt-4">
+      <!--<nav
+        class="d-flex nav-pills justify-content-between align-items-center ps_rel"
+      >
+        <div class="d-flex align-items-center">
+          <div class="bg_nav_tabs rounded-3 p-1">
+            <div class="nav nav-tabs" id="nav-tab" role="tablist">
+              <button
+                class="nav-link active font_regular_2 px-4"
+                id="nav-home-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#nav-home"
+                type="button"
+                role="tab"
+                aria-controls="nav-home"
+                aria-selected="true"
+              >
+                Competitions
+              </button>
+              <button
+                class="nav-link font_regular_2 px-4"
+                id="nav-profile-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#nav-profile"
+                type="button"
+                role="tab"
+                aria-controls="nav-profile"
+                aria-selected="false"
+              >
+                Weekly challenges
+              </button>
+            </div>
+          </div>
+        </div>
+      </nav>-->
+      <!--
+        
+    <div class="d-flex justify-content-between align-items-center mt-3 bg-light">
+        <div class="ps_rel">
+          <img
+            src="./media/tabler-icon-search.svg"
+            alt="search"
+            class="search_icon"
+          />
+          <input
+            type="text"
+            class="search_competition"
+            placeholder="Search by competition"
+          />
+        </div>
+        <div class="d-flex">
+          <select
+            class="form-select me-2 level_select"
+            aria-label="Default select example"
+          >
+            <option selected>Level</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select>
+          <select
+            class="form-select level_select"
+            aria-label="Default select example"
+          >
+            <option selected>League</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select>
+        </div>
+      </div>
+      <div>cdjk</div>
+      <div class="nav-content d-flex" id="nav-Content">
+        <div
+          class="tab-pane fade show active ps_abs w-100 mt-4"
+          id="nav-home"
+          role="tabpanel"
+          aria-labelledby="nav-home-tab"
+        >
+          <table class="table">
+            <thead>
+              <tr class="bg_nav_tabs">
+                <th class="col border" scope="col">#</th>
+                <th class="col border" scope="col">Season</th>
+                <th class="col border" scope="col">Level</th>
+                <th class="col border" scope="col">League</th>
+                <th class="col border" scope="col">Date</th>
+                <th class="col border" scope="col">BY!P score</th>
+                <th class="col border" scope="col">World Rank</th>
+                <th class="col border" scope="col">Country Rank</th>
+                <th class="col border" scope="col">School Rank</th>
+                <th class="col border" scope="col">Award</th>
+                <th class="col border" scope="col">Certificate</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="border" scope="row">245</th>
+                <td class="border">Fall 2023</td>
+                <td class="border">Primary Junior</td>
+                <td class="border">Advanced</td>
+                <td class="border">2023-11-13 15:28</td>
+                <td class="border">90,1</td>
+                <td class="border">87 / 3892</td>
+                <td class="border">11 / 398</td>
+                <td class="border">6 / 87</td>
+                <td class="border"></td>
+                <td class="border">Mark</td>
+               
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div
+          class="tab-pane fade ps_abs"
+          id="nav-profile"
+          role="tabpanel"
+          aria-labelledby="nav-home-tab"
+        >
+          <p>Second</p>
+        </div>
+      </div>-->
+      <ul
+        class="nav nav-pills mb-3 bg_nav_tabs p-1 rounded-3 fit_content"
+        id="pills-tab"
+        role="tablist"
+      >
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link active px-4"
+            id="pills-home-tab"
+            data-bs-toggle="pill"
+            data-bs-target="#pills-home"
+            type="button"
+            role="tab"
+            aria-controls="pills-home"
+            aria-selected="true"
+          >
+            Competitions
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link px-4"
+            id="pills-profile-tab"
+            data-bs-toggle="pill"
+            data-bs-target="#pills-profile"
+            type="button"
+            role="tab"
+            aria-controls="pills-profile"
+            aria-selected="false"
+          >
+            Weekly challenges
+          </button>
+        </li>
+      </ul>
+
+      <div
+        class="d-md-flex justify-content-between flex-wrap align-items-center mt-3"
+      >
+        <div class="ps_rel">
+          <img
+            src="./media/tabler-icon-search.svg"
+            alt="search"
+            class="search_icon"
+          />
+          <input
+            type="text"
+            class="search_competition"
+            placeholder="Search by competition"
+          />
+        </div>
+        <div class="d-flex mt-2 mt-md-0">
+          <div>
+            <div class="ps_rel fit_content me-2" id="selectBox">
+              <select
+                class="form-select select_width"
+                aria-label="Default select example"
+              >
+                <option selected>Season</option>
+              </select>
+              <div class="overSelect"></div>
+            </div>
+            <div class="ps_rel">
+              <div id="checkboxes">
+                <div class="px-2">
+                  <label for="ones"
+                    ><input
+                      type="checkbox"
+                      id="ones"
+                      name="season"
+                      onclick="selectAllSeasond(this)"
+                    />All</label
+                  >
+                  <label for="two"
+                    ><input type="checkbox" id="two" name="season" />Fall
+                    2023</label
+                  >
+                  <label for="three"
+                    ><input type="checkbox" id="three" name="season" />Summer
+                    2023</label
+                  >
+                  <label for="four"
+                    ><input type="checkbox" id="four" name="season" />Spring
+                    2023</label
+                  >
+                  <label for="five"
+                    ><input type="checkbox" id="five" name="season" />Winter
+                    2022</label
+                  >
+                  <label for="six"
+                    ><input type="checkbox" id="six" name="season" />autum
+                    2022</label
+                  >
+                  <label for="seven"
+                    ><input type="checkbox" id="seven" name="season" />Fall
+                    2022</label
+                  >
+                  <label for="eight"
+                    ><input type="checkbox" id="eight" name="season" />Summer
+                    2022</label
+                  >
+                  <label for="nine"
+                    ><input type="checkbox" id="nine" name="season" />Spring
+                    2021</label
+                  >
+                  <label for="ten"
+                    ><input type="checkbox" id="ten" name="season" />Winter
+                    2021</label
+                  >
+                  <label for="eleven"
+                    ><input type="checkbox" id="eleven" name="season" />autum
+                    2021 checkbox</label
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div class="ps_rel fit_content me-2" id="selectBox2">
+              <select
+                class="form-select select_width"
+                aria-label="Default select example"
+              >
+                <option selected>League</option>
+              </select>
+              <div class="overSelect"></div>
+            </div>
+            <div class="ps_rel">
+              <div id="checkboxes2">
+                <div class="px-2">
+                  <label for="LeagueAll"
+                    ><input
+                      type="checkbox"
+                      id="LeagueAll"
+                      name="legue"
+                      onclick="selectAllLegue(this)"
+                    />All</label
+                  >
+                  <label for="leguePrimaru_j"
+                    ><input
+                      type="checkbox"
+                      id="leguePrimaru_j"
+                      name="legue"
+                    />Primary Junior</label
+                  >
+                  <label for="leguePrimaru_s"
+                    ><input
+                      type="checkbox"
+                      id="leguePrimaru_s"
+                      name="legue"
+                    />Primary Senior</label
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- <select
+            class="form-select level_select"
+            aria-label="Default select example"
+          >
+            <option selected>League</option>
+          </select> -->
+        </div>
+      </div>
+
+      <div class="tab-content" id="pills-tabContent">
+        <div
+          class="tab-pane fade show active"
+          id="pills-home"
+          role="tabpanel"
+          aria-labelledby="pills-home-tab"
+        >
+          <div
+            class="tab-pane fade show active w-100 mt-4 overflow_x_auto"
+            id="nav-home"
+            role="tabpanel"
+            aria-labelledby="nav-home-tab"
+          >
+            <table class="table">
+              <thead>
+                <tr class="bg_nav_tabs font_bold_5">
+                  <th class="col text-center py-3" scope="col">ID</th>
+                  <th class="col" scope="col">Season</th>
+                  <th class="col" scope="col">Level</th>
+                  <th class="col" scope="col">League</th>
+                  <th class="col" scope="col">Date</th>
+                  <th class="col text-center" scope="col">BY!P score</th>
+                  <th class="col text-center" scope="col">World Rank</th>
+                  <th class="col text-center" scope="col">Country Rank</th>
+                  <th class="col text-center" scope="col">School Rank</th>
+                  <th class="col text-center" scope="col">Award</th>
+                  <th class="col text-center" scope="col">Certificate</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th class="text-center font_bold_5" scope="row">245</th>
+                  <td class="font_bold_5">Fall 2023</td>
+                  <td class="font_regular_1 color_black">Primary Junior</td>
+                  <td class="font_regular_1 color_black">Advanced</td>
+                  <td class="font_regular_1 muted_txt">2023-11-13 15:28</td>
+                  <td class="font_regular_1 text-center">90,1</td>
+                  <td class="font_regular_1 text-center">87 / 3892</td>
+                  <td class="font_regular_1 text-center">11 / 398</td>
+                  <td class="font_regular_1 text-center">6 / 87</td>
+                  <td class="font_regular_1 text-center">
+                    <div class="d-flex justify-content-around">
+                      <div class="d-md-flex align-items-center">
+                        <img
+                          src="./media/gold_achive.svg"
+                          class="me-md-2 mb-1 mb-md-0"
+                          alt="gold"
+                        />
+                        <span>Gold</span>
+                      </div>
+                    </div>
+                  </td>
+                  <td class="font_regular_1 border-start">
+                    <div class="d-flex justify-content-around">
+                      <img
+                        src="./media/tabler-icon-eye.svg"
+                        class="d-block"
+                        alt="eye"
+                      />
+                      <img
+                        src="./media/tabler-icon-link.svg"
+                        class="d-block"
+                        alt="link"
+                      />
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <th class="text-center font_bold_5" scope="row">245</th>
+                  <td class="font_bold_5">Fall 2023</td>
+                  <td class="font_regular_1 color_black">Primary Junior</td>
+                  <td class="font_regular_1 color_black">Advanced</td>
+                  <td class="font_regular_1 muted_txt">2023-11-13 15:28</td>
+                  <td class="font_regular_1 text-center">90,1</td>
+                  <td class="font_regular_1 text-center">87 / 3892</td>
+                  <td class="font_regular_1 text-center">11 / 398</td>
+                  <td class="font_regular_1 text-center">6 / 87</td>
+                  <td class="font_regular_1 text-center">
+                    <div class="d-flex justify-content-around">
+                      <div class="d-md-flex align-items-center">
+                        <img
+                          src="./media/gold_achive.svg"
+                          class="me-md-2 mb-1 mb-md-0"
+                          alt="gold"
+                        />
+                        <span>Gold</span>
+                      </div>
+                    </div>
+                  </td>
+                  <td class="font_regular_1 border-start">
+                    <div class="d-flex justify-content-around">
+                      <img
+                        src="./media/tabler-icon-eye.svg"
+                        class="d-block"
+                        alt="eye"
+                      />
+                      <img
+                        src="./media/tabler-icon-link.svg"
+                        class="d-block"
+                        alt="link"
+                      />
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <th class="text-center font_bold_5" scope="row">245</th>
+                  <td class="font_bold_5">Fall 2023</td>
+                  <td class="font_regular_1 color_black">Primary Junior</td>
+                  <td class="font_regular_1 color_black">Advanced</td>
+                  <td class="font_regular_1 muted_txt">2023-11-13 15:28</td>
+                  <td class="font_regular_1 text-center">90,1</td>
+                  <td class="font_regular_1 text-center">87 / 3892</td>
+                  <td class="font_regular_1 text-center">11 / 398</td>
+                  <td class="font_regular_1 text-center">6 / 87</td>
+                  <td class="font_regular_1 text-center">
+                    <div class="d-flex justify-content-around">
+                      <div class="d-md-flex align-items-center">
+                        <img
+                          src="./media/gold_achive.svg"
+                          class="me-md-2 mb-1 mb-md-0"
+                          alt="gold"
+                        />
+                        <span>Gold</span>
+                      </div>
+                    </div>
+                  </td>
+                  <td class="font_regular_1 border-start">
+                    <div class="d-flex justify-content-around">
+                      <img
+                        src="./media/tabler-icon-eye.svg"
+                        class="d-block"
+                        alt="eye"
+                      />
+                      <img
+                        src="./media/tabler-icon-link.svg"
+                        class="d-block"
+                        alt="link"
+                      />
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <th class="text-center font_bold_5" scope="row">245</th>
+                  <td class="font_bold_5">Fall 2023</td>
+                  <td class="font_regular_1 color_black">Primary Junior</td>
+                  <td class="font_regular_1 color_black">Advanced</td>
+                  <td class="font_regular_1 muted_txt">2023-11-13 15:28</td>
+                  <td class="font_regular_1 text-center">90,1</td>
+                  <td class="font_regular_1 text-center">87 / 3892</td>
+                  <td class="font_regular_1 text-center">11 / 398</td>
+                  <td class="font_regular_1 text-center">6 / 87</td>
+                  <td class="font_regular_1 text-center">
+                    <div class="d-flex justify-content-around">
+                      <div class="d-md-flex align-items-center">
+                        <img
+                          src="./media/gold_achive.svg"
+                          class="me-md-2 mb-1 mb-md-0"
+                          alt="gold"
+                        />
+                        <span>Gold</span>
+                      </div>
+                    </div>
+                  </td>
+                  <td class="font_regular_1 border-start">
+                    <div class="d-flex justify-content-around">
+                      <img
+                        src="./media/tabler-icon-eye.svg"
+                        class="d-block"
+                        alt="eye"
+                      />
+                      <img
+                        src="./media/tabler-icon-link.svg"
+                        class="d-block"
+                        alt="link"
+                      />
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <th class="text-center font_bold_5" scope="row">245</th>
+                  <td class="font_bold_5">Fall 2023</td>
+                  <td class="font_regular_1 color_black">Primary Junior</td>
+                  <td class="font_regular_1 color_black">Advanced</td>
+                  <td class="font_regular_1 muted_txt">2023-11-13 15:28</td>
+                  <td class="font_regular_1 text-center">90,1</td>
+                  <td class="font_regular_1 text-center">87 / 3892</td>
+                  <td class="font_regular_1 text-center">11 / 398</td>
+                  <td class="font_regular_1 text-center">6 / 87</td>
+                  <td class="font_regular_1 text-center">
+                    <div class="d-flex justify-content-around">
+                      <div class="d-md-flex align-items-center">
+                        <img
+                          src="./media/gold_achive.svg"
+                          class="me-md-2 mb-1 mb-md-0"
+                          alt="gold"
+                        />
+                        <span>Gold</span>
+                      </div>
+                    </div>
+                  </td>
+                  <td class="font_regular_1 border-start">
+                    <div class="d-flex justify-content-around">
+                      <img
+                        src="./media/tabler-icon-eye.svg"
+                        class="d-block"
+                        alt="eye"
+                      />
+                      <img
+                        src="./media/tabler-icon-link.svg"
+                        class="d-block"
+                        alt="link"
+                      />
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <th class="text-center font_bold_5" scope="row">245</th>
+                  <td class="font_bold_5">Fall 2023</td>
+                  <td class="font_regular_1 color_black">Primary Junior</td>
+                  <td class="font_regular_1 color_black">Advanced</td>
+                  <td class="font_regular_1 muted_txt">2023-11-13 15:28</td>
+                  <td class="font_regular_1 text-center">90,1</td>
+                  <td class="font_regular_1 text-center">87 / 3892</td>
+                  <td class="font_regular_1 text-center">11 / 398</td>
+                  <td class="font_regular_1 text-center">6 / 87</td>
+                  <td class="font_regular_1 text-center">
+                    <div class="d-flex justify-content-around">
+                      <div class="d-md-flex align-items-center">
+                        <img
+                          src="./media/gold_achive.svg"
+                          class="me-md-2 mb-1 mb-md-0"
+                          alt="gold"
+                        />
+                        <span>Gold</span>
+                      </div>
+                    </div>
+                  </td>
+                  <td class="font_regular_1 border-start">
+                    <div class="d-flex justify-content-around">
+                      <img
+                        src="./media/tabler-icon-eye.svg"
+                        class="d-block"
+                        alt="eye"
+                      />
+                      <img
+                        src="./media/tabler-icon-link.svg"
+                        class="d-block"
+                        alt="link"
+                      />
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <th class="text-center font_bold_5" scope="row">245</th>
+                  <td class="font_bold_5">Fall 2023</td>
+                  <td class="font_regular_1 color_black">Primary Junior</td>
+                  <td class="font_regular_1 color_black">Advanced</td>
+                  <td class="font_regular_1 muted_txt">2023-11-13 15:28</td>
+                  <td class="font_regular_1 text-center">90,1</td>
+                  <td class="font_regular_1 text-center">87 / 3892</td>
+                  <td class="font_regular_1 text-center">11 / 398</td>
+                  <td class="font_regular_1 text-center">6 / 87</td>
+                  <td class="font_regular_1 text-center">
+                    <div class="d-flex justify-content-around">
+                      <div class="d-md-flex align-items-center">
+                        <img
+                          src="./media/gold_achive.svg"
+                          class="me-md-2 mb-1 mb-md-0"
+                          alt="gold"
+                        />
+                        <span>Gold</span>
+                      </div>
+                    </div>
+                  </td>
+                  <td class="font_regular_1 border-start">
+                    <div class="d-flex justify-content-around">
+                      <img
+                        src="./media/tabler-icon-eye.svg"
+                        class="d-block"
+                        alt="eye"
+                      />
+                      <img
+                        src="./media/tabler-icon-link.svg"
+                        class="d-block"
+                        alt="link"
+                      />
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div
+          class="tab-pane fade w-100 mt-4 overflow_x_auto"
+          id="pills-profile"
+          role="tabpanel"
+          aria-labelledby="pills-profile-tab"
+        >
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+          <table class="table">
+            <thead>
+              <tr class="bg_nav_tabs font_bold_5">
+                <th class="col text-center py-3 border" scope="col">ID</th>
+                <th class="col-md-3 border" scope="col">Name</th>
+                <th class="col border" scope="col">League</th>
+                <th class="col border" scope="col">Date</th>
+                <th class="col text-center border" scope="col">BY!P score</th>
+                <th class="col text-center border" scope="col">World Rank</th>
+                <th class="col text-center border" scope="col">Country Rank</th>
+                <th class="col border" scope="col">School Rank</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="text-center font_bold_5 border" scope="row">245</th>
+                <td class="font_bold_5">Arithmetic Challenge</td>
+                <td class="font_regular_1 color_black">Primary Senior</td>
+                <td class="font_regular_1 color_black">2023-11-13 15:28</td>
+                <td class="font_regular_1 muted_txt text-center">90,1</td>
+                <td class="font_regular_1 text-center">87 / 3892</td>
+                <td class="font_regular_1 text-center">11 / 398</td>
+                <td class="font_regular_1 d-flex justify-content-between">
+                  <span class="px-3">6 / 87</span>
+                  <span class="border-start px-2">
+                    <img src="./media/tabler-icon-eye.svg" alt="eye" />
+                  </span>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        </div>
+      </div>
+      <div class="d-flex flex-row-reverse mt-1">
+        <select
+          class="form-select select_achive font_regular_2"
+          aria-label="Default select example"
+        >
+          <option selected>25 Rows</option>
+          <option value="1">One</option>
+          <option value="2">Two</option>
+          <option value="3">Three</option>
+        </select>
+        <nav aria-label="Page navigation example">
+          <ul class="pagination font_regular_2">
+            <li class="page-item">
+              <a class="page-link" href="#" aria-label="Previous">
+                <span aria-hidden="true"
+                  ><img src="./media/left_arrow.svg" alt="Previous"
+                /></span>
+              </a>
+            </li>
+            <li class="page-item active">
+              <a class="page-link" href="#">1</a>
+            </li>
+            <li class="page-item color_black">
+              <a class="page-link" href="#">2</a>
+            </li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item"><a class="page-link" href="#">4</a></li>
+            <li class="page-item"><a class="page-link" href="#">5</a></li>
+            <li class="page-item">
+              <a class="page-link" href="#" aria-label="Next">
+                <span aria-hidden="true"
+                  ><img src="./media/right_arrow.svg" alt="Next"
+                /></span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <script src="./showCheckboxes.js"></script>
+    <script src="./showCheckboxes2.js"></script>
+
+    <script src="bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+  </body>
+</html>
