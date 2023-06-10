@@ -35,6 +35,7 @@
   --table_bg: #e2e7eb;
   --warning_bg: #ffc107;
   --info_color: #0dcaf0;
+  --light_blue_gray:#F5F6F8;
   --white_txt: #fff;
   --green_bg_verif_stick: rgba(70, 190, 82, 0.1);
   --font_regular_1: 400 12px var(--font_family);
@@ -67,6 +68,9 @@ p {
   font-size: 12px;
 }
 
+.line_h_150{
+  line-height: 150%;
+}
 .fs_14 {
   font-size: 14px;
 }
@@ -226,6 +230,10 @@ p {
 
 .color_gold {
   color: #ffc671 !important;
+}
+
+.bg_light_blue_gray{
+  background-color: var(--light_blue_gray) !important;
 }
 
 .color_silver {
@@ -908,6 +916,14 @@ td {
   width:fit-content;
 }
 
+.w_50px{
+  width: 50px;
+}
+
+.w_120px{
+  width: 120px;
+}
+
 .overSelect{
   position: absolute;
   top:0;
@@ -925,7 +941,7 @@ td {
   position: absolute;
   background-color: #fff;
   padding-right: 4px;
-  z-index: 2;
+  z-index: 9999999;
 }
 
 #checkboxes>div {
@@ -966,7 +982,7 @@ td {
   border: 1px #dadada solid;
   position: absolute;
   background-color: #fff;
-  z-index: 2;
+  z-index: 9999999;
 }
 
 #checkboxes2>div {
