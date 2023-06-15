@@ -1,0 +1,904 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="./fontawesome-free-6.4.0-web (1)/fontawesome-free-6.4.0-web/css/all.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <nav
+      class="navbar navbar2 navbar-expand navbar-light bg-light py-2 px-1 bg-white"
+    >
+      <div class="container-xxl">
+        <a
+          class="navbar-brand border_none_sm d-none d-md-block pe-4 ps-1"
+          href="#"
+        >
+          <img alt="" src="./media/logo.svg" />
+          <img
+            alt=""
+            src="./media/logo_txt.svg"
+            class="pt-2 d-none d-md-inline"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul
+            class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto pt-2 color_black_light"
+          >
+            <li class="me-1">
+              <a
+                class="nav-link text-center fs_14 fw_400 fs_sm_12"
+                href="./index.html"
+              >
+                <i class="fa-solid fa-table-columns me-1"></i>
+                Dashboard
+              </a>
+            </li>
+            <li class="me-1">
+              <a class="nav-link text-center fs_14 fw_400 fs_sm_12" href="#">
+                <i class="fa-solid fa-brain me-1"></i> Practice
+              </a>
+            </li>
+            <li class="me-1">
+              <a
+                class="nav-link text-center active active_nav_item fs_14 fw_400 fs_sm_12"
+                href="./achievements.html"
+              >
+                <i class="fa-solid fa-bolt me-1"></i>Achievements
+              </a>
+            </li>
+            <li class="me-1">
+              <a class="nav-link text-center fs_14 fw_400 fs_sm_12" href="#">
+                <i class="fa-solid fa-chart-simple me-1"></i> Leaderboard
+              </a>
+            </li>
+          </ul>
+          <div class="d-flex">
+            <div class="px-3 d-none d-md-flex border-start border-end">
+              <img alt="" src="./media/Seasons.svg" class="d-block" />
+              <div class="d-flex align-items-center">
+                <div class="d_none_1000 ps-2">
+                  <p>SUMMER 2023</p>
+                  <p class="fs_12 muted_txt">
+                    1&nbsp;June&nbsp;2023&nbsp;-&nbsp;31&nbsp;August&nbsp;2023
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div
+              class="px-1 mt-1 mx-2 d-none d-md-flex align-items-center ps_rel"
+            >
+              <img alt="" src="./media/notif_sing.svg" class="ps_abs_t5_r5" />
+              <img
+                alt=""
+                src="./media/notification.svg"
+                class="border p-2 rounded-3"
+              />
+            </div>
+
+            <div
+              class="px-2 d-flex me-1 d-none d-md-flex align-items-center text-end border_s"
+            >
+              <div class="d_none_1090">
+                <p class="fs_12 me-2">Akhmetov&nbsp;Timur</p>
+                <p class="fs_12 me-2 muted_txt">Student</p>
+              </div>
+              <img alt="" src="./media/student_nav.svg" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div
+      class="navbar navbar-expand navbar-light d-block d-md-none bg-light px-1 py-2 bg-white"
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand border_none_sm pe-4 ps-1" href="#">
+          <img alt="" src="./media/logo.svg" />
+          <img alt="" src="./media/logo_txt.svg" class="pt-2 d-inline" />
+        </a>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mb-2 mb-lg-0 mx-auto pt-2"></ul>
+          <div class="d-flex">
+            <div class="px-3 d-flex border-start border-end">
+              <img alt="" src="./media/Seasons.svg" class="d-block" />
+              <div class="d-flex align-items-center">
+                <div class="d_none_1000 ps-2">
+                  <p>SUMMER 2023</p>
+                  <p class="fs_12 muted_txt">
+                    1&nbsp;June&nbsp;2023&nbsp;-&nbsp;31&nbsp;August&nbsp;2023
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="px-1 mt-1 mx-2 d-block ps_rel">
+              <img alt="" src="./media/notif_sing.svg" class="ps_abs_t5_r5" />
+              <img
+                alt=""
+                src="./media/notification.svg"
+                class="border p-2 rounded-3"
+              />
+            </div>
+
+            <div class="px-2 d-flex me-1 text-end border_s">
+              <div class="d_none_1090">
+                <p class="fs_12 me-2">Akhmetov&nbsp;Timur</p>
+                <p class="fs_12 me-2 muted_txt">Student</p>
+              </div>
+              <img alt="" src="./media/student_nav.svg" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-xxl">
+      <nav
+        style="--bs-breadcrumb-divider: '>'"
+        aria-label="breadcrumb"
+        class="ms-4 mt-4 ps-4 ps_rel font_regular_2"
+      >
+        <img src="./media/left.svg" alt="" class="ps_abs_20 c_pointer" />
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item">
+            <a href="#" class="muted_txt text-decoration-none">Achievments</a>
+          </li>
+          <li class="breadcrumb-item">
+            <a href="#" class="muted_txt text-decoration-none">Competitions</a>
+          </li>
+          <li class="breadcrumb-item active" aria-current="page">Fall 2023</li>
+        </ol>
+      </nav>
+      <ul
+        class="nav nav-pills mb-3 mt-4 border-bottom"
+        id="pills-tab"
+        role="tablist"
+      >
+        <li class="nav-item font_bold_2" role="presentation">
+          <button
+            class="nav-link b_rad_0 active"
+            id="pills-home-tab"
+            data-bs-toggle="pill"
+            data-bs-target="#pills-home"
+            type="button"
+            role="tab"
+            aria-controls="pills-home"
+            aria-selected="true"
+          >
+            Certificate
+          </button>
+        </li>
+        <li class="nav-item font_bold_2" role="presentation">
+          <button
+            class="nav-link b_rad_0"
+            id="pills-profile-tab"
+            data-bs-toggle="pill"
+            data-bs-target="#pills-profile"
+            type="button"
+            role="tab"
+            aria-controls="pills-profile"
+            aria-selected="false"
+          >
+            Problems
+          </button>
+        </li>
+        <li class="nav-item font_bold_2" role="presentation">
+          <button
+            class="nav-link b_rad_0"
+            id="pills-contact-tab"
+            data-bs-toggle="pill"
+            data-bs-target="#pills-contact"
+            type="button"
+            role="tab"
+            aria-controls="pills-contact"
+            aria-selected="false"
+          >
+            Analytics
+          </button>
+        </li>
+        <li class="nav-item font_bold_2" role="presentation">
+          <button
+            class="nav-link b_rad_0"
+            id="pills-contact-tab"
+            data-bs-toggle="pill"
+            data-bs-target="#pills-leaderboard"
+            type="button"
+            role="tab"
+            aria-controls="pills-contact"
+            aria-selected="false"
+          >
+            Leaderboard
+          </button>
+        </li>
+      </ul>
+      <div class="tab-content" id="pills-tabContent">
+        <div
+          class="tab-pane fade show active"
+          id="pills-home"
+          role="tabpanel"
+          aria-labelledby="pills-home-tab"
+        >
+          <div class="certificate">
+            <div class="px-4 py-3 certif_header">
+              <img src="./media/subject_logo.svg" alt="" />
+              <div class="d-flex align-items-center">
+                <p class="me-3">Digital certificate</p>
+                <img src="./media/checked.svg" alt="" />
+              </div>
+            </div>
+            <div class="p-3 bg-white border mb-4 certif_body">
+              <div class="ps_rel border-bottom pb-3">
+                <p class="font_regular_2 line_h_150">Name:</p>
+                <p class="font_bold_7 line_h_150 text-uppercase">
+                  Akhmetov Timur
+                </p>
+                <div class="d-flex ps_abs_r_t_0">
+                  <button
+                    type="button"
+                    class="btn_stc outline_btn_secondary me-3 d-none d-sm-inline font_bold_6"
+                  >
+                    <span
+                      class="d-flex align-items-center justify-content-between"
+                    >
+                      <img
+                        src="./media/tabler-icon-download.svg"
+                        alt=""
+                        class="me-1"
+                      />
+                      Download PDF
+                    </span>
+                  </button>
+                  <button
+                    type="button"
+                    class="btn_stc btn_secondary font_bold_6"
+                  >
+                    <img
+                      src="./media/tabler-icon-link_white.svg"
+                      alt=""
+                      class="me-1"
+                    />Copy link
+                  </button>
+                </div>
+                <div class="d-sm-flex mt-4">
+                  <div class="w_170px">
+                    <p class="font_regular_2 line_h_150">Country:</p>
+                    <p class="font_bold_7 line_h_150 text-uppercase">
+                      Kazakhstan:
+                    </p>
+                  </div>
+                  <div class="ps-sm-4 border-sm-start mt-4 mt-sm-0">
+                    <p class="font_regular_2 line_h_150">School:</p>
+                    <p class="font_bold_7 line_h_150 text-uppercase">
+                      Nazarbayev Intellectual School
+                    </p>
+                  </div>
+                </div>
+                <div class="d-sm-flex mt-4">
+                  <div class="w_170px mt-4 mt-sm-0">
+                    <p class="font_regular_2 line_h_150">Level:</p>
+                    <p class="font_bold_7 line_h_150 text-uppercase">
+                      Primary Junior
+                    </p>
+                  </div>
+                  <div class="px-sm-4 border-sm-start mt-4 mt-sm-0">
+                    <p class="font_regular_2 line_h_150">Subject:</p>
+                    <p class="font_bold_7 line_h_150 text-uppercase">
+                      Mathematics
+                    </p>
+                  </div>
+                  <div class="ps-sm-4 border-sm-start mt-4 mt-sm-0">
+                    <p class="font_regular_2 line_h_150">League:</p>
+                    <p class="font_bold_7 line_h_150 text-uppercase">
+                      Beginner
+                    </p>
+                  </div>
+                </div>
+                <div class="d-flex mt-4">
+                  <div class="w_170px">
+                    <p class="font_regular_2 line_h_150">Type:</p>
+                    <p class="font_bold_7 line_h_150 text-uppercase">Gold</p>
+                  </div>
+                </div>
+                <div class="d-flex mt-4">
+                  <div class="w_170px blue_text">
+                    <p class="font_regular_2 line_h_150">Date issued:</p>
+                    <p class="font_bold_7 line_h_150 text-uppercase">
+                      2023-08-03 19:44
+                    </p>
+                  </div>
+                  <div class="px-4 border-start d-flex align-items-center">
+                    <p
+                      class="font_regular_2 line_h_150 d-flex align-items-center"
+                    >
+                      Issued by:
+                      <img src="./media/Stemco Logo.svg" alt="" class="ms-3" />
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="d-flex flex-wrap py-4">
+                <div class="result border-sm-end">
+                  <p class="font_bold_7 text-uppercase muted_txt">Results</p>
+                  <div class="d-flex">
+                    <div class="result_progres">
+                      <div class="circle_chart">
+                        <svg class="progress-ring" width="144" height="144">
+                          <circle
+                            stroke="#e9ecef"
+                            stroke-width="7"
+                            cx="70"
+                            cy="70"
+                            r="64"
+                            fill="none"
+                            stroke-dashoffset="0"
+                          />
+                          <circle
+                            class="progress-ring__circle"
+                            stroke="#4d956a"
+                            stroke-width="7"
+                            stroke-linecap="round"
+                            cx="73"
+                            cy="70"
+                            r="64"
+                            fill="transparent"
+                            stroke-dashoffset="0"
+                            transform="rotate(-90, 50, 50)"
+                          />
+
+                          <text
+                            x="54"
+                            y="55"
+                            fill="#4d956a"
+                            class="font_bold_1"
+                          >
+                            BY!P:
+                          </text>
+                          <text
+                            x="48"
+                            y="79"
+                            fill="#4d956a"
+                            class="font_bold_8"
+                            id="score_in_percents"
+                          ></text>
+                        </svg>
+                      </div>
+                    </div>
+                    <ul class="scores ps-0 ms-4">
+                      <li
+                        class="d-flex justify-content-between line_h_150 font_bold_6 mt-1"
+                      >
+                        <p>BY!P score:</p>
+                        <p>38.4 / 40</p>
+                      </li>
+                      <li
+                        class="d-flex justify-content-between line_h_150 font_regular_2 mt-1"
+                      >
+                        <p>Percentile:</p>
+                        <p>23%</p>
+                      </li>
+                      <li
+                        class="d-flex justify-content-between line_h_150 font_regular_2 mt-1"
+                      >
+                        <p>Time</p>
+                        <p>1 h 23 min</p>
+                      </li>
+                      <li
+                        class="d-flex justify-content-between line_h_150 font_regular_2 mt-1"
+                      >
+                        <p>Global ranking</p>
+                        <p>13 / 3489</p>
+                      </li>
+                      <li
+                        class="d-flex justify-content-between line_h_150 font_regular_2 mt-1"
+                      >
+                        <p>Country ranking</p>
+                        <p>13 / 3489</p>
+                      </li>
+                      <li
+                        class="d-flex justify-content-between line_h_150 font_regular_2 mt-1"
+                      >
+                        <p>School ranking</p>
+                        <p>1 / 63</p>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="">
+                  <p class="font_bold_7 text-uppercase muted_txt">
+                    Participants
+                  </p>
+                  <div class="d-flex">
+                    <ul class="scores ps-0 ms-4">
+                      <li
+                        class="d-flex justify-content-between line_h_150 font_bold_6 mt-1"
+                      >
+                        <p>BY!P score:</p>
+                        <p>38.4 / 40</p>
+                      </li>
+                      <li
+                        class="d-flex justify-content-between line_h_150 font_regular_2 mt-1"
+                      >
+                        <p>Percentile:</p>
+                        <p>23%</p>
+                      </li>
+                      <li
+                        class="d-flex justify-content-between line_h_150 font_regular_2 mt-1"
+                      >
+                        <p>Time</p>
+                        <p>1 h 23 min</p>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="certificate">
+            <div class="px-4 py-3 certif_header">
+              <img src="./media/subject_logo.svg" alt="" />
+              <div class="d-flex align-items-center">
+                <p class="me-3">Digital certificate</p>
+                <img src="./media/checked.svg" alt="" />
+              </div>
+            </div>
+            <div
+              class="border bg-white mb-4 certif_none_body d-flex justify-content-around align-items-center"
+            >
+              <p class="font_regular_2 muted_txt">
+                The competition is not over yet. Certificate not available
+              </p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="tab-pane fade"
+          id="pills-profile"
+          role="tabpanel"
+          aria-labelledby="pills-profile-tab"
+        >
+          <div class="problems">
+            <div class="problems_list bg-white">
+              <div
+                class="d-flex justify-content-between align-items-center flex-wrap pb-3 border-bottom"
+              >
+                <p class="font_bold_2 gray_txt">Question: 15/40</p>
+                <div>
+                  <img src="./media/stemcologo.svg" alt="" class="ps_rel" />
+                </div>
+                <div class="d-flex py-2 px-3 bg_light_grey rounded-3">
+                  <div class="me-2 d-flex c_pointer">
+                    <img src="./media/like.svg" alt="" />
+                    <p class="ms-1">360</p>
+                  </div>
+                  <div class="border-start ps-2 d-flex c_pointer">
+                    <img src="./media/dislike.svg" alt="" />
+                    <p class="ms-1">360</p>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="d-flex justify-content-between align-items-center mt-2"
+              >
+                <p class="font_bold_6">
+                  15. Trigonometry around a Ferris Wheel
+                </p>
+                <div class="bg_light_grey d-flex align-items-center">
+                  <p class="me-1 px-2 py-1 b_rds_20 font_regular_1 topic_bg">
+                    heat
+                  </p>
+                  <p class="me-1 px-2 py-1 b_rds_20 font_regular_1 topic_bg">
+                    kinetics
+                  </p>
+                  <p class="me-1 px-2 py-1 b_rds_20 font_regular_1 topic_bg">
+                    dynamics
+                  </p>
+                </div>
+              </div>
+              <div class="p-3">
+                <p class="font_bold_5">
+                  In a hot air balloon, a flame is lit to heat up the air within
+                  the balloon, causing the balloon to rise.
+                </p>
+                <img src="./media/town.svg" alt="" class="mt-3" />
+                <p class="font_bold_5 mt-3">
+                  Bob visited the Singapore Flyer on his recent holiday to
+                  Singapore. He entered a capsule at the lowest point, and
+                  travelled one complete revolution. He realised that his height
+                  above sea level, y metres, could be described by the equation
+                  y = a cos(bt) + c where t is the time, in hours, after Bob
+                  entered the capsule, and a, b, and c are constants. What are
+                  the values of a, b, and c?
+                </p>
+                <p class="font_bold_5 mt-3">y = a cos(bt) + c</p>
+                <p class="font_bold_5 mt-3">
+                  where t is the time, in hours, after Bob entered the capsule,
+                  and a, b, and c are constants.
+                </p>
+                <p class="font_bold_5 mt-3">
+                  What are the values of a, b, and c?
+                </p>
+              </div>
+              <ul class="mt-3 ps-0">
+                <li class="d-flex border rounded-3 p-3 font_regular_1 justify-content-between">
+                  <div class="d-flex">
+                    <p class="muted_txt font_bold_11 pe-3">A</p>
+                    <input type="radio" id="a_80" name="question_1" value="1" />
+                    <label for="a_80" class="ms-3 c_pointer">
+                      a = -80, b = π, с = 75</label
+                    >
+                  </div>
+                  <img src="./media/Check.svg" alt="true" class="d-none" />
+                  <img src="./media/Close.svg" alt="true" class="d-none" />
+                </li>
+                <li class="d-flex border p-3 color_wrong rounded-3 mt-3 font_regular_1 justify-content-between">
+                  <div class="d-flex">
+                    <p class="muted_txt font_bold_11 pe-3">B</p>
+                    <input type="radio" id="a_81" name="question_1" value="1" />
+                    <label for="a_81" class="ms-3 c_pointer">
+                      a = 80, b = π, с = 85</label
+                    >
+                  </div>
+                  <img src="./media/Check.svg" alt="true" class="d-none" />
+                  <img src="./media/Close.svg" alt="true" class="d-block" />
+                </li>
+                <li
+                  class="d-flex border  p-3 rounded-3 mt-3 font_regular_1 justify-content-between"
+                >
+                  <div class="d-flex">
+                    <p class="muted_txt font_bold_11 pe-3">C</p>
+                    <input type="radio" id="a_82" name="question_1" value="1" />
+                    <label for="a_82" class="ms-3 c_pointer"
+                      >a = 80, b = 4π, c = 75</label
+                    >
+                  </div>
+                  <img src="./media/Check.svg" alt="true" class="d-none" />
+                  <img src="./media/Close.svg" alt="true" class="d-none" />
+                </li>
+                <li class="d-flex border p-3 border_black rounded-3 mt-3 font_regular_1 justify-content-between">
+                  <div class="d-flex">
+                    <p class="muted_txt font_bold_11 pe-3">D</p>
+                    <input type="radio" id="a_83" name="question_1" value="1" />
+                    <label for="a_83" class="ms-3 c_pointer"
+                      >a = -80, b = 4π, c = 85</label
+                    >
+                  </div>
+                  <img src="./media/Check.svg" alt="true" class="d-block" />
+                  <img src="./media/Close.svg" alt="true" class="d-none" />
+                </li>
+              </ul>
+            </div>
+
+            <div class="problems_result bg-white ps_rel">
+              <ul class="ps-0">
+                <li
+                  class="d-flex justify-content-between font_bold_6 line_h_150"
+                >
+                  <p>Questions:</p>
+                  <p>40</p>
+                </li>
+                <li
+                  class="d-flex justify-content-between font_regular_1 line_h_150 mt-1"
+                >
+                  <p>Correct:</p>
+                  <p class="color_primary">33</p>
+                </li>
+                <li
+                  class="d-flex justify-content-between font_regular_1 line_h_150 mt-1"
+                >
+                  <p>Wrong:</p>
+                  <p class="active_nav_item">7</p>
+                </li>
+                <li
+                  class="d-flex justify-content-between font_regular_1 line_h_150 mt-1"
+                >
+                  <p>Empty:</p>
+                  <p class="muted_txt">0</p>
+                </li>
+              </ul>
+              <ul class="ps-0 problems_result_list">
+                <li
+                  class="p-2 font_bold_1 border-bottom border-end light_green d-flex justify-content-between"
+                >
+                  <p>1. Chevron logo area</p>
+                  <img src="./media/Check.svg" alt="" />
+                </li>
+                <li
+                  class="p-2 font_bold_1 border-bottom border-end color_wrong d-flex justify-content-between"
+                >
+                  <p>2. Chevron logo area</p>
+                  <img src="./media/Close.svg" alt="" />
+                </li>
+                <li
+                  class="p-2 font_bold_1 border-bottom border-end light_green d-flex justify-content-between"
+                >
+                  <p>3. Chevron logo area</p>
+                  <img src="./media/Check.svg" alt="" />
+                </li>
+                <li
+                  class="p-2 font_bold_1 border-bottom border-end light_green d-flex justify-content-between"
+                >
+                  <p>4. Chevron logo area</p>
+                  <img src="./media/Check.svg" alt="" />
+                </li>
+                <li
+                  class="p-2 font_bold_1 border-bottom border-end light_green d-flex justify-content-between"
+                >
+                  <p>5. Chevron logo area</p>
+                  <img src="./media/Check.svg" alt="" />
+                </li>
+                <li
+                  class="p-2 font_bold_1 border-bottom border-end color_wrong d-flex justify-content-between"
+                >
+                  <p>6. Chevron logo area</p>
+                  <img src="./media/Close.svg" alt="" />
+                </li>
+                <li
+                  class="p-2 font_bold_1 border-bottom border-end light_green d-flex justify-content-between"
+                >
+                  <p>7. Chevron logo area</p>
+                  <img src="./media/Check.svg" alt="" />
+                </li>
+                <li
+                  class="p-2 font_bold_1 border-bottom border-end light_green d-flex justify-content-between"
+                >
+                  <p>8. Chevron logo area</p>
+                  <img src="./media/Check.svg" alt="" />
+                </li>
+                <li
+                  class="p-2 font_bold_1 border-bottom border-end light_green d-flex justify-content-between"
+                >
+                  <p>9. Chevron logo area</p>
+                  <img src="./media/Check.svg" alt="" />
+                </li>
+                <li
+                  class="p-2 font_bold_1 border-bottom border-end light_green d-flex justify-content-between"
+                >
+                  <p>10. Chevron logo area</p>
+                  <img src="./media/Check.svg" alt="" />
+                </li>
+                <li
+                  class="p-2 font_bold_1 border-bottom border-end color_wrong d-flex justify-content-between"
+                >
+                  <p>11. Chevron logo area</p>
+                  <img src="./media/Close.svg" alt="" />
+                </li>
+                <li
+                  class="p-2 font_bold_1 border-bottom border-end light_green d-flex justify-content-between"
+                >
+                  <p>12. Chevron logo area</p>
+                  <img src="./media/Check.svg" alt="" />
+                </li>
+                <li
+                  class="p-2 font_bold_1 border-bottom border-end light_green d-flex justify-content-between"
+                >
+                  <p>13. Chevron logo area</p>
+                  <img src="./media/Check.svg" alt="" />
+                </li>
+                <li
+                  class="p-2 font_bold_1 border-bottom border-end light_green d-flex justify-content-between"
+                >
+                  <p>14. Chevron logo area</p>
+                  <img src="./media/Check.svg" alt="" />
+                </li>
+                <li
+                  class="p-2 font_bold_1 border-bottom border-end color_wrong d-flex justify-content-between"
+                >
+                  <p>15. Chevron logo area</p>
+                  <img src="./media/Close.svg" alt="" />
+                </li>
+                <li
+                  class="p-2 font_bold_1 border-bottom border-end light_green d-flex justify-content-between"
+                >
+                  <p>16. Chevron logo area</p>
+                  <img src="./media/Check.svg" alt="" />
+                </li>
+                <li
+                  class="p-2 font_bold_1 border-bottom border-end light_green d-flex justify-content-between"
+                >
+                  <p>17. Chevron logo area</p>
+                  <img src="./media/Check.svg" alt="" />
+                </li>
+                <li
+                  class="p-2 font_bold_1 border-bottom border-end light_green d-flex justify-content-between"
+                >
+                  <p>18. Chevron logo area</p>
+                  <img src="./media/Check.svg" alt="" />
+                </li>
+                <li
+                  class="p-2 font_bold_1 border-bottom border-end light_green d-flex justify-content-between"
+                >
+                  <p>19. Chevron logo area</p>
+                  <img src="./media/Check.svg" alt="" />
+                </li>
+                <li
+                  class="p-2 font_bold_1 border-bottom border-end light_green d-flex justify-content-between"
+                >
+                  <p>20. Chevron logo area</p>
+                  <img src="./media/Check.svg" alt="" />
+                </li>
+                <li
+                  class="p-2 font_bold_1 border-bottom border-end color_wrong d-flex justify-content-between"
+                >
+                  <p>21. Chevron logo area</p>
+                  <img src="./media/Close.svg" alt="" />
+                </li>
+                <li
+                  class="p-2 font_bold_1 border-bottom border-end light_green d-flex justify-content-between"
+                >
+                  <p>20. Chevron logo area</p>
+                  <img src="./media/Check.svg" alt="" />
+                </li>
+                <li
+                  class="p-2 font_bold_1 border-bottom border-end light_green d-flex justify-content-between"
+                >
+                  <p>21. Chevron logo area</p>
+                  <img src="./media/Check.svg" alt="" />
+                </li>
+                <li
+                  class="p-2 font_bold_1 border-bottom border-end light_green d-flex justify-content-between"
+                >
+                  <p>22. Chevron logo area</p>
+                  <img src="./media/Check.svg" alt="" />
+                </li>
+                <li
+                  class="p-2 font_bold_1 border-bottom border-end light_green d-flex justify-content-between"
+                >
+                  <p>23. Chevron logo area</p>
+                  <img src="./media/Check.svg" alt="" />
+                </li>
+              </ul>
+            </div>
+            <div class="problems_comparison">
+              <ul class="p-4 rounded-3 mb-0">
+                <li class="d-flex justify-content-between border-bottom pb-2">
+                  <p class="font_bold_6">Comparison</p>
+                  <p class="font_regular_2">max. 1</p>
+                </li>
+                <li class="mt-3">
+                  <div class="d-flex justify-content-between">
+                    <div class="d-flex align-items-center">
+                      <img src="./media/byp_comparison.svg" alt="" />
+                      <p class="ms-2 font_bold_5">Your</p>
+                    </div>
+                    <p class="font_bold_6 text-primary" id="private_range"></p>
+                  </div>
+                  <div
+                    class="progress mt-2"
+                    role="progressbar"
+                    aria-label="Example with label"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  >
+                    <div class="progress-bar" id="current_user_progress"></div>
+                  </div>
+                </li>
+                <li class="mt-4">
+                  <div class="d-flex justify-content-between">
+                    <div class="d-flex align-items-center">
+                      <img src="./media/byp_comparison.svg" alt="" />
+                      <p class="ms-2 font_regular_2">
+                        Other participants (Average)
+                      </p>
+                    </div>
+                    <p class="font_bold_6 color_orange" id="main_range"></p>
+                  </div>
+                  <div
+                    class="progress mt-2"
+                    role="progressbar"
+                    aria-label="Example with label"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  >
+                    <div
+                      class="progress-bar bg_orange"
+                      id="other_users_progress"
+                    ></div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div
+            class="d-sm-flex justify-content-sm-between border bg-white  my-4  p-3 "
+          >
+            <div class="d-flex align-items-center justify-content-center c_pointer">
+              <img src="./media/InfoSquare.svg" alt="" />
+              <p class="ms-2 font_regular_3">Show solution</p>
+            </div>
+            <div class="mt-3 mt-sm-0 d-sm-flex justify-content-center group_btn">
+              <button type="button" class="btn_stc outline_btn_secondary w-100 w-sm-50">
+                Previous
+              </button>
+              <button type="button" class="btn_stc btn_secondary mt-2 mt-sm-0 w-100 ms-sm-3 w-sm-50">
+                Next
+              </button>
+            </div>
+          </div>
+        </div>
+        <div
+          class="tab-pane fade"
+          id="pills-contact"
+          role="tabpanel"
+          aria-labelledby="pills-contact-tab"
+        >
+          3
+        </div>
+        <div
+          class="tab-pane fade"
+          id="pills-leaderboard"
+          role="tabpanel"
+          aria-labelledby="pills-contact-tab"
+        >
+          4
+        </div>
+      </div>
+    </div>
+
+    <script>
+      const circle = document.querySelector(".progress-ring__circle");
+      let score = 98;
+      document.querySelector("#score_in_percents").innerHTML = score + "%";
+      const radius = circle.r.baseVal.value;
+
+      const circumference = 2 * Math.PI * radius;
+
+      circle.style.strokeDasharray = `${circumference} ${circumference}`;
+      circle.style.strokeDashoffset = circumference;
+
+      function setProgress(percent) {
+        const offset = circumference - (percent / 100) * circumference;
+        circle.style.strokeDashoffset = offset;
+      }
+
+      setProgress(score);
+    </script>
+    <script>
+      const user_progress = document.getElementById("current_user_progress");
+      const others_progress = document.getElementById("other_users_progress");
+      const main_range = document.getElementById("main_range");
+      const private_range = document.getElementById("private_range");
+
+      let scorPrivate = 1;
+      let avaragePrivate = scorPrivate + 0;
+      user_progress.style.width = `${avaragePrivate}%`;
+
+      let scoreGeneral = 40;
+      let avarageGeneral = scoreGeneral + 0;
+      others_progress.style.width = `${avarageGeneral}%`;
+
+      let main_range_score = avarageGeneral / 100;
+      let private_range_score = avaragePrivate / 100;
+
+      private_range.innerHTML = private_range_score;
+      main_range.innerHTML = main_range_score;
+    </script>
+
+    <script src="./showCheckboxes.js"></script>
+    <script src="./showCheckboxes2.js"></script>
+    <script src="bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+  </body>
+</html>
