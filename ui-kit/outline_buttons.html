@@ -8,16 +8,23 @@
     <link rel="stylesheet" href="../css/style.css" />
     <title>Document</title>
     <style>
-      ul>li>a{
+      ul > li > a {
         text-decoration: none;
       }
 
-      ul{
+      ul {
         list-style-type: none;
       }
     </style>
   </head>
-  <body style="background-color: white; padding: 20px; padding-left: 50px; padding-top: 50px;">
+  <body
+    style="
+      background-color: white;
+      padding: 20px;
+      padding-left: 50px;
+      padding-top: 50px;
+    "
+  >
     <div class="d-flex">
       <div>
         <ul>
@@ -74,28 +81,44 @@
         </ul>
       </div>
       <div class="ms-5">
-       
         <h1>Outline Buttons</h1>
-    
+
         <div class="d-flex">
           &nbsp;
-          <button type="button" class="btn_stc outline_btn_primary">Button1</button>
+          <button type="button" class="btn_stc outline_btn_primary">
+            Button1
+          </button>
           &nbsp;
           <button type="button" class="btn_stc outline_btn_secondary">
             Button2
           </button>
           &nbsp;
-          <button type="button" class="btn_stc outline_btn_light">Button3</button>
+          <button type="button" class="btn_stc outline_btn_light">
+            Button3
+          </button>
           &nbsp;
           <button type="button" class="btn_stc outline_btn_disabled">
             Button4
           </button>
           &nbsp;
-          <button type="button" class="btn_stc outline_btn_danger">Button5</button>
+          <button type="button" class="btn_stc outline_btn_danger">
+            Button5
+          </button>
           &nbsp;
-          <button type="button" class="btn_stc outline_btn_warning">Button6</button>
+          <button type="button" class="btn_stc outline_btn_warning">
+            Button6
+          </button>
           &nbsp;
-          <button type="button" class="btn_stc outline_btn_info">Button7</button>
+          <button type="button" class="btn_stc outline_btn_info">
+            Button7
+          </button>
+          &nbsp;
+          <button type="button" class="btn_stc outline_btn_secondary">
+            <span class="d-flex align-items-center justify-content-between">
+              <img src="../media/alert_notf.svg" alt="" class="me-1" />
+              Button8
+            </span>
+          </button>
         </div>
         <pre>
     
@@ -112,12 +135,16 @@
         &lt;button type="button" class="btn_stc outline_btn_warning"&gt;Button6&lt;/button&gt;
         
         &lt;button type="button" class="btn_stc outline_btn_info"&gt;Button7&lt;/button&gt;
+
+        &lt;button type="button" class="btn_stc outline_btn_secondary"&gt;
+        &lt;span class="d-flex align-items-center justify-content-between"&gt;
+            &lt;img src="../media/alert_notf.svg" alt="" class="me-1" /&gt;
+              Button8
+            &lt;/span&gt;
+        &lt;/button&gt;
         </pre>
-
       </div>
-
     </div>
-   
 
     <script src="../bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
     <script src="./swiping.js"></script>
