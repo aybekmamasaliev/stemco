@@ -366,8 +366,7 @@ p {
 }
 
 .certificate {
-  width:max(300px, 100%);
-  background-color: red;
+  width: max(300px, 100%);
 }
 
 .select_achive {
