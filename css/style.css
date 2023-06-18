@@ -65,6 +65,8 @@ body {
   font-family: var(--font_family) !important;
 }
 
+
+
 p {
   margin-bottom: 0;
 }
@@ -923,6 +925,10 @@ td {
 .b_rad_0 {
   border-radius: 0 !important;
   background-color: #fafbfd !important;
+}
+
+.underline_tabs{
+  border-radius: 0 !important;
 }
 
 .border_b {
