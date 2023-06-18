@@ -3862,9 +3862,9 @@ textarea.form-control-lg {
   cursor: default;
 }
 
-.nav-tabs {
+/* .nav-tabs {
   border-bottom: 1px solid #dee2e6;
-}
+} */
 .nav-tabs .nav-link {
   margin-bottom: -1px;
   background: none;
@@ -3888,6 +3888,7 @@ textarea.form-control-lg {
   background-color:#fff;
   border-color: #dee2e6 #dee2e6 #fff;
 }
+
 .nav-tabs .dropdown-menu {
   margin-top: -1px;
   border-top-left-radius: 0;
@@ -3903,7 +3904,15 @@ textarea.form-control-lg {
 .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {
   color: #36454F;
-  background: #FFFFFF;
+  background: #fff;
+}
+
+
+.nav-pills .nav-link.underline_tabs.active,
+.nav-pills .show > .nav-link {
+  color: #36454F;
+  background: transparent;
+  border-bottom: 4px solid #36454F;
 }
 
 .nav-pills .nav-link.b_rad_0.active,
@@ -3916,11 +3925,11 @@ textarea.form-control-lg {
 .nav-link.b_rad_0{
   display: block;
   padding: 0.5rem 0.1rem;
+  background-color: transparent !important;
   text-decoration: none;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
   margin-right: 24px;
 }
-
 
 .nav-fill > .nav-link,
 .nav-fill .nav-item {

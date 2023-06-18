@@ -10,7 +10,13 @@
       rel="stylesheet"
       href="./fontawesome-free-6.4.0-web (1)/fontawesome-free-6.4.0-web/css/all.css"
     />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <title>Document</title>
   </head>
   <body>
@@ -151,819 +157,1144 @@
       </div>
     </div>
     <div class="bg-white border_b">
-      <div class="container-xxl">
-        <ul class="nav nav-pills nav-fill subject_tabs">
-          <li class="nav-item active">
-            <a class="nav-link" aria-current="page" href="#">Mathematics</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="#">Physics</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="#">Chemistry</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="#">Biology</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Science</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-    <div class="container-xxl mt-4">
-      <ul
-        class="nav nav-pills mb-3 bg_nav_tabs p-1 rounded-3 fit_content"
-        id="pills-tab"
-        role="tablist"
+      <nav
+        class="d-flex nav-pills container-xxl px-2 justify-content-between align-items-center"
       >
-        <li class="nav-item" role="presentation">
-          <button
-            class="nav-link active px-4"
-            id="pills-home-tab"
-            data-bs-toggle="pill"
-            data-bs-target="#pills-home"
-            type="button"
-            role="tab"
-            aria-controls="pills-home"
-            aria-selected="true"
-          >
-            Competitions
-          </button>
-        </li>
-        <li class="nav-item" role="presentation">
-          <button
-            class="nav-link px-4"
-            id="pills-profile-tab"
-            data-bs-toggle="pill"
-            data-bs-target="#pills-profile"
-            type="button"
-            role="tab"
-            aria-controls="pills-profile"
-            aria-selected="false"
-          >
-            Weekly challenges
-          </button>
-        </li>
-      </ul>
+        <div class="d-flex align-items-center">
+          <div class="rounded-3">
+            <div class="nav nav-tabs" id="nav-tab" role="tablist">
+              <button
+                class="nav-link underline_tabs active fs_14 fw_500"
+                id="mathematics-home-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#mathematics-home"
+                type="button"
+                role="tab"
+                aria-controls="mathematics-home"
+                aria-selected="true"
+              >
+                Mathematics
+              </button>
+              <button
+                class="nav-link underline_tabs fs_14 fw_500"
+                id="physics-result-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#physics-result"
+                type="button"
+                role="tab"
+                aria-controls="physics-result"
+                aria-selected="false"
+              >
+                Physics
+              </button>
+              <button
+                class="nav-link underline_tabs fs_14 fw_500 d-flex align-items-end"
+                id="chemistry-result-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#chemistry-result"
+                type="button"
+                role="tab"
+                aria-controls="chemistry-result"
+                aria-selected="false"
+              >
+                Chemistry
+              </button>
+              <button
+                class="nav-link underline_tabs fs_14 fw_500 d-flex align-items-end"
+                id="biology-result-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#biology-result"
+                type="button"
+                role="tab"
+                aria-controls="biology-result"
+                aria-selected="false"
+              >
+                Biology
+              </button>
+              <button
+                class="nav-link underline_tabs fs_14 fw_500 d-flex align-items-end"
+                id="sciense-result-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#sciense-result"
+                type="button"
+                role="tab"
+                aria-controls="sciense-result"
+                aria-selected="false"
+              >
+                Science
+              </button>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
 
+    <div
+      class="nav-content ps_rel mt-2 d-flex justify-content-center"
+      id="nav-Content"
+    >
       <div
-        class="d-md-flex justify-content-between flex-wrap align-items-center mt-3"
+        class="tab-pane fade show container-xxl px-2 active ps_abs"
+        id="mathematics-home"
+        role="tabpanel"
+        aria-labelledby="nav-home-tab"
       >
-        <div class="ps_rel">
-          <img
-            src="./media/tabler-icon-search.svg"
-            alt="search"
-            class="search_icon"
-          />
-          <input
-            type="text"
-            class="search_competition"
-            placeholder="Search by competition"
-          />
-        </div>
-        <div class="d-flex mt-2 mt-md-0">
-          <div>
-            <div class="ps_rel fit_content me-2" id="selectBox">
-              <select
-                class="form-select select_width"
-                aria-label="Default select example"
-              >
-                <option selected>Season</option>
-              </select>
-              <div class="overSelect"></div>
-            </div>
-            <div class="ps_rel">
-              <div id="checkboxes">
-                <div class="px-2">
-                  <label for="ones"
-                    ><input
-                      type="checkbox"
-                      id="ones"
-                      name="season"
-                      onclick="selectAllSeasond(this)"
-                    />All</label
-                  >
-                  <label for="two"
-                    ><input type="checkbox" id="two" name="season" />Fall
-                    2023</label
-                  >
-                  <label for="three"
-                    ><input type="checkbox" id="three" name="season" />Summer
-                    2023</label
-                  >
-                  <label for="four"
-                    ><input type="checkbox" id="four" name="season" />Spring
-                    2023</label
-                  >
-                  <label for="five"
-                    ><input type="checkbox" id="five" name="season" />Winter
-                    2022</label
-                  >
-                  <label for="six"
-                    ><input type="checkbox" id="six" name="season" />autum
-                    2022</label
-                  >
-                  <label for="seven"
-                    ><input type="checkbox" id="seven" name="season" />Fall
-                    2022</label
-                  >
-                  <label for="eight"
-                    ><input type="checkbox" id="eight" name="season" />Summer
-                    2022</label
-                  >
-                  <label for="nine"
-                    ><input type="checkbox" id="nine" name="season" />Spring
-                    2021</label
-                  >
-                  <label for="ten"
-                    ><input type="checkbox" id="ten" name="season" />Winter
-                    2021</label
-                  >
-                  <label for="eleven"
-                    ><input type="checkbox" id="eleven" name="season" />autum
-                    2021 checkbox</label
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
+        <div>
+          <div class="container-xxl mt-4 px-0">
+            <ul
+              class="nav nav-pills mb-3 bg_nav_tabs p-1 rounded-3 fit_content"
+              id="pills-tab"
+              role="tablist"
+            >
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link active px-4"
+                  id="pills-home-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#pills-home"
+                  type="button"
+                  role="tab"
+                  aria-controls="pills-home"
+                  aria-selected="true"
+                >
+                  Competitions
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link px-4"
+                  id="pills-profile-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#pills-profile"
+                  type="button"
+                  role="tab"
+                  aria-controls="pills-profile"
+                  aria-selected="false"
+                >
+                  Weekly challenges
+                </button>
+              </li>
+            </ul>
 
-          <div>
-            <div class="ps_rel fit_content me-2" id="selectBox2">
-              <select
-                class="form-select select_width"
-                aria-label="Default select example"
-              >
-                <option selected>League</option>
-              </select>
-              <div class="overSelect"></div>
-            </div>
-            <div class="ps_rel">
-              <div id="checkboxes2">
-                <div class="px-2">
-                  <label for="LeagueAll"
-                    ><input
-                      type="checkbox"
-                      id="LeagueAll"
-                      name="legue"
-                      onclick="selectAllLegue(this)"
-                    />All</label
-                  >
-                  <label for="leguePrimaru_j"
-                    ><input
-                      type="checkbox"
-                      id="leguePrimaru_j"
-                      name="legue"
-                    />Primary Junior</label
-                  >
-                  <label for="leguePrimaru_s"
-                    ><input
-                      type="checkbox"
-                      id="leguePrimaru_s"
-                      name="legue"
-                    />Primary Senior</label
-                  >
+            <div
+              class="d-md-flex justify-content-between flex-wrap align-items-center mt-3"
+            >
+              <div class="ps_rel">
+                <img
+                  src="./media/tabler-icon-search.svg"
+                  alt="search"
+                  class="search_icon"
+                />
+                <input
+                  type="text"
+                  class="search_competition"
+                  placeholder="Search by competition"
+                />
+              </div>
+              <div class="d-flex mt-2 mt-md-0">
+                <div>
+                  <div class="ps_rel fit_content me-2" id="selectBox">
+                    <select
+                      class="form-select select_width"
+                      aria-label="Default select example"
+                    >
+                      <option selected>Season</option>
+                    </select>
+                    <div class="overSelect"></div>
+                  </div>
+                  <div class="ps_rel">
+                    <div id="checkboxes">
+                      <div class="px-2">
+                        <label for="ones"
+                          ><input
+                            type="checkbox"
+                            id="ones"
+                            name="season"
+                            onclick="selectAllSeasond(this)"
+                          />All</label
+                        >
+                        <label for="two"
+                          ><input type="checkbox" id="two" name="season" />Fall
+                          2023</label
+                        >
+                        <label for="three"
+                          ><input
+                            type="checkbox"
+                            id="three"
+                            name="season"
+                          />Summer 2023</label
+                        >
+                        <label for="four"
+                          ><input
+                            type="checkbox"
+                            id="four"
+                            name="season"
+                          />Spring 2023</label
+                        >
+                        <label for="five"
+                          ><input
+                            type="checkbox"
+                            id="five"
+                            name="season"
+                          />Winter 2022</label
+                        >
+                        <label for="six"
+                          ><input type="checkbox" id="six" name="season" />autum
+                          2022</label
+                        >
+                        <label for="seven"
+                          ><input
+                            type="checkbox"
+                            id="seven"
+                            name="season"
+                          />Fall 2022</label
+                        >
+                        <label for="eight"
+                          ><input
+                            type="checkbox"
+                            id="eight"
+                            name="season"
+                          />Summer 2022</label
+                        >
+                        <label for="nine"
+                          ><input
+                            type="checkbox"
+                            id="nine"
+                            name="season"
+                          />Spring 2021</label
+                        >
+                        <label for="ten"
+                          ><input
+                            type="checkbox"
+                            id="ten"
+                            name="season"
+                          />Winter 2021</label
+                        >
+                        <label for="eleven"
+                          ><input
+                            type="checkbox"
+                            id="eleven"
+                            name="season"
+                          />autum 2021 checkbox</label
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div>
+                  <div class="ps_rel fit_content me-2" id="selectBox2">
+                    <select
+                      class="form-select select_width"
+                      aria-label="Default select example"
+                    >
+                      <option selected>League</option>
+                    </select>
+                    <div class="overSelect"></div>
+                  </div>
+                  <div class="ps_rel">
+                    <div id="checkboxes2">
+                      <div class="px-2">
+                        <label for="LeagueAll"
+                          ><input
+                            type="checkbox"
+                            id="LeagueAll"
+                            name="legue"
+                            onclick="selectAllLegue(this)"
+                          />All</label
+                        >
+                        <label for="leguePrimaru_j"
+                          ><input
+                            type="checkbox"
+                            id="leguePrimaru_j"
+                            name="legue"
+                          />Primary Junior</label
+                        >
+                        <label for="leguePrimaru_s"
+                          ><input
+                            type="checkbox"
+                            id="leguePrimaru_s"
+                            name="legue"
+                          />Primary Senior</label
+                        >
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
+            </div>
+
+            <div class="tab-content" id="pills-tabContent">
+              <div
+                class="tab-pane fade show active"
+                id="pills-home"
+                role="tabpanel"
+                aria-labelledby="pills-home-tab"
+              >
+                <div
+                  class="tab-pane fade show active w-100 mt-4 overflow_x_auto"
+                  id="nav-home"
+                  role="tabpanel"
+                  aria-labelledby="nav-home-tab"
+                >
+                  <table class="table">
+                    <thead>
+                      <tr class="bg_nav_tabs font_bold_5">
+                        <th class="col text-center py-3" scope="col">ID</th>
+                        <th class="col" scope="col">Season</th>
+                        <th class="col" scope="col">Level</th>
+                        <th class="col" scope="col">League</th>
+                        <th class="col" scope="col">Date</th>
+                        <th class="col text-center" scope="col">BY!P score</th>
+                        <th class="col text-center" scope="col">World Rank</th>
+                        <th class="col text-center" scope="col">
+                          Country Rank
+                        </th>
+                        <th class="col text-center" scope="col">School Rank</th>
+                        <th class="col text-center" scope="col">Award</th>
+                        <th class="col text-center" scope="col">Certificate</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th class="text-center font_bold_5" scope="row">245</th>
+                        <td class="font_bold_5">Fall 2023</td>
+                        <td class="font_regular_1 color_black">
+                          Primary Junior
+                        </td>
+                        <td class="font_regular_1 color_black">Advanced</td>
+                        <td class="font_regular_1 muted_txt">
+                          2023-11-13 15:28
+                        </td>
+                        <td class="font_regular_1 text-center">90,1</td>
+                        <td class="font_regular_1 text-center">87 / 3892</td>
+                        <td class="font_regular_1 text-center">11 / 398</td>
+                        <td class="font_regular_1 text-center">6 / 87</td>
+                        <td class="font_regular_1 text-center">
+                          <div class="d-flex justify-content-around">
+                            <div class="d-md-flex align-items-center">
+                              <img
+                                src="./media/gold_achive.svg"
+                                class="me-md-2 mb-1 mb-md-0"
+                                alt="gold"
+                              />
+                              <span>Gold</span>
+                            </div>
+                          </div>
+                        </td>
+                        <td class="font_regular_1 border-start">
+                          <div class="d-flex justify-content-around">
+                            <img
+                              src="./media/tabler-icon-eye.svg"
+                              class="d-block"
+                              alt="eye"
+                            />
+                            <img
+                              src="./media/tabler-icon-link.svg"
+                              class="d-block"
+                              alt="link"
+                            />
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th class="text-center font_bold_5" scope="row">245</th>
+                        <td class="font_bold_5">Fall 2023</td>
+                        <td class="font_regular_1 color_black">
+                          Primary Junior
+                        </td>
+                        <td class="font_regular_1 color_black">Advanced</td>
+                        <td class="font_regular_1 muted_txt">
+                          2023-11-13 15:28
+                        </td>
+                        <td class="font_regular_1 text-center">90,1</td>
+                        <td class="font_regular_1 text-center">87 / 3892</td>
+                        <td class="font_regular_1 text-center">11 / 398</td>
+                        <td class="font_regular_1 text-center">6 / 87</td>
+                        <td class="font_regular_1 text-center">
+                          <div class="d-flex justify-content-around">
+                            <div class="d-md-flex align-items-center">
+                              <img
+                                src="./media/gold_achive.svg"
+                                class="me-md-2 mb-1 mb-md-0"
+                                alt="gold"
+                              />
+                              <span>Gold</span>
+                            </div>
+                          </div>
+                        </td>
+                        <td class="font_regular_1 border-start">
+                          <div class="d-flex justify-content-around">
+                            <img
+                              src="./media/tabler-icon-eye.svg"
+                              class="d-block"
+                              alt="eye"
+                            />
+                            <img
+                              src="./media/tabler-icon-link.svg"
+                              class="d-block"
+                              alt="link"
+                            />
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th class="text-center font_bold_5" scope="row">245</th>
+                        <td class="font_bold_5">Fall 2023</td>
+                        <td class="font_regular_1 color_black">
+                          Primary Junior
+                        </td>
+                        <td class="font_regular_1 color_black">Advanced</td>
+                        <td class="font_regular_1 muted_txt">
+                          2023-11-13 15:28
+                        </td>
+                        <td class="font_regular_1 text-center">90,1</td>
+                        <td class="font_regular_1 text-center">87 / 3892</td>
+                        <td class="font_regular_1 text-center">11 / 398</td>
+                        <td class="font_regular_1 text-center">6 / 87</td>
+                        <td class="font_regular_1 text-center">
+                          <div class="d-flex justify-content-around">
+                            <div class="d-md-flex align-items-center">
+                              <img
+                                src="./media/gold_achive.svg"
+                                class="me-md-2 mb-1 mb-md-0"
+                                alt="gold"
+                              />
+                              <span>Gold</span>
+                            </div>
+                          </div>
+                        </td>
+                        <td class="font_regular_1 border-start">
+                          <div class="d-flex justify-content-around">
+                            <img
+                              src="./media/tabler-icon-eye.svg"
+                              class="d-block"
+                              alt="eye"
+                            />
+                            <img
+                              src="./media/tabler-icon-link.svg"
+                              class="d-block"
+                              alt="link"
+                            />
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th class="text-center font_bold_5" scope="row">245</th>
+                        <td class="font_bold_5">Fall 2023</td>
+                        <td class="font_regular_1 color_black">
+                          Primary Junior
+                        </td>
+                        <td class="font_regular_1 color_black">Advanced</td>
+                        <td class="font_regular_1 muted_txt">
+                          2023-11-13 15:28
+                        </td>
+                        <td class="font_regular_1 text-center">90,1</td>
+                        <td class="font_regular_1 text-center">87 / 3892</td>
+                        <td class="font_regular_1 text-center">11 / 398</td>
+                        <td class="font_regular_1 text-center">6 / 87</td>
+                        <td class="font_regular_1 text-center">
+                          <div class="d-flex justify-content-around">
+                            <div class="d-md-flex align-items-center">
+                              <img
+                                src="./media/gold_achive.svg"
+                                class="me-md-2 mb-1 mb-md-0"
+                                alt="gold"
+                              />
+                              <span>Gold</span>
+                            </div>
+                          </div>
+                        </td>
+                        <td class="font_regular_1 border-start">
+                          <div class="d-flex justify-content-around">
+                            <img
+                              src="./media/tabler-icon-eye.svg"
+                              class="d-block"
+                              alt="eye"
+                            />
+                            <img
+                              src="./media/tabler-icon-link.svg"
+                              class="d-block"
+                              alt="link"
+                            />
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th class="text-center font_bold_5" scope="row">245</th>
+                        <td class="font_bold_5">Fall 2023</td>
+                        <td class="font_regular_1 color_black">
+                          Primary Junior
+                        </td>
+                        <td class="font_regular_1 color_black">Advanced</td>
+                        <td class="font_regular_1 muted_txt">
+                          2023-11-13 15:28
+                        </td>
+                        <td class="font_regular_1 text-center">90,1</td>
+                        <td class="font_regular_1 text-center">87 / 3892</td>
+                        <td class="font_regular_1 text-center">11 / 398</td>
+                        <td class="font_regular_1 text-center">6 / 87</td>
+                        <td class="font_regular_1 text-center">
+                          <div class="d-flex justify-content-around">
+                            <div class="d-md-flex align-items-center">
+                              <img
+                                src="./media/gold_achive.svg"
+                                class="me-md-2 mb-1 mb-md-0"
+                                alt="gold"
+                              />
+                              <span>Gold</span>
+                            </div>
+                          </div>
+                        </td>
+                        <td class="font_regular_1 border-start">
+                          <div class="d-flex justify-content-around">
+                            <img
+                              src="./media/tabler-icon-eye.svg"
+                              class="d-block"
+                              alt="eye"
+                            />
+                            <img
+                              src="./media/tabler-icon-link.svg"
+                              class="d-block"
+                              alt="link"
+                            />
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th class="text-center font_bold_5" scope="row">245</th>
+                        <td class="font_bold_5">Fall 2023</td>
+                        <td class="font_regular_1 color_black">
+                          Primary Junior
+                        </td>
+                        <td class="font_regular_1 color_black">Advanced</td>
+                        <td class="font_regular_1 muted_txt">
+                          2023-11-13 15:28
+                        </td>
+                        <td class="font_regular_1 text-center">90,1</td>
+                        <td class="font_regular_1 text-center">87 / 3892</td>
+                        <td class="font_regular_1 text-center">11 / 398</td>
+                        <td class="font_regular_1 text-center">6 / 87</td>
+                        <td class="font_regular_1 text-center">
+                          <div class="d-flex justify-content-around">
+                            <div class="d-md-flex align-items-center">
+                              <img
+                                src="./media/gold_achive.svg"
+                                class="me-md-2 mb-1 mb-md-0"
+                                alt="gold"
+                              />
+                              <span>Gold</span>
+                            </div>
+                          </div>
+                        </td>
+                        <td class="font_regular_1 border-start">
+                          <div class="d-flex justify-content-around">
+                            <img
+                              src="./media/tabler-icon-eye.svg"
+                              class="d-block"
+                              alt="eye"
+                            />
+                            <img
+                              src="./media/tabler-icon-link.svg"
+                              class="d-block"
+                              alt="link"
+                            />
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th class="text-center font_bold_5" scope="row">245</th>
+                        <td class="font_bold_5">Fall 2023</td>
+                        <td class="font_regular_1 color_black">
+                          Primary Junior
+                        </td>
+                        <td class="font_regular_1 color_black">Advanced</td>
+                        <td class="font_regular_1 muted_txt">
+                          2023-11-13 15:28
+                        </td>
+                        <td class="font_regular_1 text-center">90,1</td>
+                        <td class="font_regular_1 text-center">87 / 3892</td>
+                        <td class="font_regular_1 text-center">11 / 398</td>
+                        <td class="font_regular_1 text-center">6 / 87</td>
+                        <td class="font_regular_1 text-center">
+                          <div class="d-flex justify-content-around">
+                            <div class="d-md-flex align-items-center">
+                              <img
+                                src="./media/gold_achive.svg"
+                                class="me-md-2 mb-1 mb-md-0"
+                                alt="gold"
+                              />
+                              <span>Gold</span>
+                            </div>
+                          </div>
+                        </td>
+                        <td class="font_regular_1 border-start">
+                          <div class="d-flex justify-content-around">
+                            <img
+                              src="./media/tabler-icon-eye.svg"
+                              class="d-block"
+                              alt="eye"
+                            />
+                            <img
+                              src="./media/tabler-icon-link.svg"
+                              class="d-block"
+                              alt="link"
+                            />
+                          </div>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <div
+                class="tab-pane fade w-100 mt-4 overflow_x_auto"
+                id="pills-profile"
+                role="tabpanel"
+                aria-labelledby="pills-profile-tab"
+              >
+                <table class="table">
+                  <thead>
+                    <tr class="bg_nav_tabs font_bold_5 border">
+                      <th class="w_50px text-center py-3" scope="col">ID</th>
+                      <th class="col-3" scope="col">Name</th>
+                      <th class="w_120px" scope="col">League</th>
+                      <th class="col-2" scope="col">Date</th>
+                      <th class="col-1 text-center" scope="col">BY!P score</th>
+                      <th class="w_120px text-center" scope="col">
+                        World Rank
+                      </th>
+                      <th class="col-1 text-center" scope="col">
+                        Country Rank
+                      </th>
+                      <th class="col-1" scope="col">School Rank</th>
+                      <th class="w_50px" scope="col"></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td
+                        colspan="9"
+                        class="bg_light_blue_gray accordion-header p-0"
+                        id="flush-headingOne"
+                      >
+                        <button
+                          class="accordion-button font_bold_5 line_h_150 p-2"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#collapsing1"
+                          aria-expanded="true"
+                          aria-controls="yuiyui"
+                        >
+                          Fall 2023
+                        </button>
+                      </td>
+                    </tr>
+                    <tr class="collapse" id="collapsing1">
+                      <td class="text-center w_50px font_bold_5" scope="row">
+                        245
+                      </td>
+                      <td class="col-3 font_bold_5">Arithmetic Challenge</td>
+                      <td class="w_120px font_regular_1 color_black">
+                        Primary Senior
+                      </td>
+                      <td class="col-2 font_regular_1 color_black">
+                        2023-11-13 15:28
+                      </td>
+                      <td class="col-1 font_regular_1 muted_txt text-center">
+                        90,1
+                      </td>
+                      <td class="w_120px font_regular_1 text-center">
+                        87 / 3892
+                      </td>
+                      <td class="col-1 font_regular_1 text-center">11 / 398</td>
+                      <td class="col-1 font_regular_1 text-center">6 / 87</td>
+                      <td class="font_regular_1 w_50px text-center">
+                        <a href="./achievements_certificate.html">
+                          <img src="./media/tabler-icon-eye.svg" alt="eye" />
+                        </a>
+                      </td>
+                    </tr>
+                    <tr class="collapse" id="collapsing1">
+                      <td class="text-center w_50px font_bold_5" scope="row">
+                        245
+                      </td>
+                      <td class="col-3 font_bold_5">Arithmetic Challenge</td>
+                      <td class="w_120px font_regular_1 color_black">
+                        Primary Senior
+                      </td>
+                      <td class="col-2 font_regular_1 color_black">
+                        2023-11-13 15:28
+                      </td>
+                      <td class="col-1 font_regular_1 muted_txt text-center">
+                        90,1
+                      </td>
+                      <td class="w_120px font_regular_1 text-center">
+                        87 / 3892
+                      </td>
+                      <td class="col-1 font_regular_1 text-center">11 / 398</td>
+                      <td class="col-1 font_regular_1 text-center">6 / 87</td>
+                      <td class="font_regular_1 w_50px text-center">
+                        <a href="./achievements_certificate.html">
+                          <img src="./media/tabler-icon-eye.svg" alt="eye" />
+                        </a>
+                      </td>
+                    </tr>
+                    <tr class="collapse" id="collapsing1">
+                      <td class="text-center w_50px font_bold_5" scope="row">
+                        245
+                      </td>
+                      <td class="col-3 font_bold_5">Arithmetic Challenge</td>
+                      <td class="w_120px font_regular_1 color_black">
+                        Primary Senior
+                      </td>
+                      <td class="col-2 font_regular_1 color_black">
+                        2023-11-13 15:28
+                      </td>
+                      <td class="col-1 font_regular_1 muted_txt text-center">
+                        90,1
+                      </td>
+                      <td class="w_120px font_regular_1 text-center">
+                        87 / 3892
+                      </td>
+                      <td class="col-1 font_regular_1 text-center">11 / 398</td>
+                      <td class="col-1 font_regular_1 text-center">6 / 87</td>
+                      <td class="font_regular_1 w_50px text-center">
+                        <a href="./achievements_certificate.html">
+                          <img src="./media/tabler-icon-eye.svg" alt="eye" />
+                        </a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td
+                        colspan="9"
+                        class="bg_light_blue_gray accordion-header p-0"
+                        id="flush-headingOne"
+                      >
+                        <button
+                          class="accordion-button font_bold_5 line_h_150 p-2"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#collapsing2"
+                          aria-expanded="true"
+                          aria-controls="yuiyui"
+                        >
+                          Summer 2023
+                        </button>
+                      </td>
+                    </tr>
+                    <tr class="collapse" id="collapsing2">
+                      <td class="text-center w_50px font_bold_5" scope="row">
+                        245
+                      </td>
+                      <td class="col-3 font_bold_5">Arithmetic Challenge</td>
+                      <td class="w_120px font_regular_1 color_black">
+                        Primary Senior
+                      </td>
+                      <td class="col-2 font_regular_1 color_black">
+                        2023-11-13 15:28
+                      </td>
+                      <td class="col-1 font_regular_1 muted_txt text-center">
+                        90,1
+                      </td>
+                      <td class="w_120px font_regular_1 text-center">
+                        87 / 3892
+                      </td>
+                      <td class="col-1 font_regular_1 text-center">11 / 398</td>
+                      <td class="col-1 font_regular_1 text-center">6 / 87</td>
+                      <td class="font_regular_1 w_50px text-center">
+                        <a href="./achievements_certificate.html">
+                          <img src="./media/tabler-icon-eye.svg" alt="eye" />
+                        </a>
+                      </td>
+                    </tr>
+                    <tr class="collapse" id="collapsing2">
+                      <td class="text-center w_50px font_bold_5" scope="row">
+                        245
+                      </td>
+                      <td class="col-3 font_bold_5">Arithmetic Challenge</td>
+                      <td class="w_120px font_regular_1 color_black">
+                        Primary Senior
+                      </td>
+                      <td class="col-2 font_regular_1 color_black">
+                        2023-11-13 15:28
+                      </td>
+                      <td class="col-1 font_regular_1 muted_txt text-center">
+                        90,1
+                      </td>
+                      <td class="w_120px font_regular_1 text-center">
+                        87 / 3892
+                      </td>
+                      <td class="col-1 font_regular_1 text-center">11 / 398</td>
+                      <td class="col-1 font_regular_1 text-center">6 / 87</td>
+                      <td class="font_regular_1 w_50px text-center">
+                        <a href="./achievements_certificate.html">
+                          <img src="./media/tabler-icon-eye.svg" alt="eye" />
+                        </a>
+                      </td>
+                    </tr>
+                    <tr class="collapse" id="collapsing2">
+                      <td class="text-center w_50px font_bold_5" scope="row">
+                        245
+                      </td>
+                      <td class="col-3 font_bold_5">Arithmetic Challenge</td>
+                      <td class="w_120px font_regular_1 color_black">
+                        Primary Senior
+                      </td>
+                      <td class="col-2 font_regular_1 color_black">
+                        2023-11-13 15:28
+                      </td>
+                      <td class="col-1 font_regular_1 muted_txt text-center">
+                        90,1
+                      </td>
+                      <td class="w_120px font_regular_1 text-center">
+                        87 / 3892
+                      </td>
+                      <td class="col-1 font_regular_1 text-center">11 / 398</td>
+                      <td class="col-1 font_regular_1 text-center">6 / 87</td>
+                      <td class="font_regular_1 w_50px text-center">
+                        <img src="./media/tabler-icon-eye.svg" alt="eye" />
+                      </td>
+                    </tr>
+                    <tr>
+                      <td
+                        colspan="9"
+                        class="bg_light_blue_gray accordion-header p-0"
+                        id="flush-headingOne"
+                      >
+                        <button
+                          class="accordion-button font_bold_5 line_h_150 p-2"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#collapsing3"
+                          aria-expanded="true"
+                          aria-controls="yuiyui"
+                        >
+                          Spring 2023
+                        </button>
+                      </td>
+                    </tr>
+                    <tr class="collapse" id="collapsing3">
+                      <td class="text-center w_50px font_bold_5" scope="row">
+                        245
+                      </td>
+                      <td class="col-3 font_bold_5">Arithmetic Challenge</td>
+                      <td class="w_120px font_regular_1 color_black">
+                        Primary Senior
+                      </td>
+                      <td class="col-2 font_regular_1 color_black">
+                        2023-11-13 15:28
+                      </td>
+                      <td class="col-1 font_regular_1 muted_txt text-center">
+                        90,1
+                      </td>
+                      <td class="w_120px font_regular_1 text-center">
+                        87 / 3892
+                      </td>
+                      <td class="col-1 font_regular_1 text-center">11 / 398</td>
+                      <td class="col-1 font_regular_1 text-center">6 / 87</td>
+                      <td class="font_regular_1 w_50px text-center">
+                        <img src="./media/tabler-icon-eye.svg" alt="eye" />
+                      </td>
+                    </tr>
+                    <tr class="collapse" id="collapsing3">
+                      <td class="text-center w_50px font_bold_5" scope="row">
+                        245
+                      </td>
+                      <td class="col-3 font_bold_5">Arithmetic Challenge</td>
+                      <td class="w_120px font_regular_1 color_black">
+                        Primary Senior
+                      </td>
+                      <td class="col-2 font_regular_1 color_black">
+                        2023-11-13 15:28
+                      </td>
+                      <td class="col-1 font_regular_1 muted_txt text-center">
+                        90,1
+                      </td>
+                      <td class="w_120px font_regular_1 text-center">
+                        87 / 3892
+                      </td>
+                      <td class="col-1 font_regular_1 text-center">11 / 398</td>
+                      <td class="col-1 font_regular_1 text-center">6 / 87</td>
+                      <td class="font_regular_1 w_50px text-center">
+                        <img src="./media/tabler-icon-eye.svg" alt="eye" />
+                      </td>
+                    </tr>
+                    <tr class="collapse" id="collapsing3">
+                      <td class="text-center w_50px font_bold_5" scope="row">
+                        245
+                      </td>
+                      <td class="col-3 font_bold_5">Arithmetic Challenge</td>
+                      <td class="w_120px font_regular_1 color_black">
+                        Primary Senior
+                      </td>
+                      <td class="col-2 font_regular_1 color_black">
+                        2023-11-13 15:28
+                      </td>
+                      <td class="col-1 font_regular_1 muted_txt text-center">
+                        90,1
+                      </td>
+                      <td class="w_120px font_regular_1 text-center">
+                        87 / 3892
+                      </td>
+                      <td class="col-1 font_regular_1 text-center">11 / 398</td>
+                      <td class="col-1 font_regular_1 text-center">6 / 87</td>
+                      <td class="font_regular_1 w_50px text-center">
+                        <img src="./media/tabler-icon-eye.svg" alt="eye" />
+                      </td>
+                    </tr>
+                    <tr>
+                      <td
+                        colspan="9"
+                        class="bg_light_blue_gray accordion-header p-0"
+                        id="flush-headingOne"
+                      >
+                        <button
+                          class="accordion-button font_bold_5 line_h_150 p-2"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#collapsing4"
+                          aria-expanded="true"
+                          aria-controls="yuiyui"
+                        >
+                          Winter 2022
+                        </button>
+                      </td>
+                    </tr>
+                    <tr class="collapse" id="collapsing4">
+                      <td class="text-center w_50px font_bold_5" scope="row">
+                        245
+                      </td>
+                      <td class="col-3 font_bold_5">Arithmetic Challenge</td>
+                      <td class="w_120px font_regular_1 color_black">
+                        Primary Senior
+                      </td>
+                      <td class="col-2 font_regular_1 color_black">
+                        2023-11-13 15:28
+                      </td>
+                      <td class="col-1 font_regular_1 muted_txt text-center">
+                        90,1
+                      </td>
+                      <td class="w_120px font_regular_1 text-center">
+                        87 / 3892
+                      </td>
+                      <td class="col-1 font_regular_1 text-center">11 / 398</td>
+                      <td class="col-1 font_regular_1 text-center">6 / 87</td>
+                      <td class="font_regular_1 w_50px text-center">
+                        <img src="./media/tabler-icon-eye.svg" alt="eye" />
+                      </td>
+                    </tr>
+                    <tr class="collapse" id="collapsing4">
+                      <td class="text-center w_50px font_bold_5" scope="row">
+                        245
+                      </td>
+                      <td class="col-3 font_bold_5">Arithmetic Challenge</td>
+                      <td class="w_120px font_regular_1 color_black">
+                        Primary Senior
+                      </td>
+                      <td class="col-2 font_regular_1 color_black">
+                        2023-11-13 15:28
+                      </td>
+                      <td class="col-1 font_regular_1 muted_txt text-center">
+                        90,1
+                      </td>
+                      <td class="w_120px font_regular_1 text-center">
+                        87 / 3892
+                      </td>
+                      <td class="col-1 font_regular_1 text-center">11 / 398</td>
+                      <td class="col-1 font_regular_1 text-center">6 / 87</td>
+                      <td class="font_regular_1 w_50px text-center">
+                        <img src="./media/tabler-icon-eye.svg" alt="eye" />
+                      </td>
+                    </tr>
+                    <tr class="collapse" id="collapsing4">
+                      <td class="text-center w_50px font_bold_5" scope="row">
+                        245
+                      </td>
+                      <td class="col-3 font_bold_5">Arithmetic Challenge</td>
+                      <td class="w_120px font_regular_1 color_black">
+                        Primary Senior
+                      </td>
+                      <td class="col-2 font_regular_1 color_black">
+                        2023-11-13 15:28
+                      </td>
+                      <td class="col-1 font_regular_1 muted_txt text-center">
+                        90,1
+                      </td>
+                      <td class="w_120px font_regular_1 text-center">
+                        87 / 3892
+                      </td>
+                      <td class="col-1 font_regular_1 text-center">11 / 398</td>
+                      <td class="col-1 font_regular_1 text-center">6 / 87</td>
+                      <td class="font_regular_1 w_50px text-center">
+                        <img src="./media/tabler-icon-eye.svg" alt="eye" />
+                      </td>
+                    </tr>
+                    <tr>
+                      <td
+                        colspan="9"
+                        class="bg_light_blue_gray accordion-header p-0"
+                        id="flush-headingOne"
+                      >
+                        <button
+                          class="accordion-button font_bold_5 line_h_150 p-2"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#collapsing5"
+                          aria-expanded="true"
+                          aria-controls="yuiyui"
+                        >
+                          Fall 2022
+                        </button>
+                      </td>
+                    </tr>
+                    <tr class="collapse" id="collapsing5">
+                      <td class="text-center w_50px font_bold_5" scope="row">
+                        245
+                      </td>
+                      <td class="col-3 font_bold_5">Arithmetic Challenge</td>
+                      <td class="w_120px font_regular_1 color_black">
+                        Primary Senior
+                      </td>
+                      <td class="col-2 font_regular_1 color_black">
+                        2023-11-13 15:28
+                      </td>
+                      <td class="col-1 font_regular_1 muted_txt text-center">
+                        90,1
+                      </td>
+                      <td class="w_120px font_regular_1 text-center">
+                        87 / 3892
+                      </td>
+                      <td class="col-1 font_regular_1 text-center">11 / 398</td>
+                      <td class="col-1 font_regular_1 text-center">6 / 87</td>
+                      <td class="font_regular_1 w_50px text-center">
+                        <img src="./media/tabler-icon-eye.svg" alt="eye" />
+                      </td>
+                    </tr>
+                    <tr class="collapse" id="collapsing5">
+                      <td class="text-center w_50px font_bold_5" scope="row">
+                        245
+                      </td>
+                      <td class="col-3 font_bold_5">Arithmetic Challenge</td>
+                      <td class="w_120px font_regular_1 color_black">
+                        Primary Senior
+                      </td>
+                      <td class="col-2 font_regular_1 color_black">
+                        2023-11-13 15:28
+                      </td>
+                      <td class="col-1 font_regular_1 muted_txt text-center">
+                        90,1
+                      </td>
+                      <td class="w_120px font_regular_1 text-center">
+                        87 / 3892
+                      </td>
+                      <td class="col-1 font_regular_1 text-center">11 / 398</td>
+                      <td class="col-1 font_regular_1 text-center">6 / 87</td>
+                      <td class="font_regular_1 w_50px text-center">
+                        <img src="./media/tabler-icon-eye.svg" alt="eye" />
+                      </td>
+                    </tr>
+                    <tr class="collapse" id="collapsing5">
+                      <td class="text-center w_50px font_bold_5" scope="row">
+                        245
+                      </td>
+                      <td class="col-3 font_bold_5">Arithmetic Challenge</td>
+                      <td class="w_120px font_regular_1 color_black">
+                        Primary Senior
+                      </td>
+                      <td class="col-2 font_regular_1 color_black">
+                        2023-11-13 15:28
+                      </td>
+                      <td class="col-1 font_regular_1 muted_txt text-center">
+                        90,1
+                      </td>
+                      <td class="w_120px font_regular_1 text-center">
+                        87 / 3892
+                      </td>
+                      <td class="col-1 font_regular_1 text-center">11 / 398</td>
+                      <td class="col-1 font_regular_1 text-center">6 / 87</td>
+                      <td class="font_regular_1 w_50px text-center">
+                        <img src="./media/tabler-icon-eye.svg" alt="eye" />
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div class="d-flex flex-row-reverse mt-1">
+              <select
+                class="form-select select_achive font_regular_2"
+                aria-label="Default select example"
+              >
+                <option selected>25 Rows</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+              <nav aria-label="Page navigation example">
+                <ul class="pagination font_regular_2">
+                  <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Previous">
+                      <span aria-hidden="true"
+                        ><img src="./media/left_arrow.svg" alt="Previous"
+                      /></span>
+                    </a>
+                  </li>
+                  <li class="page-item active">
+                    <a class="page-link" href="#">1</a>
+                  </li>
+                  <li class="page-item color_black">
+                    <a class="page-link" href="#">2</a>
+                  </li>
+                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+                  <li class="page-item"><a class="page-link" href="#">4</a></li>
+                  <li class="page-item"><a class="page-link" href="#">5</a></li>
+                  <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Next">
+                      <span aria-hidden="true"
+                        ><img src="./media/right_arrow.svg" alt="Next"
+                      /></span>
+                    </a>
+                  </li>
+                </ul>
+              </nav>
             </div>
           </div>
         </div>
       </div>
-
-      <div class="tab-content" id="pills-tabContent">
-        <div
-          class="tab-pane fade show active"
-          id="pills-home"
-          role="tabpanel"
-          aria-labelledby="pills-home-tab"
-        >
-          <div
-            class="tab-pane fade show active w-100 mt-4 overflow_x_auto"
-            id="nav-home"
-            role="tabpanel"
-            aria-labelledby="nav-home-tab"
-          >
-            <table class="table">
-              <thead>
-                <tr class="bg_nav_tabs font_bold_5">
-                  <th class="col text-center py-3" scope="col">ID</th>
-                  <th class="col" scope="col">Season</th>
-                  <th class="col" scope="col">Level</th>
-                  <th class="col" scope="col">League</th>
-                  <th class="col" scope="col">Date</th>
-                  <th class="col text-center" scope="col">BY!P score</th>
-                  <th class="col text-center" scope="col">World Rank</th>
-                  <th class="col text-center" scope="col">Country Rank</th>
-                  <th class="col text-center" scope="col">School Rank</th>
-                  <th class="col text-center" scope="col">Award</th>
-                  <th class="col text-center" scope="col">Certificate</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <th class="text-center font_bold_5" scope="row">245</th>
-                  <td class="font_bold_5">Fall 2023</td>
-                  <td class="font_regular_1 color_black">Primary Junior</td>
-                  <td class="font_regular_1 color_black">Advanced</td>
-                  <td class="font_regular_1 muted_txt">2023-11-13 15:28</td>
-                  <td class="font_regular_1 text-center">90,1</td>
-                  <td class="font_regular_1 text-center">87 / 3892</td>
-                  <td class="font_regular_1 text-center">11 / 398</td>
-                  <td class="font_regular_1 text-center">6 / 87</td>
-                  <td class="font_regular_1 text-center">
-                    <div class="d-flex justify-content-around">
-                      <div class="d-md-flex align-items-center">
-                        <img
-                          src="./media/gold_achive.svg"
-                          class="me-md-2 mb-1 mb-md-0"
-                          alt="gold"
-                        />
-                        <span>Gold</span>
-                      </div>
-                    </div>
-                  </td>
-                  <td class="font_regular_1 border-start">
-                    <div class="d-flex justify-content-around">
-                      <img
-                        src="./media/tabler-icon-eye.svg"
-                        class="d-block"
-                        alt="eye"
-                      />
-                      <img
-                        src="./media/tabler-icon-link.svg"
-                        class="d-block"
-                        alt="link"
-                      />
-                    </div>
-                  </td>
-                </tr>
-                <tr>
-                  <th class="text-center font_bold_5" scope="row">245</th>
-                  <td class="font_bold_5">Fall 2023</td>
-                  <td class="font_regular_1 color_black">Primary Junior</td>
-                  <td class="font_regular_1 color_black">Advanced</td>
-                  <td class="font_regular_1 muted_txt">2023-11-13 15:28</td>
-                  <td class="font_regular_1 text-center">90,1</td>
-                  <td class="font_regular_1 text-center">87 / 3892</td>
-                  <td class="font_regular_1 text-center">11 / 398</td>
-                  <td class="font_regular_1 text-center">6 / 87</td>
-                  <td class="font_regular_1 text-center">
-                    <div class="d-flex justify-content-around">
-                      <div class="d-md-flex align-items-center">
-                        <img
-                          src="./media/gold_achive.svg"
-                          class="me-md-2 mb-1 mb-md-0"
-                          alt="gold"
-                        />
-                        <span>Gold</span>
-                      </div>
-                    </div>
-                  </td>
-                  <td class="font_regular_1 border-start">
-                    <div class="d-flex justify-content-around">
-                      <img
-                        src="./media/tabler-icon-eye.svg"
-                        class="d-block"
-                        alt="eye"
-                      />
-                      <img
-                        src="./media/tabler-icon-link.svg"
-                        class="d-block"
-                        alt="link"
-                      />
-                    </div>
-                  </td>
-                </tr>
-                <tr>
-                  <th class="text-center font_bold_5" scope="row">245</th>
-                  <td class="font_bold_5">Fall 2023</td>
-                  <td class="font_regular_1 color_black">Primary Junior</td>
-                  <td class="font_regular_1 color_black">Advanced</td>
-                  <td class="font_regular_1 muted_txt">2023-11-13 15:28</td>
-                  <td class="font_regular_1 text-center">90,1</td>
-                  <td class="font_regular_1 text-center">87 / 3892</td>
-                  <td class="font_regular_1 text-center">11 / 398</td>
-                  <td class="font_regular_1 text-center">6 / 87</td>
-                  <td class="font_regular_1 text-center">
-                    <div class="d-flex justify-content-around">
-                      <div class="d-md-flex align-items-center">
-                        <img
-                          src="./media/gold_achive.svg"
-                          class="me-md-2 mb-1 mb-md-0"
-                          alt="gold"
-                        />
-                        <span>Gold</span>
-                      </div>
-                    </div>
-                  </td>
-                  <td class="font_regular_1 border-start">
-                    <div class="d-flex justify-content-around">
-                      <img
-                        src="./media/tabler-icon-eye.svg"
-                        class="d-block"
-                        alt="eye"
-                      />
-                      <img
-                        src="./media/tabler-icon-link.svg"
-                        class="d-block"
-                        alt="link"
-                      />
-                    </div>
-                  </td>
-                </tr>
-                <tr>
-                  <th class="text-center font_bold_5" scope="row">245</th>
-                  <td class="font_bold_5">Fall 2023</td>
-                  <td class="font_regular_1 color_black">Primary Junior</td>
-                  <td class="font_regular_1 color_black">Advanced</td>
-                  <td class="font_regular_1 muted_txt">2023-11-13 15:28</td>
-                  <td class="font_regular_1 text-center">90,1</td>
-                  <td class="font_regular_1 text-center">87 / 3892</td>
-                  <td class="font_regular_1 text-center">11 / 398</td>
-                  <td class="font_regular_1 text-center">6 / 87</td>
-                  <td class="font_regular_1 text-center">
-                    <div class="d-flex justify-content-around">
-                      <div class="d-md-flex align-items-center">
-                        <img
-                          src="./media/gold_achive.svg"
-                          class="me-md-2 mb-1 mb-md-0"
-                          alt="gold"
-                        />
-                        <span>Gold</span>
-                      </div>
-                    </div>
-                  </td>
-                  <td class="font_regular_1 border-start">
-                    <div class="d-flex justify-content-around">
-                      <img
-                        src="./media/tabler-icon-eye.svg"
-                        class="d-block"
-                        alt="eye"
-                      />
-                      <img
-                        src="./media/tabler-icon-link.svg"
-                        class="d-block"
-                        alt="link"
-                      />
-                    </div>
-                  </td>
-                </tr>
-                <tr>
-                  <th class="text-center font_bold_5" scope="row">245</th>
-                  <td class="font_bold_5">Fall 2023</td>
-                  <td class="font_regular_1 color_black">Primary Junior</td>
-                  <td class="font_regular_1 color_black">Advanced</td>
-                  <td class="font_regular_1 muted_txt">2023-11-13 15:28</td>
-                  <td class="font_regular_1 text-center">90,1</td>
-                  <td class="font_regular_1 text-center">87 / 3892</td>
-                  <td class="font_regular_1 text-center">11 / 398</td>
-                  <td class="font_regular_1 text-center">6 / 87</td>
-                  <td class="font_regular_1 text-center">
-                    <div class="d-flex justify-content-around">
-                      <div class="d-md-flex align-items-center">
-                        <img
-                          src="./media/gold_achive.svg"
-                          class="me-md-2 mb-1 mb-md-0"
-                          alt="gold"
-                        />
-                        <span>Gold</span>
-                      </div>
-                    </div>
-                  </td>
-                  <td class="font_regular_1 border-start">
-                    <div class="d-flex justify-content-around">
-                      <img
-                        src="./media/tabler-icon-eye.svg"
-                        class="d-block"
-                        alt="eye"
-                      />
-                      <img
-                        src="./media/tabler-icon-link.svg"
-                        class="d-block"
-                        alt="link"
-                      />
-                    </div>
-                  </td>
-                </tr>
-                <tr>
-                  <th class="text-center font_bold_5" scope="row">245</th>
-                  <td class="font_bold_5">Fall 2023</td>
-                  <td class="font_regular_1 color_black">Primary Junior</td>
-                  <td class="font_regular_1 color_black">Advanced</td>
-                  <td class="font_regular_1 muted_txt">2023-11-13 15:28</td>
-                  <td class="font_regular_1 text-center">90,1</td>
-                  <td class="font_regular_1 text-center">87 / 3892</td>
-                  <td class="font_regular_1 text-center">11 / 398</td>
-                  <td class="font_regular_1 text-center">6 / 87</td>
-                  <td class="font_regular_1 text-center">
-                    <div class="d-flex justify-content-around">
-                      <div class="d-md-flex align-items-center">
-                        <img
-                          src="./media/gold_achive.svg"
-                          class="me-md-2 mb-1 mb-md-0"
-                          alt="gold"
-                        />
-                        <span>Gold</span>
-                      </div>
-                    </div>
-                  </td>
-                  <td class="font_regular_1 border-start">
-                    <div class="d-flex justify-content-around">
-                      <img
-                        src="./media/tabler-icon-eye.svg"
-                        class="d-block"
-                        alt="eye"
-                      />
-                      <img
-                        src="./media/tabler-icon-link.svg"
-                        class="d-block"
-                        alt="link"
-                      />
-                    </div>
-                  </td>
-                </tr>
-                <tr>
-                  <th class="text-center font_bold_5" scope="row">245</th>
-                  <td class="font_bold_5">Fall 2023</td>
-                  <td class="font_regular_1 color_black">Primary Junior</td>
-                  <td class="font_regular_1 color_black">Advanced</td>
-                  <td class="font_regular_1 muted_txt">2023-11-13 15:28</td>
-                  <td class="font_regular_1 text-center">90,1</td>
-                  <td class="font_regular_1 text-center">87 / 3892</td>
-                  <td class="font_regular_1 text-center">11 / 398</td>
-                  <td class="font_regular_1 text-center">6 / 87</td>
-                  <td class="font_regular_1 text-center">
-                    <div class="d-flex justify-content-around">
-                      <div class="d-md-flex align-items-center">
-                        <img
-                          src="./media/gold_achive.svg"
-                          class="me-md-2 mb-1 mb-md-0"
-                          alt="gold"
-                        />
-                        <span>Gold</span>
-                      </div>
-                    </div>
-                  </td>
-                  <td class="font_regular_1 border-start">
-                    <div class="d-flex justify-content-around">
-                      <img
-                        src="./media/tabler-icon-eye.svg"
-                        class="d-block"
-                        alt="eye"
-                      />
-                      <img
-                        src="./media/tabler-icon-link.svg"
-                        class="d-block"
-                        alt="link"
-                      />
-                    </div>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
-        <div
-          class="tab-pane fade w-100 mt-4 overflow_x_auto"
-          id="pills-profile"
-          role="tabpanel"
-          aria-labelledby="pills-profile-tab"
-        >
-          <table class="table">
-            <thead>
-              <tr class="bg_nav_tabs font_bold_5 border">
-                <th class="w_50px text-center py-3 " scope="col">ID</th>
-                <th class="col-3" scope="col">Name</th>
-                <th class="w_120px" scope="col">League</th>
-                <th class="col-2" scope="col">Date</th>
-                <th class="col-1 text-center " scope="col">BY!P score</th>
-                <th class="w_120px text-center " scope="col">World Rank</th>
-                <th class="col-1  text-center " scope="col">Country Rank</th>
-                <th class="col-1" scope="col">School Rank</th>
-                <th class="w_50px" scope="col"></th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td colspan="9" class="bg_light_blue_gray accordion-header p-0" id="flush-headingOne">
-                  <button
-                    class="accordion-button font_bold_5 line_h_150 p-2"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapsing1"
-                    aria-expanded="true"
-                    aria-controls="yuiyui"
-                  >
-                    Fall 2023
-                  </button>
-                </td>
-              </tr>
-                <tr class="collapse" id="collapsing1">
-                  <td class="text-center w_50px font_bold_5 " scope="row">245</td>
-                  <td class="col-3 font_bold_5 ">Arithmetic Challenge</td>
-                  <td class="w_120px font_regular_1 color_black   ">Primary Senior</td>
-                  <td class="col-2 font_regular_1 color_black   ">2023-11-13 15:28</td>
-                  <td class="col-1 font_regular_1 muted_txt text-center   ">90,1</td>
-                  <td class="w_120px font_regular_1 text-center   ">87 / 3892</td>
-                  <td class="col-1 font_regular_1 text-center   ">11 / 398</td>
-                  <td class="col-1 font_regular_1   text-center ">6 / 87</td>
-                  <td class="font_regular_1  w_50px text-center ">
-                    <a href="./achievements_certificate.html" >
-                      <img src="./media/tabler-icon-eye.svg" alt="eye" />
-                    </a>
-                  </td>
-                </tr>
-                <tr class="collapse" id="collapsing1">
-                  <td class="text-center w_50px font_bold_5" scope="row">245</td>
-                  <td class="col-3 font_bold_5">Arithmetic Challenge</td>
-                  <td class="w_120px font_regular_1 color_black">Primary Senior</td>
-                  <td class="col-2 font_regular_1 color_black  ">2023-11-13 15:28</td>
-                  <td class="col-1 font_regular_1 muted_txt text-center   ">90,1</td>
-                  <td class="w_120px font_regular_1 text-center   ">87 / 3892</td>
-                  <td class="col-1 font_regular_1 text-center   ">11 / 398</td>
-                  <td class="col-1 font_regular_1   text-center ">6 / 87</td>
-                  <td class="font_regular_1  w_50px text-center ">
-                    <a href="./achievements_certificate.html" >
-                      <img src="./media/tabler-icon-eye.svg" alt="eye" />
-                    </a>
-                  </td>
-                </tr>
-                <tr class="collapse" id="collapsing1">
-                  <td class="text-center w_50px font_bold_5" scope="row">245</td>
-                  <td class="col-3 font_bold_5">Arithmetic Challenge</td>
-                  <td class="w_120px font_regular_1 color_black">Primary Senior</td>
-                  <td class="col-2 font_regular_1 color_black  ">2023-11-13 15:28</td>
-                  <td class="col-1 font_regular_1 muted_txt text-center   ">90,1</td>
-                  <td class="w_120px font_regular_1 text-center   ">87 / 3892</td>
-                  <td class="col-1 font_regular_1 text-center   ">11 / 398</td>
-                  <td class="col-1 font_regular_1   text-center ">6 / 87</td>
-                  <td class="font_regular_1  w_50px text-center ">
-                    <a href="./achievements_certificate.html" >
-                      <img src="./media/tabler-icon-eye.svg" alt="eye" />
-                    </a>
-                  </td>
-                </tr>
-                <tr>
-                  <td colspan="9" class="bg_light_blue_gray accordion-header p-0" id="flush-headingOne">
-                    <button
-                      class="accordion-button font_bold_5 line_h_150 p-2"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#collapsing2"
-                      aria-expanded="true"
-                      aria-controls="yuiyui"
-                    >
-                    Summer 2023
-                    </button>
-                  </td>
-                </tr>
-                <tr class="collapse" id="collapsing2">
-                  <td class="text-center w_50px font_bold_5" scope="row">245</td>
-                  <td class="col-3 font_bold_5">Arithmetic Challenge</td>
-                  <td class="w_120px font_regular_1 color_black">Primary Senior</td>
-                  <td class="col-2 font_regular_1 color_black  ">2023-11-13 15:28</td>
-                  <td class="col-1 font_regular_1 muted_txt text-center   ">90,1</td>
-                  <td class="w_120px font_regular_1 text-center   ">87 / 3892</td>
-                  <td class="col-1 font_regular_1 text-center   ">11 / 398</td>
-                  <td class="col-1 font_regular_1   text-center ">6 / 87</td>
-                  <td class="font_regular_1  w_50px text-center ">
-                    <a href="./achievements_certificate.html" >
-                      <img src="./media/tabler-icon-eye.svg" alt="eye" />
-                    </a>
-                  </td>
-                </tr>
-                <tr class="collapse" id="collapsing2">
-                  <td class="text-center w_50px font_bold_5" scope="row">245</td>
-                  <td class="col-3 font_bold_5">Arithmetic Challenge</td>
-                  <td class="w_120px font_regular_1 color_black">Primary Senior</td>
-                  <td class="col-2 font_regular_1 color_black  ">2023-11-13 15:28</td>
-                  <td class="col-1 font_regular_1 muted_txt text-center   ">90,1</td>
-                  <td class="w_120px font_regular_1 text-center   ">87 / 3892</td>
-                  <td class="col-1 font_regular_1 text-center   ">11 / 398</td>
-                  <td class="col-1 font_regular_1   text-center ">6 / 87</td>
-                  <td class="font_regular_1  w_50px text-center ">
-                    <a href="./achievements_certificate.html" >
-                      <img src="./media/tabler-icon-eye.svg" alt="eye" />
-                    </a>
-                  </td>
-                </tr>
-                <tr class="collapse" id="collapsing2">
-                  <td class="text-center w_50px font_bold_5" scope="row">245</td>
-                  <td class="col-3 font_bold_5">Arithmetic Challenge</td>
-                  <td class="w_120px font_regular_1 color_black">Primary Senior</td>
-                  <td class="col-2 font_regular_1 color_black  ">2023-11-13 15:28</td>
-                  <td class="col-1 font_regular_1 muted_txt text-center   ">90,1</td>
-                  <td class="w_120px font_regular_1 text-center   ">87 / 3892</td>
-                  <td class="col-1 font_regular_1 text-center   ">11 / 398</td>
-                  <td class="col-1 font_regular_1   text-center ">6 / 87</td>
-                  <td class="font_regular_1  w_50px text-center ">
-                    <img src="./media/tabler-icon-eye.svg" alt="eye" />
-                  </td>
-                </tr>
-                <tr>
-                  <td colspan="9" class="bg_light_blue_gray accordion-header p-0" id="flush-headingOne">
-                    <button
-                      class="accordion-button font_bold_5 line_h_150 p-2"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#collapsing3"
-                      aria-expanded="true"
-                      aria-controls="yuiyui"
-                    >
-                    Spring 2023
-                    </button>
-                  </td>
-                </tr>
-                <tr class="collapse" id="collapsing3">
-                  <td class="text-center w_50px font_bold_5" scope="row">245</td>
-                  <td class="col-3 font_bold_5">Arithmetic Challenge</td>
-                  <td class="w_120px font_regular_1 color_black">Primary Senior</td>
-                  <td class="col-2 font_regular_1 color_black  ">2023-11-13 15:28</td>
-                  <td class="col-1 font_regular_1 muted_txt text-center   ">90,1</td>
-                  <td class="w_120px font_regular_1 text-center   ">87 / 3892</td>
-                  <td class="col-1 font_regular_1 text-center   ">11 / 398</td>
-                  <td class="col-1 font_regular_1   text-center ">6 / 87</td>
-                  <td class="font_regular_1  w_50px text-center ">
-                    <img src="./media/tabler-icon-eye.svg" alt="eye" />
-                  </td>
-                </tr>
-                <tr class="collapse" id="collapsing3">
-                  <td class="text-center w_50px font_bold_5" scope="row">245</td>
-                  <td class="col-3 font_bold_5">Arithmetic Challenge</td>
-                  <td class="w_120px font_regular_1 color_black">Primary Senior</td>
-                  <td class="col-2 font_regular_1 color_black  ">2023-11-13 15:28</td>
-                  <td class="col-1 font_regular_1 muted_txt text-center   ">90,1</td>
-                  <td class="w_120px font_regular_1 text-center   ">87 / 3892</td>
-                  <td class="col-1 font_regular_1 text-center   ">11 / 398</td>
-                  <td class="col-1 font_regular_1   text-center ">6 / 87</td>
-                  <td class="font_regular_1  w_50px text-center ">
-                    <img src="./media/tabler-icon-eye.svg" alt="eye" />
-                  </td>
-                </tr>
-                <tr class="collapse" id="collapsing3">
-                  <td class="text-center w_50px font_bold_5" scope="row">245</td>
-                  <td class="col-3 font_bold_5">Arithmetic Challenge</td>
-                  <td class="w_120px font_regular_1 color_black">Primary Senior</td>
-                  <td class="col-2 font_regular_1 color_black  ">2023-11-13 15:28</td>
-                  <td class="col-1 font_regular_1 muted_txt text-center   ">90,1</td>
-                  <td class="w_120px font_regular_1 text-center   ">87 / 3892</td>
-                  <td class="col-1 font_regular_1 text-center   ">11 / 398</td>
-                  <td class="col-1 font_regular_1   text-center ">6 / 87</td>
-                  <td class="font_regular_1  w_50px text-center ">
-                    <img src="./media/tabler-icon-eye.svg" alt="eye" />
-                  </td>
-                </tr>
-                <tr>
-                  <td colspan="9" class="bg_light_blue_gray accordion-header p-0" id="flush-headingOne">
-                    <button
-                      class="accordion-button font_bold_5 line_h_150 p-2"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#collapsing4"
-                      aria-expanded="true"
-                      aria-controls="yuiyui"
-                    >
-                    Winter 2022
-                    </button>
-                  </td>
-                </tr>
-                <tr class="collapse" id="collapsing4">
-                  <td class="text-center w_50px font_bold_5" scope="row">245</td>
-                  <td class="col-3 font_bold_5">Arithmetic Challenge</td>
-                  <td class="w_120px font_regular_1 color_black">Primary Senior</td>
-                  <td class="col-2 font_regular_1 color_black  ">2023-11-13 15:28</td>
-                  <td class="col-1 font_regular_1 muted_txt text-center   ">90,1</td>
-                  <td class="w_120px font_regular_1 text-center   ">87 / 3892</td>
-                  <td class="col-1 font_regular_1 text-center   ">11 / 398</td>
-                  <td class="col-1 font_regular_1   text-center ">6 / 87</td>
-                  <td class="font_regular_1  w_50px text-center ">
-                    <img src="./media/tabler-icon-eye.svg" alt="eye" />
-                  </td>
-                </tr>
-                <tr class="collapse" id="collapsing4">
-                  <td class="text-center w_50px font_bold_5" scope="row">245</td>
-                  <td class="col-3 font_bold_5">Arithmetic Challenge</td>
-                  <td class="w_120px font_regular_1 color_black">Primary Senior</td>
-                  <td class="col-2 font_regular_1 color_black  ">2023-11-13 15:28</td>
-                  <td class="col-1 font_regular_1 muted_txt text-center   ">90,1</td>
-                  <td class="w_120px font_regular_1 text-center   ">87 / 3892</td>
-                  <td class="col-1 font_regular_1 text-center   ">11 / 398</td>
-                  <td class="col-1 font_regular_1   text-center ">6 / 87</td>
-                  <td class="font_regular_1  w_50px text-center ">
-                    <img src="./media/tabler-icon-eye.svg" alt="eye" />
-                  </td>
-                </tr>
-                <tr class="collapse" id="collapsing4">
-                  <td class="text-center w_50px font_bold_5" scope="row">245</td>
-                  <td class="col-3 font_bold_5">Arithmetic Challenge</td>
-                  <td class="w_120px font_regular_1 color_black">Primary Senior</td>
-                  <td class="col-2 font_regular_1 color_black  ">2023-11-13 15:28</td>
-                  <td class="col-1 font_regular_1 muted_txt text-center   ">90,1</td>
-                  <td class="w_120px font_regular_1 text-center   ">87 / 3892</td>
-                  <td class="col-1 font_regular_1 text-center   ">11 / 398</td>
-                  <td class="col-1 font_regular_1   text-center ">6 / 87</td>
-                  <td class="font_regular_1  w_50px text-center ">
-                    <img src="./media/tabler-icon-eye.svg" alt="eye" />
-                  </td>
-                </tr>
-                <tr>
-                  <td colspan="9" class="bg_light_blue_gray accordion-header p-0" id="flush-headingOne">
-                    <button
-                      class="accordion-button font_bold_5 line_h_150 p-2"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#collapsing5"
-                      aria-expanded="true"
-                      aria-controls="yuiyui"
-                    >
-                      Fall 2022
-                    </button>
-                  </td>
-                </tr>
-                <tr class="collapse" id="collapsing5">
-                  <td class="text-center w_50px font_bold_5" scope="row">245</td>
-                  <td class="col-3 font_bold_5">Arithmetic Challenge</td>
-                  <td class="w_120px font_regular_1 color_black">Primary Senior</td>
-                  <td class="col-2 font_regular_1 color_black  ">2023-11-13 15:28</td>
-                  <td class="col-1 font_regular_1 muted_txt text-center   ">90,1</td>
-                  <td class="w_120px font_regular_1 text-center   ">87 / 3892</td>
-                  <td class="col-1 font_regular_1 text-center   ">11 / 398</td>
-                  <td class="col-1 font_regular_1   text-center ">6 / 87</td>
-                  <td class="font_regular_1  w_50px text-center ">
-                    <img src="./media/tabler-icon-eye.svg" alt="eye" />
-                  </td>
-                </tr>
-                <tr class="collapse" id="collapsing5">
-                  <td class="text-center w_50px font_bold_5" scope="row">245</td>
-                  <td class="col-3 font_bold_5">Arithmetic Challenge</td>
-                  <td class="w_120px font_regular_1 color_black">Primary Senior</td>
-                  <td class="col-2 font_regular_1 color_black  ">2023-11-13 15:28</td>
-                  <td class="col-1 font_regular_1 muted_txt text-center   ">90,1</td>
-                  <td class="w_120px font_regular_1 text-center   ">87 / 3892</td>
-                  <td class="col-1 font_regular_1 text-center   ">11 / 398</td>
-                  <td class="col-1 font_regular_1   text-center ">6 / 87</td>
-                  <td class="font_regular_1  w_50px text-center ">
-                    <img src="./media/tabler-icon-eye.svg" alt="eye" />
-                  </td>
-                </tr>
-                <tr class="collapse" id="collapsing5">
-                  <td class="text-center w_50px font_bold_5" scope="row">245</td>
-                  <td class="col-3 font_bold_5">Arithmetic Challenge</td>
-                  <td class="w_120px font_regular_1 color_black">Primary Senior</td>
-                  <td class="col-2 font_regular_1 color_black  ">2023-11-13 15:28</td>
-                  <td class="col-1 font_regular_1 muted_txt text-center   ">90,1</td>
-                  <td class="w_120px font_regular_1 text-center   ">87 / 3892</td>
-                  <td class="col-1 font_regular_1 text-center   ">11 / 398</td>
-                  <td class="col-1 font_regular_1   text-center ">6 / 87</td>
-                  <td class="font_regular_1  w_50px text-center ">
-                    <img src="./media/tabler-icon-eye.svg" alt="eye" />
-                  </td>
-                </tr>
-            </tbody>
-        </table>
-        </div>
+      <div
+        class="tab-pane fade container-xxl px-0 ps_abs"
+        id="physics-result"
+        role="tabpanel"
+        aria-labelledby="nav-physics-tab"
+      >
+        <div>Physics</div>
       </div>
-      <div class="d-flex flex-row-reverse mt-1">
-        <select
-          class="form-select select_achive font_regular_2"
-          aria-label="Default select example"
-        >
-          <option selected>25 Rows</option>
-          <option value="1">One</option>
-          <option value="2">Two</option>
-          <option value="3">Three</option>
-        </select>
-        <nav aria-label="Page navigation example">
-          <ul class="pagination font_regular_2">
-            <li class="page-item">
-              <a class="page-link" href="#" aria-label="Previous">
-                <span aria-hidden="true"
-                  ><img src="./media/left_arrow.svg" alt="Previous"
-                /></span>
-              </a>
-            </li>
-            <li class="page-item active">
-              <a class="page-link" href="#">1</a>
-            </li>
-            <li class="page-item color_black">
-              <a class="page-link" href="#">2</a>
-            </li>
-            <li class="page-item"><a class="page-link" href="#">3</a></li>
-            <li class="page-item"><a class="page-link" href="#">4</a></li>
-            <li class="page-item"><a class="page-link" href="#">5</a></li>
-            <li class="page-item">
-              <a class="page-link" href="#" aria-label="Next">
-                <span aria-hidden="true"
-                  ><img src="./media/right_arrow.svg" alt="Next"
-                /></span>
-              </a>
-            </li>
-          </ul>
-        </nav>
+      <div
+        class="tab-pane fade container-xxl px-0 ps_abs"
+        id="chemistry-result"
+        role="tabpanel"
+        aria-labelledby="nav-chemistry-tab"
+      >
+        <div>Chemstry</div>
+      </div>
+      <div
+        class="tab-pane fade container-xxl px-0 ps_abs"
+        id="biology-result"
+        role="tabpanel"
+        aria-labelledby="nav-biology-tab"
+      >
+        <div>Biology</div>
+      </div>
+      <div
+        class="tab-pane fade container-xxl px-0 ps_abs"
+        id="sciense-result"
+        role="tabpanel"
+        aria-labelledby="nav-sciense-tab"
+      >
+        <div>Sciense</div>
       </div>
     </div>
-
     <script src="./showCheckboxes.js"></script>
     <script src="./showCheckboxes2.js"></script>
 
