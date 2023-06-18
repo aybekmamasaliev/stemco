@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../bootstrap-5.0.2-dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>Document</title>
+    <style>
+      ul>li>a{
+        text-decoration: none;
+      }
+
+      ul{
+        list-style-type: none;
+      }
+    </style>
+  </head>
+  <body style="background-color: white; padding: 20px; padding-left: 50px; padding-top:50px;">
+    <div class="d-flex">
+      <div>
+        <ul>
+          <li>
+            <a href="./buttons.html">Button</a>
+          </li>
+          <li>
+            <a href="./outline_buttons.html">Outline Buttons</a>
+          </li>
+          <li>
+            <a href="./tabs.html">Tabs</a>
+          </li>
+          <li>
+            <a href="./subjects.html">Subjects</a>
+          </li>
+          <li>
+            <a href="./nav_items.html">Nav Items</a>
+          </li>
+          <li>
+            <a href="./progress_bar.html">Progress Bar</a>
+          </li>
+          <li>
+            <a href="./season_competition_bio.html">Competition Bio</a>
+          </li>
+          <li>
+            <a href="./season_competition_chemstry.html"
+              >Competition Chemstry</a
+            >
+          </li>
+          <li>
+            <a href="./season_competition_his.html">Competition Science</a>
+          </li>
+          <li>
+            <a href="./season_competition_math.html">Competition Math</a>
+          </li>
+          <li>
+            <a href="./season_competition_physics.html">Competiton Phisics</a>
+          </li>
+          <li>
+            <a href="./weekly_challenge_bio.html">Challenge Biology</a>
+          </li>
+          <li>
+            <a href="./weekly_challenge_chemstry.html">Challenge Chemstry</a>
+          </li>
+          <li>
+            <a href="./weekly_challenge_history.html">Challenge History</a>
+          </li>
+          <li>
+            <a href="./weekly_challenge_math.html">Challenge Math</a>
+          </li>
+          <li>
+            <a href="./weekly_challenge_physics.html">Challenge Physics</a>
+          </li>
+        </ul>
+      </div>
+      <div class="ms-5">
+        <h1>Underline Tabs</h1>
+        <ul class="nav nav-pills mb-3 mt-4 border-bottom" id="pills-tab" role="tablist">
+            <li class="nav-item font_bold_2" role="presentation">
+                <button
+                class="nav-link underline_tabs active"
+                id="pills-home-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#pills-home"
+                type="button"
+                role="tab"
+                aria-controls="pills-home"
+                aria-selected="true"
+                >
+                Certificate
+                </button>
+            </li>
+            <li class="nav-item underline_tabs font_bold_2" role="presentation">
+                <button
+                class="nav-link b_rad_0"
+                id="pills-profile-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#pills-profile"
+                type="button"
+                role="tab"
+                aria-controls="pills-profile"
+                aria-selected="false"
+                >
+                Problems
+                </button>
+            </li>
+            <li class="nav-item underline_tabs font_bold_2" role="presentation">
+                <button
+                class="nav-link b_rad_0"
+                id="pills-contact-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#pills-contact"
+                type="button"
+                role="tab"
+                aria-controls="pills-contact"
+                aria-selected="false"
+                >
+                Analytics
+                </button>
+            </li>
+            <li class="nav-item underline_tabs font_bold_2" role="presentation">
+                <button
+                class="nav-link b_rad_0"
+                id="pills-contact-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#pills-leaderboard"
+                type="button"
+                role="tab"
+                aria-controls="pills-contact"
+                aria-selected="false"
+                >
+                Leaderboard
+                </button>
+            </li>
+            </ul>
+            <div class="tab-content" id="pills-tabContent">
+                <div class="tab-pane fade show active"
+                    id="pills-home"
+                    role="tabpanel"
+                    aria-labelledby="pills-home-tab"
+                    >
+                    First Content
+                </div>
+                <div class="tab-pane fade"
+                    id="pills-profile"
+                    role="tabpanel"
+                    aria-labelledby="pills-profile-tab"
+                    >
+                    Second Content
+                </div>
+                <div class="tab-pane fade"
+                    id="pills-contact"
+                    role="tabpanel"
+                    aria-labelledby="pills-contact-tab"
+                    >
+                    Third Content
+                </div>
+                <div
+                    class="tab-pane fade"
+                    id="pills-leaderboard"
+                    role="tabpanel"
+                    aria-labelledby="pills-contact-tab"
+                    >
+                    Fourth Content
+                </div>
+            </div>
+      <pre>
+
+        &lt;ul class="nav nav-pills mb-3 mt-4 border-bottom" id="pills-tab" role="tablist"&gt;
+            &lt;li class="nav-item font_bold_2" role="presentation"&gt;
+                &lt;button
+                class="nav-link b_rad_0 active"
+                id="pills-home-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#pills-home"
+                type="button"
+                role="tab"
+                aria-controls="pills-home"
+                aria-selected="true"
+                &gt;
+                Certificate
+                &lt;/button&gt;
+            &lt;/li&gt;
+            &lt;li class="nav-item font_bold_2" role="presentation"&gt;
+                &lt;button
+                class="nav-link b_rad_0"
+                id="pills-profile-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#pills-profile"
+                type="button"
+                role="tab"
+                aria-controls="pills-profile"
+                aria-selected="false"
+                &gt;
+                Problems
+                &lt;/button&gt;
+            &lt;/li&gt;
+            &lt;li class="nav-item font_bold_2" role="presentation"&gt;
+                &lt;button
+                class="nav-link b_rad_0"
+                id="pills-contact-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#pills-contact"
+                type="button"
+                role="tab"
+                aria-controls="pills-contact"
+                aria-selected="false"
+                &gt;
+                Analytics
+                &lt;/button&gt;
+            &lt;/li&gt;
+            &lt;li class="nav-item font_bold_2" role="presentation"&gt;
+                &lt;button
+                class="nav-link b_rad_0"
+                id="pills-contact-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#pills-leaderboard"
+                type="button"
+                role="tab"
+                aria-controls="pills-contact"
+                aria-selected="false"
+                &gt;
+                Leaderboard
+                &lt;/button&gt;
+            &lt;/li&gt;
+            &lt;/ul&gt;
+
+            
+            &lt;div class="tab-content" id="pills-tabContent"&gt;
+                &lt;div class="tab-pane fade show active"
+                    id="pills-home"
+                    role="tabpanel"
+                    aria-labelledby="pills-home-tab"
+                    &gt;
+                    First Content
+                &lt;/div&gt;
+                &lt;div class="tab-pane fade"
+                    id="pills-profile"
+                    role="tabpanel"
+                    aria-labelledby="pills-profile-tab"
+                    &gt;
+                    Second Content
+                &lt;/div&gt;
+                &lt;div class="tab-pane fade"
+                    id="pills-contact"
+                    role="tabpanel"
+                    aria-labelledby="pills-contact-tab"
+                    &gt;
+                    Third Content
+                &lt;/div&gt;
+                &lt;div
+                    class="tab-pane fade"
+                    id="pills-leaderboard"
+                    role="tabpanel"
+                    aria-labelledby="pills-contact-tab"
+                    &gt;
+                    Fourth Content
+                &lt;/div&gt;
+            &lt;/div&gt;
+    </pre>
+        </div>
+        
+    </div>
+        
+    </div>
+    <script src="../bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+    <script src="./swiping.js"></script>
+  </body>
+</html>
