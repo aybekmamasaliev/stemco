@@ -244,7 +244,11 @@
         >
           <div class="certificate">
             <div class="px-4 py-3 certif_header">
-              <img src="./media/subject_logo.svg" alt="" class="d-none d-sm-block" />
+              <img
+                src="./media/subject_logo.svg"
+                alt=""
+                class="d-none d-sm-block"
+              />
               <div class="d-flex align-items-center">
                 <p class="me-3">Digital certificate</p>
                 <img src="./media/checked.svg" alt="" />
@@ -459,7 +463,11 @@
           </div>
           <div class="certificate">
             <div class="px-4 py-3 certif_header">
-              <img src="./media/subject_logo.svg" alt="" class="d-none d-sm-block"/>
+              <img
+                src="./media/subject_logo.svg"
+                alt=""
+                class="d-none d-sm-block"
+              />
               <div class="d-flex align-items-center">
                 <p class="me-3">Digital certificate</p>
                 <img src="./media/checked.svg" alt="" />
@@ -468,7 +476,7 @@
             <div
               class="border bg-white mb-4 certif_none_body d-flex justify-content-around align-items-center"
             >
-              <p class="font_regular_2 muted_txt px-3 text-center ">
+              <p class="font_regular_2 muted_txt px-3 text-center">
                 The competition is not over yet. Certificate not available
               </p>
             </div>
@@ -543,7 +551,9 @@
                 </p>
               </div>
               <ul class="mt-3 ps-0">
-                <li class="d-flex border rounded-3 p-3 font_regular_1 justify-content-between">
+                <li
+                  class="d-flex border rounded-3 p-3 font_regular_1 justify-content-between"
+                >
                   <div class="d-flex">
                     <p class="muted_txt font_bold_11 pe-3">A</p>
                     <input type="radio" id="a_80" name="question_1" value="1" />
@@ -554,7 +564,9 @@
                   <img src="./media/Check.svg" alt="true" class="d-none" />
                   <img src="./media/Close.svg" alt="true" class="d-none" />
                 </li>
-                <li class="d-flex border p-3 color_wrong rounded-3 mt-3 font_regular_1 justify-content-between">
+                <li
+                  class="d-flex border p-3 color_wrong rounded-3 mt-3 font_regular_1 justify-content-between"
+                >
                   <div class="d-flex">
                     <p class="muted_txt font_bold_11 pe-3">B</p>
                     <input type="radio" id="a_81" name="question_1" value="1" />
@@ -566,7 +578,7 @@
                   <img src="./media/Close.svg" alt="true" class="d-block" />
                 </li>
                 <li
-                  class="d-flex border  p-3 rounded-3 mt-3 font_regular_1 justify-content-between"
+                  class="d-flex border p-3 rounded-3 mt-3 font_regular_1 justify-content-between"
                 >
                   <div class="d-flex">
                     <p class="muted_txt font_bold_11 pe-3">C</p>
@@ -578,7 +590,9 @@
                   <img src="./media/Check.svg" alt="true" class="d-none" />
                   <img src="./media/Close.svg" alt="true" class="d-none" />
                 </li>
-                <li class="d-flex border p-3 border_black rounded-3 mt-3 font_regular_1 justify-content-between">
+                <li
+                  class="d-flex border p-3 border_black rounded-3 mt-3 font_regular_1 justify-content-between"
+                >
                   <div class="d-flex">
                     <p class="muted_txt font_bold_11 pe-3">D</p>
                     <input type="radio" id="a_83" name="question_1" value="1" />
@@ -823,17 +837,27 @@
             </div>
           </div>
           <div
-            class="d-sm-flex justify-content-sm-between border bg-white rounded-3 my-4  p-3 "
+            class="d-sm-flex justify-content-sm-between border bg-white rounded-3 my-4 p-3"
           >
-            <div class="d-flex align-items-center justify-content-center c_pointer">
+            <div
+              class="d-flex align-items-center justify-content-center c_pointer"
+            >
               <img src="./media/InfoSquare.svg" alt="" />
               <p class="ms-2 font_regular_3">Show solution</p>
             </div>
-            <div class="mt-3 mt-sm-0 d-sm-flex justify-content-center group_btn">
-              <button type="button" class="btn_stc outline_btn_secondary w-100 w-sm-50">
+            <div
+              class="mt-3 mt-sm-0 d-sm-flex justify-content-center group_btn"
+            >
+              <button
+                type="button"
+                class="btn_stc outline_btn_secondary w-100 w-sm-50"
+              >
                 Previous
               </button>
-              <button type="button" class="btn_stc btn_secondary mt-2 mt-sm-0 w-100 ms-sm-3 w-sm-50">
+              <button
+                type="button"
+                class="btn_stc btn_secondary mt-2 mt-sm-0 w-100 ms-sm-3 w-sm-50"
+              >
                 Next
               </button>
             </div>
@@ -845,7 +869,282 @@
           role="tabpanel"
           aria-labelledby="pills-contact-tab"
         >
-          3
+          <div class="py-3 px-4 bg-white rounded-3">
+            <div class="ps_rel fit_content me-2" id="selectBox">
+              <select
+                class="form-select select_width"
+                aria-label="Default select example"
+              >
+                <option selected>Sort by: BY!P</option>
+              </select>
+              <div class="overSelect"></div>
+            </div>
+            <div class="ps_rel">
+              <div id="checkboxes">
+                <div class="px-2">
+                  <label for="ones"
+                    ><input
+                      type="checkbox"
+                      id="ones"
+                      name="season"
+                      onclick="selectAllSeasond(this)"
+                    />All</label
+                  >
+                  <label for="two"
+                    ><input type="checkbox" id="two" name="season" />Fall
+                    2023</label
+                  >
+                  <label for="three"
+                    ><input type="checkbox" id="three" name="season" />Summer
+                    2023</label
+                  >
+                  <label for="four"
+                    ><input type="checkbox" id="four" name="season" />Spring
+                    2023</label
+                  >
+                  <label for="five"
+                    ><input type="checkbox" id="five" name="season" />Winter
+                    2022</label
+                  >
+                  <label for="six"
+                    ><input type="checkbox" id="six" name="season" />autum
+                    2022</label
+                  >
+                  <label for="seven"
+                    ><input type="checkbox" id="seven" name="season" />Fall
+                    2022</label
+                  >
+                  <label for="eight"
+                    ><input type="checkbox" id="eight" name="season" />Summer
+                    2022</label
+                  >
+                  <label for="nine"
+                    ><input type="checkbox" id="nine" name="season" />Spring
+                    2021</label
+                  >
+                  <label for="ten"
+                    ><input type="checkbox" id="ten" name="season" />Winter
+                    2021</label
+                  >
+                  <label for="eleven"
+                    ><input type="checkbox" id="eleven" name="season" />autum
+                    2021 checkbox</label
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="d-flex flex-wrap mt-2">
+              <p class="me-2 mt-2 px-2 py-1 b_rds_20 font_regular_1 topic_bg">
+                All
+              </p>
+              <p
+                class="me-2 mt-2 px-2 py-1 b_rds_20 font_regular_1 topic_border"
+              >
+                number theory
+              </p>
+              <p
+                class="me-2 mt-2 px-2 py-1 b_rds_20 font_regular_1 topic_border"
+              >
+                combinations
+              </p>
+              <p
+                class="me-2 mt-2 px-2 py-1 b_rds_20 font_regular_1 topic_border"
+              >
+                statistics
+              </p>
+              <p
+                class="me-2 mt-2 px-2 py-1 b_rds_20 font_regular_1 topic_border"
+              >
+                arithmetic
+              </p>
+              <p
+                class="me-2 mt-2 px-2 py-1 b_rds_20 font_regular_1 topic_border"
+              >
+                algebra
+              </p>
+              <p
+                class="me-2 mt-2 px-2 py-1 b_rds_20 font_regular_1 topic_border"
+              >
+                ratios
+              </p>
+              <p
+                class="me-2 mt-2 px-2 py-1 b_rds_20 font_regular_1 topic_border"
+              >
+                percentages
+              </p>
+              <p
+                class="me-2 mt-2 px-2 py-1 b_rds_20 font_regular_1 topic_border"
+              >
+                number theory
+              </p>
+              <p
+                class="me-2 mt-2 px-2 py-1 b_rds_20 font_regular_1 topic_border"
+              >
+                combinations
+              </p>
+              <p
+                class="me-2 mt-2 px-2 py-1 b_rds_20 font_regular_1 topic_border"
+              >
+                statistics
+              </p>
+              <p
+                class="me-2 mt-2 px-2 py-1 b_rds_20 font_regular_1 topic_border"
+              >
+                combinations
+              </p>
+              <p
+                class="me-2 mt-2 px-2 py-1 b_rds_20 font_regular_1 topic_border"
+              >
+                statistics
+              </p>
+            </div>
+            <div class="mt-3 d_grid_1fr_2fr">
+              <div
+                class="d-flex align-items-center justify-content-between px-3 bg_main rounded-3"
+              >
+                <div class="border-end py-0">
+                  <ul class="ps-0 pe-3">
+                    <li
+                      class="d-flex justify-content-between font_bold_6 line_h_150 mb-2"
+                    >
+                      <p>Questions:</p>
+                      <p>40</p>
+                    </li>
+                    <li
+                      class="d-flex justify-content-between font_regular_1 line_h_150 mt-1"
+                    >
+                      <p>Correct:</p>
+                      <p class="color_primary">33</p>
+                    </li>
+                    <li
+                      class="d-flex justify-content-between font_regular_1 line_h_150 mt-1"
+                    >
+                      <p>Wrong:</p>
+                      <p class="active_nav_item">7</p>
+                    </li>
+                    <li
+                      class="d-flex justify-content-between font_regular_1 line_h_150 mt-1"
+                    >
+                      <p>Empty:</p>
+                      <p class="muted_txt">0</p>
+                    </li>
+                  </ul>
+                  <ul class="ps-0 pe-3" style="width: 150px">
+                    <li
+                      class="d-flex justify-content-between font_regular_1 line_h_150 mt-1"
+                    >
+                      <p>Wrong:</p>
+                      <p class="active_nav_item">7</p>
+                    </li>
+                    <li
+                      class="d-flex justify-content-between font_regular_1 line_h_150 mt-1"
+                    >
+                      <p>Empty:</p>
+                      <p class="muted_txt">0</p>
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="result_progres ms-4">
+                  <div class="circle_chart">
+                    <svg class="progress-ring" width="144" height="144">
+                      <circle
+                        stroke="#e9ecef"
+                        stroke-width="7"
+                        cx="70"
+                        cy="70"
+                        r="64"
+                        fill="none"
+                        stroke-dashoffset="0"
+                      />
+                      <circle
+                        class="progress-ring__circle_analytics"
+                        stroke="#4d956a"
+                        stroke-width="7"
+                        stroke-linecap="round"
+                        cx="31"
+                        cy="70"
+                        r="64"
+                        fill="transparent"
+                        stroke-dashoffset="0"
+                        transform="rotate(-90, 50, 50)"
+                      />
+
+                      <text x="54" y="55" fill="#4d956a" class="font_bold_1">
+                        BY!P:
+                      </text>
+                      <text
+                        x="48"
+                        y="79"
+                        fill="#4d956a"
+                        class="font_bold_8"
+                        id="score_in_percents_analytics"
+                      ></text>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+
+              <div class="rounded-3 bg_main">
+                <ul class="p-4 rounded-3 mb-0">
+                  <li class="d-flex justify-content-between border-bottom pb-2">
+                    <p class="font_bold_6">Comparison</p>
+                    <p class="font_regular_2">max. 40</p>
+                  </li>
+                  <li class="mt-3">
+                    <div class="d-flex justify-content-between">
+                      <div class="d-flex align-items-center">
+                        <img src="./media/byp_comparison.svg" alt="" />
+                        <p class="ms-2 font_bold_5">Your</p>
+                      </div>
+                      <p
+                        class="font_bold_6 text-primary"
+                        id="private_range_analytics"
+                      ></p>
+                    </div>
+                    <div
+                      class="progress mt-2"
+                      role="progressbar"
+                      aria-label="Example with label"
+                      aria-valuemin="0"
+                      aria-valuemax="40"
+                    >
+                      <div
+                        class="progress-bar"
+                        id="current_user_progress_analytics"
+                      ></div>
+                    </div>
+                  </li>
+                  <li class="mt-4">
+                    <div class="d-flex justify-content-between">
+                      <div class="d-flex align-items-center">
+                        <img src="./media/byp_comparison.svg" alt="" />
+                        <p class="ms-2 font_regular_2">
+                          Other participants (Average)
+                        </p>
+                      </div>
+                      <p
+                        class="font_bold_6 color_orange"
+                        id="main_range_analytics"
+                      ></p>
+                    </div>
+                    <div
+                      class="progress mt-2"
+                      role="progressbar"
+                      aria-label="Example with label"
+                      aria-valuemin="0"
+                      aria-valuemax="40"
+                    >
+                      <div
+                        class="progress-bar bg_orange"
+                        id="other_users_progress_analytics"
+                      ></div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
         <div
           class="tab-pane fade"
@@ -853,10 +1152,206 @@
           role="tabpanel"
           aria-labelledby="pills-contact-tab"
         >
-          4
+          <!-- <div class="bg-danger p-3"> -->
+          <div class="w-100">
+            <ul
+              class="nav nav-pills mb-3 bg_nav_tabs fit_content rounded-3 p-1"
+              id="pills-tab"
+              role="tablist"
+             >
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link active"
+                  id="pills-leaderboard_global-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#pills-leaderboard_global"
+                  type="button"
+                  role="tab"
+                  aria-controls="pills-leaderboard_global"
+                  aria-selected="true"
+                >
+                Global
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link"
+                  id="pills-leaderboard_kazahstan-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#pills-leaderboard_kazahstan"
+                  type="button"
+                  role="tab"
+                  aria-controls="pills-leaderboard_kazahstan"
+                  aria-selected="false"
+                >
+                Kazakhstan
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link"
+                  id="pills-leaderboard_nazarbaev-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#pills-leaderboard_nazarbaev"
+                  type="button"
+                  role="tab"
+                  aria-controls="pills-leaderboard_nazarbaev"
+                  aria-selected="false"
+                >
+                Nazarbayev Intellectual School
+                </button>
+              </li>
+            </ul>
+            <div
+                class="d-md-flex justify-content-between flex-wrap align-items-center mt-3"
+               >
+               <div class="d-flex align-items-center">
+                <p class="me-2 font_regular_2">Participants: <span class="font_bold_2 color_black">5063</span></p>
+                <div class="ps_rel">
+                  <img
+                    src="./media/tabler-icon-search.svg"
+                    alt="search"
+                    class="search_icon"
+                  />
+                  <input
+                    type="text"
+                    class="search_competition"
+                    placeholder="Search by competition"
+                  />
+                </div>
+              </div>
+                <div class="d-flex mt-2 mt-md-0">  
+                  <div>
+                    <div class="ps_rel fit_content me-2" id="selectBox2">
+                      <select
+                        class="form-select select_width"
+                        aria-label="Default select example"
+                      >
+                        <option selected>Award</option>
+                      </select>
+                      <div class="overSelect"></div>
+                    </div>
+                    <div class="ps_rel">
+                      <div id="checkboxes2">
+                        <div class="px-2">
+                          <label for="LeagueAll"
+                            ><input
+                              type="checkbox"
+                              id="LeagueAll"
+                              name="legue"
+                              onclick="selectAllLegue(this)"
+                            />All</label
+                          >
+                          <label for="leguePrimaru_j"
+                            ><input
+                              type="checkbox"
+                              id="leguePrimaru_j"
+                              name="legue"
+                            />Primary Junior</label
+                          >
+                          <label for="leguePrimaru_s"
+                            ><input
+                              type="checkbox"
+                              id="leguePrimaru_s"
+                              name="legue"
+                            />Primary Senior</label
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            <div class="tab-content w-100" id="pills-tabContent">
+              <div
+                class="tab-pane fade show active"
+                id="pills-leaderboard_global"
+                role="tabpanel"
+                aria-labelledby="pills-leaderboard_global-tab"
+              >
+                cdk
+              </div>
+              <div
+                class="tab-pane fade"
+                id="pills-leaderboard_kazahstan"
+                role="tabpanel"
+                aria-labelledby="pills-leaderboard_kazahstan-tab"
+              >
+                y78r56tf...
+              </div>
+              <div
+                class="tab-pane fade"
+                id="pills-leaderboard_nazarbaev"
+                role="tabpanel"
+                aria-labelledby="pills-leaderboard_nazarbaev-tab"
+              >
+                lpokg78...
+              </div>
+            </div>
+          </div>
+          <!-- </div> -->
         </div>
       </div>
     </div>
+
+    <script>
+      const circle_analytics = document.querySelector(
+        ".progress-ring__circle_analytics"
+      );
+      let score_analytics = 90;
+      document.querySelector("#score_in_percents_analytics").innerHTML =
+        score_analytics + "%";
+      const radius_analytics = circle_analytics.r.baseVal.value;
+
+      const circumference_analytics = 2 * Math.PI * radius_analytics;
+
+      circle_analytics.style.strokeDasharray = `${circumference_analytics} ${circumference_analytics}`;
+      circle_analytics.style.strokeDashoffset = circumference_analytics;
+
+      function setProgress(percent) {
+        const offset_analytics =
+          circumference_analytics - (percent / 100) * circumference_analytics;
+        circle_analytics.style.strokeDashoffset = offset_analytics;
+      }
+
+      setProgress(score_analytics);
+    </script>
+
+    <script>
+      const user_progress_analytics = document.getElementById(
+        "current_user_progress_analytics"
+      );
+
+      const others_progress_analytics = document.getElementById(
+        "other_users_progress_analytics"
+      );
+
+      const main_range_analytics = document.getElementById(
+        "main_range_analytics"
+      );
+
+      const private_range_analytics = document.getElementById(
+        "private_range_analytics"
+      );
+
+      let scorPrivate_analytics = 32;
+      let avaragePrivate_analytics = scorPrivate_analytics + 0;
+      user_progress_analytics.style.width = `${
+        (avaragePrivate_analytics / 40) * 100
+      }%`;
+
+      let scoreGeneral_analytics = 28;
+      let avarageGeneral_analytics = scoreGeneral_analytics + 0;
+      others_progress_analytics.style.width = `${
+        (avarageGeneral_analytics / 40) * 100
+      }%`;
+
+      let main_range_score_analytics = avarageGeneral_analytics;
+      let private_range_score_analytics = avaragePrivate_analytics;
+
+      private_range_analytics.innerHTML = private_range_score_analytics;
+      main_range_analytics.innerHTML = main_range_score_analytics;
+    </script>
 
     <script>
       const circle = document.querySelector(".progress-ring__circle");
