@@ -129,6 +129,12 @@ p {
   border: 1px solid var(--light_grey);
 }
 
+.none_border{
+  border: none;
+  background-color: transparent;
+  padding-block: 4px;
+}
+
 .price_icon {
   position: absolute;
   top: 50%;

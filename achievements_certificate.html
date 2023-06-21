@@ -157,22 +157,38 @@
       </div>
     </div>
     <div class="container-xxl">
-      <nav
-        style="--bs-breadcrumb-divider: '>'"
-        aria-label="breadcrumb"
-        class="ms-4 mt-4 ps-4 ps_rel font_regular_2"
-      >
-        <img src="./media/left.svg" alt="" class="ps_abs_20 c_pointer" />
-        <ol class="breadcrumb">
-          <li class="breadcrumb-item">
-            <a href="#" class="muted_txt text-decoration-none">Achievments</a>
-          </li>
-          <li class="breadcrumb-item">
-            <a href="#" class="muted_txt text-decoration-none">Competitions</a>
-          </li>
-          <li class="breadcrumb-item active" aria-current="page">Fall 2023</li>
-        </ol>
-      </nav>
+      <div class="d-flex justify-content-between align-items-center">
+        <nav
+          style="--bs-breadcrumb-divider: '>'"
+          aria-label="breadcrumb"
+          class="ms-4 mt-4 ps-4 ps_rel font_regular_2"
+         >
+          <img src="./media/left.svg" alt="" class="ps_abs_20 c_pointer" />
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item">
+              <a href="#" class="muted_txt text-decoration-none">Achievments</a>
+            </li>
+            <li class="breadcrumb-item">
+              <a href="#" class="muted_txt text-decoration-none">Competitions</a>
+            </li>
+            <li class="breadcrumb-item active" aria-current="page">Fall 2023</li>
+          </ol>
+        </nav>
+        <div class="mt-1 pt-1 pe-1 d-flex align-items-center font_regular_2">
+          <p class="me-3 ">Language:</p> 
+          <img src="./media/lang_flag.svg" alt="" class="me-2" />
+          <img src="./media/flag.svg" alt="" class="me-2 d-none" />
+          <select class="none_border">
+            <option>Eng </option>
+            <option>Ru </option>
+            <option>Kz </option>
+            <option>Kg </option>
+            <option>Uz </option>
+            <option>Tr </option>
+          </select>
+        </div>
+      </div>
+      
       <ul
         class="nav nav-pills mb-3 mt-4 border-bottom"
         id="pills-tab"
@@ -1151,62 +1167,71 @@
           id="pills-leaderboard"
           role="tabpanel"
           aria-labelledby="pills-contact-tab"
-        >
-          <!-- <div class="bg-danger p-3"> -->
+         >
           <div class="w-100">
-            <ul
-              class="nav nav-pills mb-3 bg_nav_tabs fit_content rounded-3 p-1"
-              id="pills-tab"
-              role="tablist"
-             >
-              <li class="nav-item" role="presentation">
-                <button
-                  class="nav-link active"
-                  id="pills-leaderboard_global-tab"
-                  data-bs-toggle="pill"
-                  data-bs-target="#pills-leaderboard_global"
-                  type="button"
-                  role="tab"
-                  aria-controls="pills-leaderboard_global"
-                  aria-selected="true"
-                >
-                Global
-                </button>
-              </li>
-              <li class="nav-item" role="presentation">
-                <button
-                  class="nav-link"
-                  id="pills-leaderboard_kazahstan-tab"
-                  data-bs-toggle="pill"
-                  data-bs-target="#pills-leaderboard_kazahstan"
-                  type="button"
-                  role="tab"
-                  aria-controls="pills-leaderboard_kazahstan"
-                  aria-selected="false"
-                >
-                Kazakhstan
-                </button>
-              </li>
-              <li class="nav-item" role="presentation">
-                <button
-                  class="nav-link"
-                  id="pills-leaderboard_nazarbaev-tab"
-                  data-bs-toggle="pill"
-                  data-bs-target="#pills-leaderboard_nazarbaev"
-                  type="button"
-                  role="tab"
-                  aria-controls="pills-leaderboard_nazarbaev"
-                  aria-selected="false"
-                >
-                Nazarbayev Intellectual School
-                </button>
-              </li>
-            </ul>
-            <div
-                class="d-md-flex justify-content-between flex-wrap align-items-center mt-3"
+            <div class="d-flex justify-content-between flex-wrap">
+              <ul
+                class="nav nav-pills mb-3 bg_nav_tabs fit_content rounded-3 p-1"
+                id="pills-tab"
+                role="tablist"
                >
-               <div class="d-flex align-items-center">
-                <p class="me-2 font_regular_2">Participants: <span class="font_bold_2 color_black">5063</span></p>
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link active"
+                    id="pills-leaderboard_global-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#pills-leaderboard_global"
+                    type="button"
+                    role="tab"
+                    aria-controls="pills-leaderboard_global"
+                    aria-selected="true"
+                  >
+                    Global
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link"
+                    id="pills-leaderboard_kazahstan-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#pills-leaderboard_kazahstan"
+                    type="button"
+                    role="tab"
+                    aria-controls="pills-leaderboard_kazahstan"
+                    aria-selected="false"
+                  >
+                    Kazakhstan
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link"
+                    id="pills-leaderboard_nazarbaev-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#pills-leaderboard_nazarbaev"
+                    type="button"
+                    role="tab"
+                    aria-controls="pills-leaderboard_nazarbaev"
+                    aria-selected="false"
+                  >
+                    Nazarbayev Intellectual School
+                  </button>
+                </li>
+              </ul>
+              <div class="p-3 font_regular_2 d-flex align-items-center">
+                <img src="./media/tabler-icon-reload.svg" alt="" />
+                <span class="muted_txt ms-2">Update after 00:06:23</span>
+              </div>
+            </div>
+
+            <div
+              class="d-md-flex justify-content-between flex-wrap align-items-center mt-3"
+            >
+              <div class="d-flex align-items-center">
+                <p class="me-2 font_regular_2">
+                  Participants:
+                  <span class="font_bold_2 color_black">5063</span>
+                </p>
                 <div class="ps_rel">
                   <img
                     src="./media/tabler-icon-search.svg"
@@ -1220,48 +1245,48 @@
                   />
                 </div>
               </div>
-                <div class="d-flex mt-2 mt-md-0">  
-                  <div>
-                    <div class="ps_rel fit_content me-2" id="selectBox2">
-                      <select
-                        class="form-select select_width"
-                        aria-label="Default select example"
-                      >
-                        <option selected>Award</option>
-                      </select>
-                      <div class="overSelect"></div>
-                    </div>
-                    <div class="ps_rel">
-                      <div id="checkboxes2">
-                        <div class="px-2">
-                          <label for="LeagueAll"
-                            ><input
-                              type="checkbox"
-                              id="LeagueAll"
-                              name="legue"
-                              onclick="selectAllLegue(this)"
-                            />All</label
-                          >
-                          <label for="leguePrimaru_j"
-                            ><input
-                              type="checkbox"
-                              id="leguePrimaru_j"
-                              name="legue"
-                            />Primary Junior</label
-                          >
-                          <label for="leguePrimaru_s"
-                            ><input
-                              type="checkbox"
-                              id="leguePrimaru_s"
-                              name="legue"
-                            />Primary Senior</label
-                          >
-                        </div>
+              <div class="d-flex mt-2 mt-md-0">
+                <div>
+                  <div class="ps_rel fit_content me-2" id="selectBox2">
+                    <select
+                      class="form-select select_width"
+                      aria-label="Default select example"
+                    >
+                      <option selected>Award</option>
+                    </select>
+                    <div class="overSelect"></div>
+                  </div>
+                  <div class="ps_rel">
+                    <div id="checkboxes2">
+                      <div class="px-2">
+                        <label for="LeagueAll"
+                          ><input
+                            type="checkbox"
+                            id="LeagueAll"
+                            name="legue"
+                            onclick="selectAllLegue(this)"
+                          />All</label
+                        >
+                        <label for="leguePrimaru_j"
+                          ><input
+                            type="checkbox"
+                            id="leguePrimaru_j"
+                            name="legue"
+                          />Primary Junior</label
+                        >
+                        <label for="leguePrimaru_s"
+                          ><input
+                            type="checkbox"
+                            id="leguePrimaru_s"
+                            name="legue"
+                          />Primary Senior</label
+                        >
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
+            </div>
             <div class="tab-content w-100" id="pills-tabContent">
               <div
                 class="tab-pane fade show active"
@@ -1269,213 +1294,632 @@
                 role="tabpanel"
                 aria-labelledby="pills-leaderboard_global-tab"
               >
-              <div class="overf_y_s mt-3 border-bottom">
-                <table class="table ps_rel">
-                  <thead class="ps_sticky_t_1 bg_nav_tabs" style="z-index: 2;">
-                    <tr>
-                      <th scope="col" class="text-center">Rank</th>
-                      <th scope="col">Besty</th>
-                      <th scope="col">Country</th>
-                      <th scope="col">School</th>
-                      <th scope="col">League</th>
-                      <th scope="col" class="text-center">Award</th>
-                      <th scope="col" class="text-center">BY!P Score</th>
-                    </tr>
-                  </thead>
-                  <tbody class="font_regular_1 ps_rel">
-                    <tr>
-                      <td class="text-center">1</td>
-                      <td><div class="d-flex align-items-center"><img src="./media/ahror.svg" alt="name student" /> <p class="ms-2">Arshan AghaBabaieMobarake</p></div></td>
-                      <td><div class="d-flex align-items-center"><img src="./media/Country.svg" alt="name country" /><p class="ms-2">Indonesia</p></div></td>
-                      <td><div class="d-flex align-items-center"><img src="./media/logo_of_school.svg" alt="name school" /><p class="ms-2">MathHome of Tehran</p></div></td>
-                      <td>Beginner</td>
-                      <td class="text-center"><img src="./media/priz.svg" alt="price" /></td>
-                      <td class="text-center">72.31</td>
-                    </tr>
-                    <tr>
-                      <td class="text-center">1</td>
-                      <td><div class="d-flex align-items-center"><img src="./media/ahror.svg" alt="name student" /> <p class="ms-2">Arshan AghaBabaieMobarake</p></div></td>
-                      <td><div class="d-flex align-items-center"><img src="./media/Country.svg" alt="name country" /><p class="ms-2">Indonesia</p></div></td>
-                      <td><div class="d-flex align-items-center"><img src="./media/logo_of_school.svg" alt="name school" /><p class="ms-2">MathHome of Tehran</p></div></td>
-                      <td>Beginner</td>
-                      <td class="text-center"><img src="./media/priz.svg" alt="price" /></td>
-                      <td class="text-center">72.31</td>
-                    </tr>
-                    <tr>
-                      <td class="text-center">1</td>
-                      <td><div class="d-flex align-items-center"><img src="./media/ahror.svg" alt="name student" /> <p class="ms-2">Arshan AghaBabaieMobarake</p></div></td>
-                      <td><div class="d-flex align-items-center"><img src="./media/Country.svg" alt="name country" /><p class="ms-2">Indonesia</p></div></td>
-                      <td><div class="d-flex align-items-center"><img src="./media/logo_of_school.svg" alt="name school" /><p class="ms-2">MathHome of Tehran</p></div></td>
-                      <td>Beginner</td>
-                      <td class="text-center"><img src="./media/priz.svg" alt="price" /></td>
-                      <td class="text-center">72.31</td>
-                    </tr>
-                    <tr>
-                      <td class="text-center">1</td>
-                      <td><div class="d-flex align-items-center"><img src="./media/ahror.svg" alt="name student" /> <p class="ms-2">Arshan AghaBabaieMobarake</p></div></td>
-                      <td><div class="d-flex align-items-center"><img src="./media/Country.svg" alt="name country" /><p class="ms-2">Indonesia</p></div></td>
-                      <td><div class="d-flex align-items-center"><img src="./media/logo_of_school.svg" alt="name school" /><p class="ms-2">MathHome of Tehran</p></div></td>
-                      <td>Beginner</td>
-                      <td class="text-center"><img src="./media/priz.svg" alt="price" /></td>
-                      <td class="text-center">72.31</td>
-                    </tr>
-                    <tr>
-                      <td class="text-center">1</td>
-                      <td><div class="d-flex align-items-center"><img src="./media/ahror.svg" alt="name student" /> <p class="ms-2">Arshan AghaBabaieMobarake</p></div></td>
-                      <td><div class="d-flex align-items-center"><img src="./media/Country.svg" alt="name country" /><p class="ms-2">Indonesia</p></div></td>
-                      <td><div class="d-flex align-items-center"><img src="./media/logo_of_school.svg" alt="name school" /><p class="ms-2">MathHome of Tehran</p></div></td>
-                      <td>Beginner</td>
-                      <td class="text-center"><img src="./media/priz.svg" alt="price" /></td>
-                      <td class="text-center">72.31</td>
-                    </tr>
-                    <tr>
-                      <td class="text-center">1</td>
-                      <td><div class="d-flex align-items-center"><img src="./media/ahror.svg" alt="name student" /> <p class="ms-2">Arshan AghaBabaieMobarake</p></div></td>
-                      <td><div class="d-flex align-items-center"><img src="./media/Country.svg" alt="name country" /><p class="ms-2">Indonesia</p></div></td>
-                      <td><div class="d-flex align-items-center"><img src="./media/logo_of_school.svg" alt="name school" /><p class="ms-2">MathHome of Tehran</p></div></td>
-                      <td>Beginner</td>
-                      <td class="text-center"><img src="./media/priz.svg" alt="price" /></td>
-                      <td class="text-center">72.31</td>
-                    </tr>
-                    <tr>
-                      <td class="text-center">1</td>
-                      <td><div class="d-flex align-items-center"><img src="./media/ahror.svg" alt="name student" /> <p class="ms-2">Arshan AghaBabaieMobarake</p></div></td>
-                      <td><div class="d-flex align-items-center"><img src="./media/Country.svg" alt="name country" /><p class="ms-2">Indonesia</p></div></td>
-                      <td><div class="d-flex align-items-center"><img src="./media/logo_of_school.svg" alt="name school" /><p class="ms-2">MathHome of Tehran</p></div></td>
-                      <td>Beginner</td>
-                      <td class="text-center"><img src="./media/priz.svg" alt="price" /></td>
-                      <td class="text-center">72.31</td>
-                    </tr>
-                    <tr>
-                      <td class="text-center">1</td>
-                      <td><div class="d-flex align-items-center"><img src="./media/ahror.svg" alt="name student" /> <p class="ms-2">Arshan AghaBabaieMobarake</p></div></td>
-                      <td><div class="d-flex align-items-center"><img src="./media/Country.svg" alt="name country" /><p class="ms-2">Indonesia</p></div></td>
-                      <td><div class="d-flex align-items-center"><img src="./media/logo_of_school.svg" alt="name school" /><p class="ms-2">MathHome of Tehran</p></div></td>
-                      <td>Beginner</td>
-                      <td class="text-center"><img src="./media/priz.svg" alt="price" /></td>
-                      <td class="text-center">72.31</td>
-                    </tr>
-                    <tr>
-                      <td class="text-center">1</td>
-                      <td><div class="d-flex align-items-center"><img src="./media/ahror.svg" alt="name student" /> <p class="ms-2">Arshan AghaBabaieMobarake</p></div></td>
-                      <td><div class="d-flex align-items-center"><img src="./media/Country.svg" alt="name country" /><p class="ms-2">Indonesia</p></div></td>
-                      <td><div class="d-flex align-items-center"><img src="./media/logo_of_school.svg" alt="name school" /><p class="ms-2">MathHome of Tehran</p></div></td>
-                      <td>Beginner</td>
-                      <td class="text-center"><img src="./media/priz.svg" alt="price" /></td>
-                      <td class="text-center">72.31</td>
-                    </tr>
-                    <tr>
-                      <td class="text-center">1</td>
-                      <td><div class="d-flex align-items-center"><img src="./media/ahror.svg" alt="name student" /> <p class="ms-2">Arshan AghaBabaieMobarake</p></div></td>
-                      <td><div class="d-flex align-items-center"><img src="./media/Country.svg" alt="name country" /><p class="ms-2">Indonesia</p></div></td>
-                      <td><div class="d-flex align-items-center"><img src="./media/logo_of_school.svg" alt="name school" /><p class="ms-2">MathHome of Tehran</p></div></td>
-                      <td>Beginner</td>
-                      <td class="text-center"><img src="./media/priz.svg" alt="price" /></td>
-                      <td class="text-center">72.31</td>
-                    </tr>
-                    <tr>
-                      <td class="text-center">1</td>
-                      <td><div class="d-flex align-items-center"><img src="./media/ahror.svg" alt="name student" /> <p class="ms-2">Arshan AghaBabaieMobarake</p></div></td>
-                      <td><div class="d-flex align-items-center"><img src="./media/Country.svg" alt="name country" /><p class="ms-2">Indonesia</p></div></td>
-                      <td><div class="d-flex align-items-center"><img src="./media/logo_of_school.svg" alt="name school" /><p class="ms-2">MathHome of Tehran</p></div></td>
-                      <td>Beginner</td>
-                      <td class="text-center"><img src="./media/priz.svg" alt="price" /></td>
-                      <td class="text-center">72.31</td>
-                    </tr>
-                    <tr>
-                      <td class="text-center">1</td>
-                      <td><div class="d-flex align-items-center"><img src="./media/ahror.svg" alt="name student" /> <p class="ms-2">Arshan AghaBabaieMobarake</p></div></td>
-                      <td><div class="d-flex align-items-center"><img src="./media/Country.svg" alt="name country" /><p class="ms-2">Indonesia</p></div></td>
-                      <td><div class="d-flex align-items-center"><img src="./media/logo_of_school.svg" alt="name school" /><p class="ms-2">MathHome of Tehran</p></div></td>
-                      <td>Beginner</td>
-                      <td class="text-center"><img src="./media/priz.svg" alt="price" /></td>
-                      <td class="text-center">72.31</td>
-                    </tr>
-                    <tr>
-                      <td class="text-center">1</td>
-                      <td><div class="d-flex align-items-center"><img src="./media/ahror.svg" alt="name student" /> <p class="ms-2">Arshan AghaBabaieMobarake</p></div></td>
-                      <td><div class="d-flex align-items-center"><img src="./media/Country.svg" alt="name country" /><p class="ms-2">Indonesia</p></div></td>
-                      <td><div class="d-flex align-items-center"><img src="./media/logo_of_school.svg" alt="name school" /><p class="ms-2">MathHome of Tehran</p></div></td>
-                      <td>Beginner</td>
-                      <td class="text-center"><img src="./media/priz.svg" alt="price" /></td>
-                      <td class="text-center">72.31</td>
-                    </tr>
-                    <tr>
-                      <td class="text-center">1</td>
-                      <td><div class="d-flex align-items-center"><img src="./media/ahror.svg" alt="name student" /> <p class="ms-2">Arshan AghaBabaieMobarake</p></div></td>
-                      <td><div class="d-flex align-items-center"><img src="./media/Country.svg" alt="name country" /><p class="ms-2">Indonesia</p></div></td>
-                      <td><div class="d-flex align-items-center"><img src="./media/logo_of_school.svg" alt="name school" /><p class="ms-2">MathHome of Tehran</p></div></td>
-                      <td>Beginner</td>
-                      <td class="text-center"><img src="./media/priz.svg" alt="price" /></td>
-                      <td class="text-center">72.31</td>
-                    </tr>
-                    <tr>
-                      <td class="text-center">1</td>
-                      <td><div class="d-flex align-items-center"><img src="./media/ahror.svg" alt="name student" /> <p class="ms-2">Arshan AghaBabaieMobarake</p></div></td>
-                      <td><div class="d-flex align-items-center"><img src="./media/Country.svg" alt="name country" /><p class="ms-2">Indonesia</p></div></td>
-                      <td><div class="d-flex align-items-center"><img src="./media/logo_of_school.svg" alt="name school" /><p class="ms-2">MathHome of Tehran</p></div></td>
-                      <td>Beginner</td>
-                      <td class="text-center"><img src="./media/priz.svg" alt="price" /></td>
-                      <td class="text-center">72.31</td>
-                    </tr>
-                    <tr>
-                      <td class="text-center">1</td>
-                      <td><div class="d-flex align-items-center"><img src="./media/ahror.svg" alt="name student" /> <p class="ms-2">Arshan AghaBabaieMobarake</p></div></td>
-                      <td><div class="d-flex align-items-center"><img src="./media/Country.svg" alt="name country" /><p class="ms-2">Indonesia</p></div></td>
-                      <td><div class="d-flex align-items-center"><img src="./media/logo_of_school.svg" alt="name school" /><p class="ms-2">MathHome of Tehran</p></div></td>
-                      <td>Beginner</td>
-                      <td class="text-center"><img src="./media/priz.svg" alt="price" /></td>
-                      <td class="text-center">72.31</td>
-                    </tr>
-                    <tr>
-                      <td class="text-center">1</td>
-                      <td><div class="d-flex align-items-center"><img src="./media/ahror.svg" alt="name student" /> <p class="ms-2">Arshan AghaBabaieMobarake</p></div></td>
-                      <td><div class="d-flex align-items-center"><img src="./media/Country.svg" alt="name country" /><p class="ms-2">Indonesia</p></div></td>
-                      <td><div class="d-flex align-items-center"><img src="./media/logo_of_school.svg" alt="name school" /><p class="ms-2">MathHome of Tehran</p></div></td>
-                      <td>Beginner</td>
-                      <td class="text-center"><img src="./media/priz.svg" alt="price" /></td>
-                      <td class="text-center">72.31</td>
-                    </tr>
-                    <tr class="ps_sticky_t_35">
-                      <td class="text-center">1</td>
-                      <td><div class="d-flex align-items-center"><img src="./media/ahror.svg" alt="name student" /> <p class="ms-2">Arshan AghaBabaieMobarake</p></div></td>
-                      <td><div class="d-flex align-items-center"><img src="./media/Country.svg" alt="name country" /><p class="ms-2">Indonesia</p></div></td>
-                      <td><div class="d-flex align-items-center"><img src="./media/logo_of_school.svg" alt="name school" /><p class="ms-2">MathHome of Tehran</p></div></td>
-                      <td>Beginner</td>
-                      <td class="text-center"><img src="./media/priz.svg" alt="price" /></td>
-                      <td class="text-center">72.31</td>
-                    </tr>
-                    <tr>
-                      <td class="text-center">1</td>
-                      <td><div class="d-flex align-items-center"><img src="./media/ahror.svg" alt="name student" /> <p class="ms-2">Arshan AghaBabaieMobarake</p></div></td>
-                      <td><div class="d-flex align-items-center"><img src="./media/Country.svg" alt="name country" /><p class="ms-2">Indonesia</p></div></td>
-                      <td><div class="d-flex align-items-center"><img src="./media/logo_of_school.svg" alt="name school" /><p class="ms-2">MathHome of Tehran</p></div></td>
-                      <td>Beginner</td>
-                      <td class="text-center"><img src="./media/priz.svg" alt="price" /></td>
-                      <td class="text-center">72.31</td>
-                    </tr>
-                    <tr>
-                      <td class="text-center">1</td>
-                      <td><div class="d-flex align-items-center"><img src="./media/ahror.svg" alt="name student" /> <p class="ms-2">Arshan AghaBabaieMobarake</p></div></td>
-                      <td><div class="d-flex align-items-center"><img src="./media/Country.svg" alt="name country" /><p class="ms-2">Indonesia</p></div></td>
-                      <td><div class="d-flex align-items-center"><img src="./media/logo_of_school.svg" alt="name school" /><p class="ms-2">MathHome of Tehran</p></div></td>
-                      <td>Beginner</td>
-                      <td class="text-center"><img src="./media/priz.svg" alt="price" /></td>
-                      <td class="text-center">72.31</td>
-                    </tr>
-                    <tr>
-                      <td class="text-center">1</td>
-                      <td><div class="d-flex align-items-center"><img src="./media/ahror.svg" alt="name student" /> <p class="ms-2">Arshan AghaBabaieMobarake</p></div></td>
-                      <td><div class="d-flex align-items-center"><img src="./media/Country.svg" alt="name country" /><p class="ms-2">Indonesia</p></div></td>
-                      <td><div class="d-flex align-items-center"><img src="./media/logo_of_school.svg" alt="name school" /><p class="ms-2">MathHome of Tehran</p></div></td>
-                      <td>Beginner</td>
-                      <td class="text-center"><img src="./media/priz.svg" alt="price" /></td>
-                      <td class="text-center">72.31</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-              
+                <div class="overf_y_s mt-3 border-bottom">
+                  <table class="table ps_rel">
+                    <thead class="ps_sticky_t_1 bg_nav_tabs" style="z-index: 2">
+                      <tr>
+                        <th scope="col" class="text-center">Rank</th>
+                        <th scope="col">Besty</th>
+                        <th scope="col">Country</th>
+                        <th scope="col">School</th>
+                        <th scope="col">League</th>
+                        <th scope="col" class="text-center">Award</th>
+                        <th scope="col" class="text-center">BY!P Score</th>
+                      </tr>
+                    </thead>
+                    <tbody class="font_regular_1 ps_rel">
+                      <tr>
+                        <td class="text-center">1</td>
+                        <td>
+                          <div class="d-flex align-items-center">
+                            <img src="./media/ahror.svg" alt="name student" />
+                            <p class="ms-2">Arshan AghaBabaieMobarake</p>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="d-flex align-items-center">
+                            <img src="./media/Country.svg" alt="name country" />
+                            <p class="ms-2">Indonesia</p>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="d-flex align-items-center">
+                            <img
+                              src="./media/logo_of_school.svg"
+                              alt="name school"
+                            />
+                            <p class="ms-2">MathHome of Tehran</p>
+                          </div>
+                        </td>
+                        <td>Beginner</td>
+                        <td class="text-center">
+                          <img src="./media/priz.svg" alt="price" />
+                        </td>
+                        <td class="text-center">72.31</td>
+                      </tr>
+                      <tr>
+                        <td class="text-center">1</td>
+                        <td>
+                          <div class="d-flex align-items-center">
+                            <img src="./media/ahror.svg" alt="name student" />
+                            <p class="ms-2">Arshan AghaBabaieMobarake</p>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="d-flex align-items-center">
+                            <img src="./media/Country.svg" alt="name country" />
+                            <p class="ms-2">Indonesia</p>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="d-flex align-items-center">
+                            <img
+                              src="./media/logo_of_school.svg"
+                              alt="name school"
+                            />
+                            <p class="ms-2">MathHome of Tehran</p>
+                          </div>
+                        </td>
+                        <td>Beginner</td>
+                        <td class="text-center">
+                          <img src="./media/priz.svg" alt="price" />
+                        </td>
+                        <td class="text-center">72.31</td>
+                      </tr>
+                      <tr>
+                        <td class="text-center">1</td>
+                        <td>
+                          <div class="d-flex align-items-center">
+                            <img src="./media/ahror.svg" alt="name student" />
+                            <p class="ms-2">Arshan AghaBabaieMobarake</p>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="d-flex align-items-center">
+                            <img src="./media/Country.svg" alt="name country" />
+                            <p class="ms-2">Indonesia</p>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="d-flex align-items-center">
+                            <img
+                              src="./media/logo_of_school.svg"
+                              alt="name school"
+                            />
+                            <p class="ms-2">MathHome of Tehran</p>
+                          </div>
+                        </td>
+                        <td>Beginner</td>
+                        <td class="text-center">
+                          <img src="./media/priz.svg" alt="price" />
+                        </td>
+                        <td class="text-center">72.31</td>
+                      </tr>
+                      <tr>
+                        <td class="text-center">1</td>
+                        <td>
+                          <div class="d-flex align-items-center">
+                            <img src="./media/ahror.svg" alt="name student" />
+                            <p class="ms-2">Arshan AghaBabaieMobarake</p>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="d-flex align-items-center">
+                            <img src="./media/Country.svg" alt="name country" />
+                            <p class="ms-2">Indonesia</p>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="d-flex align-items-center">
+                            <img
+                              src="./media/logo_of_school.svg"
+                              alt="name school"
+                            />
+                            <p class="ms-2">MathHome of Tehran</p>
+                          </div>
+                        </td>
+                        <td>Beginner</td>
+                        <td class="text-center">
+                          <img src="./media/priz.svg" alt="price" />
+                        </td>
+                        <td class="text-center">72.31</td>
+                      </tr>
+                      <tr>
+                        <td class="text-center">1</td>
+                        <td>
+                          <div class="d-flex align-items-center">
+                            <img src="./media/ahror.svg" alt="name student" />
+                            <p class="ms-2">Arshan AghaBabaieMobarake</p>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="d-flex align-items-center">
+                            <img src="./media/Country.svg" alt="name country" />
+                            <p class="ms-2">Indonesia</p>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="d-flex align-items-center">
+                            <img
+                              src="./media/logo_of_school.svg"
+                              alt="name school"
+                            />
+                            <p class="ms-2">MathHome of Tehran</p>
+                          </div>
+                        </td>
+                        <td>Beginner</td>
+                        <td class="text-center">
+                          <img src="./media/priz.svg" alt="price" />
+                        </td>
+                        <td class="text-center">72.31</td>
+                      </tr>
+                      <tr>
+                        <td class="text-center">1</td>
+                        <td>
+                          <div class="d-flex align-items-center">
+                            <img src="./media/ahror.svg" alt="name student" />
+                            <p class="ms-2">Arshan AghaBabaieMobarake</p>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="d-flex align-items-center">
+                            <img src="./media/Country.svg" alt="name country" />
+                            <p class="ms-2">Indonesia</p>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="d-flex align-items-center">
+                            <img
+                              src="./media/logo_of_school.svg"
+                              alt="name school"
+                            />
+                            <p class="ms-2">MathHome of Tehran</p>
+                          </div>
+                        </td>
+                        <td>Beginner</td>
+                        <td class="text-center">
+                          <img src="./media/priz.svg" alt="price" />
+                        </td>
+                        <td class="text-center">72.31</td>
+                      </tr>
+                      <tr>
+                        <td class="text-center">1</td>
+                        <td>
+                          <div class="d-flex align-items-center">
+                            <img src="./media/ahror.svg" alt="name student" />
+                            <p class="ms-2">Arshan AghaBabaieMobarake</p>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="d-flex align-items-center">
+                            <img src="./media/Country.svg" alt="name country" />
+                            <p class="ms-2">Indonesia</p>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="d-flex align-items-center">
+                            <img
+                              src="./media/logo_of_school.svg"
+                              alt="name school"
+                            />
+                            <p class="ms-2">MathHome of Tehran</p>
+                          </div>
+                        </td>
+                        <td>Beginner</td>
+                        <td class="text-center">
+                          <img src="./media/priz.svg" alt="price" />
+                        </td>
+                        <td class="text-center">72.31</td>
+                      </tr>
+                      <tr>
+                        <td class="text-center">1</td>
+                        <td>
+                          <div class="d-flex align-items-center">
+                            <img src="./media/ahror.svg" alt="name student" />
+                            <p class="ms-2">Arshan AghaBabaieMobarake</p>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="d-flex align-items-center">
+                            <img src="./media/Country.svg" alt="name country" />
+                            <p class="ms-2">Indonesia</p>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="d-flex align-items-center">
+                            <img
+                              src="./media/logo_of_school.svg"
+                              alt="name school"
+                            />
+                            <p class="ms-2">MathHome of Tehran</p>
+                          </div>
+                        </td>
+                        <td>Beginner</td>
+                        <td class="text-center">
+                          <img src="./media/priz.svg" alt="price" />
+                        </td>
+                        <td class="text-center">72.31</td>
+                      </tr>
+                      <tr>
+                        <td class="text-center">1</td>
+                        <td>
+                          <div class="d-flex align-items-center">
+                            <img src="./media/ahror.svg" alt="name student" />
+                            <p class="ms-2">Arshan AghaBabaieMobarake</p>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="d-flex align-items-center">
+                            <img src="./media/Country.svg" alt="name country" />
+                            <p class="ms-2">Indonesia</p>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="d-flex align-items-center">
+                            <img
+                              src="./media/logo_of_school.svg"
+                              alt="name school"
+                            />
+                            <p class="ms-2">MathHome of Tehran</p>
+                          </div>
+                        </td>
+                        <td>Beginner</td>
+                        <td class="text-center">
+                          <img src="./media/priz.svg" alt="price" />
+                        </td>
+                        <td class="text-center">72.31</td>
+                      </tr>
+                      <tr>
+                        <td class="text-center">1</td>
+                        <td>
+                          <div class="d-flex align-items-center">
+                            <img src="./media/ahror.svg" alt="name student" />
+                            <p class="ms-2">Arshan AghaBabaieMobarake</p>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="d-flex align-items-center">
+                            <img src="./media/Country.svg" alt="name country" />
+                            <p class="ms-2">Indonesia</p>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="d-flex align-items-center">
+                            <img
+                              src="./media/logo_of_school.svg"
+                              alt="name school"
+                            />
+                            <p class="ms-2">MathHome of Tehran</p>
+                          </div>
+                        </td>
+                        <td>Beginner</td>
+                        <td class="text-center">
+                          <img src="./media/priz.svg" alt="price" />
+                        </td>
+                        <td class="text-center">72.31</td>
+                      </tr>
+                      <tr>
+                        <td class="text-center">1</td>
+                        <td>
+                          <div class="d-flex align-items-center">
+                            <img src="./media/ahror.svg" alt="name student" />
+                            <p class="ms-2">Arshan AghaBabaieMobarake</p>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="d-flex align-items-center">
+                            <img src="./media/Country.svg" alt="name country" />
+                            <p class="ms-2">Indonesia</p>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="d-flex align-items-center">
+                            <img
+                              src="./media/logo_of_school.svg"
+                              alt="name school"
+                            />
+                            <p class="ms-2">MathHome of Tehran</p>
+                          </div>
+                        </td>
+                        <td>Beginner</td>
+                        <td class="text-center">
+                          <img src="./media/priz.svg" alt="price" />
+                        </td>
+                        <td class="text-center">72.31</td>
+                      </tr>
+                      <tr>
+                        <td class="text-center">1</td>
+                        <td>
+                          <div class="d-flex align-items-center">
+                            <img src="./media/ahror.svg" alt="name student" />
+                            <p class="ms-2">Arshan AghaBabaieMobarake</p>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="d-flex align-items-center">
+                            <img src="./media/Country.svg" alt="name country" />
+                            <p class="ms-2">Indonesia</p>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="d-flex align-items-center">
+                            <img
+                              src="./media/logo_of_school.svg"
+                              alt="name school"
+                            />
+                            <p class="ms-2">MathHome of Tehran</p>
+                          </div>
+                        </td>
+                        <td>Beginner</td>
+                        <td class="text-center">
+                          <img src="./media/priz.svg" alt="price" />
+                        </td>
+                        <td class="text-center">72.31</td>
+                      </tr>
+                      <tr>
+                        <td class="text-center">1</td>
+                        <td>
+                          <div class="d-flex align-items-center">
+                            <img src="./media/ahror.svg" alt="name student" />
+                            <p class="ms-2">Arshan AghaBabaieMobarake</p>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="d-flex align-items-center">
+                            <img src="./media/Country.svg" alt="name country" />
+                            <p class="ms-2">Indonesia</p>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="d-flex align-items-center">
+                            <img
+                              src="./media/logo_of_school.svg"
+                              alt="name school"
+                            />
+                            <p class="ms-2">MathHome of Tehran</p>
+                          </div>
+                        </td>
+                        <td>Beginner</td>
+                        <td class="text-center">
+                          <img src="./media/priz.svg" alt="price" />
+                        </td>
+                        <td class="text-center">72.31</td>
+                      </tr>
+                      <tr>
+                        <td class="text-center">1</td>
+                        <td>
+                          <div class="d-flex align-items-center">
+                            <img src="./media/ahror.svg" alt="name student" />
+                            <p class="ms-2">Arshan AghaBabaieMobarake</p>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="d-flex align-items-center">
+                            <img src="./media/Country.svg" alt="name country" />
+                            <p class="ms-2">Indonesia</p>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="d-flex align-items-center">
+                            <img
+                              src="./media/logo_of_school.svg"
+                              alt="name school"
+                            />
+                            <p class="ms-2">MathHome of Tehran</p>
+                          </div>
+                        </td>
+                        <td>Beginner</td>
+                        <td class="text-center">
+                          <img src="./media/priz.svg" alt="price" />
+                        </td>
+                        <td class="text-center">72.31</td>
+                      </tr>
+                      <tr>
+                        <td class="text-center">1</td>
+                        <td>
+                          <div class="d-flex align-items-center">
+                            <img src="./media/ahror.svg" alt="name student" />
+                            <p class="ms-2">Arshan AghaBabaieMobarake</p>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="d-flex align-items-center">
+                            <img src="./media/Country.svg" alt="name country" />
+                            <p class="ms-2">Indonesia</p>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="d-flex align-items-center">
+                            <img
+                              src="./media/logo_of_school.svg"
+                              alt="name school"
+                            />
+                            <p class="ms-2">MathHome of Tehran</p>
+                          </div>
+                        </td>
+                        <td>Beginner</td>
+                        <td class="text-center">
+                          <img src="./media/priz.svg" alt="price" />
+                        </td>
+                        <td class="text-center">72.31</td>
+                      </tr>
+                      <tr>
+                        <td class="text-center">1</td>
+                        <td>
+                          <div class="d-flex align-items-center">
+                            <img src="./media/ahror.svg" alt="name student" />
+                            <p class="ms-2">Arshan AghaBabaieMobarake</p>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="d-flex align-items-center">
+                            <img src="./media/Country.svg" alt="name country" />
+                            <p class="ms-2">Indonesia</p>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="d-flex align-items-center">
+                            <img
+                              src="./media/logo_of_school.svg"
+                              alt="name school"
+                            />
+                            <p class="ms-2">MathHome of Tehran</p>
+                          </div>
+                        </td>
+                        <td>Beginner</td>
+                        <td class="text-center">
+                          <img src="./media/priz.svg" alt="price" />
+                        </td>
+                        <td class="text-center">72.31</td>
+                      </tr>
+                      <tr>
+                        <td class="text-center">1</td>
+                        <td>
+                          <div class="d-flex align-items-center">
+                            <img src="./media/ahror.svg" alt="name student" />
+                            <p class="ms-2">Arshan AghaBabaieMobarake</p>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="d-flex align-items-center">
+                            <img src="./media/Country.svg" alt="name country" />
+                            <p class="ms-2">Indonesia</p>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="d-flex align-items-center">
+                            <img
+                              src="./media/logo_of_school.svg"
+                              alt="name school"
+                            />
+                            <p class="ms-2">MathHome of Tehran</p>
+                          </div>
+                        </td>
+                        <td>Beginner</td>
+                        <td class="text-center">
+                          <img src="./media/priz.svg" alt="price" />
+                        </td>
+                        <td class="text-center">72.31</td>
+                      </tr>
+                      <tr class="ps_sticky_t_35">
+                        <td class="text-center">1</td>
+                        <td>
+                          <div class="d-flex align-items-center">
+                            <img src="./media/ahror.svg" alt="name student" />
+                            <p class="ms-2">Arshan AghaBabaieMobarake</p>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="d-flex align-items-center">
+                            <img src="./media/Country.svg" alt="name country" />
+                            <p class="ms-2">Indonesia</p>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="d-flex align-items-center">
+                            <img
+                              src="./media/logo_of_school.svg"
+                              alt="name school"
+                            />
+                            <p class="ms-2">MathHome of Tehran</p>
+                          </div>
+                        </td>
+                        <td>Beginner</td>
+                        <td class="text-center">
+                          <img src="./media/priz.svg" alt="price" />
+                        </td>
+                        <td class="text-center">72.31</td>
+                      </tr>
+                      <tr>
+                        <td class="text-center">1</td>
+                        <td>
+                          <div class="d-flex align-items-center">
+                            <img src="./media/ahror.svg" alt="name student" />
+                            <p class="ms-2">Arshan AghaBabaieMobarake</p>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="d-flex align-items-center">
+                            <img src="./media/Country.svg" alt="name country" />
+                            <p class="ms-2">Indonesia</p>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="d-flex align-items-center">
+                            <img
+                              src="./media/logo_of_school.svg"
+                              alt="name school"
+                            />
+                            <p class="ms-2">MathHome of Tehran</p>
+                          </div>
+                        </td>
+                        <td>Beginner</td>
+                        <td class="text-center">
+                          <img src="./media/priz.svg" alt="price" />
+                        </td>
+                        <td class="text-center">72.31</td>
+                      </tr>
+                      <tr>
+                        <td class="text-center">1</td>
+                        <td>
+                          <div class="d-flex align-items-center">
+                            <img src="./media/ahror.svg" alt="name student" />
+                            <p class="ms-2">Arshan AghaBabaieMobarake</p>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="d-flex align-items-center">
+                            <img src="./media/Country.svg" alt="name country" />
+                            <p class="ms-2">Indonesia</p>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="d-flex align-items-center">
+                            <img
+                              src="./media/logo_of_school.svg"
+                              alt="name school"
+                            />
+                            <p class="ms-2">MathHome of Tehran</p>
+                          </div>
+                        </td>
+                        <td>Beginner</td>
+                        <td class="text-center">
+                          <img src="./media/priz.svg" alt="price" />
+                        </td>
+                        <td class="text-center">72.31</td>
+                      </tr>
+                      <tr>
+                        <td class="text-center">1</td>
+                        <td>
+                          <div class="d-flex align-items-center">
+                            <img src="./media/ahror.svg" alt="name student" />
+                            <p class="ms-2">Arshan AghaBabaieMobarake</p>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="d-flex align-items-center">
+                            <img src="./media/Country.svg" alt="name country" />
+                            <p class="ms-2">Indonesia</p>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="d-flex align-items-center">
+                            <img
+                              src="./media/logo_of_school.svg"
+                              alt="name school"
+                            />
+                            <p class="ms-2">MathHome of Tehran</p>
+                          </div>
+                        </td>
+                        <td>Beginner</td>
+                        <td class="text-center">
+                          <img src="./media/priz.svg" alt="price" />
+                        </td>
+                        <td class="text-center">72.31</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
               </div>
               <div
                 class="tab-pane fade"
