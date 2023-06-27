@@ -8,16 +8,23 @@
     <link rel="stylesheet" href="../css/style.css" />
     <title>Document</title>
     <style>
-      ul>li>a{
+      ul > li > a {
         text-decoration: none;
       }
 
-      ul{
+      ul {
         list-style-type: none;
       }
     </style>
   </head>
-  <body style="background-color: white; padding: 20px; padding-left: 50px; padding-top: 50px;">
+  <body
+    style="
+      background-color: white;
+      padding: 20px;
+      padding-left: 50px;
+      padding-top: 50px;
+    "
+  >
     <div class="d-flex">
       <div>
         <ul>
@@ -29,6 +36,18 @@
           </li>
           <li>
             <a href="./tabs.html">Tabs</a>
+          </li>
+          <li>
+            <a href="./underline_tabs.html">Tabs Underline</a>
+          </li>
+          <li>
+            <a href="./underlina_tabs_2.html">Tabs Underline Wide</a>
+          </li>
+          <li>
+            <a href="./table.html">Table</a>
+          </li>
+          <li>
+            <a href="./table_dashboard.html">Table Dashboard</a>
           </li>
           <li>
             <a href="./subjects.html">Subjects</a>
@@ -74,759 +93,1809 @@
         </ul>
       </div>
       <div class="ms-5">
-        <div class="w-50">
+        <div class="w-100">
           <div class="border stmc_card bg-white">
-            <div class="d-flex justify-content-between align-items-center">
-              <p class="font_bold_6">Weekly Challenges</p>
-              <div class="d-flex">
-                <button
-                  class="rounded-circle border-0 me-1"
-                  onClick="swipingLeft()"
-                >
-                  <img alt="left" src="./media/left.svg" class="rounded-circle" />
-                </button>
-                <div class="d-flex align-items-center overflow_x_h">
-                  <p class="my-auto w_60 font_bold_2" id="test"></p>
-                </div>
-    
-                <button
-                  class="border-0 ms-1 rounded-circle"
-                  onClick="swipingRight()"
-                >
-                  <img alt="right" src="./media/left.svg" class="rotateimg180" />
-                </button>
-              </div>
-            </div>
-    
-            <p class="font_bold_8 text-uppercase blue_text mt-3">Challange name</p>
-            <div class="d-flex border_bottom pb-3 mt-2">
-              <p class="me-1 px-2 py-1 b_rds_20 fs_12 topic_bg">heat</p>
-              <p class="me-1 px-2 py-1 b_rds_20 fs_12 topic_bg">kinetics</p>
-              <p class="me-1 px-2 py-1 b_rds_20 fs_12 topic_bg">dynamics</p>
-            </div>
-    
-            <div class="mt-4">
-              <p class="font_bold_5 color_black_light">Until the end</p>
-              <p class="muted_txt mt-1">
-                <span class="font_bold_8 color_black me-3">24</span>:<span
-                  class="font_bold_8 color_black me-3 ms-2"
-                  >16</span
-                >:<span class="font_bold_8 color_black me-4 ms-2">53</span>:<span
-                  class="font_bold_8 color_black me-1 ms-2"
-                  >03</span
-                >
+            <div class="d-flex justify-content-between border_bottom">
+              <p class="fw_600 fs_16 muted_txt">Week 3/8: 10.06. - 17.06</p>
+              <p class="px-2 b_rds_20 topic_bg fw_500 fs_14 blue_text">
+                Active
               </p>
-    
-              <p class="muted_txt fs_12">
-                <span class="me-4">days</span><span class="me-3">hours</span
-                ><span class="me-2">minutes</span><span class="me-1">seconds</span>
+            </div>
+            <p class="blue_text fs_24 fw_700 mt-1">
+              Addition and subtraction of rational numbers
+            </p>
+            <div class="d-flex mt-1">
+              <p class="px-2 b_rds_20 me-1 topic_bg fw_500 fs_14 blue_text">
+                heat
               </p>
-    
-              <div class="user_icons color_black_light fs_12 mt-3">
-                <img alt="" src="./media/Ellipse 11.svg" class="zindex_1" />
-                <img alt="" src="./media/Ellipse 12.svg" class="zindex_2" />
-                <img alt="" src="./media/Ellipse 13.svg" class="zindex_3" />
-                <img alt="" src="./media/Ellipse 14.svg" class="zindex_4" />
-                <img alt="" src="./media/Ellipse 15.svg" class="zindex_5" />
-                <div class="circled_div">
-                  <p>+265</p>
+              <p class="px-2 b_rds_20 me-1 topic_bg fw_500 fs_14 blue_text">
+                kinetics
+              </p>
+              <p class="px-2 b_rds_20 me-1 topic_bg fw_500 fs_14 blue_text">
+                dynamics
+              </p>
+            </div>
+
+            <div
+              class="mt-4 d-flex flex-column-reverse flex-sm-row flex-md-column-reverse flex-xl-row justify-content-between"
+            >
+              <div class="">
+                <div class="d-flex mt-3 align-items-center like_muted">
+                  <div class="d-flex align-items-center fs_14 fw_500 me-3">
+                    <img src="./media/tabler_map_pin.svg" alt="" />
+                    <p class="ms-1">Online</p>
+                  </div>
+                  <div class="d-flex align-items-center fs_14 fw_500 me-3">
+                    <img src="./media/tabler_pin_list.svg" alt="" />
+                    <p class="ms-1">10 question</p>
+                  </div>
+                  <div class="d-flex align-items-center fs_14 fw_500 me-3">
+                    <img src="./media/tabler_pin_clock.svg" alt="" />
+                    <p class="ms-1">40 min</p>
+                  </div>
                 </div>
-                <p class="zindex_6">Participiants</p>
+                <div class="mt-3 fs_14 fw_500">
+                  <p class="like_muted">Until the end:</p>
+                  <div class="mt-1 d-flex">
+                    <p class="color_black bg-light p-1 rounded-3">6d</p>
+                    <p class="muted_txt px-1 pt-1">:</p>
+                    <p class="color_black bg-light p-1 rounded-3">2h</p>
+                    <p class="muted_txt px-1 pt-1">:</p>
+                    <p class="color_black bg-light p-1 rounded-3">30m</p>
+                    <p class="muted_txt px-1 pt-1">:</p>
+                    <p class="color_black bg-light p-1 rounded-3">43s</p>
+                  </div>
+                </div>
+                <div class="user_icons color_black_light fs_12 mt-3">
+                  <img alt="" src="./media/Ellipse 11.svg" class="zindex_1" />
+                  <img alt="" src="./media/Ellipse 12.svg" class="zindex_2" />
+                  <img alt="" src="./media/Ellipse 13.svg" class="zindex_3" />
+                  <img alt="" src="./media/Ellipse 14.svg" class="zindex_4" />
+                  <img alt="" src="./media/Ellipse 15.svg" class="zindex_5" />
+                  <div class="ps_abs_120 like_muted">
+                    <p class="fs_12 fw_600">+265</p>
+                    <p class="fs_12 fw_400">Participiants</p>
+                  </div>
+                </div>
+                <div class="d-flex align-items-center mt-3">
+                  <button type="button" class="btn_stc btn_primary">
+                    <img alt="" src="./media/play.svg" class="me-2" />
+                    Compete
+                  </button>
+                  <button
+                    type="button"
+                    class="btn_stc outline_btn_primary ms-2"
+                  >
+                    Learn
+                  </button>
+                </div>
               </div>
-              <div class="d-flex align-items-center mt-3">
-                <button type="button" class="btn_stc btn_primary">
-                  <img alt="" src="./media/play.svg" class="me-2" />
-                  Let’s Start
-                </button>
-                <button type="button" class="btn_stc outline_btn_primary ms-2">
-                  Practice
-                </button>
+
+              <div class="text-center">
+                <img alt="books" src="./media/BACKGROUND 1.svg" class="" />
               </div>
-              <img alt="books" src="./media/BACKGROUND 1.svg" class="ps_abs_r_b" />
             </div>
           </div>
+
+          <pre>
+
+  &lt;div class="border stmc_card bg-white"&gt;
+    &lt;div class="d-flex justify-content-between border_bottom"&gt;
+      &lt;p class="fw_600 fs_16 muted_txt"&gt;Week 3/8: 10.06. - 17.06&lt;/p&gt;
+      &lt;p class="px-2 b_rds_20 topic_bg fw_500 fs_14 blue_text"&gt;
+        Active
+      &lt;/p&gt;
+    &lt;/div&gt;
+    &lt;p class="blue_text fs_24 fw_700 mt-1"&gt;
+      Addition and subtraction of rational numbers
+    &lt;/p&gt;
+    &lt;div class="d-flex mt-1"&gt;
+      &lt;p class="px-2 b_rds_20 me-1 topic_bg fw_500 fs_14 blue_text"&gt;
+        heat
+      &lt;/p&gt;
+      &lt;p class="px-2 b_rds_20 me-1 topic_bg fw_500 fs_14 blue_text"&gt;
+        kinetics
+      &lt;/p&gt;
+      &lt;p class="px-2 b_rds_20 me-1 topic_bg fw_500 fs_14 blue_text"&gt;
+        dynamics
+      &lt;/p&gt;
+    &lt;/div&gt;
+  
+    &lt;div
+      class="mt-4 d-flex flex-column-reverse flex-sm-row flex-md-column-reverse 
+      flex-xl-row justify-content-between"
+    &gt;
+  
+        &lt;div class=""&gt;
+          &lt;div class="d-flex mt-3 align-items-center like_muted"&gt;
+            &lt;div
+              class="d-flex align-items-center fs_14 fw_500 me-3"
+            &gt;
+              &lt;img src="./media/tabler_map_pin.svg" alt="" /&gt;
+              &lt;p class="ms-1"&gt;Online&lt;/p&gt;
+            &lt;/div&gt;
+            &lt;div
+              class="d-flex align-items-center fs_14 fw_500 me-3"
+            &gt;
+              &lt;img src="./media/tabler_pin_list.svg" alt="" /&gt;
+              &lt;p class="ms-1"&gt;10 question&lt;/p&gt;
+            &lt;/div&gt;
+            &lt;div
+              class="d-flex align-items-center fs_14 fw_500 me-3"
+            &gt;
+              &lt;img src="./media/tabler_pin_clock.svg" alt="" /&gt;
+              &lt;p class="ms-1"&gt;40 min&lt;/p&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+          &lt;div class="mt-3 fs_14 fw_500"&gt;
+            &lt;p class="like_muted"&gt;Until the end:&lt;/p&gt;
+            &lt;div class="mt-1 d-flex"&gt;
+              &lt;p class="color_black bg-light p-1 rounded-3"&gt;6d&lt;/p&gt;
+              &lt;p class="muted_txt px-1 pt-1"&gt;:&lt;/p&gt;
+              &lt;p class="color_black bg-light p-1 rounded-3"&gt;2h&lt;/p&gt;
+              &lt;p class="muted_txt px-1 pt-1"&gt;:&lt;/p&gt;
+              &lt;p class="color_black bg-light p-1 rounded-3"&gt;30m&lt;/p&gt;
+              &lt;p class="muted_txt px-1 pt-1"&gt;:&lt;/p&gt;
+              &lt;p class="color_black bg-light p-1 rounded-3"&gt;43s&lt;/p&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+          &lt;div class="user_icons color_black_light fs_12 mt-3"&gt;
+            &lt;img
+              alt=""
+              src="./media/Ellipse 11.svg"
+              class="zindex_1"
+            /&gt;
+            &lt;img
+              alt=""
+              src="./media/Ellipse 12.svg"
+              class="zindex_2"
+            /&gt;
+            &lt;img
+              alt=""
+              src="./media/Ellipse 13.svg"
+              class="zindex_3"
+            /&gt;
+            &lt;img
+              alt=""
+              src="./media/Ellipse 14.svg"
+              class="zindex_4"
+            /&gt;
+            &lt;img
+              alt=""
+              src="./media/Ellipse 15.svg"
+              class="zindex_5"
+            /&gt;
+            &lt;div class="ps_abs_120 like_muted"&gt;
+              &lt;p class="fs_12 fw_600"&gt;+265&lt;/p&gt;
+              &lt;p class="fs_12 fw_400"&gt;Participiants&lt;/p&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+          &lt;div class="d-flex align-items-center mt-3"&gt;
+            &lt;button type="button" class="btn_stc btn_primary"&gt;
+              &lt;img alt="" src="./media/play.svg" class="me-2" /&gt;
+              Compete
+            &lt;/button&gt;
+            &lt;button
+              type="button"
+              class="btn_stc outline_btn_primary ms-2"
+            &gt;
+              Learn
+            &lt;/button&gt;
+          &lt;/div&gt;
+      &lt;/div&gt;
+  
+      &lt;div class="text-center"&gt;
+        &lt;img alt="books" src="./media/BACKGROUND 1.svg" class="" /&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+          </pre>
         </div>
-    
-        <pre>
-    
-    
-        &lt;div class="border stmc_card bg-white"&gt;
-          &lt;div class="d-flex justify-content-between"&gt;
-            &lt;p class="font_bold_6"&gt;Weekly Challenges&lt;/p&gt;
-            &lt;div class="d-flex"&gt;
-    
-              &lt;button class="rounded-circle border-0 me-1" onClick="swipingLeft()"&gt;
-                &lt;img alt="left" src="./media/left.svg" class="rounded-circle"/&gt;
-              &lt;/button&gt;
-              &lt;div class="d-flex align-items-center overflow_x_h"&gt;
-                &lt;p class="my-auto w_60 font_bold_2" id="test"&gt;&lt;/p&gt;
-              &lt;/div&gt;
-              &lt;button class="border-0 ms-1 rounded-circle" onClick="swipingRight()"&gt;
-                &lt;img alt="right" src="./media/left.svg" class="rotateimg180"/&gt;
-              &lt;/button&gt;
-    
+
+        <div class="w-75">
+          <div class="accordion-item border stmc_card bg-white">
+            <div class="p-0 accordion-header" id="panelsStayOpen-headingOne">
+              <button
+                class="accordion-button_none_cursor d-flex justify-content-between"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#panelsStayOpen-collapseOne"
+                aria-expanded="true"
+                aria-controls="panelsStayOpen-collapseOne"
+              >
+                <p class="fw_600 fs_16 muted_txt">Week 3/8: 10.06. - 17.06</p>
+                <p class="px-2 b_rds_20 topic_bg fw_500 fs_14 blue_text">
+                  Active
+                </p>
+              </button>
+            </div>
+            <div
+              id="panelsStayOpen-collapseOne"
+              class="accordion-collapse collapse show"
+              aria-labelledby="panelsStayOpen-headingOne"
+            >
+              <div class="accordion-body mt-3 border-top">
+                <p class="blue_text fs_24 fw_700 mt-2">
+                  Addition and subtraction of rational numbers
+                </p>
+                <div class="d-flex mt-1">
+                  <p class="px-2 b_rds_20 me-1 topic_bg fw_500 fs_14 blue_text">
+                    heat
+                  </p>
+                  <p class="px-2 b_rds_20 me-1 topic_bg fw_500 fs_14 blue_text">
+                    kinetics
+                  </p>
+                  <p class="px-2 b_rds_20 me-1 topic_bg fw_500 fs_14 blue_text">
+                    dynamics
+                  </p>
+                </div>
+                <div
+                  class="mt-4 d-flex flex-column-reverse flex-sm-row flex-md-column-reverse flex-xl-row justify-content-between"
+                >
+                  <div class="">
+                    <div class="d-flex mt-3 align-items-center like_muted">
+                      <div class="d-flex align-items-center fs_14 fw_500 me-3">
+                        <img src="./media/tabler_map_pin.svg" alt="" />
+                        <p class="ms-1">Online</p>
+                      </div>
+                      <div class="d-flex align-items-center fs_14 fw_500 me-3">
+                        <img src="./media/tabler_pin_list.svg" alt="" />
+                        <p class="ms-1">10 question</p>
+                      </div>
+                      <div class="d-flex align-items-center fs_14 fw_500 me-3">
+                        <img src="./media/tabler_pin_clock.svg" alt="" />
+                        <p class="ms-1">40 min</p>
+                      </div>
+                    </div>
+                    <div class="mt-3 fs_14 fw_500">
+                      <p class="like_muted">Until the end:</p>
+                      <div class="mt-1 d-flex">
+                        <p class="color_black bg-light p-1 rounded-3">6d</p>
+                        <p class="muted_txt px-1 pt-1">:</p>
+                        <p class="color_black bg-light p-1 rounded-3">2h</p>
+                        <p class="muted_txt px-1 pt-1">:</p>
+                        <p class="color_black bg-light p-1 rounded-3">30m</p>
+                        <p class="muted_txt px-1 pt-1">:</p>
+                        <p class="color_black bg-light p-1 rounded-3">43s</p>
+                      </div>
+                    </div>
+                    <div class="user_icons color_black_light fs_12 mt-3">
+                      <img
+                        alt=""
+                        src="./media/Ellipse 11.svg"
+                        class="zindex_1"
+                      />
+                      <img
+                        alt=""
+                        src="./media/Ellipse 12.svg"
+                        class="zindex_2"
+                      />
+                      <img
+                        alt=""
+                        src="./media/Ellipse 13.svg"
+                        class="zindex_3"
+                      />
+                      <img
+                        alt=""
+                        src="./media/Ellipse 14.svg"
+                        class="zindex_4"
+                      />
+                      <img
+                        alt=""
+                        src="./media/Ellipse 15.svg"
+                        class="zindex_5"
+                      />
+                      <div class="ps_abs_120 like_muted">
+                        <p class="fs_12 fw_600">+265</p>
+                        <p class="fs_12 fw_400">Participiants</p>
+                      </div>
+                    </div>
+                    <div class="d-flex align-items-center mt-3">
+                      <button type="button" class="btn_stc btn_primary">
+                        <img alt="" src="./media/play.svg" class="me-2" />
+                        Compete
+                      </button>
+                      <button
+                        type="button"
+                        class="btn_stc outline_btn_primary ms-2"
+                      >
+                        Learn
+                      </button>
+                    </div>
+                  </div>
+
+                  <div class="text-center">
+                    <img alt="books" src="./media/BACKGROUND 1.svg" class="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <pre>
+
+
+&lt;div class="accordion-item border stmc_card bg-white"&gt;
+  &lt;div class="p-0 accordion-header" id="panelsStayOpen-headingOne"&gt;
+    &lt;button
+      class="accordion-button_none_cursor d-flex justify-content-between"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#panelsStayOpen-collapseOne"
+      aria-expanded="true"
+      aria-controls="panelsStayOpen-collapseOne"
+    &gt;
+      &lt;p class="fw_600 fs_16 muted_txt"&gt;Week 3/8: 10.06. - 17.06&lt;/p&gt;
+      &lt;p class="px-2 b_rds_20 topic_bg fw_500 fs_14 blue_text"&gt;Active&lt;/p&gt;
+    &lt;/button&gt;
+  &lt;/div&gt;
+  &lt;div
+    id="panelsStayOpen-collapseOne"
+    class="accordion-collapse collapse show "
+    aria-labelledby="panelsStayOpen-headingOne"
+    &gt;
+    &lt;div class="accordion-body mt-3 border-top"&gt;
+      &lt;p class="blue_text fs_24 fw_700 mt-2"&gt;
+        Addition and subtraction of rational numbers
+      &lt;/p&gt;
+      &lt;div class="d-flex mt-1"&gt;
+        &lt;p class="px-2 b_rds_20 me-1 topic_bg fw_500 fs_14 blue_text"&gt;
+          heat
+        &lt;/p&gt;
+        &lt;p class="px-2 b_rds_20 me-1 topic_bg fw_500 fs_14 blue_text"&gt;
+          kinetics
+        &lt;/p&gt;
+        &lt;p class="px-2 b_rds_20 me-1 topic_bg fw_500 fs_14 blue_text"&gt;
+          dynamics
+        &lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div
+        class="mt-4 d-flex flex-column-reverse flex-sm-row flex-md-column-reverse 
+        flex-xl-row justify-content-between"
+      &gt;
+        &lt;div class=""&gt;
+          &lt;div class="d-flex mt-3 align-items-center like_muted"&gt;
+            &lt;div class="d-flex align-items-center fs_14 fw_500 me-3"&gt;
+              &lt;img src="./media/tabler_map_pin.svg" alt="" /&gt;
+              &lt;p class="ms-1"&gt;Online&lt;/p&gt;
+            &lt;/div&gt;
+            &lt;div class="d-flex align-items-center fs_14 fw_500 me-3"&gt;
+              &lt;img src="./media/tabler_pin_list.svg" alt="" /&gt;
+              &lt;p class="ms-1"&gt;10 question&lt;/p&gt;
+            &lt;/div&gt;
+            &lt;div class="d-flex align-items-center fs_14 fw_500 me-3"&gt;
+              &lt;img src="./media/tabler_pin_clock.svg" alt="" /&gt;
+              &lt;p class="ms-1"&gt;40 min&lt;/p&gt;
             &lt;/div&gt;
           &lt;/div&gt;
-      
-          &lt;p class="font_bold_8 text-uppercase blue_text mt-3"&gt;Challange name&lt;/p&gt;
-          &lt;div class="d-flex border_bottom pb-3 mt-2"&gt;
-            &lt;p class="me-1 px-2 py-1 b_rds_20 fs_12 topic_bg"&gt;heat&lt;/p&gt;
-            &lt;p class="me-1 px-2 py-1 b_rds_20 fs_12 topic_bg"&gt;kinetics&lt;/p&gt;
-            &lt;p class="me-1 px-2 py-1 b_rds_20 fs_12 topic_bg"&gt;dynamics&lt;/p&gt;
+          &lt;div class="mt-3 fs_14 fw_500"&gt;
+            &lt;p class="like_muted"&gt;Until the end:&lt;/p&gt;
+            &lt;div class="mt-1 d-flex"&gt;
+              &lt;p class="color_black bg-light p-1 rounded-3"&gt;6d&lt;/p&gt;
+              &lt;p class="muted_txt px-1 pt-1"&gt;:&lt;/p&gt;
+              &lt;p class="color_black bg-light p-1 rounded-3"&gt;2h&lt;/p&gt;
+              &lt;p class="muted_txt px-1 pt-1"&gt;:&lt;/p&gt;
+              &lt;p class="color_black bg-light p-1 rounded-3"&gt;30m&lt;/p&gt;
+              &lt;p class="muted_txt px-1 pt-1"&gt;:&lt;/p&gt;
+              &lt;p class="color_black bg-light p-1 rounded-3"&gt;43s&lt;/p&gt;
+            &lt;/div&gt;
           &lt;/div&gt;
-      
-          &lt;div class="mt-4"&gt;
-            &lt;p&gt;Until the end&lt;/p&gt;
-            &lt;p class="muted_txt mt-1"&gt;
-              &lt;span class="font_bold_8 color_black me-3"&gt;24&lt;/span&gt;
-             :&lt;span class="font_bold_8 color_black me-3 ms-2"&gt;16&lt;/span&gt;
-             :&lt;span class="font_bold_8 color_black me-4 ms-2"&gt;53&lt;/span&gt;
-             :&lt;span  class="font_bold_8 color_black me-1 ms-2"&gt;03&lt;/span&gt;
-            &lt;/p&gt;
-      
-            &lt;p class="muted_txt fs_12"&gt;
-              &lt;span class="me-4"&gt;days&lt;/span&gt;&lt;span class="me-3"&gt;hours&lt;/span&gt;
-              &lt;span class="me-2"&gt;minutes&lt;/span&gt;&lt;span class="me-1"&gt;seconds&lt;/span&gt;
-            &lt;/p&gt;
-      
-            &lt;div class="user_icons color_black_light fs_12 mt-3"&gt;
-              &lt;img alt="" src="./media/Ellipse 11.svg" class="zindex_1" /&gt;
-              &lt;img alt="" src="./media/Ellipse 12.svg" class="zindex_2" /&gt;
-              &lt;img alt="" src="./media/Ellipse 13.svg" class="zindex_3" /&gt;
-              &lt;img alt="" src="./media/Ellipse 14.svg" class="zindex_4" /&gt;
-              &lt;img alt="" src="./media/Ellipse 15.svg" class="zindex_5" /&gt;
-              &lt;div class="circled_div"&gt;
-                &lt;p&gt;+265&lt;/p&gt;
-              &lt;/div&gt;
-              &lt;p class="zindex_6"&gt;Participiants&lt;/p&gt;
+          &lt;div class="user_icons color_black_light fs_12 mt-3"&gt;
+            &lt;img alt="" src="./media/Ellipse 11.svg" class="zindex_1" /&gt;
+            &lt;img alt="" src="./media/Ellipse 12.svg" class="zindex_2" /&gt;
+            &lt;img alt="" src="./media/Ellipse 13.svg" class="zindex_3" /&gt;
+            &lt;img alt="" src="./media/Ellipse 14.svg" class="zindex_4" /&gt;
+            &lt;img alt="" src="./media/Ellipse 15.svg" class="zindex_5" /&gt;
+            &lt;div class="ps_abs_120 like_muted"&gt;
+              &lt;p class="fs_12 fw_600"&gt;+265&lt;/p&gt;
+              &lt;p class="fs_12 fw_400"&gt;Participiants&lt;/p&gt;
             &lt;/div&gt;
-            
-            &lt;div class="d-flex align-items-center mt-3"&gt;
-              &lt;button type="button" class="btn_stc btn_primary"&gt;
-                &lt;img alt="" src="./media/play.svg" class="me-2"/&gt;
-                Let’s Start
-              &lt;/button&gt;
-              &lt;button type="button" class="btn_stc outline_btn_primary ms-2"&gt;
-                Practice
-              &lt;/button&gt;
-            &lt;/div&gt;
-    
-            &lt;img alt="books" src="./media/BACKGROUND 1.svg" class="ps_abs_r_b"/&gt;
-    
+          &lt;/div&gt;
+          &lt;div class="d-flex align-items-center mt-3"&gt;
+            &lt;button type="button" class="btn_stc btn_primary"&gt;
+              &lt;img alt="" src="./media/play.svg" class="me-2" /&gt;
+              Compete
+            &lt;/button&gt;
+            &lt;button type="button" class="btn_stc outline_btn_primary ms-2"&gt;
+              Learn
+            &lt;/button&gt;
           &lt;/div&gt;
         &lt;/div&gt;
-        </pre>
-    
-        <div class="w-50">
-          <div class="border stmc_card bg-white">
-            <div class="d-flex justify-content-between align-items-center">
-              <p class="font_bold_6">Weekly Challenges</p>
-              <div class="d-flex">
-                <button
-                  class="rounded-circle border-0 me-1"
-                  onClick="swipingLeft2()"
-                >
-                  <img alt="left" src="./media/left.svg" class="rounded-circle" />
-                </button>
-                <div class="d-flex align-items-center overflow_x_h">
-                  <p class="my-auto w_60 font_bold_2" id="test2"></p>
-                </div>
-                <button
-                  class="border-0 ms-1 rounded-circle"
-                  onClick="swipingRight2()"
-                >
-                  <img alt="right" src="./media/left.svg" class="rotateimg180" />
-                </button>
-              </div>
-            </div>
-            <div class="d-flex justify-content-center">
-              <img alt="" src="./media/coming_soon_math.svg" class="my-5" />
-            </div>
-          </div>
+
+        &lt;div class="text-center"&gt;
+          &lt;img alt="books" src="./media/BACKGROUND 1.svg" class="" /&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+          </pre>
         </div>
-        <pre>
-    
-    
-        &lt;div class="border stmc_card bg-white" &gt;
-          &lt;div class="d-flex justify-content-between align-items-center" &gt;
-            &lt;p class="font_bold_6" &gt;Weekly Challenges &lt;/p &gt;
-            &lt;div class="d-flex" &gt;
-              &lt;button class="rounded-circle border-0 me-1" onClick="swipingLeft2()" &gt;
-                &lt;img alt="left" src="./media/left.svg" class="rounded-circle" / &gt;
-              &lt;/button &gt;
-              &lt;div class="d-flex align-items-center overflow_x_h" &gt;
-                &lt;p class="my-auto w_60 font_bold_2" id="test2" &gt; &lt;/p &gt;
-              &lt;/div &gt;
-              &lt;button class="border-0 ms-1 rounded-circle" onClick="swipingRight2()" &gt;
-                &lt;img alt="right" src="./media/left.svg" class="rotateimg180" / &gt;
-              &lt;/button &gt;
-            &lt;/div &gt;
-          &lt;/div &gt;
-          &lt;div class="d-flex justify-content-center" &gt;
-            &lt;img alt="" src="./media/coming_soon_math.svg" class="my-5" / &gt;
-          &lt;/div &gt;
-        &lt;/div &gt;
-      
-        </pre>
-    
-        <div class="w-50">
-          <div class="border stmc_card bg-white">
-            <div class="d-flex justify-content-between align-items-center">
-              <p class="font_bold_6">Weekly Challenges</p>
-              <div class="d-flex">
-                <button
-                  class="rounded-circle border-0 me-1"
-                  onClick="swipingLeft()"
-                >
-                  <img alt="left" src="./media/left.svg" class="rounded-circle" />
-                </button>
-                <div class="d-flex align-items-center overflow_x_h">
-                  <p class="my-auto w_60 font_bold_2" id="test"></p>
+
+        <div class="w-75">
+          <div class="accordion-item border stmc_card bg-white">
+            <div class="p-0 accordion-header" id="panelsStayOpen-headingTwo">
+              <button
+                class="accordion-button_none_own_cursor d-flex justify-content-between"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#panelsStayOpen-collapseTwo"
+                aria-expanded="true"
+                aria-controls="panelsStayOpen-collapseTwo"
+                onclick="changeChild(this.id)"
+                id="progress_btn"
+              >
+                <div class="d-flex justify-content-between w-100">
+                  <p class="fw_600 fs_16 muted_txt">Week 3/8: 10.06. - 17.06</p>
+                  <div class="d-flex">
+                    <div class="px-2 b_rds_20 verified_sticker fw_500 fs_14">
+                      <span>Completed</span>
+                    </div>
+                  </div>
                 </div>
-    
-                <button
-                  class="border-0 ms-1 rounded-circle"
-                  onClick="swipingRight()"
-                >
-                  <img alt="right" src="./media/left.svg" class="rotateimg180" />
-                </button>
+              </button>
+              <div class="none">
+                <div class="d-flex justify-content-between mt-3" id="progress_toggle">
+                  <p class="fs_16 fw_600 color_black">Addition and subtraction of rational numbers</p>
+                  <div class="d-flex align-items-end">
+                    <img src="./media/Union.svg" alt="ulion" />
+                    <p style="line-height: 100%;">
+                      <span class="fs_16 fw_600 color_black ms-2">38.4</span>
+                      <span class="font_regular_1 color_black_light ms-1">/40</span>
+                    </p>
+                  </div>
               </div>
+              </div>
+             
             </div>
-    
-            <p class="font_bold_8 text-uppercase blue_text mt-3">Challange name</p>
-            <div class="d-flex border_bottom pb-3 mt-2">
-              <p class="me-1 px-2 py-1 b_rds_20 fs_12 topic_bg">heat</p>
-              <p class="me-1 px-2 py-1 b_rds_20 fs_12 topic_bg">kinetics</p>
-              <p class="me-1 px-2 py-1 b_rds_20 fs_12 topic_bg">dynamics</p>
-            </div>
-    
-            <div class="mt-4">
-              <div class="d-flex justify-content-between">
-                <div class="col-8 pe-3 d-flex flex-column justify-content-between score_tbl">
-                  <div class="d-flex justify-content-between">
-                    <p class="font_regular_1">Correct:</p>
-                    <p class="font_bold_5 color_primary">39</p>
-                  </div>
-                  <div class="d-flex justify-content-between">
-                    <p class="font_regular_1">Wrong:</p>
-                    <p class="font_bold_5 active_nav_item">1</p>
-                  </div>
-                  <div class="d-flex justify-content-between">
-                    <p class="font_regular_1">Empty:</p>
-                    <p class="font_bold_5 muted_txt">0</p>
-                  </div>
-                  <div class="d-flex justify-content-between">
-                    <p class="font_regular_1">Time taken:</p>
-                    <p class="font_bold_5 color_black">17:06 min</p>
-                  </div>
-                  <div class="d-flex justify-content-between">
-                    <p class="font_regular_1">Penalty:</p>
-                    <p class="font_bold_5 active_nav_item">-3.7%</p>
-                  </div>
+            <div
+              id="panelsStayOpen-collapseTwo"
+              class="accordion-collapse collapse show"
+              aria-labelledby="panelsStayOpen-headingTwo"
+            >
+              <div class="accordion-body mt-3 border-top">
+                <p class="blue_text fs_24 fw_700 mt-1">
+                  Addition and subtraction of rational numbers
+                </p>
+                <div class="d-flex mt-1">
+                  <p class="px-2 b_rds_20 me-1 topic_bg fw_500 fs_14 blue_text">
+                    heat
+                  </p>
+                  <p class="px-2 b_rds_20 me-1 topic_bg fw_500 fs_14 blue_text">
+                    kinetics
+                  </p>
+                  <p class="px-2 b_rds_20 me-1 topic_bg fw_500 fs_14 blue_text">
+                    dynamics
+                  </p>
                 </div>
-                <div class="d-flex flex-row-reverse">
-                  <div class="ps_rel">
+                <div
+                  class="mt-3 d-flex flex-column-reverse flex-sm-row flex-md-column-reverse flex-xl-row justify-content-between"
+                >
+                  <div class="">
+                    <div class="d-flex like_muted fs_14 fw_400 mt-3">
+                      <ul class="ps-0 mb-0 me-4">
+                        <li>
+                          Correct:
+                          <span class="fw_600 color_primary ms-1">33</span>
+                        </li>
+                        <li>
+                          Wrong:
+                          <span class="fw_600 active_nav_item ms-1">7</span>
+                        </li>
+                        <li>Empty: <span class="fw_600 ms-1">0</span></li>
+                      </ul>
+                      <ul class="ps-0 mb-0 ps-4 border-start">
+                        <li>
+                          Time taken:
+                          <span class="fw_600 fs_14 color_black ms-1">
+                            17:06 min</span
+                          >
+                        </li>
+                        <li>
+                          Penalty:
+                          <span class="fw_600 fs_14 active_nav_item ms-1">
+                            -3.7%</span
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="user_icons color_black_light fs_12 mt-3">
+                      <img
+                        alt=""
+                        src="./media/Ellipse 11.svg"
+                        class="zindex_1"
+                      />
+                      <img
+                        alt=""
+                        src="./media/Ellipse 12.svg"
+                        class="zindex_2"
+                      />
+                      <img
+                        alt=""
+                        src="./media/Ellipse 13.svg"
+                        class="zindex_3"
+                      />
+                      <img
+                        alt=""
+                        src="./media/Ellipse 14.svg"
+                        class="zindex_4"
+                      />
+                      <img
+                        alt=""
+                        src="./media/Ellipse 15.svg"
+                        class="zindex_5"
+                      />
+                      <div class="ps_abs_120 like_muted">
+                        <p class="fs_12 fw_600">+265</p>
+                        <p class="fs_12 fw_400">Participiants</p>
+                      </div>
+                    </div>
+                    <div class="d-flex align-items-center mt-3">
+                      <button type="button" class="btn_stc outline_btn_primary">
+                        Practice
+                      </button>
+                      <button
+                        type="button"
+                        class="btn_stc outline_btn_primary ms-2"
+                      >
+                        Review
+                      </button>
+                    </div>
+                  </div>
+                  <div class="mt-4 d-flex justify-content-center">
                     <div class="circle_chart">
-                      <svg class="progress-ring" width="102" height="102">
+                      <svg class="progress-ring" width="164" height="164">
                         <circle
                           stroke="#e9ecef"
-                          stroke-width="6"
-                          cx="50"
-                          cy="50"
-                          r="42"
+                          stroke-width="12"
+                          cx="83"
+                          cy="82"
+                          r="75"
                           fill="none"
-                          stroke-dasharray="314.16"
+                          stroke-dasharray="471"
                           stroke-dashoffset="0"
                         />
                         <circle
                           class="progress-ring__circle"
-                          stroke="#4d956a"
-                          stroke-width="6"
-                          cx="52"
-                          cy="50"
-                          r="42"
+                          stroke="url(#circleGradient)"
+                          stroke-width="13"
+                          stroke-linecap="round"
+                          cx="50%"
+                          cy="50%"
+                          r="75"
                           fill="transparent"
                           stroke-dasharray="314.16"
                           stroke-dashoffset="0"
                           transform="rotate(-90, 50, 50)"
                         />
-                    
-                        <text x="37" y="45" fill="#4d956a" class="font_bold_1">BY!P:</text>
+
                         <text
-                          x="30"
-                          y="68"
-                          fill="#4d956a"
-                          class="font_bold_8"
+                          text-anchor="middle"
+                          dominant-baseline="middle"
+                          x="50%"
+                          y="70%"
+                          fill="#043785"
+                          class="font_bold_1"
+                        >
+                          max 40
+                        </text>
+                        <text
+                          text-anchor="middle"
+                          dominant-baseline="middle"
+                          x="50%"
+                          y="55%"
+                          fill="#000"
+                          class="font_bold_9"
                           id="score_in_percents"
                         ></text>
+                        <image
+                          text-anchor="middle"
+                          dominant-baseline="middle"
+                          x="44%"
+                          y="24%"
+                          width="24"
+                          height="24"
+                          xlink:href="./media/Union.svg"
+                        />
+                        <linearGradient
+                          id="circleGradient"
+                          gradientTransform="rotate(45)"
+                        >
+                          <stop offset="0%" stop-color="#043785" />
+                          <stop offset="100%" stop-color="#1F55A6" />
+                        </linearGradient>
                       </svg>
                     </div>
                   </div>
                 </div>
               </div>
-    
-              <div class="d-flex align-items-center mt-4">
-                <button type="button" class="btn_stc outline_btn_secondary w-50">
-                  Leaderboard
-                </button>
-                <button
-                  type="button"
-                  class="btn_stc outline_btn_secondary w-50 ms-2"
-                >
-                  Review
-                </button>
-              </div>
             </div>
           </div>
-        </div>
-    
-        <pre>
-        &lt;div class="border stmc_card bg-white"&gt;
-          &lt;div class="d-flex justify-content-between align-items-center"&gt;
-            &lt;p class="font_bold_6"&gt;Weekly Challenges&lt;/p&gt;
-            &lt;div class="d-flex"&gt;
-              &lt;button
-                class="rounded-circle border-0 me-1"
-                onClick="swipingLeft()"
-              &gt;
-                &lt;img alt="left" src="./media/left.svg" class="rounded-circle" /&gt;
-              &lt;/button&gt;
-              &lt;div class="d-flex align-items-center overflow_x_h"&gt;
-                &lt;p class="my-auto w_60 font_bold_2" id="test"&gt;&lt;/p&gt;
-              &lt;/div&gt;
-        
-              &lt;button
-                class="border-0 ms-1 rounded-circle"
-                onClick="swipingRight()"
-              &gt;
-                &lt;img alt="right" src="./media/left.svg" class="rotateimg180" /&gt;
-              &lt;/button&gt;
+          <pre>
+  &lt;div class="accordion-item border stmc_card bg-white"&gt;
+    &lt;div class="p-0 accordion-header" id="panelsStayOpen-headingTwo"&gt;
+      &lt;button
+        class="accordion-button_none_own_cursor d-flex justify-content-between"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#panelsStayOpen-collapseTwo"
+        aria-expanded="true"
+        aria-controls="panelsStayOpen-collapseTwo"
+      &gt;
+        &lt;div class="d-flex justify-content-between w-100"&gt;
+          &lt;p class="fw_600 fs_16 muted_txt"&gt;Week 3/8: 10.06. - 17.06&lt;/p&gt;
+          &lt;div class="d-flex"&gt;
+            &lt;div class="px-2 b_rds_20 verified_sticker fw_500 fs_14"&gt;
+              &lt;span&gt;Completed&lt;/span&gt;
             &lt;/div&gt;
           &lt;/div&gt;
-        
-          &lt;p class="font_bold_8 text-uppercase blue_text mt-3"&gt;Challange name&lt;/p&gt;
-          &lt;div class="d-flex border_bottom pb-3 mt-2"&gt;
-            &lt;p class="me-1 px-2 py-1 b_rds_20 fs_12 topic_bg"&gt;heat&lt;/p&gt;
-            &lt;p class="me-1 px-2 py-1 b_rds_20 fs_12 topic_bg"&gt;kinetics&lt;/p&gt;
-            &lt;p class="me-1 px-2 py-1 b_rds_20 fs_12 topic_bg"&gt;dynamics&lt;/p&gt;
-          &lt;/div&gt;
-        
-          &lt;div class="mt-4"&gt;
-            &lt;div class="d-flex justify-content-between"&gt;
-              &lt;div class="col-8 pe-3 d-flex flex-column justify-content-between score_tbl"&gt;
-                &lt;div class="d-flex justify-content-between"&gt;
-                  &lt;p class="font_regular_1"&gt;Correct:&lt;/p&gt;
-                  &lt;p class="font_bold_5 color_primary"&gt;39&lt;/p&gt;
-                &lt;/div&gt;
-                &lt;div class="d-flex justify-content-between"&gt;
-                  &lt;p class="font_regular_1"&gt;Wrong:&lt;/p&gt;
-                  &lt;p class="font_bold_5 active_nav_item"&gt;1&lt;/p&gt;
-                &lt;/div&gt;
-                &lt;div class="d-flex justify-content-between"&gt;
-                  &lt;p class="font_regular_1"&gt;Empty:&lt;/p&gt;
-                  &lt;p class="font_bold_5 muted_txt"&gt;0&lt;/p&gt;
-                &lt;/div&gt;
-                &lt;div class="d-flex justify-content-between"&gt;
-                  &lt;p class="font_regular_1"&gt;Time taken:&lt;/p&gt;
-                  &lt;p class="font_bold_5 color_black"&gt;17:06 min&lt;/p&gt;
-                &lt;/div&gt;
-                &lt;div class="d-flex justify-content-between"&gt;
-                  &lt;p class="font_regular_1"&gt;Penalty:&lt;/p&gt;
-                  &lt;p class="font_bold_5 active_nav_item"&gt;-3.7%&lt;/p&gt;
-                &lt;/div&gt;
-              &lt;/div&gt;
-              &lt;div class="d-flex flex-row-reverse"&gt;
-                &lt;div class="ps_rel"&gt;
-                  &lt;div class="circle_chart"&gt;
-                    &lt;svg class="progress-ring" width="102" height="102"&gt;
-                      &lt;circle
-                        stroke="#e9ecef"
-                        stroke-width="6"
-                        cx="50"
-                        cy="50"
-                        r="42"
-                        fill="none"
-                        stroke-dasharray="314.16"
-                        stroke-dashoffset="0"
-                      /&gt;
-                      &lt;circle
-                        class="progress-ring__circle"
-                        stroke="#4d956a"
-                        stroke-width="6"
-                        cx="52"
-                        cy="50"
-                        r="42"
-                        fill="transparent"
-                        stroke-dasharray="314.16"
-                        stroke-dashoffset="0"
-                        transform="rotate(-90, 50, 50)"
-                      /&gt;
-                  
-                      &lt;text x="37" y="45" fill="#4d956a" class="font_bold_1"&gt;BY!P:&lt;/text&gt;
-                      &lt;text
-                        x="30"
-                        y="68"
-                        fill="#4d956a"
-                        class="font_bold_8"
-                        id="score_in_percents"
-                      &gt;&lt;/text&gt;
-                    &lt;/svg&gt;
-                  &lt;/div&gt;
-                &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/button&gt;
+    &lt;/div&gt;
+    &lt;div
+      id="panelsStayOpen-collapseTwo"
+      class="accordion-collapse collapse show"
+      aria-labelledby="panelsStayOpen-headingTwo"
+    &gt;
+      &lt;div class="accordion-body mt-3 border-top"&gt;
+        &lt;p class="blue_text fs_24 fw_700 mt-1"&gt;
+          Addition and subtraction of rational numbers
+        &lt;/p&gt;
+        &lt;div class="d-flex mt-1"&gt;
+          &lt;p class="px-2 b_rds_20 me-1 topic_bg fw_500 fs_14 blue_text"&gt;
+            heat
+          &lt;/p&gt;
+          &lt;p class="px-2 b_rds_20 me-1 topic_bg fw_500 fs_14 blue_text"&gt;
+            kinetics
+          &lt;/p&gt;
+          &lt;p class="px-2 b_rds_20 me-1 topic_bg fw_500 fs_14 blue_text"&gt;
+            dynamics
+          &lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div
+          class="mt-3 d-flex flex-column-reverse flex-sm-row flex-md-column-reverse flex-xl-row justify-content-between"
+        &gt;
+          &lt;div class=""&gt;
+            &lt;div class="d-flex like_muted fs_14 fw_400 mt-3"&gt;
+              &lt;ul class="ps-0 mb-0 me-4"&gt;
+                &lt;li&gt;
+                  Correct:
+                  &lt;span class="fw_600 color_primary ms-1"&gt;33&lt;/span&gt;
+                &lt;/li&gt;
+                &lt;li&gt;
+                  Wrong:
+                  &lt;span class="fw_600 active_nav_item ms-1"&gt;7&lt;/span&gt;
+                &lt;/li&gt;
+                &lt;li&gt;Empty: &lt;span class="fw_600 ms-1"&gt;0&lt;/span&gt;&lt;/li&gt;
+              &lt;/ul&gt;
+              &lt;ul class="ps-0 mb-0 ps-4 border-start"&gt;
+                &lt;li&gt;
+                  Time taken:
+                  &lt;span class="fw_600 fs_14 color_black ms-1"&gt;
+                    17:06 min&lt;/span
+                  &gt;
+                &lt;/li&gt;
+                &lt;li&gt;
+                  Penalty:
+                  &lt;span class="fw_600 fs_14 active_nav_item ms-1"&gt;
+                    -3.7%&lt;/span
+                  &gt;
+                &lt;/li&gt;
+              &lt;/ul&gt;
+            &lt;/div&gt;
+            &lt;div class="user_icons color_black_light fs_12 mt-3"&gt;
+              &lt;img
+                alt=""
+                src="./media/Ellipse 11.svg"
+                class="zindex_1"
+              /&gt;
+              &lt;img
+                alt=""
+                src="./media/Ellipse 12.svg"
+                class="zindex_2"
+              /&gt;
+              &lt;img
+                alt=""
+                src="./media/Ellipse 13.svg"
+                class="zindex_3"
+              /&gt;
+              &lt;img
+                alt=""
+                src="./media/Ellipse 14.svg"
+                class="zindex_4"
+              /&gt;
+              &lt;img
+                alt=""
+                src="./media/Ellipse 15.svg"
+                class="zindex_5"
+              /&gt;
+              &lt;div class="ps_abs_120 like_muted"&gt;
+                &lt;p class="fs_12 fw_600"&gt;+265&lt;/p&gt;
+                &lt;p class="fs_12 fw_400"&gt;Participiants&lt;/p&gt;
               &lt;/div&gt;
             &lt;/div&gt;
-        
-            &lt;div class="d-flex align-items-center mt-4"&gt;
-              &lt;button type="button" class="btn_stc outline_btn_secondary w-50"&gt;
-                Leaderboard
+            &lt;div class="d-flex align-items-center mt-3"&gt;
+              &lt;button type="button" class="btn_stc outline_btn_primary"&gt;
+                Practice
               &lt;/button&gt;
               &lt;button
                 type="button"
-                class="btn_stc outline_btn_secondary w-50 ms-2"
+                class="btn_stc outline_btn_primary ms-2"
+              &gt;
+                Review
+              &lt;/button&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+          &lt;div class="mt-4 d-flex justify-content-center"&gt;
+            &lt;div class="circle_chart"&gt;
+              &lt;svg class="progress-ring" width="164" height="164"&gt;
+                &lt;circle
+                  stroke="#e9ecef"
+                  stroke-width="12"
+                  cx="83"
+                  cy="82"
+                  r="75"
+                  fill="none"
+                  stroke-dasharray="471"
+                  stroke-dashoffset="0"
+                /&gt;
+                &lt;circle
+                  class="progress-ring__circle"
+                  stroke="url(#circleGradient)"
+                  stroke-width="13"
+                  stroke-linecap="round"
+                  cx="50%"
+                  cy="50%"
+                  r="75"
+                  fill="transparent"
+                  stroke-dasharray="314.16"
+                  stroke-dashoffset="0"
+                  transform="rotate(-90, 50, 50)"
+                /&gt;
+  
+                &lt;text
+                  text-anchor="middle"
+                  dominant-baseline="middle"
+                  x="50%"
+                  y="70%"
+                  fill="#043785"
+                  class="font_bold_1"
+                &gt;
+                  max 40
+                &lt;/text&gt;
+                &lt;text
+                  text-anchor="middle"
+                  dominant-baseline="middle"
+                  x="50%"
+                  y="55%"
+                  fill="#000"
+                  class="font_bold_9"
+                  id="score_in_percents"
+                &gt;&lt;/text&gt;
+                &lt;image
+                  text-anchor="middle"
+                  dominant-baseline="middle"
+                  x="44%"
+                  y="24%"
+                  width="24"
+                  height="24"
+                  xlink:href="./media/Union.svg"
+                /&gt;
+                &lt;linearGradient
+                  id="circleGradient"
+                  gradientTransform="rotate(45)"
+                &gt;
+                  &lt;stop offset="0%" stop-color="#043785" /&gt;
+                  &lt;stop offset="100%" stop-color="#1F55A6" /&gt;
+                &lt;/linearGradient&gt;
+              &lt;/svg&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+          </pre>
+        </div>
+
+        <div class="w-75">
+          <div class="accordion-item border stmc_card bg-white">
+            <div class="p-0 accordion-header" id="panelsStayOpen-headingThree">
+              <button
+                class="accordion-button_none_own_cursor d-flex justify-content-between"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#panelsStayOpen-collapseThree"
+                aria-expanded="true"
+                aria-controls="panelsStayOpen-collapseThree"
+              >
+                <div class="d-flex justify-content-between w-100">
+                  <p class="fw_600 fs_16 muted_txt">Week 3/8: 10.06. - 17.06</p>
+                  <div class="d-flex align-items-center">
+                    <div class="px-2 finished_sticker fw_500 fs_14">
+                      <span>Time is up!</span>
+                    </div>
+                  </div>
+                </div>
+              </button>
+            </div>
+            <div
+              id="panelsStayOpen-collapseThree"
+              class="accordion-collapse collapse show"
+              aria-labelledby="panelsStayOpen-headingThree"
+            >
+              <div class="accordion-body mt-3 border-top">
+                <p class="blue_text fs_24 fw_700 mt-1">
+                  Addition and subtraction of rational numbers
+                </p>
+                <div class="d-flex mt-1">
+                  <p class="px-2 b_rds_20 me-1 topic_bg fw_500 fs_14 blue_text">
+                    heat
+                  </p>
+                  <p class="px-2 b_rds_20 me-1 topic_bg fw_500 fs_14 blue_text">
+                    kinetics
+                  </p>
+                  <p class="px-2 b_rds_20 me-1 topic_bg fw_500 fs_14 blue_text">
+                    dynamics
+                  </p>
+                </div>
+                <div
+                  class="mt-4 d-flex flex-column-reverse flex-sm-row flex-md-column-reverse flex-xl-row justify-content-between"
+                >
+                  <div class="">
+                    <div class="d-flex align-items-center mt-2">
+                      <img alt="" src="./media/unsuccess.svg" />
+                      <p class="active_nav_item ms-2">
+                        Time is up! You don't have results for the challenge
+                      </p>
+                    </div>
+                    <div class="col-10 col-lg-8 mt-2">
+                      <p class="font_regular_1 color_black_light">
+                        You have access to the competition, but you will not
+                        receive a reward based on the results
+                      </p>
+                    </div>
+                    <div class="user_icons color_black_light fs_12 mt-3">
+                      <img
+                        alt=""
+                        src="./media/Ellipse 11.svg"
+                        class="zindex_1"
+                      />
+                      <img
+                        alt=""
+                        src="./media/Ellipse 12.svg"
+                        class="zindex_2"
+                      />
+                      <img
+                        alt=""
+                        src="./media/Ellipse 13.svg"
+                        class="zindex_3"
+                      />
+                      <img
+                        alt=""
+                        src="./media/Ellipse 14.svg"
+                        class="zindex_4"
+                      />
+                      <img
+                        alt=""
+                        src="./media/Ellipse 15.svg"
+                        class="zindex_5"
+                      />
+                      <div class="ps_abs_120 like_muted">
+                        <p class="fs_12 fw_600">+265</p>
+                        <p class="fs_12 fw_400">Participiants</p>
+                      </div>
+                    </div>
+                    <div class="d-flex align-items-center mt-3">
+                      <button type="button" class="btn_stc outline_btn_primary">
+                        Practice
+                      </button>
+                    </div>
+                  </div>
+                  <div class="text-center">
+                    <img alt="books" src="./media/BACKGROUND 1.svg" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <pre>
+
+
+  &lt;div class="accordion-item border stmc_card bg-white"&gt;
+    &lt;div class="p-0 accordion-header" id="panelsStayOpen-headingThree"&gt;
+      &lt;button
+        class="accordion-button_none_own_cursor d-flex justify-content-between"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#panelsStayOpen-collapseThree"
+        aria-expanded="true"
+        aria-controls="panelsStayOpen-collapseThree"
+      &gt;
+        &lt;div class="d-flex justify-content-between w-100"&gt;
+          &lt;p class="fw_600 fs_16 muted_txt"&gt;Week 3/8: 10.06. - 17.06&lt;/p&gt;
+          &lt;div class="d-flex align-items-center"&gt;
+            &lt;div class="px-2 finished_sticker fw_500 fs_14"&gt;
+              &lt;span&gt;Time is up!&lt;/span&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/button&gt;
+    &lt;/div&gt;
+    &lt;div
+      id="panelsStayOpen-collapseThree"
+      class="accordion-collapse collapse show"
+      aria-labelledby="panelsStayOpen-headingThree"
+      &gt;
+      &lt;div class="accordion-body mt-3 border-top"&gt;
+        &lt;p class="blue_text fs_24 fw_700 mt-1"&gt;
+          Addition and subtraction of rational numbers
+        &lt;/p&gt;
+        &lt;div class="d-flex mt-1"&gt;
+          &lt;p class="px-2 b_rds_20 me-1 topic_bg fw_500 fs_14 blue_text"&gt;
+            heat
+          &lt;/p&gt;
+          &lt;p class="px-2 b_rds_20 me-1 topic_bg fw_500 fs_14 blue_text"&gt;
+            kinetics
+          &lt;/p&gt;
+          &lt;p class="px-2 b_rds_20 me-1 topic_bg fw_500 fs_14 blue_text"&gt;
+            dynamics
+          &lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div
+          class="mt-4 d-flex flex-column-reverse flex-sm-row flex-md-column-reverse flex-xl-row justify-content-between"
+        &gt;
+          &lt;div class=""&gt;
+            &lt;div class="d-flex align-items-center mt-2"&gt;
+              &lt;img alt="" src="./media/unsuccess.svg" /&gt;
+              &lt;p class="active_nav_item ms-2"&gt;
+                Time is up! You don't have results for the challenge
+              &lt;/p&gt;
+            &lt;/div&gt;
+            &lt;div class="col-10 col-lg-8 mt-2"&gt;
+              &lt;p class="font_regular_1 color_black_light"&gt;
+                You have access to the competition, but you will not
+                receive a reward based on the results
+              &lt;/p&gt;
+            &lt;/div&gt;
+            &lt;div class="user_icons color_black_light fs_12 mt-3"&gt;
+              &lt;img
+                alt=""
+                src="./media/Ellipse 11.svg"
+                class="zindex_1"
+              /&gt;
+              &lt;img
+                alt=""
+                src="./media/Ellipse 12.svg"
+                class="zindex_2"
+              /&gt;
+              &lt;img
+                alt=""
+                src="./media/Ellipse 13.svg"
+                class="zindex_3"
+              /&gt;
+              &lt;img
+                alt=""
+                src="./media/Ellipse 14.svg"
+                class="zindex_4"
+              /&gt;
+              &lt;img
+                alt=""
+                src="./media/Ellipse 15.svg"
+                class="zindex_5"
+              /&gt;
+              &lt;div class="ps_abs_120 like_muted"&gt;
+                &lt;p class="fs_12 fw_600"&gt;+265&lt;/p&gt;
+                &lt;p class="fs_12 fw_400"&gt;Participiants&lt;/p&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class="d-flex align-items-center mt-3"&gt;
+              &lt;button type="button" class="btn_stc outline_btn_primary"&gt;
+                Practice
+              &lt;/button&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+          &lt;div class="text-center"&gt;
+            &lt;img alt="books" src="./media/BACKGROUND 1.svg" /&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+          </pre>
+        </div>
+
+        <div class="w-75">
+          <div class="accordion-item border stmc_card bg-white">
+            <div class="p-0 accordion-header" id="panelsStayOpen-headingFour">
+              <button
+                class="accordion-button_none_own_cursor d-flex justify-content-between"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#panelsStayOpen-collapseFour"
+                aria-expanded="true"
+                aria-controls="panelsStayOpen-collapseFour"
+              >
+                <div class="d-flex justify-content-between w-100">
+                  <p class="fw_600 fs_16 muted_txt">Week 3/8: 10.06. - 17.06</p>
+                  <div class="d-flex">
+                    <div class="px-2 sorting_sticker fw_500 fs_14">
+                      <span>Scoring...</span>
+                    </div>
+                  </div>
+                </div>
+              </button>
+            </div>
+            <div
+              id="panelsStayOpen-collapseFour"
+              class="accordion-collapse collapse show"
+              aria-labelledby="panelsStayOpen-headingFour"
+            >
+              <div class="accordion-body mt-3 border-top">
+                <p class="blue_text fs_24 fw_700 mt-1">
+                  Addition and subtraction of rational numbers
+                </p>
+                <div class="d-flex mt-1">
+                  <p class="px-2 b_rds_20 me-1 topic_bg fw_500 fs_14 blue_text">
+                    heat
+                  </p>
+                  <p class="px-2 b_rds_20 me-1 topic_bg fw_500 fs_14 blue_text">
+                    kinetics
+                  </p>
+                  <p class="px-2 b_rds_20 me-1 topic_bg fw_500 fs_14 blue_text">
+                    dynamics
+                  </p>
+                </div>
+                <div
+                  class="mt-4 d-flex flex-column-reverse flex-sm-row flex-md-column-reverse flex-xl-row justify-content-between"
+                >
+                  <div class="">
+                    <div class="mt-2">
+                      <div class="d-flex align-items-center">
+                        <img alt="" src="./media/clock.svg" />
+                        <p class="compleated_ch_color fs_20 fw_700 ms-2">
+                          You have completed the challenge.
+                        </p>
+                      </div>
+                      <div class="col-10 mt-3">
+                        <p class="fw_500 fs_14 gray_txt">
+                          Time left until the announcement of the result:
+                        </p>
+                      </div>
+                      <div class="mt-1 d-flex">
+                        <p class="color_black bg-light p-1 rounded-3">6d</p>
+                        <p class="muted_txt px-1 pt-1">:</p>
+                        <p class="color_black bg-light p-1 rounded-3">2h</p>
+                        <p class="muted_txt px-1 pt-1">:</p>
+                        <p class="color_black bg-light p-1 rounded-3">30m</p>
+                        <p class="muted_txt px-1 pt-1">:</p>
+                        <p class="color_black bg-light p-1 rounded-3">43s</p>
+                      </div>
+                      <div class="user_icons color_black_light fs_12 mt-3">
+                        <img
+                          alt=""
+                          src="./media/Ellipse 11.svg"
+                          class="zindex_1"
+                        />
+                        <img
+                          alt=""
+                          src="./media/Ellipse 12.svg"
+                          class="zindex_2"
+                        />
+                        <img
+                          alt=""
+                          src="./media/Ellipse 13.svg"
+                          class="zindex_3"
+                        />
+                        <img
+                          alt=""
+                          src="./media/Ellipse 14.svg"
+                          class="zindex_4"
+                        />
+                        <img
+                          alt=""
+                          src="./media/Ellipse 15.svg"
+                          class="zindex_5"
+                        />
+                        <div class="ps_abs_120 like_muted">
+                          <p class="fs_12 fw_600">+265</p>
+                          <p class="fs_12 fw_400">Participiants</p>
+                        </div>
+                      </div>
+                      <div class="d-flex align-items-center mt-3">
+                        <button
+                          type="button"
+                          class="btn_stc outline_btn_primary"
+                        >
+                          Review
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="text-center d-sm-flex d-md-block d-xl-flex flex-column-reverse"
+                  >
+                    <img alt="books" src="./media/BACKGROUND 1.svg" class="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <pre>
+  &lt;div class="accordion-item border stmc_card bg-white"&gt;
+    &lt;div class="p-0 accordion-header" id="panelsStayOpen-headingFour"&gt;
+      &lt;button
+        class="accordion-button_none_own_cursor d-flex justify-content-between"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#panelsStayOpen-collapseFour"
+        aria-expanded="true"
+        aria-controls="panelsStayOpen-collapseFour"
+      &gt;
+        &lt;div class="d-flex justify-content-between w-100"&gt;
+          &lt;p class="fw_600 fs_16 muted_txt"&gt;Week 3/8: 10.06. - 17.06&lt;/p&gt;
+          &lt;div class="d-flex"&gt;
+            &lt;div class="px-2 sorting_sticker fw_500 fs_14"&gt;
+              &lt;span&gt;Scoring...&lt;/span&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/button&gt;
+    &lt;/div&gt;
+    &lt;div
+      id="panelsStayOpen-collapseFour"
+      class="accordion-collapse collapse show"
+      aria-labelledby="panelsStayOpen-headingFour"
+    &gt;
+      &lt;div class="accordion-body mt-3 border-top"&gt;
+        &lt;p class="blue_text fs_24 fw_700 mt-1"&gt;
+          Addition and subtraction of rational numbers
+        &lt;/p&gt;
+        &lt;div class="d-flex mt-1"&gt;
+          &lt;p class="px-2 b_rds_20 me-1 topic_bg fw_500 fs_14 blue_text"&gt;
+            heat
+          &lt;/p&gt;
+          &lt;p class="px-2 b_rds_20 me-1 topic_bg fw_500 fs_14 blue_text"&gt;
+            kinetics
+          &lt;/p&gt;
+          &lt;p class="px-2 b_rds_20 me-1 topic_bg fw_500 fs_14 blue_text"&gt;
+            dynamics
+          &lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div
+          class="mt-4 d-flex flex-column-reverse flex-sm-row flex-md-column-reverse flex-xl-row justify-content-between"
+        &gt;
+          &lt;div class=""&gt;
+            &lt;div class="mt-2"&gt;
+              &lt;div class="d-flex align-items-center"&gt;
+                &lt;img alt="" src="./media/clock.svg" /&gt;
+                &lt;p class="compleated_ch_color fs_20 fw_700 ms-2"&gt;
+                  You have completed the challenge.
+                &lt;/p&gt;
+              &lt;/div&gt;
+              &lt;div class="col-10 mt-3"&gt;
+                &lt;p class="fw_500 fs_14 gray_txt"&gt;
+                  Time left until the announcement of the result:
+                &lt;/p&gt;
+              &lt;/div&gt;
+              &lt;div class="mt-1 d-flex"&gt;
+                &lt;p class="color_black bg-light p-1 rounded-3"&gt;6d&lt;/p&gt;
+                &lt;p class="muted_txt px-1 pt-1"&gt;:&lt;/p&gt;
+                &lt;p class="color_black bg-light p-1 rounded-3"&gt;2h&lt;/p&gt;
+                &lt;p class="muted_txt px-1 pt-1"&gt;:&lt;/p&gt;
+                &lt;p class="color_black bg-light p-1 rounded-3"&gt;30m&lt;/p&gt;
+                &lt;p class="muted_txt px-1 pt-1"&gt;:&lt;/p&gt;
+                &lt;p class="color_black bg-light p-1 rounded-3"&gt;43s&lt;/p&gt;
+              &lt;/div&gt;
+              &lt;div class="user_icons color_black_light fs_12 mt-3"&gt;
+                &lt;img
+                  alt=""
+                  src="./media/Ellipse 11.svg"
+                  class="zindex_1"
+                /&gt;
+                &lt;img
+                  alt=""
+                  src="./media/Ellipse 12.svg"
+                  class="zindex_2"
+                /&gt;
+                &lt;img
+                  alt=""
+                  src="./media/Ellipse 13.svg"
+                  class="zindex_3"
+                /&gt;
+                &lt;img
+                  alt=""
+                  src="./media/Ellipse 14.svg"
+                  class="zindex_4"
+                /&gt;
+                &lt;img
+                  alt=""
+                  src="./media/Ellipse 15.svg"
+                  class="zindex_5"
+                /&gt;
+                &lt;div class="ps_abs_120 like_muted"&gt;
+                  &lt;p class="fs_12 fw_600"&gt;+265&lt;/p&gt;
+                  &lt;p class="fs_12 fw_400"&gt;Participiants&lt;/p&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+              &lt;div class="d-flex align-items-center mt-3"&gt;
+                &lt;button
+                  type="button"
+                  class="btn_stc outline_btn_primary"
+                &gt;
+                  Review
+                &lt;/button&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+          &lt;div
+            class="text-center d-sm-flex d-md-block d-xl-flex flex-column-reverse"
+          &gt;
+            &lt;img alt="books" src="./media/BACKGROUND 1.svg" class="" /&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+          </pre>
+        </div>
+
+        <div class="w-75">
+          <div class="accordion-item border stmc_card bg-white">
+            <div class="p-0 accordion-header" id="panelsStayOpen-headingFive">
+              <button
+                class="accordion-button_none_cursor d-flex justify-content-between"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#panelsStayOpen-collapseFive"
+                aria-expanded="true"
+                aria-controls="panelsStayOpen-collapseFive"
+              >
+                <p class="fw_600 fs_16 muted_txt">Week 3/8: 10.06. - 17.06</p>
+                <p class="px-2 b_rds_20 topic_bg fw_500 fs_14 blue_text">
+                  Active
+                </p>
+              </button>
+            </div>
+
+            <div
+              id="panelsStayOpen-collapseFive"
+              class="accordion-collapse collapse show"
+              aria-labelledby="panelsStayOpen-headingFive"
+            >
+              <div class="accordion-body mt-3 border-top">
+                <p class="blue_text fs_24 fw_700 mt-1">
+                  Addition and subtraction of rational numbers
+                </p>
+                <div class="d-flex mt-1">
+                  <p class="px-2 b_rds_20 me-1 topic_bg fw_500 fs_14 blue_text">
+                    heat
+                  </p>
+                  <p class="px-2 b_rds_20 me-1 topic_bg fw_500 fs_14 blue_text">
+                    kinetics
+                  </p>
+                  <p class="px-2 b_rds_20 me-1 topic_bg fw_500 fs_14 blue_text">
+                    dynamics
+                  </p>
+                </div>
+                <div
+                  class="mt-4 d-flex flex-column-reverse flex-sm-row flex-md-column-reverse flex-xl-row justify-content-between"
+                >
+                  <div class="">
+                    <div class="mt-2">
+                      <div class="d-flex align-items-center">
+                        <img alt="" src="./media/warning_icon.svg" />
+                        <p class="color_warning fs_20 fw_700 ms-2">
+                          You have completed the challenge.
+                        </p>
+                      </div>
+                      <div class="col-10 mt-3">
+                        <div class="d-flex mt-3 align-items-center like_muted">
+                          <div
+                            class="d-flex align-items-center fs_14 fw_500 me-3"
+                          >
+                            <img src="./media/tabler_map_pin.svg" alt="" />
+                            <p class="ms-1">Online</p>
+                          </div>
+                          <div
+                            class="d-flex align-items-center fs_14 fw_500 me-3"
+                          >
+                            <img src="./media/tabler_pin_list.svg" alt="" />
+                            <p class="ms-1">6/10 question</p>
+                          </div>
+                          <div
+                            class="d-flex align-items-center fs_14 fw_500 me-3"
+                          >
+                            <img src="./media/tabler_pin_clock.svg" alt="" />
+                            <p class="ms-1">40 min</p>
+                          </div>
+                        </div>
+                        <p class="fw_500 fs_14 gray_txt mt-3">
+                          Time left until the announcement of the result:
+                        </p>
+                      </div>
+                      <div class="mt-1 d-flex">
+                        <p class="color_black bg-light p-1 rounded-3">6d</p>
+                        <p class="muted_txt px-1 pt-1">:</p>
+                        <p class="color_black bg-light p-1 rounded-3">2h</p>
+                        <p class="muted_txt px-1 pt-1">:</p>
+                        <p class="color_black bg-light p-1 rounded-3">30m</p>
+                        <p class="muted_txt px-1 pt-1">:</p>
+                        <p class="color_black bg-light p-1 rounded-3">43s</p>
+                      </div>
+                      <div class="user_icons color_black_light fs_12 mt-3">
+                        <img
+                          alt=""
+                          src="./media/Ellipse 11.svg"
+                          class="zindex_1"
+                        />
+                        <img
+                          alt=""
+                          src="./media/Ellipse 12.svg"
+                          class="zindex_2"
+                        />
+                        <img
+                          alt=""
+                          src="./media/Ellipse 13.svg"
+                          class="zindex_3"
+                        />
+                        <img
+                          alt=""
+                          src="./media/Ellipse 14.svg"
+                          class="zindex_4"
+                        />
+                        <img
+                          alt=""
+                          src="./media/Ellipse 15.svg"
+                          class="zindex_5"
+                        />
+                        <div class="ps_abs_120 like_muted">
+                          <p class="fs_12 fw_600">+265</p>
+                          <p class="fs_12 fw_400">Participiants</p>
+                        </div>
+                      </div>
+                      <div class="d-flex align-items-center mt-3">
+                        <button
+                          type="button"
+                          class="btn_stc outline_btn_primary"
+                        >
+                          Review
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="text-center d-sm-flex d-md-block d-xl-flex flex-column-reverse"
+                  >
+                    <img alt="books" src="./media/BACKGROUND 1.svg" class="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <pre>
+
+
+
+   &lt;div class="accordion-item border stmc_card bg-white"&gt;
+    &lt;div class="p-0 accordion-header" id="panelsStayOpen-headingFive"&gt;
+      &lt;button
+        class="accordion-button_none_cursor d-flex justify-content-between"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#panelsStayOpen-collapseFive"
+        aria-expanded="true"
+        aria-controls="panelsStayOpen-collapseFive"
+      &gt;
+        &lt;p class="fw_600 fs_16 muted_txt"&gt;Week 3/8: 10.06. - 17.06&lt;/p&gt;
+        &lt;p class="px-2 b_rds_20 topic_bg fw_500 fs_14 blue_text"&gt;
+          Active
+        &lt;/p&gt;
+      &lt;/button&gt;
+    &lt;/div&gt;
+  
+    &lt;div
+      id="panelsStayOpen-collapseFive"
+      class="accordion-collapse collapse show"
+      aria-labelledby="panelsStayOpen-headingFive"
+    &gt;
+      &lt;div class="accordion-body mt-3 border-top"&gt;
+        &lt;p class="blue_text fs_24 fw_700 mt-1"&gt;
+          Addition and subtraction of rational numbers
+        &lt;/p&gt;
+        &lt;div class="d-flex mt-1"&gt;
+          &lt;p class="px-2 b_rds_20 me-1 topic_bg fw_500 fs_14 blue_text"&gt;
+            heat
+          &lt;/p&gt;
+          &lt;p class="px-2 b_rds_20 me-1 topic_bg fw_500 fs_14 blue_text"&gt;
+            kinetics
+          &lt;/p&gt;
+          &lt;p class="px-2 b_rds_20 me-1 topic_bg fw_500 fs_14 blue_text"&gt;
+            dynamics
+          &lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div
+          class="mt-4 d-flex flex-column-reverse flex-sm-row flex-md-column-reverse flex-xl-row justify-content-between"
+        &gt;
+          &lt;div class=""&gt;
+            &lt;div class="mt-2"&gt;
+              &lt;div class="d-flex align-items-center"&gt;
+                &lt;img alt="" src="./media/warning_icon.svg" /&gt;
+                &lt;p class="color_warning fs_20 fw_700 ms-2"&gt;
+                  You have completed the challenge.
+                &lt;/p&gt;
+              &lt;/div&gt;
+              &lt;div class="col-10 mt-3"&gt;
+                &lt;div class="d-flex mt-3 align-items-center like_muted"&gt;
+                  &lt;div
+                    class="d-flex align-items-center fs_14 fw_500 me-3"
+                  &gt;
+                    &lt;img src="./media/tabler_map_pin.svg" alt="" /&gt;
+                    &lt;p class="ms-1"&gt;Online&lt;/p&gt;
+                  &lt;/div&gt;
+                  &lt;div
+                    class="d-flex align-items-center fs_14 fw_500 me-3"
+                  &gt;
+                    &lt;img src="./media/tabler_pin_list.svg" alt="" /&gt;
+                    &lt;p class="ms-1"&gt;6/10 question&lt;/p&gt;
+                  &lt;/div&gt;
+                  &lt;div
+                    class="d-flex align-items-center fs_14 fw_500 me-3"
+                  &gt;
+                    &lt;img src="./media/tabler_pin_clock.svg" alt="" /&gt;
+                    &lt;p class="ms-1"&gt;40 min&lt;/p&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;p class="fw_500 fs_14 gray_txt mt-3"&gt;
+                  Time left until the announcement of the result:
+                &lt;/p&gt;
+              &lt;/div&gt;
+              &lt;div class="mt-1 d-flex"&gt;
+                &lt;p class="color_black bg-light p-1 rounded-3"&gt;6d&lt;/p&gt;
+                &lt;p class="muted_txt px-1 pt-1"&gt;:&lt;/p&gt;
+                &lt;p class="color_black bg-light p-1 rounded-3"&gt;2h&lt;/p&gt;
+                &lt;p class="muted_txt px-1 pt-1"&gt;:&lt;/p&gt;
+                &lt;p class="color_black bg-light p-1 rounded-3"&gt;30m&lt;/p&gt;
+                &lt;p class="muted_txt px-1 pt-1"&gt;:&lt;/p&gt;
+                &lt;p class="color_black bg-light p-1 rounded-3"&gt;43s&lt;/p&gt;
+              &lt;/div&gt;
+              &lt;div class="user_icons color_black_light fs_12 mt-3"&gt;
+                &lt;img
+                  alt=""
+                  src="./media/Ellipse 11.svg"
+                  class="zindex_1"
+                /&gt;
+                &lt;img
+                  alt=""
+                  src="./media/Ellipse 12.svg"
+                  class="zindex_2"
+                /&gt;
+                &lt;img
+                  alt=""
+                  src="./media/Ellipse 13.svg"
+                  class="zindex_3"
+                /&gt;
+                &lt;img
+                  alt=""
+                  src="./media/Ellipse 14.svg"
+                  class="zindex_4"
+                /&gt;
+                &lt;img
+                  alt=""
+                  src="./media/Ellipse 15.svg"
+                  class="zindex_5"
+                /&gt;
+                &lt;div class="ps_abs_120 like_muted"&gt;
+                  &lt;p class="fs_12 fw_600"&gt;+265&lt;/p&gt;
+                  &lt;p class="fs_12 fw_400"&gt;Participiants&lt;/p&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+              &lt;div class="d-flex align-items-center mt-3"&gt;
+                &lt;button
+                  type="button"
+                  class="btn_stc outline_btn_primary"
+                &gt;
+                  Review
+                &lt;/button&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+          &lt;div
+            class="text-center d-sm-flex d-md-block d-xl-flex flex-column-reverse"
+          &gt;
+            &lt;img alt="books" src="./media/BACKGROUND 1.svg" class="" /&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+          </pre>
+        </div>
+
+        <div class="w-100">
+          <div class="accordion-item border stmc_card gradient_math" id="cndkjsl">
+            <div class="p-0 accordion-header" id="panelsStayOpen-headingSix">
+              <button
+                class="accordion-button_none_cursor d-flex justify-content-between"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#panelsStayOpen-collapseSix"
+                aria-expanded="true"
+                aria-controls="panelsStayOpen-collapseSix"
+                id="ok"
+                onclick="changeChild(this.id)"
+              >
+                <div class="d-flex justify-content-between w-100">
+                  <p class="fw_600 fs_16 text-white">
+                    Final week: 18.06. - 25.06
+                  </p>
+                  <div class="d-flex">
+                    <p class="px-2 b_rds_20 blue_start_bg fw_500 fs_14">
+                      Started
+                    </p>
+                  </div>
+                </div>
+              </button>
+              <div class="none" id="ko">
+                <div class="d-flex mt-3 align-items-center white_80">
+                  <div
+                    class="d-flex align-items-center fs_14 fw_500 me-3"
+                  >
+                    <img src="./media/pin_map_white.svg" alt="" />
+                    <p class="ms-1">Online</p>
+                  </div>
+                  <div
+                    class="d-flex align-items-center fs_14 fw_500 me-3"
+                  >
+                    <img src="./media/pin_list_white.svg" alt="" />
+                    <p class="ms-1">6/10 question</p>
+                  </div>
+                  <div
+                    class="d-flex align-items-center fs_14 fw_500 me-3"
+                  >
+                    <img src="./media/pin_clock_white.svg" alt="" />
+                    <p class="ms-1">40 min</p>
+                  </div>
+                </div>
+              </div>
+              <div
+                id="panelsStayOpen-collapseSix"
+                class="accordion-collapse collapse show"
+                aria-labelledby="panelsStayOpen-headingSix"
+              >
+                <div class="accordion-body mt-3 border-top">
+                  <div class="mt-2">
+                    <div class="col-10 mt-3">
+                      <div class="d-flex mt-3 align-items-center white_80">
+                        <div
+                          class="d-flex align-items-center fs_14 fw_500 me-3"
+                        >
+                          <img src="./media/pin_map_white.svg" alt="" />
+                          <p class="ms-1">Online</p>
+                        </div>
+                        <div
+                          class="d-flex align-items-center fs_14 fw_500 me-3"
+                        >
+                          <img src="./media/pin_list_white.svg" alt="" />
+                          <p class="ms-1">6/10 question</p>
+                        </div>
+                        <div
+                          class="d-flex align-items-center fs_14 fw_500 me-3"
+                        >
+                          <img src="./media/pin_clock_white.svg" alt="" />
+                          <p class="ms-1">40 min</p>
+                        </div>
+                      </div>
+                      <p class="fw_500 fs_14 white_80 mt-3">Available</p>
+                    </div>
+                    <div class="mt-1 d-flex">
+                      <p class="color_black blue_start_bg p-1 rounded-3">6d</p>
+                      <p class="clr_light_grey px-1 pt-1">:</p>
+                      <p class="color_black blue_start_bg p-1 rounded-3">2h</p>
+                      <p class="clr_light_grey px-1 pt-1">:</p>
+                      <p class="color_black blue_start_bg p-1 rounded-3">30m</p>
+                      <p class="clr_light_grey px-1 pt-1">:</p>
+                      <p class="color_black blue_start_bg p-1 rounded-3">43s</p>
+                    </div>
+                    <div class="user_icons color_black_light fs_12 mt-3">
+                      <img
+                        alt=""
+                        src="./media/Ellipse 11.svg"
+                        class="zindex_1"
+                      />
+                      <img
+                        alt=""
+                        src="./media/Ellipse 12.svg"
+                        class="zindex_2"
+                      />
+                      <img
+                        alt=""
+                        src="./media/Ellipse 13.svg"
+                        class="zindex_3"
+                      />
+                      <img
+                        alt=""
+                        src="./media/Ellipse 14.svg"
+                        class="zindex_4"
+                      />
+                      <img
+                        alt=""
+                        src="./media/Ellipse 15.svg"
+                        class="zindex_5"
+                      />
+                      <div class="ps_abs_120 like_muted white_80">
+                        <p class="fs_12 fw_600">+265</p>
+                        <p class="fs_12 fw_400">Participiants</p>
+                      </div>
+                    </div>
+                    <div class="d-flex align-items-center mt-3">
+                      <button type="button" class="btn_stc outline_math_btn">
+                        <span
+                          class="d-flex align-items-center justify-content-between"
+                        >
+                          <img src="../media/play.svg" alt="" class="me-1" />
+                          Continue
+                        </span>
+                      </button>
+                      <button
+                        type="button"
+                        class="ms-2 btn_stc outline_math_btn"
+                      >
+                        Review
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <pre>
+
+  &lt;div class="accordion-item border stmc_card gradient_math"&gt;
+    &lt;div class="p-0 accordion-header" id="panelsStayOpen-headingSix"&gt;
+      &lt;button
+        class="accordion-button_none_cursor d-flex justify-content-between"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#panelsStayOpen-collapseSix"
+        aria-expanded="true"
+        aria-controls="panelsStayOpen-collapseSix"
+      &gt;
+        &lt;div class="d-flex justify-content-between w-100"&gt;
+          &lt;p class="fw_600 fs_16 text-white"&gt;
+            Final week: 18.06. - 25.06
+          &lt;/p&gt;
+          &lt;div class="d-flex"&gt;
+            &lt;p class="px-2 b_rds_20 blue_start_bg fw_500 fs_14"&gt;
+              Started
+            &lt;/p&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/button&gt;
+      &lt;div
+        id="panelsStayOpen-collapseSix"
+        class="accordion-collapse collapse show"
+        aria-labelledby="panelsStayOpen-headingSix"
+      &gt;
+        &lt;div class="accordion-body mt-3 border-top"&gt;
+          &lt;div class="mt-2"&gt;
+            &lt;div class="col-10 mt-3"&gt;
+              &lt;div class="d-flex mt-3 align-items-center white_80"&gt;
+                &lt;div
+                  class="d-flex align-items-center fs_14 fw_500 me-3"
+                &gt;
+                  &lt;img src="./media/pin_map_white.svg" alt="" /&gt;
+                  &lt;p class="ms-1"&gt;Online&lt;/p&gt;
+                &lt;/div&gt;
+                &lt;div
+                  class="d-flex align-items-center fs_14 fw_500 me-3"
+                &gt;
+                  &lt;img src="./media/pin_list_white.svg" alt="" /&gt;
+                  &lt;p class="ms-1"&gt;6/10 question&lt;/p&gt;
+                &lt;/div&gt;
+                &lt;div
+                  class="d-flex align-items-center fs_14 fw_500 me-3"
+                &gt;
+                  &lt;img src="./media/pin_clock_white.svg" alt="" /&gt;
+                  &lt;p class="ms-1"&gt;40 min&lt;/p&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+              &lt;p class="fw_500 fs_14 white_80 mt-3"&gt;Available&lt;/p&gt;
+            &lt;/div&gt;
+            &lt;div class="mt-1 d-flex"&gt;
+              &lt;p class="color_black blue_start_bg p-1 rounded-3"&gt;6d&lt;/p&gt;
+              &lt;p class="clr_light_grey px-1 pt-1"&gt;:&lt;/p&gt;
+              &lt;p class="color_black blue_start_bg p-1 rounded-3"&gt;2h&lt;/p&gt;
+              &lt;p class="clr_light_grey px-1 pt-1"&gt;:&lt;/p&gt;
+              &lt;p class="color_black blue_start_bg p-1 rounded-3"&gt;30m&lt;/p&gt;
+              &lt;p class="clr_light_grey px-1 pt-1"&gt;:&lt;/p&gt;
+              &lt;p class="color_black blue_start_bg p-1 rounded-3"&gt;43s&lt;/p&gt;
+            &lt;/div&gt;
+            &lt;div class="user_icons color_black_light fs_12 mt-3"&gt;
+              &lt;img
+                alt=""
+                src="./media/Ellipse 11.svg"
+                class="zindex_1"
+              /&gt;
+              &lt;img
+                alt=""
+                src="./media/Ellipse 12.svg"
+                class="zindex_2"
+              /&gt;
+              &lt;img
+                alt=""
+                src="./media/Ellipse 13.svg"
+                class="zindex_3"
+              /&gt;
+              &lt;img
+                alt=""
+                src="./media/Ellipse 14.svg"
+                class="zindex_4"
+              /&gt;
+              &lt;img
+                alt=""
+                src="./media/Ellipse 15.svg"
+                class="zindex_5"
+              /&gt;
+              &lt;div class="ps_abs_120 like_muted white_80"&gt;
+                &lt;p class="fs_12 fw_600"&gt;+265&lt;/p&gt;
+                &lt;p class="fs_12 fw_400"&gt;Participiants&lt;/p&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class="d-flex align-items-center mt-3"&gt;
+              &lt;button type="button" class="btn_stc outline_math_btn"&gt;
+                &lt;span
+                  class="d-flex align-items-center justify-content-between"
+                &gt;
+                  &lt;img src="../media/play.svg" alt="" class="me-1" /&gt;
+                  Continue
+                &lt;/span&gt;
+              &lt;/button&gt;
+              &lt;button
+                type="button"
+                class="ms-2 btn_stc outline_math_btn"
               &gt;
                 Review
               &lt;/button&gt;
             &lt;/div&gt;
           &lt;/div&gt;
         &lt;/div&gt;
-        </pre>
-    
-        <div class="w-50">
-          <div class="border stmc_card bg-white">
-            <div class="d-flex justify-content-between">
-              <p class="font_bold_6">Weekly Challenges</p>
-              <div class="d-flex">
-      
-                <button class="rounded-circle border-0 me-1" onClick="swipingLeft()">
-                  <img alt="left" src="./media/left.svg" class="rounded-circle"/>
-                </button>
-                <div class="d-flex align-items-center overflow_x_h">
-                  <p class="my-auto w_60 font_bold_2" id="test"></p>
-                </div>
-                <button class="border-0 ms-1 rounded-circle" onClick="swipingRight()">
-                  <img alt="right" src="./media/left.svg" class="rotateimg180"/>
-                </button>
-      
-              </div>
-            </div>
-        
-            <p class="font_bold_8 text-uppercase blue_text mt-3">Challange name</p>
-            <div class="d-flex border_bottom pb-3 mt-2">
-              <p class="me-1 px-2 py-1 b_rds_20 fs_12 topic_bg">heat</p>
-              <p class="me-1 px-2 py-1 b_rds_20 fs_12 topic_bg">kinetics</p>
-              <p class="me-1 px-2 py-1 b_rds_20 fs_12 topic_bg">dynamics</p>
-            </div>
-        
-            <div class="mt-4">
-              <div class="d-flex align-items-center">
-                <img alt="" src="./media/unsuccess.svg" />
-                <p class="active_nav_item ms-2 font_bold_6">Time is up! You don't have results for the challenge</p>
-              </div>
-              <div class="col-10 col-lg-8 mt-2">
-                <p class="font_regular_1 color_black_light">
-                  You have access to the competition, but 
-                  you will not receive a reward based on the results
-                </p>
-              </div>
-              <div class="user_icons color_black_light fs_12 mt-3">
-                <img alt="" src="./media/Ellipse 11.svg" class="zindex_1" />
-                <img alt="" src="./media/Ellipse 12.svg" class="zindex_2" />
-                <img alt="" src="./media/Ellipse 13.svg" class="zindex_3" />
-                <img alt="" src="./media/Ellipse 14.svg" class="zindex_4" />
-                <img alt="" src="./media/Ellipse 15.svg" class="zindex_5" />
-                <div class="circled_div">
-                  <p>+265</p>
-                </div>
-                <p class="zindex_6">Participiants</p>
-              </div>
-              
-              <div class="d-flex align-items-center mt-3">
-                <button type="button" class="btn_stc outline_btn_primary">
-                  Practice
-                </button>
-              </div>
-      
-              <img alt="books" src="./media/BACKGROUND 1.svg" class="ps_abs_r_b"/>
-      
-            </div>
-          </div>
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+          </pre>
         </div>
-    
-        <pre>
-    
-    
-        &lt;div class="border stmc_card bg-white"&gt;
-          &lt;div class="d-flex justify-content-between"&gt;
-            &lt;p class="font_bold_6"&gt;Weekly Challenges&lt;/p&gt;
-            &lt;div class="d-flex"&gt;
-      
-              &lt;button class="rounded-circle border-0 me-1" onClick="swipingLeft()"&gt;
-                &lt;img alt="left" src="./media/left.svg" class="rounded-circle"/&gt;
-              &lt;/button&gt;
-              &lt;div class="d-flex align-items-center overflow_x_h"&gt;
-                &lt;p class="my-auto w_60 font_bold_2" id="test"&gt;&lt;/p&gt;
-              &lt;/div&gt;
-              &lt;button class="border-0 ms-1 rounded-circle" onClick="swipingRight()"&gt;
-                &lt;img alt="right" src="./media/left.svg" class="rotateimg180"/&gt;
-              &lt;/button&gt;
-      
-            &lt;/div&gt;
-          &lt;/div&gt;
-      
-          &lt;p class="font_bold_8 text-uppercase blue_text mt-3"&gt;Challange name&lt;/p&gt;
-          &lt;div class="d-flex border_bottom pb-3 mt-2"&gt;
-            &lt;p class="me-1 px-2 py-1 b_rds_20 fs_12 topic_bg"&gt;heat&lt;/p&gt;
-            &lt;p class="me-1 px-2 py-1 b_rds_20 fs_12 topic_bg"&gt;kinetics&lt;/p&gt;
-            &lt;p class="me-1 px-2 py-1 b_rds_20 fs_12 topic_bg"&gt;dynamics&lt;/p&gt;
-          &lt;/div&gt;
-      
-          &lt;div class="mt-4"&gt;
-            &lt;div class="d-flex align-items-center"&gt;
-              &lt;img alt="" src="./media/unsuccess.svg" /&gt;
-              &lt;p class="active_nav_item ms-2"&gt;Time is up! You don't have results for the challenge&lt;/p&gt;
-            &lt;/div&gt;
-            &lt;div class="col-10 col-lg-8 mt-2"&gt;
-              &lt;p class="font_regular_1 color_black_light"&gt;
-              You have access to the competition, 
-              but you will not receive a reward based on the results
-              &lt;/p&gt;
-            &lt;/div&gt;
-            &lt;div class="user_icons color_black_light fs_12 mt-3"&gt;
-              &lt;img alt="" src="./media/Ellipse 11.svg" class="zindex_1" /&gt;
-              &lt;img alt="" src="./media/Ellipse 12.svg" class="zindex_2" /&gt;
-              &lt;img alt="" src="./media/Ellipse 13.svg" class="zindex_3" /&gt;
-              &lt;img alt="" src="./media/Ellipse 14.svg" class="zindex_4" /&gt;
-              &lt;img alt="" src="./media/Ellipse 15.svg" class="zindex_5" /&gt;
-              &lt;div class="circled_div"&gt;
-                &lt;p&gt;+265&lt;/p&gt;
-              &lt;/div&gt;
-              &lt;p class="zindex_6"&gt;Participiants&lt;/p&gt;
-            &lt;/div&gt;
-            
-            &lt;div class="d-flex align-items-center mt-3"&gt;
-              &lt;button type="button" class="btn_stc btn_primary"&gt;
-                &lt;img alt="" src="./media/play.svg" class="me-2"/&gt;
-                Let’s Start
-              &lt;/button&gt;
-              &lt;button type="button" class="btn_stc outline_btn_primary ms-2"&gt;
-                Practice
-              &lt;/button&gt;
-            &lt;/div&gt;
-            &lt;img alt="books" src="./media/BACKGROUND 1.svg" class="ps_abs_r_b"/&gt;
-          &lt;/div&gt;
-        &lt;/div&gt;
-        </pre>
-
-        <div class="w-50">
-          
-          <div class="border stmc_card bg-white">
-            <div class="d-flex justify-content-between">
-              <p class="font_bold_6">Weekly Challenges</p>
-              <div class="d-flex">
-        
-                <button class="rounded-circle border-0 me-1" onClick="swipingLeft()">
-                  <img alt="left" src="./media/left.svg" class="rounded-circle"/>
-                </button>
-                <div class="d-flex align-items-center overflow_x_h">
-                  <p class="my-auto w_60 font_bold_2" id="test"></p>
-                </div>
-                <button class="border-0 ms-1 rounded-circle" onClick="swipingRight()">
-                  <img alt="right" src="./media/left.svg" class="rotateimg180"/>
-                </button>
-        
-              </div>
-            </div>
-        
-            <p class="font_bold_8 text-uppercase blue_text mt-3">Challange name</p>
-            <div class="d-flex border_bottom pb-3 mt-2">
-              <p class="me-1 px-2 py-1 b_rds_20 fs_12 topic_bg">heat</p>
-              <p class="me-1 px-2 py-1 b_rds_20 fs_12 topic_bg">kinetics</p>
-              <p class="me-1 px-2 py-1 b_rds_20 fs_12 topic_bg">dynamics</p>
-            </div>
-        
-            <div class="mt-4 pt-2">
-              <div class="d-flex align-items-center">
-                <img alt="" src="./media/clock.svg" />
-                <p class="color_primary font_bold_6 ms-2">You have completed the challenge.</p>
-              </div>
-              <div class="col-10 col-lg-8 mt-2">
-                <p class="font_regular_1 color_black_light">
-                  Time left until the announcement of the result: 
-                </p>
-              </div>
-              <p class="mt-2 font_bold_7 color_black_light">2 days, 13:24:18</p>
-              <div class="mt-4">
-                <button type="button" class="btn_stc outline_btn_secondary">Review</button>
-              </div>
-            </div>
-          </div>
-
-        </div>
-
-        <pre>
-
-
-          &lt;div class="border stmc_card bg-white"&gt;
-          &lt;div class="d-flex justify-content-between"&gt;
-            &lt;p class="font_bold_6"&gt;Weekly Challenges&lt;/p&gt;
-            &lt;div class="d-flex"&gt;
-      
-              &lt;button class="rounded-circle border-0 me-1" onClick="swipingLeft()"&gt;
-                &lt;img alt="left" src="./media/left.svg" class="rounded-circle"/&gt;
-              &lt;/button&gt;
-              &lt;div class="d-flex align-items-center overflow_x_h"&gt;
-                &lt;p class="my-auto w_60 font_bold_2" id="test"&gt;&lt;/p&gt;
-              &lt;/div&gt;
-              &lt;button class="border-0 ms-1 rounded-circle" onClick="swipingRight()"&gt;
-                &lt;img alt="right" src="./media/left.svg" class="rotateimg180"/&gt;
-              &lt;/button&gt;
-      
-            &lt;/div&gt;
-          &lt;/div&gt;
-      
-          &lt;p class="font_bold_8 text-uppercase blue_text mt-3"&gt;Challange name&lt;/p&gt;
-          &lt;div class="d-flex border_bottom pb-3 mt-2"&gt;
-            &lt;p class="me-1 px-2 py-1 b_rds_20 fs_12 topic_bg"&gt;heat&lt;/p&gt;
-            &lt;p class="me-1 px-2 py-1 b_rds_20 fs_12 topic_bg"&gt;kinetics&lt;/p&gt;
-            &lt;p class="me-1 px-2 py-1 b_rds_20 fs_12 topic_bg"&gt;dynamics&lt;/p&gt;
-          &lt;/div&gt;
-      
-          &lt;div class="mt-4 pt-2"&gt;
-            &lt;div class="d-flex align-items-center"&gt;
-              &lt;img alt="" src="./media/clock.svg" /&gt;
-              &lt;p class="color_primary font_bold_6 ms-2"&gt;You have completed the challenge.&lt;/p&gt;
-            &lt;/div&gt;
-            &lt;div class="col-10 col-lg-8 mt-2"&gt;
-              &lt;p class="font_regular_1 color_black_light"&gt;
-                Time left until the announcement of the result: 
-              &lt;/p&gt;
-            &lt;/div&gt;
-            &lt;p class="mt-2 font_bold_7 color_black_light"&gt;2 days, 13:24:18&lt;/p&gt;
-            &lt;div class="mt-4"&gt;
-              &lt;button type="button" class="btn_stc outline_btn_secondary"&gt;Review&lt;/button&gt;
-            &lt;/div&gt;
-          &lt;/div&gt;
-        &lt;/div&gt;
-        </pre>
-
-        <div class="w-50">
-          <div class="border stmc_card bg-white">
-            <div class="d-flex justify-content-between">
-              <p class="font_bold_6">Weekly Challenges</p>
-              <div class="d-flex">
-        
-                <button class="rounded-circle border-0 me-1" onClick="swipingLeft()">
-                  <img alt="left" src="./media/left.svg" class="rounded-circle"/>
-                </button>
-                <div class="d-flex align-items-center overflow_x_h">
-                  <p class="my-auto w_60 font_bold_2" id="test"></p>
-                </div>
-                <button class="border-0 ms-1 rounded-circle" onClick="swipingRight()">
-                  <img alt="right" src="./media/left.svg" class="rotateimg180"/>
-                </button>
-        
-              </div>
-            </div>
-        
-            <p class="font_bold_8 text-uppercase blue_text mt-3">Challange name</p>
-            <div class="d-flex border_bottom pb-3 mt-2">
-              <p class="me-1 px-2 py-1 b_rds_20 fs_12 topic_bg">heat</p>
-              <p class="me-1 px-2 py-1 b_rds_20 fs_12 topic_bg">kinetics</p>
-              <p class="me-1 px-2 py-1 b_rds_20 fs_12 topic_bg">dynamics</p>
-            </div>
-        
-            <div class="mt-4 pt-2">
-              <div class="d-flex align-items-center">
-                <img alt="" src="./media/warning_icon.svg" />
-                <p class="color_warning font_bold_6 ms-2">You have completed the challenge.</p>
-              </div>
-              <div class="col-10 col-lg-8 mt-2">
-                <p class="font_regular_1 color_black_light">
-                  Time left until the announcement of the result: 
-                </p>
-              </div>
-              <p class="mt-2 font_bold_7 color_black_light">2 days, 13:24:18</p>
-              <div class="mt-4">
-                <button type="button" class="btn_stc btn_primary">
-                  <img alt="" src="./media/play.svg" class="me-2"/>
-                  Continue
-                </button>
-              </div>
-            </div>
-            <img alt="books" src="./media/BACKGROUND 1.svg" class="ps_abs_r_b"/>
-          </div>
-        </div>
-        <pre>
-
-
-        &lt;div class="border stmc_card bg-white"&gt;
-          &lt;div class="d-flex justify-content-between"&gt;
-            &lt;p class="font_bold_6"&gt;Weekly Challenges&lt;/p&gt;
-            &lt;div class="d-flex"&gt;
-        
-              &lt;button class="rounded-circle border-0 me-1" onClick="swipingLeft()"&gt;
-                &lt;img alt="left" src="./media/left.svg" class="rounded-circle"/&gt;
-              &lt;/button&gt;
-              &lt;div class="d-flex align-items-center overflow_x_h"&gt;
-                &lt;p class="my-auto w_60 font_bold_2" id="test"&gt;&lt;/p&gt;
-              &lt;/div&gt;
-              &lt;button class="border-0 ms-1 rounded-circle" onClick="swipingRight()"&gt;
-                &lt;img alt="right" src="./media/left.svg" class="rotateimg180"/&gt;
-              &lt;/button&gt;
-        
-            &lt;/div&gt;
-          &lt;/div&gt;
-        
-          &lt;p class="font_bold_8 text-uppercase blue_text mt-3"&gt;Challange name&lt;/p&gt;
-          &lt;div class="d-flex border_bottom pb-3 mt-2"&gt;
-            &lt;p class="me-1 px-2 py-1 b_rds_20 fs_12 topic_bg"&gt;heat&lt;/p&gt;
-            &lt;p class="me-1 px-2 py-1 b_rds_20 fs_12 topic_bg"&gt;kinetics&lt;/p&gt;
-            &lt;p class="me-1 px-2 py-1 b_rds_20 fs_12 topic_bg"&gt;dynamics&lt;/p&gt;
-          &lt;/div&gt;
-        
-          &lt;div class="mt-4 pt-2"&gt;
-            &lt;div class="d-flex align-items-center"&gt;
-              &lt;img alt="" src="./media/warning_icon.svg" /&gt;
-              &lt;p class="color_warning font_bold_6 ms-2"&gt;You have completed the challenge.&lt;/p&gt;
-            &lt;/div&gt;
-            &lt;div class="col-10 col-lg-8 mt-2"&gt;
-              &lt;p class="font_regular_1 color_black_light"&gt;
-                Time left until the announcement of the result: 
-              &lt;/p&gt;
-            &lt;/div&gt;
-            &lt;p class="mt-2 font_bold_7 color_black_light"&gt;2 days, 13:24:18&lt;/p&gt;
-            &lt;div class="mt-4"&gt;
-              &lt;button type="button" class="btn_stc btn_primary"&gt;
-                &lt;img alt="" src="./media/play.svg" class="me-2"/&gt;
-                Continue
-              &lt;/button&gt;
-            &lt;/div&gt;
-          &lt;/div&gt;
-          &lt;img alt="books" src="./media/BACKGROUND 1.svg" class="ps_abs_r_b"/&gt;
-        &lt;/div&gt;
-        </pre>
       </div>
-   
-
     </div>
-   
-      <script>
-        const circle = document.querySelector(".progress-ring__circle");
-        let score = 25;
-        document.querySelector("#score_in_percents").innerHTML = score + "%";
-        const radius = circle.r.baseVal.value;
-        
-        const circumference = 2 * Math.PI * radius;
-        
-        circle.style.strokeDasharray = `${circumference} ${circumference}`;
-        circle.style.strokeDashoffset = circumference;
-        
-        function setProgress(percent) {
-          const offset = circumference - (percent / 100) * circumference;
-          circle.style.strokeDashoffset = offset;
-        }
-        
-        setProgress(score);
+
+    <script>
+      let firstSibling;
+      const changeChild=(id)=>{
+          firstSibling=document.getElementById(id).nextElementSibling;
+          console.log(firstSibling)
+          firstSibling.classList.toggle("none");
+      }
+  </script>
+
+
+
+    <script>
+      const circle = document.querySelector(".progress-ring__circle");
+      let score = 25;
+      document.querySelector("#score_in_percents").innerHTML = score + "%";
+      const radius = circle.r.baseVal.value;
+
+      const circumference = 2 * Math.PI * radius;
+
+      circle.style.strokeDasharray = `${circumference} ${circumference}`;
+      circle.style.strokeDashoffset = circumference;
+
+      function setProgress(percent) {
+        const offset = circumference - (percent / 100) * circumference;
+        circle.style.strokeDashoffset = offset;
+      }
+
+      setProgress(score);
     </script>
     <script src="../bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
     <script src="./swiping.js"></script>

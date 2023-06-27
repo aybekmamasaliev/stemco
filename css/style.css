@@ -21,6 +21,7 @@
   --black_text_light: #36454f;
   --black_text: #1a1a1a;
   --full_black: #000;
+  --like_muted: #4B6A7E;
   --student_text: #7792ab;
   --color_wrong: #FFE3E6;
   --blue_text: #1f55a6;
@@ -41,6 +42,7 @@
   --light_green:#E0FFE3;
   --info_color: #0dcaf0;
   --header_certificate: #1f55a6;
+  --bg_primary:#043785;
   --light_blue_gray: #f5f6f8;
   --white_txt: #fff;
   --green_bg_verif_stick: rgba(70, 190, 82, 0.1);
@@ -64,6 +66,10 @@
 body {
   background: #fafbfd;
   font-family: var(--font_family) !important;
+}
+
+.d-flex>div>ul>li>a:hover{
+  background-color: #0dcaf0;
 }
 
 p {
@@ -109,6 +115,10 @@ p {
   font-weight: 600;
 }
 
+.fw_700{
+  font-weight: 700;
+}
+
 .bg_gold {
   background-color: var(--gold_bg);
 }
@@ -123,6 +133,14 @@ p {
 
 .bg_light_grey {
   background-color: var(--light_grey);
+}
+
+.clr_light_grey{
+  color:var(--light_grey)
+}
+
+.like_muted{
+  color: var(--like_muted);
 }
 
 .border_light_grey {
@@ -225,8 +243,13 @@ p {
 .border_black{
   border: 1px solid var(--black_text_light) !important;
 }
+
 .active_nav_item {
   color: var(--active_txt) !important;
+}
+
+.compleated_ch_color{
+  color: rgba(75, 106, 126, 1);
 }
 
 .color_warning {
@@ -293,6 +316,10 @@ p {
   color: var(--blue_text);
 }
 
+.bg_blue{
+  background-color: #043785;
+}
+
 .count_gold {
   color: var(--count_gold);
   font-weight: 600;
@@ -303,14 +330,14 @@ p {
 }
 
 .btn_primary {
-  background-color: var(--green_text);
-  border: 1px solid var(--green_text);
+  background-color: var(--bg_primary);
+  border: 1px solid var(--bg_primary);
   color: var(--white_txt);
 }
 
 .btn_primary:hover {
-  background-color: var(--green_active);
-  border: 1px solid var(--green_active);
+  background-color: var(--header_certificate);
+  border: 1px solid var(--header_certificate);
 }
 
 .btn_secondary {
@@ -405,15 +432,23 @@ p {
 }
 
 .outline_btn_primary {
-  border: 1px solid var(--green_text);
+  border: 1px solid var(--bg_primary);
   background-color: var(--white_txt);
-  color: var(--green_text);
+  background-color: rgba(255, 255, 255, 0.2);
+  color: var(--bg_primary);
+  transition-duration: 0.3s;
+}
+
+.outline_math_btn{
+  border: 1px solid var(--white_txt);
+  background-color: rgba(255, 255, 255, 0.2);
+  color: var(--white_txt);
   transition-duration: 0.3s;
 }
 
 .outline_btn_primary:hover {
-  background-color: var(--green_active);
-  border: 1px solid var(--green_active);
+  background-color: var(--bg_primary);
+  border: 1px solid var(--bg_primary);
   color: var(--white_txt);
 }
 
@@ -513,7 +548,7 @@ p {
   align-items: center;
   justify-content: center;
   font: var(--font_bold_2);
-  border-radius: 4px;
+  border-radius: 8px;
   padding: 8px 16px !important;
 }
 
@@ -575,6 +610,11 @@ p {
   position: relative;
 }
 
+.ps_abs_120{
+  position: absolute;
+  left:120px;
+}
+
 .score_tbl {
   height: 90px;
   border-right: 1px solid var(--table_bg);
@@ -620,6 +660,12 @@ p {
   border-radius: 16px;
 }
 
+.sorting_sticker{
+  background-color: rgba(75, 106, 126, 0.1);
+  color: rgba(75, 106, 126, 1);
+  border-radius: 16px;
+}
+
 .circled_div {
   width: 33px;
   height: 33px;
@@ -635,8 +681,8 @@ p {
 
 .ps_abs_r_b {
   position: absolute;
-  right: 20px;
-  bottom: 20px;
+  right: 16px;
+  bottom: 12px;
 }
 
 .ps_abs_r_t_0 {
@@ -653,8 +699,41 @@ p {
   width: 134px;
 }
 
+.w_100_200{
+  width: max(100, min(200, 100%));
+}
+
 .topic_bg {
   background: #d6e8f3;
+}
+
+.gradient_math{
+  background-image: linear-gradient(to right, rgba(4, 55, 133, 1) , rgba(31, 85, 166, 1));
+}
+
+.gradient_chemstry{
+  background-image: linear-gradient(to right, rgba(220, 47, 2, 1) , rgba(244, 140, 6, 1));
+}
+
+.gradient_physics{
+  background-image: linear-gradient(to right, rgba(10, 77, 104, 1) , rgba(8, 131, 149, 1));
+}
+
+.gradient_bio{
+  background-image: linear-gradient(to right, rgba(33, 119, 86, 1) , rgba(99, 183, 93, 1));
+}
+
+.gradient_science{
+  background-image: linear-gradient(to right, rgba(214, 28, 78, 1) , rgba(193, 66, 101, 1));
+}
+
+.blue_start_bg{
+  background-color: rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.white_80{
+  color: rgba(255, 255, 255, 0.8);
 }
 
 .topic_border{
@@ -713,7 +792,7 @@ p {
 
 .ps_sticky_t_1 {
   position: sticky;
-  top: -1px;
+  top: -2px;
 }
 
 .ps_sticky_t_35{
@@ -833,9 +912,10 @@ td {
 
 .stmc_card {
   padding: 16px;
-  border-radius: 8px;
+  border-radius: 8px !important;
   position: relative;
 }
+
 
 .my_shadow {
   text-shadow: 2px 2px 4px #000000;
@@ -1149,6 +1229,10 @@ td {
 
 .w_170px {
   width: 170px;
+}
+
+.none{
+  display:none;
 }
 
 .result {

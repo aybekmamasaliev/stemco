@@ -8,16 +8,23 @@
     <link rel="stylesheet" href="../css/style.css" />
     <title>Document</title>
     <style>
-      ul>li>a{
+      ul > li > a {
         text-decoration: none;
       }
 
-      ul{
+      ul {
         list-style-type: none;
       }
     </style>
   </head>
-  <body style="background-color: white; padding: 20px; padding-left: 50px; padding-top:50px;">
+  <body
+    style="
+      background-color: white;
+      padding: 20px;
+      padding-left: 50px;
+      padding-top: 50px;
+    "
+  >
     <div class="d-flex">
       <div>
         <ul>
@@ -29,6 +36,18 @@
           </li>
           <li>
             <a href="./tabs.html">Tabs</a>
+          </li>
+          <li>
+            <a href="./underline_tabs.html">Tabs Underline</a>
+          </li>
+          <li>
+            <a href="./underlina_tabs_2.html">Tabs Underline Wide</a>
+          </li>
+          <li>
+            <a href="./table.html">Table</a>
+          </li>
+          <li>
+            <a href="./table_dashboard.html">Table Dashboard</a>
           </li>
           <li>
             <a href="./subjects.html">Subjects</a>
@@ -91,8 +110,47 @@
           <button type="button" class="btn_stc btn_info">Button9</button>
           &nbsp;
           <button type="button" class="btn btn-link">Link</button>
+          <div>
+            <div class="ps_rel fit_content me-2" id="selectBox2">
+              <select
+                class="form-select select_width"
+                aria-label="Default select example"
+              >
+                <option selected>League</option>
+              </select>
+              <div class="overSelect"></div>
+            </div>
+            <div class="ps_rel">
+              <div id="checkboxes2">
+                <div class="px-2">
+                  <label for="LeagueAll"
+                    ><input
+                      type="checkbox"
+                      id="LeagueAll"
+                      name="legue"
+                      onclick="selectAllLegue(this)"
+                    />All</label
+                  >
+                  <label for="leguePrimaru_j"
+                    ><input
+                      type="checkbox"
+                      id="leguePrimaru_j"
+                      name="legue"
+                    />Primary Junior</label
+                  >
+                  <label for="leguePrimaru_s"
+                    ><input
+                      type="checkbox"
+                      id="leguePrimaru_s"
+                      name="legue"
+                    />Primary Senior</label
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-    
+
         <pre>
     
         &lt;button type="button" class="btn_stc btn_primary"&gt;
@@ -126,12 +184,9 @@
         &lt;button type="button" class="btn btn-link"&gt;Link&lt;/button&gt;
           </pre
         >
-    
       </div>
-
     </div>
-   
-
+    <script src="../showCheckboxes2.js"></script>
     <script src="../bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
     <script src="./swiping.js"></script>
   </body>

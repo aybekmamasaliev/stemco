@@ -38,6 +38,18 @@
             <a href="./tabs.html">Tabs</a>
           </li>
           <li>
+            <a href="./underline_tabs.html">Tabs Underline</a>
+          </li>
+          <li>
+            <a href="./underlina_tabs_2.html">Tabs Underline Wide</a>
+          </li>
+          <li>
+            <a href="./table.html">Table</a>
+          </li>
+          <li>
+            <a href="./table_dashboard.html">Table Dashboard</a>
+          </li>
+          <li>
             <a href="./subjects.html">Subjects</a>
           </li>
           <li>
@@ -83,109 +95,139 @@
       <div class="ms-5">
         <h1>Progress Bar</h1>
         <div class="circle_chart">
-          <svg class="progress-ring" width="102" height="102">
+          <svg class="progress-ring" width="164" height="164">
             <circle
               stroke="#e9ecef"
-              stroke-width="6"
-              cx="50"
-              cy="50"
-              r="42"
+              stroke-width="12"
+              cx="83"
+              cy="82"
+              r="75"
               fill="none"
-              stroke-dasharray="314.16"
+              stroke-dasharray="471"
               stroke-dashoffset="0"
             />
             <circle
               class="progress-ring__circle"
-              stroke="#4d956a"
-              stroke-width="6"
+              stroke="url(#circleGradient)"
+              stroke-width="13"
               stroke-linecap="round"
-              cx="52"
-              cy="50"
-              r="42"
+              cx="50%"
+              cy="50%"
+              r="75"
               fill="transparent"
               stroke-dasharray="314.16"
               stroke-dashoffset="0"
               transform="rotate(-90, 50, 50)"
             />
 
-            <text x="37" y="45" fill="#4d956a" class="font_bold_1">BY!P:</text>
             <text
-              x="30"
-              y="68"
-              fill="#4d956a"
-              class="font_bold_8"
+              text-anchor="middle"
+              dominant-baseline="middle"
+              x="50%"
+              y="70%"
+              fill="#043785"
+              class="font_bold_1"
+            >
+              max 40
+            </text>
+            <text
+              text-anchor="middle"
+              dominant-baseline="middle"
+              x="50%"
+              y="55%"
+              fill="#00"
+              class="font_bold_9"
               id="score_in_percents"
             ></text>
+            <image
+            text-anchor="middle"
+              dominant-baseline="middle"
+              x="44%"
+              y="24%"
+              width="24"
+              height="24"
+              xlink:href="../media/Union.svg"
+            />
+            <linearGradient id="circleGradient" gradientTransform="rotate(45)">
+              <stop offset="0%" stop-color="#043785" />
+              <stop offset="100%" stop-color="#1F55A6" />
+            </linearGradient>
           </svg>
         </div>
         <pre>
 
 
         &lt;div class="circle_chart"&gt;
-          &lt;svg class="progress-ring" width="102" height="102"&gt;
+          &lt;svg class="progress-ring" width="164" height="164"&gt;
             &lt;circle
               stroke="#e9ecef"
-              stroke-width="6"
-              cx="50"
-              cy="50"
-              r="42"
+              stroke-width="12"
+              cx="83"
+              cy="82"
+              r="75"
               fill="none"
-              stroke-dasharray="314.16"
+              stroke-dasharray="471"
               stroke-dashoffset="0"
             /&gt;
             &lt;circle
               class="progress-ring__circle"
-              stroke="#4d956a"
-              stroke-width="6"
+              stroke="url(#circleGradient)"
+              stroke-width="13"
               stroke-linecap="round"
-              cx="52"
-              cy="50"
-              r="42"
+              cx="50%"
+              cy="50%"
+              r="75"
               fill="transparent"
               stroke-dasharray="314.16"
               stroke-dashoffset="0"
               transform="rotate(-90, 50, 50)"
             /&gt;
         
-            &lt;text x="37" y="45" fill="#4d956a" class="font_bold_1"&gt;BY!P:&lt;/text&gt;
             &lt;text
-              x="30"
-              y="68"
-              fill="#4d956a"
-              class="font_bold_8"
+              text-anchor="middle"
+              dominant-baseline="middle"
+              x="50%"
+              y="70%"
+              fill="#043785"
+              class="font_bold_1"
+            &gt;
+              max 40
+            &lt;/text&gt;
+            &lt;text
+              text-anchor="middle"
+              dominant-baseline="middle"
+              x="50%"
+              y="55%"
+              fill="#00"
+              class="font_bold_9"
               id="score_in_percents"
             &gt;&lt;/text&gt;
+            &lt;image
+            text-anchor="middle"
+              dominant-baseline="middle"
+              x="44%"
+              y="24%"
+              width="24"
+              height="24"
+              xlink:href="../media/Union.svg"
+            /&gt;
+            &lt;linearGradient id="circleGradient" gradientTransform="rotate(45)"&gt;
+              &lt;stop offset="0%" stop-color="#043785" /&gt;
+              &lt;stop offset="100%" stop-color="#1F55A6" /&gt;
+            &lt;/linearGradient&gt;
           &lt;/svg&gt;
         &lt;/div&gt;
-    
-        </pre>
 
-        <pre>
-        &lt;script&gt;
-            const circle = document.querySelector(".progress-ring__circle");
-            let score = 25;
-            document.querySelector("#score_in_percents").innerHTML = score + "%";
-            const radius = circle.r.baseVal.value;
-            
-            const circumference = 2 * Math.PI * radius;
-            
-            circle.style.strokeDasharray = `${circumference} ${circumference}`;
-            circle.style.strokeDashoffset = circumference;
-            
-            function setProgress(percent) {
-              const offset = circumference - (percent / 100) * circumference;
-              circle.style.strokeDashoffset = offset;
-            }
-            
-            setProgress(score);
-        &lt;/script&gt;
+   
+    
         </pre>
       </div>
     </div>
     <script>
       const circle = document.querySelector(".progress-ring__circle");
-      let score = 40;
-      document.querySelector("#score_in_percents").innerHTML = score + "%";
+      let score = 96;
+      let byp = (score/100)*40;
+      document.querySelector("#score_in_percents").innerHTML = Math.floor(byp * 100) / 100 ;
       const radius = circle.r.baseVal.value;
 
       const circumference = 2 * Math.PI * radius;
