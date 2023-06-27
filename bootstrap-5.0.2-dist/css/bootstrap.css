@@ -4450,6 +4450,41 @@ textarea.form-control-lg {
   background-color: inherit;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, border-radius 0.15s ease;
 }
+
+.accordion-button_none_cursor {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  /* padding: 1rem 1.25rem; */
+  /* font-size: 1rem; */
+  color: #212529;
+  text-align: left;
+  /* background-color: #fff; */
+  border: 0;
+  border-radius: 0;
+  overflow-anchor: none;
+  background-color: inherit;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, border-radius 0.15s ease;
+}
+
+.accordion-button_none_own_cursor {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  /* padding: 1rem 1.25rem; */
+  /* font-size: 1rem; */
+  color: #212529;
+  text-align: left;
+  /* background-color: #fff; */
+  border: 0;
+  border-radius: 0;
+  overflow-anchor: none;
+  background-color: inherit;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, border-radius 0.15s ease;
+}
+
 @media (prefers-reduced-motion: reduce) {
   .accordion-button {
     transition: none;
@@ -4467,6 +4502,13 @@ textarea.form-control-lg {
 
   transform: rotate(-180deg);
 }
+
+.accordion-button_none_own_cursor:not(.collapsed)::after {
+ /* background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e"); */
+ background-image: url("../../media/triangle.svg");
+  transform: rotate(-180deg);
+}
+
 .accordion-button::after {
   flex-shrink: 0;
   width: 1rem;
@@ -4480,6 +4522,21 @@ textarea.form-control-lg {
   background-size:cover;
   transition: transform 0.2s ease-in-out;
 }
+
+.accordion-button_none_own_cursor::after {
+  flex-shrink: 0;
+  width: 1rem;
+  height: 0.55rem;
+  /* margin-left: auto; */
+  margin-left: 8px;
+  content: "";
+  /* background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e"); */
+  background-image: url("../../media/triangle.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: transform 0.2s ease-in-out;
+}
+
 @media (prefers-reduced-motion: reduce) {
   .accordion-button::after {
     transition: none;
@@ -4527,9 +4584,9 @@ textarea.form-control-lg {
   border-bottom-left-radius: 0.25rem;
 }
 
-.accordion-body {
+/* .accordion-body {
   padding: 1rem 1.25rem;
-}
+} */
 
 .accordion-flush .accordion-collapse {
   border-width: 0;
