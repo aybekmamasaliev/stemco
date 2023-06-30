@@ -30,13 +30,71 @@
                 class="d-none d-lg-block"
               />
             </a>
-            <div
-              class="d-flex align-items-center border-start border-end px-3 ms-3"
-             >
-              <img src="./media/math_sins.svg" alt="math" />
-              <p class="fs_20 fw_700 text-white ms-2 d-md-none d-lg-block fs_sm_14">Mathematics</p>
-              <img src="./media/Vector.svg" alt="" class="ms-3" />
+            <div>
+              <div
+                class="d-flex align-items-center border-start border-end px-3 ms-3 c_pointer ps_rel"
+                id="select1"
+                onclick="changeChild(this.id)"
+               >
+                <img src="./media/math_sins.svg" alt="math" />
+                <p
+                  class="fs_20 fw_700 text-white ms-2 d-md-none d-lg-block fs_sm_14"
+                >
+                  Mathematics
+                </p>
+                <img src="./media/Vector.svg" alt="" class="ms-3" />
+              </div>
+              <div class="ps_rel none" id="option1">
+                <div class="gradient_math ps_abs_l_16_t_18">
+                   <div
+                    class="d-flex align-items-center border-start border-end px-3 c_pointer border-bottom ps_rel py-1 w-100"
+                  >
+                    <img src="./media/physics_logo.svg" alt="math" />
+                    <p
+                      class="fs_20 fw_700 text-white ms-2 d-lg-block fs_sm_14"
+                    >
+                    Physics
+                    </p>
+                    <img src="./media/Vector.svg" alt="" class="ms-3" />
+                  </div>
+                  <div
+                    class="d-flex align-items-center border-start border-end px-3 c_pointer border-bottom ps_rel py-1 w-100"
+                  >
+                    <img src="./media/science_logo.svg" alt="math" />
+                    <p
+                      class="fs_20 fw_700 text-white ms-2  d-lg-block fs_sm_14"
+                    >
+                      Chemstry
+                    </p>
+                    <img src="./media/Vector.svg" alt="" class="ms-3" />
+                  </div>
+                  <div
+                    class="d-flex align-items-center border-start border-end px-3 c_pointer border-bottom ps_rel py-1 w-100"
+                  >
+                    <img src="./media/chemstry_logo.svg" alt="math" />
+                    <p
+                      class="fs_20 fw_700 text-white ms-2 d-lg-block fs_sm_14"
+                    >
+                    Biology
+                    </p>
+                    <img src="./media/Vector.svg" alt="" class="ms-3" />
+                  </div>
+                  <div
+                    class="d-flex align-items-center border-start border-end px-3 c_pointer border-bottom ps_rel py-1 w-100"
+                  >
+                    <img src="./media/bio_logo.svg" alt="math" />
+                    <p
+                      class="fs_20 fw_700 text-white ms-2 d-lg-block fs_sm_14"
+                    >
+                    Science
+                    </p>
+                    <img src="./media/Vector.svg" alt="" class="ms-3" />
+                  </div>
+                  
+                </div>
+              </div>
             </div>
+
             <div class="d-none d-md-flex align-items-center text-white">
               <ul class="d-flex ps-0 mb-0 text-white">
                 <li class="me-1">
@@ -80,9 +138,7 @@
               <img alt="" src="./media/Notification.svg" />
             </div>
 
-            <div
-              class="px-2 d-flex d-md-flex align-items-center text-end"
-             >
+            <div class="px-2 d-flex d-md-flex align-items-center text-end">
               <div class="d_none_1000">
                 <p class="fs_12 me-2 text-white">Akhmetov&nbsp;Timur</p>
                 <p class="fs_12 me-2 gray_white">Student</p>
@@ -94,53 +150,56 @@
       </div>
     </nav>
     <nav class="navbar gradient_math d-flex d-md-none navbar2">
-        <div
-          class="d-flex align-items-center justify-content-center container-xxl"
-         >
-              <ul class="d-flex ps-0 mb-0 text-white">
-                <li class="me-1">
-                  <a
-                    class="nav-link header-link active text-center ms-3 fit_content px-0 fs_14 fw_400 fs_sm_12"
-                    href="./index.html"
-                  >
-                    <i class="fa-solid fa-table-columns me-1"></i>
-                    Dashboard
-                  </a>
-                </li>
-                <li class="me-1">
-                  <a
-                    class="nav-link header-link text-center ms-3 fs_14 px-0 fw_400 fs_sm_12"
-                    href="#"
-                  >
-                    <i class="fa-solid fa-brain me-1"></i> Practice
-                  </a>
-                </li>
-                <li class="me-1">
-                  <a
-                    class="nav-link header-link text-center ms-3 fs_14 px-0 fw_400 fs_sm_12"
-                    href="./achievements.html"
-                  >
-                    <i class="fa-solid fa-bolt me-1"></i>Achievements
-                  </a>
-                </li>
-                <li class="me-1">
-                  <a
-                    class="nav-link header-link text-center ms-3 px-0 fs_14 fw_400 fs_sm_12"
-                    href="#"
-                  >
-                    <i class="fa-solid fa-chart-simple me-1"></i> Leaderboard
-                  </a>
-                </li>
-              </ul>
-        </div>
+      <div
+        class="d-flex align-items-center justify-content-center container-xxl"
+      >
+        <ul class="d-flex ps-0 mb-0 text-white">
+          <li class="me-1">
+            <a
+              class="nav-link header-link active text-center ms-3 fit_content px-0 fs_14 fw_400 fs_sm_12"
+              href="./index.html"
+            >
+              <i class="fa-solid fa-table-columns me-1"></i>
+              Dashboard
+            </a>
+          </li>
+          <li class="me-1">
+            <a
+              class="nav-link header-link text-center ms-3 fs_14 px-0 fw_400 fs_sm_12"
+              href="#"
+            >
+              <i class="fa-solid fa-brain me-1"></i> Practice
+            </a>
+          </li>
+          <li class="me-1">
+            <a
+              class="nav-link header-link text-center ms-3 fs_14 px-0 fw_400 fs_sm_12"
+              href="./achievements.html"
+            >
+              <i class="fa-solid fa-bolt me-1"></i>Achievements
+            </a>
+          </li>
+          <li class="me-1">
+            <a
+              class="nav-link header-link text-center ms-3 px-0 fs_14 fw_400 fs_sm_12"
+              href="#"
+            >
+              <i class="fa-solid fa-chart-simple me-1"></i> Leaderboard
+            </a>
+          </li>
+        </ul>
+      </div>
     </nav>
 
     <script>
       let firstSibling;
+      let firstChild;
       const changeChild = (id) => {
         let width = document.getElementById(id).clientWidth;
         firstSibling = document.getElementById(id).nextElementSibling;
-        firstSibling.style.minWidth = `${width + 4}px`;
+        firstChild=firstSibling.firstElementChild;
+        firstChild.style.minWidth=`${width}px`;
+        firstSibling.style.minWidth = `${width}px`;
         firstSibling.classList.toggle("none");
       };
     </script>
