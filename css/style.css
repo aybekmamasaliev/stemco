@@ -612,6 +612,12 @@ p {
   left:120px;
 }
 
+.ps_abs_l_16_t_18{
+  position: absolute;
+  left: 16px;
+  top:18px
+}
+
 .score_tbl {
   height: 90px;
   border-right: 1px solid var(--table_bg);
