@@ -825,6 +825,10 @@ p {
 }
 
 .nav-link {
+  color: var(--black_text_light);
+}
+
+.header-link {
   color: var(--white_txt);
 }
 
