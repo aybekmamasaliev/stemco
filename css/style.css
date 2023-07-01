@@ -15,6 +15,8 @@
   --color_warning: #e59347;
   --color_orange: #FAAA7D;
   --count_silver: #959292;
+  --orange_rgb:rgba(232, 93, 4, 1);
+  --gray_rgb:rgba(231, 233, 239, 1);
   --count_bronze: #fbaa6b;
   --muted_text: #90a0aa;
   --gray_txt:#636F81;
@@ -28,6 +30,9 @@
   --green_text: #4d956a;
   /* --green_active: #198754; */
   --green_active: #48bb77;
+  --red_clr:rgba(244, 54, 76, 1);
+  --green_txt:rgba(77, 149, 106, 1);
+  --green_bg:rgba(244, 255, 239, 1);
   --physics_purple: #d90f7e;
   --finished_sticker: rgba(244, 54, 76, 0.12);
   --physics_orange: #ff9e44;
@@ -132,12 +137,20 @@ p {
   background-color: var(--light_grey);
 }
 
+.orange_rgb{
+  background-color: var(--orange_rgb);
+}
+
 .clr_light_grey{
   color:var(--light_grey)
 }
 
 .like_muted{
   color: var(--like_muted);
+}
+
+.green_txt{
+  color: var(--green_text);
 }
 
 .border_light_grey {
@@ -155,6 +168,14 @@ p {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.green_bg{
+  background-color: var(--green_bg);
+}
+
+.red_clr{
+  background-color: var(--active_txt);
 }
 
 .muted_txt {
@@ -193,6 +214,9 @@ p {
   font: var(--font_regular_2);
 }
 
+.gray_rgb{
+  background-color: var(--gray_rgb);
+}
 .font_regular_3 {
   font: var(--font_regular_3);
 }
@@ -615,7 +639,7 @@ p {
 .ps_abs_l_16_t_18{
   position: absolute;
   left: 16px;
-  top:18px
+  top:8px
 }
 
 .score_tbl {
@@ -802,6 +826,10 @@ p {
   position: relative;
 }
 
+.b_r_16{
+  border-radius: 16px;
+}
+
 .w_60 {
   width: 50px;
   text-align: center;
@@ -817,12 +845,56 @@ p {
   top: -2px;
 }
 
+.ps_sticky_t_0 {
+  position: sticky;
+  top: 0;
+}
+
+.ps_min_score{
+  position: absolute; 
+  top: 20%; 
+  left: -4px;
+}
+
+.progress_thumb{
+  height: 100%; 
+  border-radius: 10px;
+}
+
+.ps_stc{
+  position: sticky;
+  width: 8px;
+}
+
+.b_rad_10{
+  border-radius: 10px;
+}
+
+.b_rad_t_s{
+  border-top-left-radius: 10px;
+}
+
+.b_rad_t_e{
+  border-top-right-radius: 10px;
+}
+
+.b_rad_b_e{
+  border-bottom-right-radius: 10px;
+}
+
 .ps_sticky_t_35{
   position: sticky;
   top: 38px;
   bottom: -1px;
   background-color: #EDF1F9;
   box-shadow: 0px 0px 10px var(--student_text);
+  z-index: 9;
+}
+
+.ps_sticky_t_58{
+  position: sticky;
+  top: 58px;
+  bottom: -1px;
   z-index: 9;
 }
 
@@ -873,6 +945,11 @@ p {
   max-height: 698px;
 }
 
+.max_h_866{
+  height: 106px;
+  /* overflow-y: hidden; */
+}
+
 .color_hr {
   color: var(--table_bg);
 }
@@ -903,6 +980,21 @@ td {
 .tbl_overf_s{
   max-height: 520px;
   overflow-y: scroll;
+}
+
+.tbl_overf_s_860{
+  max-height: 660px;
+  overflow-y: scroll;
+}
+
+.tbl_overf_s_860::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.tbl_overf_s_860 {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
 }
 
 .overf_y_s{

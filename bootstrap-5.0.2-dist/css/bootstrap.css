@@ -3854,8 +3854,7 @@ textarea.form-control-lg {
   }
 }
 .nav-link:hover, .nav-link:focus {
-  color: white;
-  font-weight: 700;
+  color: gray;
 }
 
 .nav-link.disabled {
