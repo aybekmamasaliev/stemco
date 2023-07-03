@@ -20,93 +20,132 @@
     <title>Document</title>
   </head>
   <body>
-    <nav
-      class="navbar navbar2 navbar-expand navbar-light bg-light py-2 px-1 bg-white"
-    >
-      <div class="container-xxl">
-        <a
-          class="navbar-brand border_none_sm d-none d-md-block pe-4 ps-1"
-          href="#"
-        >
-          <img alt="" src="./media/logo.svg" />
-          <img
-            alt=""
-            src="./media/logo_txt.svg"
-            class="pt-2 d-none d-md-inline"
-          />
-        </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul
-            class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto pt-2 color_black_light"
-          >
-            <li class="me-1">
-              <a
-                class="nav-link active text-center active_nav_item fs_14 fw_400 fs_sm_12"
-                href="./index.html"
-              >
-                <i class="fa-solid fa-table-columns me-1"></i>
-                Dashboard
-              </a>
-            </li>
-            <li class="me-1">
-              <a class="nav-link text-center fs_14 fw_400 fs_sm_12" href="#">
-                <i class="fa-solid fa-brain me-1"></i> Practice
-              </a>
-            </li>
-            <li class="me-1">
-              <a
-                class="nav-link text-center fs_14 fw_400 fs_sm_12"
-                href="./achievements.html"
-              >
-                <i class="fa-solid fa-bolt me-1"></i>Achievements
-              </a>
-            </li>
-            <li class="me-1">
-              <a class="nav-link text-center fs_14 fw_400 fs_sm_12" href="#">
-                <i class="fa-solid fa-chart-simple me-1"></i> Leaderboard
-              </a>
-            </li>
-          </ul>
-          <div class="d-flex">
-            <div class="px-3 d-none d-md-flex border-start border-end">
-              <img alt="" src="./media/Seasons.svg" class="d-block" />
-              <div class="d-flex align-items-center">
-                <div class="d_none_1000 ps-2">
-                  <p>SUMMER 2023</p>
-                  <p class="fs_12 muted_txt">
-                    1&nbsp;June&nbsp;2023&nbsp;-&nbsp;31&nbsp;August&nbsp;2023
-                  </p>
+    <nav class="navbar gradient_math d-flex">
+      <div class="d-flex justify-content-between container-xxl">
+        <div
+          class="d-flex align-items-center justify-content-between container-xxl"
+         >
+          <div class="d-flex align-items-center">
+            <a href="#">
+              <img src="./media/half_logo.svg" alt="" class="d-lg-none" />
+              <img
+                src="./media/logo_white.svg"
+                alt=""
+                class="d-none d-lg-block"
+              />
+            </a>
+            <div>
+              <div
+                class="d-flex align-items-center border-start border-end px-3 ms-3 c_pointer ps_rel"
+                id="select1"
+                onclick="changeChild(this.id)"
+               >
+                <img src="./media/math_sins.svg" alt="math" />
+                <p
+                  class="fs_20 fw_700 text-white ms-2 d-md-none d-lg-block fs_sm_14"
+                >
+                  Mathematics
+                </p>
+                <img src="./media/Vector.svg" alt="" class="ms-3" />
+              </div>
+              <div class="ps_rel none z_index" id="option1">
+                <div class="gradient_math ps_abs_l_16_t_18">
+                   <div
+                    class="d-flex align-items-center border-start border-end px-3 c_pointer border-bottom ps_rel py-1 w-100"
+                  >
+                    <img src="./media/physics_logo.svg" alt="math" />
+                    <p
+                      class="fs_20 fw_700 text-white ms-2 d-lg-block fs_sm_14"
+                    >
+                    Physics
+                    </p>
+                    <img src="./media/Vector.svg" alt="" class="ms-3" />
+                  </div>
+                  <div
+                    class="d-flex align-items-center border-start border-end px-3 c_pointer border-bottom ps_rel py-1 w-100"
+                  >
+                    <img src="./media/science_logo.svg" alt="math" />
+                    <p
+                      class="fs_20 fw_700 text-white ms-2  d-lg-block fs_sm_14"
+                    >
+                      Chemstry
+                    </p>
+                    <img src="./media/Vector.svg" alt="" class="ms-3" />
+                  </div>
+                  <div
+                    class="d-flex align-items-center border-start border-end px-3 c_pointer border-bottom ps_rel py-1 w-100"
+                  >
+                    <img src="./media/chemstry_logo.svg" alt="math" />
+                    <p
+                      class="fs_20 fw_700 text-white ms-2 d-lg-block fs_sm_14"
+                    >
+                    Biology
+                    </p>
+                    <img src="./media/Vector.svg" alt="" class="ms-3" />
+                  </div>
+                  <div
+                    class="d-flex align-items-center border-start border-end px-3 c_pointer border-bottom ps_rel py-1 w-100"
+                  >
+                    <img src="./media/bio_logo.svg" alt="math" />
+                    <p
+                      class="fs_20 fw_700 text-white ms-2 d-lg-block fs_sm_14"
+                    >
+                    Science
+                    </p>
+                    <img src="./media/Vector.svg" alt="" class="ms-3" />
+                  </div>
+                  
                 </div>
               </div>
             </div>
-            <div
-              class="px-1 mt-1 mx-2 d-none d-md-flex align-items-center ps_rel"
-            >
-              <img alt="" src="./media/notif_sing.svg" class="ps_abs_t5_r5" />
-              <img
-                alt=""
-                src="./media/notification.svg"
-                class="border p-2 rounded-3"
-              />
+
+            <div class="d-none d-md-flex align-items-center text-white">
+              <ul class="d-flex ps-0 mb-0 text-white">
+                <li class="me-1">
+                  <a
+                    class="nav-link header-link active text-center ms-3 fit_content px-0 fs_14 fw_400 fs_sm_12"
+                    href="./index.html"
+                  >
+                    <i class="fa-solid fa-table-columns me-1"></i>
+                    Dashboard
+                  </a>
+                </li>
+                <li class="me-1">
+                  <a
+                    class="nav-link header-link text-center ms-3 fs_14 px-0 fw_400 fs_sm_12"
+                    href="#"
+                  >
+                    <i class="fa-solid fa-brain me-1"></i> Practice
+                  </a>
+                </li>
+                <li class="me-1">
+                  <a
+                    class="nav-link header-link text-center ms-3 fs_14 px-0 fw_400 fs_sm_12"
+                    href="./achievements.html"
+                  >
+                    <i class="fa-solid fa-bolt me-1"></i>Achievements
+                  </a>
+                </li>
+                <li class="me-1">
+                  <a
+                    class="nav-link header-link text-center ms-3 px-0 fs_14 fw_400 fs_sm_12"
+                    href="#"
+                  >
+                    <i class="fa-solid fa-chart-simple me-1"></i> Leaderboard
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="d-flex">
+            <div class="px-1 mt-1 d-md-flex align-items-center ps_rel">
+              <img alt="" src="./media/Notification.svg" />
             </div>
 
-            <div
-              class="px-2 d-flex me-1 d-none d-md-flex align-items-center text-end border_s"
-            >
-              <div class="d_none_1090">
-                <p class="fs_12 me-2">Akhmetov&nbsp;Timur</p>
-                <p class="fs_12 me-2 muted_txt">Student</p>
+            <div class="px-2 d-flex d-md-flex align-items-center text-end">
+              <div class="d_none_1000">
+                <p class="fs_12 me-2 text-white">Akhmetov&nbsp;Timur</p>
+                <p class="fs_12 me-2 gray_white">Student</p>
               </div>
               <img alt="" src="./media/student_nav.svg" />
             </div>
@@ -114,49 +153,48 @@
         </div>
       </div>
     </nav>
-    <div
-      class="navbar navbar-expand navbar-light d-block d-md-none bg-light px-1 py-2 bg-white"
-    >
-      <div class="container-fluid">
-        <a class="navbar-brand border_none_sm pe-4 ps-1" href="#">
-          <img alt="" src="./media/logo.svg" />
-          <img alt="" src="./media/logo_txt.svg" class="pt-2 d-inline" />
-        </a>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mb-2 mb-lg-0 mx-auto pt-2"></ul>
-          <div class="d-flex">
-            <div class="px-3 d-flex border-start border-end">
-              <img alt="" src="./media/Seasons.svg" class="d-block" />
-              <div class="d-flex align-items-center">
-                <div class="d_none_1000 ps-2">
-                  <p>SUMMER 2023</p>
-                  <p class="fs_12 muted_txt">
-                    1&nbsp;June&nbsp;2023&nbsp;-&nbsp;31&nbsp;August&nbsp;2023
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="px-1 mt-1 mx-2 d-block ps_rel">
-              <img alt="" src="./media/notif_sing.svg" class="ps_abs_t5_r5" />
-              <img
-                alt=""
-                src="./media/notification.svg"
-                class="border p-2 rounded-3"
-              />
-            </div>
-
-            <div class="px-2 d-flex me-1 text-end border_s">
-              <div class="d_none_1090">
-                <p class="fs_12 me-2">Akhmetov&nbsp;Timur</p>
-                <p class="fs_12 me-2 muted_txt">Student</p>
-              </div>
-              <img alt="" src="./media/student_nav.svg" />
-            </div>
-          </div>
-        </div>
+    <nav class="navbar gradient_math d-flex d-md-none navbar2">
+      <div
+        class="d-flex align-items-center justify-content-center container-xxl"
+       >
+        <ul class="d-flex ps-0 mb-0 text-white">
+          <li class="me-1">
+            <a
+              class="nav-link header-link active text-center ms-3 fit_content px-0 fs_14 fw_400 fs_sm_12"
+              href="./index.html"
+            >
+              <i class="fa-solid fa-table-columns me-1"></i>
+              Dashboard
+            </a>
+          </li>
+          <li class="me-1">
+            <a
+              class="nav-link header-link text-center ms-3 fs_14 px-0 fw_400 fs_sm_12"
+              href="#"
+            >
+              <i class="fa-solid fa-brain me-1"></i> Practice
+            </a>
+          </li>
+          <li class="me-1">
+            <a
+              class="nav-link header-link text-center ms-3 fs_14 px-0 fw_400 fs_sm_12"
+              href="./achievements.html"
+            >
+              <i class="fa-solid fa-bolt me-1"></i>Achievements
+            </a>
+          </li>
+          <li class="me-1">
+            <a
+              class="nav-link header-link text-center ms-3 px-0 fs_14 fw_400 fs_sm_12"
+              href="#"
+            >
+              <i class="fa-solid fa-chart-simple me-1"></i> Leaderboard
+            </a>
+          </li>
+        </ul>
       </div>
-    </div>
-    <section class="bg-white border_b_E2E7EB px-1">
+    </nav>
+    <section class="bg-white border_b_E2E7EB  px-1">
       <div class="container-xxl py-2">
         <div class="vndfvndfjkvndjkvndkj mt-2">
           <div class="nvjfdnvj d-none d-sm-block">
@@ -321,410 +359,9 @@
           </div>
         </div>
       </div>
-     <!-- <div class="container-xxl py-2">
-        <div class="d-flex mt-2">
-          <div class="nvjfdnvj" style="width:120px; background-color: red;">
-            <img alt="" src="./media/timur.svg" class="d-block" style="width:120px; background-color: red;" />
-          </div>
-          <div class="grid_1030 bg-warning">
-            <div class="xyz bg-light">
-              <div class="d-flex justify-content-between align-items-center">
-                <div>
-                  <p class="fs_20 fw_600">@akhmetovtimur</p>
-                  <p class="fs_12 fw_400 align-items-center">
-                    akhmetovtimur@gmail.com •
-                    Kazakhstan.&nbsp;Almaty&nbsp;&nbsp;
-                    <img alt="" src="./media/mini_flag.svg" />&nbsp;
-                  </p>
-                </div>
-                <div class="d-flex">
-                  <button type="button" class="btn_stc btn_primary">
-                    <span class="d-flex align-items-center justify-content-between">
-                      <img src="./media/tabler-icon-edit.svg" alt="" class="me-2" />
-                      Edit profile
-                      </span>
-                  </button>
-                  <button type="button" class="btn_stc outline_btn_primary ms-2">
-                    <span class="d-flex align-items-center justify-content-between">
-                      <img src="./media/tabler-icon-link.svg" alt="" class="me-2" />
-                      Share profile
-                      </span>
-                  </button>
-                </div>
-              </div>
-            </div>
-            <div class="c2c3r2r3 bg-secondary">
-              <div class="gap_12">
-                <div class="p_16_12 bg-light ps_rel">
-                  <p class="compleated_ch_color fw_600 fs_16">Primary junior</p>
-                  <p class="i_gray fw_500 fs_12 mt-3">Level</p>
-                  <img
-                    src="./media/i_leaderbord.svg"
-                    alt="leaderboard"
-                    class="ps_abs_b_r"
-                  />
-                </div>
-                <div class="p_16_12 bg-light ps_rel">
-                  <div class="d-flex justify-content-between">
-                    <div class="gold_card">
-                      <p class="fs_14 fw_600">0</p>
-                      <img src="./media/gold_1.svg" alt="" class="ms_2" />
-                    </div>
-                    <div class="silver_card">
-                      <p class="fs_14 fw_600">0</p>
-                      <img src="./media/silver_1.svg" alt="" class="ms_2" />
-                    </div>
-                    <div class="bronze_card">
-                      <p class="fs_14 fw_600">0</p>
-                      <img src="./media/bronze_1.svg" alt="" class="ms_2" />
-                    </div>
-                  </div>
-                  <div
-                    class="i_gray fw_500 fs_12 mt-2 pt-1 d-flex align-items-center"
-                  >
-                    <p>Medals</p>
-                    <img
-                      src="./media/i_for_table.svg"
-                      alt="icon"
-                      class="ms-2"
-                    />
-                  </div>
-                  <img
-                    src="./media/i_medal.svg"
-                    alt="leaderboard"
-                    class="ps_abs_b_r"
-                  />
-                </div>
-                <div class="p_16_12 bg-light ps_rel">
-                  <p class="fw_600 fs_16 compleated_ch_color">1586</p>
-                  <p class="fw_500 fs_12 i_gray mt-3">Problems solved</p>
-                  <img src="./media/i_list.svg" alt="" class="ps_abs_b_r" />
-                </div>
-                <div class="p_16_12 bg-light ps_rel vhbdhvjbdfhk">
-                  <p class="fw_600 fs_16 compleated_ch_color">2 874.8</p>
-                  <div class="d-flex align-items-center mt-3">
-                    <p class="i_gray fw_500 fs_12">BY!P</p>
-                    <img src="./media/i_for_table.svg" alt="" class="ms-2" />
-                  </div>
-                  <img src="./media/Union.svg" alt="" class="ps_abs_b_r" />
-                </div>
-              </div>
-              <div class="steps_beginner mt-3">
-                <div class="d-flex">
-                  <img src="./media/Group 1864496.svg" alt="" />
-                  <div class="ms-2">
-                    <p class="fw_600 fs_20 text-black">Beginner</p>
-                    <p class="fw_400 fs_12 i_gray">League</p>
-                  </div>
-                </div>
-                <div class="h_1px ps_rel">
-                  <div class="point ps_point_left"></div>
-                  <div class="point ps_point_right"></div>
-                </div>
-                <div class="d-flex">
-                  <img src="./media/i_block.svg" alt="" />
-                  <div class="ms-2">
-                    <p class="fw_600 fs_20 text-black i_gray">Advanced</p>
-                    <p class="fw_400 fs_12 i_gray">League</p>
-                  </div>
-                </div>
-                <div class="h_1px ps_rel">
-                  <div class="point ps_point_left"></div>
-                  <div class="point ps_point_right"></div>
-                </div>
-                <div class="d-flex">
-                  <img src="./media/i_block.svg" alt="" />
-                  <div class="ms-2">
-                    <p class="fw_600 fs_20 text-black i_gray">Olympiad</p>
-                    <p class="fw_400 fs_12 i_gray">League</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="border ps_rel br_r_12 c3c4r2r3 bg-danger">
-              <div class="top_head_card card_bg"></div>
-              <div class="stmc_card">
-                <div class="fit_content bg-white">
-                  <img
-                    alt=""
-                    src="./media/tree4040.svg"
-                    class="d-block shadow"
-                  />
-                </div>
-                <div class="d-flex border-bottom pb-2">
-                  <p class="fw_500 fs_16 mt-2">
-                    Nazarbayev Intellectual School
-                  </p>
-                  <img alt="" src="./media/green_tick.svg" class="ms-2 mt-1" />
-                </div>
-                <div class="d-flex mt-2">
-                  <div class="border-end pe-3">
-                    <p class="fs_14 fw_400 muted_txt">Students:</p>
-                    <p class="fs_14 fw_500">543</p>
-                  </div>
-                  <div class="ps-3">
-                    <p class="fs_14 fw_400 muted_txt">Awards:</p>
-                    <div class="d-flex">
-                      <p class="text-center">
-                        <span class="fs_14 fw_500 count_gold">28</span>
-                        <img alt="" src="./media/gold_award.svg" />
-                      </p>
-                      <p class="ms-3 text-center px-2">
-                        <span class="fs_14 fw_500 count_silver">31</span>
-                        <img alt="" src="./media/silver_award.svg" />
-                      </p>
-                      <p class="ms-3 text-center">
-                        <span class="fs_14 fw_500 count_bronze">53</span>
-                        <img alt="" src="./media/bronze_award.svg" />
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="row my-1">
-          <div class="col-12 col-sm-7 stmc_card">
-            <div class="d-flex justify-content-between">
-              <img
-                alt=""
-                src="./media/timur.svg"
-                class="d-block col-2 img-fluid"
-              />
-              <div class="col-10 ps-4">
-                <p class="fs_24 fw_600">@akhmetovtimur</p>
-                <p class="fs_14 fw_500 align-items-center">
-                  akhmetovtimur@gmail.com • Kazakhstan.&nbsp;Almaty&nbsp;&nbsp;
-                  <img alt="" src="./media/mini_flag.svg" />&nbsp;
-                </p>
-                <div
-                  class="d-flex align-items-center pt-2 pb-3 mt-1 border-bottom"
-                >
-                  <div class="d-flex border-end pe-2">
-                    <p class="my-auto count_gold">1</p>
-                    <div class="circle_award ms-2 me-1 bg_gold">
-                      <img
-                        alt=""
-                        src="./media/test_gold_3.svg"
-                        class="price_icon"
-                      />
-                    </div>
-                  </div>
-                  <div class="d-flex border-end px-3">
-                    <p class="my-auto count_silver">0</p>
-                    <div class="circle_award ms-2 me-1 bg_silver">
-                      <img
-                        alt=""
-                        src="./media/test_gold_3.svg"
-                        class="price_icon"
-                      />
-                    </div>
-                  </div>
-                  <div class="d-flex px-3">
-                    <p class="my-auto count_bronze">3</p>
-                    <div class="circle_award ms-2 me-1 bg_bronze">
-                      <img
-                        alt=""
-                        src="./media/test_gold_3.svg"
-                        class="price_icon"
-                      />
-                    </div>
-                  </div>
-                </div>
-                <div class="d-flex pt-2">
-                  <div class="d-flex c_pointer">
-                    <img
-                      alt=""
-                      src="./media/tabler-icon-pencil-minusedit_profile.svg"
-                    />
-                    <p class="ps-1 pe-3 border-end">Edit Profile</p>
-                  </div>
-                  <div class="d-flex ps-3 c_pointer">
-                    <img alt="" src="./media/tabler-icon-linkshare.svg" />
-                    <p class="ps-1">Share profile</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-sm-5 stmc_card">
-            <div class="border p-2 ps_rel rounded-3">
-              <div class="d-flex justify-content-between">
-                <p class="font_bold_2 muted_txt">School</p>
-                <p class="font_bold_1 d-flex align-items-center">Edit</p>
-              </div>
-
-              <div
-                class="font_bold_2 d-flex align-items-center mt-2 justify-content-between"
-              >
-                <div class="d-flex align-items-center justify-content-between">
-                  <img
-                    alt=""
-                    src="./media/tree4040.svg"
-                    class="d-block shadow"
-                  />
-                  <p class="ms-2">Nazarbayev Intellectual School</p>
-                  <img
-                    alt=""
-                    src="./media/green_tick.svg"
-                    class="d-block ms-2"
-                  />
-                </div>
-                <div class="d-flex rounded-3">
-                  <img alt="" src="./media/subscribed.svg" class="d-block" />
-                  <span class="ms-2 d_none_750">Subscribed</span>
-                </div>
-              </div>
-              <hr class="color_hr" />
-              <p class="fs_12">Students: <span class="ms-2">543</span></p>
-
-              <div class="d-flex align-items-center mt-2">
-                <p class="fs_12 pt-1">Awards:</p>
-                <p class="ms-4 text-center">
-                  <img alt="" src="./media/gold_award.svg" />
-                  <span class="fs_12">28</span>
-                </p>
-                <p class="ms-3 text-center border-end border-start px-2">
-                  <img alt="" src="./media/silver_award.svg" />
-                  <span class="fs_12">31</span>
-                </p>
-                <p class="ms-3 text-center">
-                  <img alt="" src="./media/bronze_award.svg" />
-                  <span class="fs_12">53</span>
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>-->
     </section>
     <section class="px-1">
-      <div class="container-xxl main_design_challenges pt-4">
-        <div class="d-flex flex-wrap">
-          <div class="me-3 my-1">
-            <select
-              class="form-select pe-5 p-2 bg-secondary text-white select"
-              aria-label="Mathematics: Primary Junior"
-            >
-              <option selected>Mathematics : Primary Junior</option>
-              <option value="1">One</option>
-              <option value="2">Two</option>
-              <option value="3">Three</option>
-            </select>
-          </div>
-
-          <div class="me-3 my-1">
-            <select
-              class="form-select pe-5 p-2 bg-light select_darck"
-              aria-label="Default select example"
-            >
-              <option selected>Physics</option>
-              <option value="1">One</option>
-              <option value="2">Two</option>
-              <option value="3">Three</option>
-            </select>
-          </div>
-
-          <div class="me-3 my-1">
-            <select
-              class="form-select pe-5 p-2 bg-light select_darck"
-              aria-label="Default select example"
-            >
-              <option selected>Chemistry</option>
-              <option value="1">One</option>
-              <option value="2">Two</option>
-              <option value="3">Three</option>
-            </select>
-          </div>
-
-          <div class="me-3 my-1">
-            <select
-              class="form-select pe-5 p-2 bg-light select_darck"
-              aria-label="Default select example"
-            >
-              <option selected>Biology</option>
-              <option value="1">One</option>
-              <option value="2">Two</option>
-              <option value="3">Three</option>
-            </select>
-          </div>
-
-          <div class="me-3 my-1">
-            <select
-              class="form-select pe-5 p-2 bg-light select_darck"
-              aria-label="Default select example"
-            >
-              <option selected>Science</option>
-              <option value="1">One</option>
-              <option value="2">Two</option>
-              <option value="3">Three</option>
-            </select>
-          </div>
-        </div>
-
-        <div class="border stmc_card mt-4 bg-white">
-          <div class="container-xxl">
-            <div class="row">
-              <div class="col-6 col-md-3 border-end ps-0">
-                <div class="fs_14 fw_500 d-flex align-items-center">
-                  <img alt="" src="./media/byip.svg" />
-                  <p class="ps-1">Lifetime</p>
-                  <img alt="" src="./media/alert_notf.svg" class="ps-1" />
-                </div>
-                <p class="fs_30 fw_600 mt-1 line_h_1">2 874.8</p>
-              </div>
-              <div class="col-6 col-md-3 ps-3 border_none_sm d-flex">
-                <div class="mt-2">
-                  <img alt="earth" src="./media/earth.svg" />
-                </div>
-                <div class="flex-column ps-3">
-                  <div class="d-flex justify-content-between">
-                    <img alt="" src="./media/cupa.svg" />
-                    <p class="fs_14 fw_500 ps-2">World Rank:</p>
-                    <img alt="" src="./media/alert_notf.svg" class="ps-1" />
-                  </div>
-                  <div class="mt-1">
-                    <p class="fs_20 fw_600 color_black">563/9874</p>
-                  </div>
-                </div>
-              </div>
-              <div
-                class="col-6 col-md-3 border-end d-flex ps-0 ps-md-3 mt-4 mt-md-0"
-              >
-                <div class="mt-3">
-                  <img alt="earth" src="./media/flag.svg" />
-                </div>
-                <div class="flex-column ps-3">
-                  <div class="d-flex justify-content-between">
-                    <img alt="" src="./media/cupa.svg" class="me-2" />
-                    <p class="fs_14 fw_500">Country Rank:</p>
-                    <img alt="" src="./media/alert_notf.svg" class="ps-1" />
-                  </div>
-                  <div class="mt-1">
-                    <p class="fs_20 fw_600 color_black">64/983</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-6 col-md-3 ps-3 d-flex mt-4 mt-md-0">
-                <div class="mt-2">
-                  <img alt="earth" src="./media/tree.svg" />
-                </div>
-                <div class="flex-column ps-3">
-                  <div class="d-flex justify-content-between">
-                    <img alt="" src="./media/cupa.svg" class="me-2" />
-                    <p class="fs_14 fw_500">Rank in School:</p>
-                    <img alt="" src="./media/alert_notf.svg" class="ps-1" />
-                  </div>
-                  <div class="mt-1">
-                    <p class="fs_20 fw_600 color_black">22/48</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+      <div class="container-xxl main_design_challenges">
         <div class="d-flex flex-wrap mt-5 justify-content-between">
           <div class="col-12 col-md-5 pe-0 pe-md-2">
             <div>
@@ -4391,6 +4028,18 @@
         </div>
       </div>
     </section>
+    <script>
+      let firstSibling;
+      let firstChild;
+      const changeChild = (id) => {
+        let width = document.getElementById(id).clientWidth;
+        firstSibling = document.getElementById(id).nextElementSibling;
+        firstChild=firstSibling.firstElementChild;
+        firstChild.style.minWidth=`${width}px`;
+        firstSibling.style.minWidth = `${width}px`;
+        firstSibling.classList.toggle("none");
+      };
+    </script>
     <script>
       let score = 70;
       let progress = document.getElementById("progress");
