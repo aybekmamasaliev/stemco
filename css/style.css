@@ -214,11 +214,6 @@ p {
 
 }
 
-@media (max-width:576px) {
-  .vndfvndfjkvndjkvndkj{
-    grid-template-columns:1fr;
-  }
-}
 
 @media (max-width:767px) {
   .gap_12{
@@ -244,14 +239,10 @@ p {
 
 }
 
-@media (max-width:576px) {
-
-
+@media (max-width:575px) {
   .vndfvndfjkvndjkvndkj{
-    grid-template-columns:100px 1fr;
+    grid-template-columns:1fr;
   }
-
- 
 }
 
 
@@ -346,6 +337,10 @@ p {
 
 .card_bg{
   background-color: var(--card_bg);
+}
+
+.z_index{
+  z-index: 999;
 }
 
 .top_head_card{
