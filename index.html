@@ -38,7 +38,7 @@
               <div
                 class="d-flex align-items-center border-start border-end px-3 ms-3 c_pointer ps_rel"
                 id="select1"
-                onclick="changeChild(this.id)"
+                onclick="changeChildRotate(this.id)"
                >
                 <img src="./media/math_sins.svg" alt="math" />
                 <p
@@ -92,9 +92,9 @@
                   </div>
                   
                 </div>
+                
               </div>
             </div>
-
             <div class="d-none d-md-flex align-items-center text-white">
               <ul class="d-flex ps-0 mb-0 text-white">
                 <li class="me-1">
@@ -192,8 +192,8 @@
     </nav>
     <section class="bg-white border_b_E2E7EB  px-1">
       <div class="container-xxl py-2">
-        <div class="vndfvndfjkvndjkvndkj mt-2">
-          <div class="nvjfdnvj d-none d-sm-block">
+        <div class="respons_grid mt-2">
+          <div class="d-none d-sm-block">
             <img alt="" src="./media/timur.svg" class="d-block img-fluid" />
           </div>
           <div class="grid_1030">
@@ -223,7 +223,7 @@
                 </div>
               </div>
             </div>
-            <div class="c2c3r2r3">
+            <div class="c1c2r2r3">
               <div class="gap_12">
                 <div class="p_16_12 bg-light ps_rel">
                   <p class="compleated_ch_color fw_600 fs_16">Primary junior</p>
@@ -311,8 +311,7 @@
                 </div>
               </div>
             </div>
-
-            <div class="border ps_rel br_r_12 c3c4r2r3">
+            <div class="border ps_rel br_r_12 c12_r34-1165-c23_r23">
               <div class="top_head_card card_bg"></div>
               <div class="stmc_card">
                 <div class="fit_content bg-white">
@@ -358,7 +357,7 @@
       </div>
     </section>
     <section class="px-1">
-      <div class="d-flex mt-3 ms-3">
+      <div class="d-flex mt-3 ms-3" >
         <p class="fs_20 fw_500">Season</p>
         <div class="d-flex ms-3">
           <button
@@ -389,7 +388,7 @@
       </div>
       <div class="container-xxl main_design_challenges">
         <div class="d-flex flex-wrap mt-5 justify-content-between">
-          <div class="col-12 col-md-5 pe-0 pe-md-2">
+          <div class="col-12 col-md-6 pe-0 pe-md-2">
             <div>
               <div class="accordion-item border stmc_card gradient_math" id="cndkjsl">
                 <div class="p-0 accordion-header" id="panelsStayOpen-headingSix">
@@ -511,7 +510,7 @@
                             <span
                               class="d-flex align-items-center justify-content-between"
                             >
-                              <img src="../media/play.svg" alt="" class="me-1" />
+                              <img src="./media/play.svg" alt="" class="me-1" />
                               Continue
                             </span>
                           </button>
@@ -824,7 +823,7 @@
             </div>
           </div>
 
-          <div class="col-12 col-md-7 ps-0 ps-md-2 mt-3 mt-md-0 rounded-3 ps_rel">
+          <div class="col-12 col-md-6 ps-0 ps-md-2 mt-3 mt-md-0 rounded-3 ps_rel">
             <div class="tbl_overf_s_860 bg-white  px-2 b_r_16 d-flex">
               <div class="ps_sticky_t_1 me-2 ps_stc">
                 <div class="w-100 mt-2 gray_rgb ps_rel d-flex flex-column-reverse progress_thumb">
@@ -1848,6 +1847,35 @@
     <script>
       let firstSibling;
       let firstChild;
+      let lastChildSibling;
+      const changeChildRotate = (id) => {
+        let width = document.getElementById(id).clientWidth;
+        firstSibling = document.getElementById(id).nextElementSibling;
+        lastChildSibling=document.getElementById(id).lastElementChild;
+        lastChildSibling.classList.toggle("rotate_180")
+        firstChild=firstSibling.firstElementChild;
+        firstChild.style.minWidth=`${width}px`;
+        firstSibling.style.minWidth = `${width}px`;
+        firstSibling.classList.toggle("none");
+      };
+
+
+
+      document.addEventListener("click",(function(e){
+        let x = e.target;
+        let fcdsacdsa = document.getElementById("select1");
+        let cdfmvklmfdsklvm =  document.getElementById("option1");
+        if(!document.getElementById("select1").contains(x) && !document.getElementById("option1").contains(x)){
+          fcdsacdsa.lastElementChild.classList.remove("rotate_180")
+          cdfmvklmfdsklvm.classList.add("none")
+        }else if(document.getElementById("option1").contains(x)){
+          cdfmvklmfdsklvm.classList.add("none")
+          fcdsacdsa.lastElementChild.classList.remove("rotate_180")
+        }
+      }))
+      
+
+
       const changeChild = (id) => {
         let width = document.getElementById(id).clientWidth;
         firstSibling = document.getElementById(id).nextElementSibling;
