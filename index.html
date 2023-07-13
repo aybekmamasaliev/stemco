@@ -59,7 +59,6 @@
                     >
                     Physics
                     </p>
-                    <img src="./media/Vector.svg" alt="" class="ms-3" />
                   </div>
                   <div
                     class="d-flex align-items-center border-start border-end px-3 c_pointer border-bottom ps_rel py-1 w-100"
@@ -70,7 +69,6 @@
                     >
                       Chemstry
                     </p>
-                    <img src="./media/Vector.svg" alt="" class="ms-3" />
                   </div>
                   <div
                     class="d-flex align-items-center border-start border-end px-3 c_pointer border-bottom ps_rel py-1 w-100"
@@ -81,7 +79,6 @@
                     >
                     Biology
                     </p>
-                    <img src="./media/Vector.svg" alt="" class="ms-3" />
                   </div>
                   <div
                     class="d-flex align-items-center border-start border-end px-3 c_pointer border-bottom ps_rel py-1 w-100"
@@ -92,7 +89,6 @@
                     >
                     Science
                     </p>
-                    <img src="./media/Vector.svg" alt="" class="ms-3" />
                   </div>
                   
                 </div>
@@ -315,7 +311,7 @@
                 </div>
               </div>
             </div>
-            
+
             <div class="border ps_rel br_r_12 c3c4r2r3">
               <div class="top_head_card card_bg"></div>
               <div class="stmc_card">
@@ -362,6 +358,35 @@
       </div>
     </section>
     <section class="px-1">
+      <div class="d-flex mt-3 ms-3">
+        <p class="fs_20 fw_500">Season</p>
+        <div class="d-flex ms-3">
+          <button
+            class="rounded-circle border-0 me-1"
+            onClick="swipingLeft()"
+          >
+            <img
+              alt="left"
+              src="./media/left.svg"
+              class="rounded-circle"
+            />
+          </button>
+          <div class="d-flex align-items-center overflow_x_h">
+            <p class="my-auto w_60 font_bold_2" id="test"></p>
+          </div>
+
+          <button
+            class="border-0 ms-1 rounded-circle"
+            onClick="swipingRight()"
+          >
+            <img
+              alt="right"
+              src="./media/left.svg"
+              class="rotateimg180"
+            />
+          </button>
+        </div>
+      </div>
       <div class="container-xxl main_design_challenges">
         <div class="d-flex flex-wrap mt-5 justify-content-between">
           <div class="col-12 col-md-5 pe-0 pe-md-2">
@@ -607,6 +632,8 @@
                     data-bs-target="#panelsStayOpen-collapseTwo"
                     aria-expanded="true"
                     aria-controls="panelsStayOpen-collapseTwo"
+                    onclick="changeChild(this.id)"
+                    id="progress_btn"
                   >
                     <div class="d-flex justify-content-between w-100">
                       <p class="fw_600 fs_16 muted_txt">Week 3/8: 10.06. - 17.06</p>
@@ -617,6 +644,19 @@
                       </div>
                     </div>
                   </button>
+                  <div class="none">
+                    <div class="d-flex justify-content-between mt-3" id="progress_toggle">
+                      <p class="fs_16 fw_600 color_black">Addition and subtraction of rational numbers</p>
+                      <div class="d-flex align-items-end" style="width:160px">
+                        <img src="./media/Union.svg" alt="ulion" />
+                        <p>
+                          <span class="fs_16 fw_600 color_black ms-2">38.4</span>
+                          <span class="font_regular_1 color_black_light ms-1">/40</span>
+                        </p>
+                      </div>
+                  </div>
+                  </div>
+                 
                 </div>
                 <div
                   id="panelsStayOpen-collapseTwo"
@@ -738,7 +778,7 @@
                               stroke-dashoffset="0"
                               transform="rotate(-90, 50, 50)"
                             />
-              
+    
                             <text
                               text-anchor="middle"
                               dominant-baseline="middle"
@@ -784,7 +824,7 @@
             </div>
           </div>
 
-          <div class="col-12 col-md-7 ps-0 ps-md-2 rounded-3 ps_rel">
+          <div class="col-12 col-md-7 ps-0 ps-md-2 mt-3 mt-md-0 rounded-3 ps_rel">
             <div class="tbl_overf_s_860 bg-white  px-2 b_r_16 d-flex">
               <div class="ps_sticky_t_1 me-2 ps_stc">
                 <div class="w-100 mt-2 gray_rgb ps_rel d-flex flex-column-reverse progress_thumb">
