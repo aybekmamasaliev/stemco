@@ -1,0 +1,4075 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="./fontawesome-free-6.4.0-web (1)/fontawesome-free-6.4.0-web/css/all.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <nav
+      class="navbar navbar2 navbar-expand navbar-light bg-light py-2 px-1 bg-white"
+    >
+      <div class="container-xxl">
+        <a
+          class="navbar-brand border_none_sm d-none d-md-block pe-4 ps-1"
+          href="#"
+        >
+          <img alt="" src="./media/logo.svg" />
+          <img
+            alt=""
+            src="./media/logo_txt.svg"
+            class="pt-2 d-none d-md-inline"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul
+            class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto pt-2 color_black_light"
+          >
+            <li class="me-1">
+              <a
+                class="nav-link active text-center active_nav_item fs_14 fw_400 fs_sm_12"
+                href="./index.html"
+              >
+                <i class="fa-solid fa-table-columns me-1"></i>
+                Dashboard
+              </a>
+            </li>
+            <li class="me-1">
+              <a class="nav-link text-center fs_14 fw_400 fs_sm_12" href="#">
+                <i class="fa-solid fa-brain me-1"></i> Practice
+              </a>
+            </li>
+            <li class="me-1">
+              <a
+                class="nav-link text-center fs_14 fw_400 fs_sm_12"
+                href="./achievements.html"
+              >
+                <i class="fa-solid fa-bolt me-1"></i>Achievements
+              </a>
+            </li>
+            <li class="me-1">
+              <a class="nav-link text-center fs_14 fw_400 fs_sm_12" href="#">
+                <i class="fa-solid fa-chart-simple me-1"></i> Leaderboard
+              </a>
+            </li>
+          </ul>
+          <div class="d-flex">
+            <div class="px-3 d-none d-md-flex border-start border-end">
+              <img alt="" src="./media/Seasons.svg" class="d-block" />
+              <div class="d-flex align-items-center">
+                <div class="d_none_1000 ps-2">
+                  <p>SUMMER 2023</p>
+                  <p class="fs_12 muted_txt">
+                    1&nbsp;June&nbsp;2023&nbsp;-&nbsp;31&nbsp;August&nbsp;2023
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div
+              class="px-1 mt-1 mx-2 d-none d-md-flex align-items-center ps_rel"
+            >
+              <img alt="" src="./media/notif_sing.svg" class="ps_abs_t5_r5" />
+              <img
+                alt=""
+                src="./media/notification.svg"
+                class="border p-2 rounded-3"
+              />
+            </div>
+
+            <div
+              class="px-2 d-flex me-1 d-none d-md-flex align-items-center text-end border_s"
+            >
+              <div class="d_none_1090">
+                <p class="fs_12 me-2">Akhmetov&nbsp;Timur</p>
+                <p class="fs_12 me-2 muted_txt">Student</p>
+              </div>
+              <img alt="" src="./media/student_nav.svg" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div
+      class="navbar navbar-expand navbar-light d-block d-md-none bg-light px-1 py-2 bg-white"
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand border_none_sm pe-4 ps-1" href="#">
+          <img alt="" src="./media/logo.svg" />
+          <img alt="" src="./media/logo_txt.svg" class="pt-2 d-inline" />
+        </a>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mb-2 mb-lg-0 mx-auto pt-2"></ul>
+          <div class="d-flex">
+            <div class="px-3 d-flex border-start border-end">
+              <img alt="" src="./media/Seasons.svg" class="d-block" />
+              <div class="d-flex align-items-center">
+                <div class="d_none_1000 ps-2">
+                  <p>SUMMER 2023</p>
+                  <p class="fs_12 muted_txt">
+                    1&nbsp;June&nbsp;2023&nbsp;-&nbsp;31&nbsp;August&nbsp;2023
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="px-1 mt-1 mx-2 d-block ps_rel">
+              <img alt="" src="./media/notif_sing.svg" class="ps_abs_t5_r5" />
+              <img
+                alt=""
+                src="./media/notification.svg"
+                class="border p-2 rounded-3"
+              />
+            </div>
+
+            <div class="px-2 d-flex me-1 text-end border_s">
+              <div class="d_none_1090">
+                <p class="fs_12 me-2">Akhmetov&nbsp;Timur</p>
+                <p class="fs_12 me-2 muted_txt">Student</p>
+              </div>
+              <img alt="" src="./media/student_nav.svg" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <section class="bg-white border_b_E2E7EB px-1 ">
+       <div class="container-xxl py-2">
+        <div class="row my-1">
+          <div class="col-12 col-sm-7 stmc_card">
+            <div class="d-flex justify-content-between">
+              <img
+                alt=""
+                src="./media/timur.svg"
+                class="d-block col-2 img-fluid"
+              />
+              <div class="col-10 ps-4">
+                <p class="fs_24 fw_600">@akhmetovtimur</p>
+                <p class="fs_14 fw_500 align-items-center">
+                  akhmetovtimur@gmail.com • Kazakhstan.&nbsp;Almaty&nbsp;&nbsp;
+                  <img alt="" src="./media/mini_flag.svg" />&nbsp;
+                </p>
+                <div
+                  class="d-flex align-items-center pt-2 pb-3 mt-1 border-bottom"
+                >
+                  <div class="d-flex border-end pe-2">
+                    <p class="my-auto count_gold">1</p>
+                    <div class="circle_award ms-2 me-1 bg_gold">
+                      <img
+                        alt=""
+                        src="./media/test_gold_3.svg"
+                        class="price_icon"
+                      />
+                    </div>
+                  </div>
+                  <div class="d-flex border-end px-3">
+                    <p class="my-auto count_silver">0</p>
+                    <div class="circle_award ms-2 me-1 bg_silver">
+                      <img
+                        alt=""
+                        src="./media/test_gold_3.svg"
+                        class="price_icon"
+                      />
+                    </div>
+                  </div>
+                  <div class="d-flex px-3">
+                    <p class="my-auto count_bronze">3</p>
+                    <div class="circle_award ms-2 me-1 bg_bronze">
+                      <img
+                        alt=""
+                        src="./media/test_gold_3.svg"
+                        class="price_icon"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="d-flex pt-2">
+                  <div class="d-flex c_pointer">
+                    <img
+                      alt=""
+                      src="./media/tabler-icon-pencil-minusedit_profile.svg"
+                    />
+                    <p class="ps-1 pe-3 border-end">Edit Profile</p>
+                  </div>
+                  <div class="d-flex ps-3 c_pointer">
+                    <img alt="" src="./media/tabler-icon-linkshare.svg" />
+                    <p class="ps-1">Share profile</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-5 stmc_card">
+            <div class="border p-2 ps_rel rounded-3">
+              <div class="d-flex justify-content-between">
+                <p class="font_bold_2 muted_txt">School</p>
+                <p class="font_bold_1 d-flex align-items-center">Edit</p>
+              </div>
+
+              <div
+                class="font_bold_2 d-flex align-items-center mt-2 justify-content-between"
+              >
+                <div class="d-flex align-items-center justify-content-between">
+                  <img
+                    alt=""
+                    src="./media/tree4040.svg"
+                    class="d-block shadow"
+                  />
+                  <p class="ms-2">Nazarbayev Intellectual School</p>
+                  <img
+                    alt=""
+                    src="./media/green_tick.svg"
+                    class="d-block ms-2"
+                  />
+                </div>
+                <div class="d-flex rounded-3">
+                  <img alt="" src="./media/subscribed.svg" class="d-block" />
+                  <span class="ms-2 d_none_750">Subscribed</span>
+                </div>
+              </div>
+              <hr class="color_hr" />
+              <p class="fs_12">Students: <span class="ms-2">543</span></p>
+
+              <div class="d-flex align-items-center mt-2">
+                <p class="fs_12 pt-1">Awards:</p>
+                <p class="ms-4 text-center">
+                  <img alt="" src="./media/gold_award.svg" />
+                  <span class="fs_12">28</span>
+                </p>
+                <p class="ms-3 text-center border-end border-start px-2">
+                  <img alt="" src="./media/silver_award.svg" />
+                  <span class="fs_12">31</span>
+                </p>
+                <p class="ms-3 text-center">
+                  <img alt="" src="./media/bronze_award.svg" />
+                  <span class="fs_12">53</span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="px-1">
+      <div class="container-xxl main_design_challenges pt-4">
+        <div class="d-flex flex-wrap">
+          <div class="me-3 my-1">
+            <select
+              class="form-select pe-5 p-2 bg-secondary text-white select"
+              aria-label="Mathematics: Primary Junior"
+            >
+              <option selected>Mathematics : Primary Junior</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
+          </div>
+
+          <div class="me-3 my-1">
+            <select
+              class="form-select pe-5 p-2 bg-light select_darck"
+              aria-label="Default select example"
+            >
+              <option selected>Physics</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
+          </div>
+
+          <div class="me-3 my-1">
+            <select
+              class="form-select pe-5 p-2 bg-light select_darck"
+              aria-label="Default select example"
+            >
+              <option selected>Chemistry</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
+          </div>
+
+          <div class="me-3 my-1">
+            <select
+              class="form-select pe-5 p-2 bg-light select_darck"
+              aria-label="Default select example"
+            >
+              <option selected>Biology</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
+          </div>
+
+          <div class="me-3 my-1">
+            <select
+              class="form-select pe-5 p-2 bg-light select_darck"
+              aria-label="Default select example"
+            >
+              <option selected>Science</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="border stmc_card mt-4 bg-white">
+          <div class="container-xxl">
+            <div class="row">
+              <div class="col-6 col-md-3 border-end ps-0">
+                <div class="fs_14 fw_500 d-flex align-items-center">
+                  <img alt="" src="./media/byip.svg" />
+                  <p class="ps-1">Lifetime</p>
+                  <img alt="" src="./media/alert_notf.svg" class="ps-1" />
+                </div>
+                <p class="fs_30 fw_600 mt-1 line_h_1">2 874.8</p>
+              </div>
+              <div class="col-6 col-md-3 ps-3 border_none_sm d-flex">
+                <div class="mt-2">
+                  <img alt="earth" src="./media/earth.svg" />
+                </div>
+                <div class="flex-column ps-3">
+                  <div class="d-flex justify-content-between">
+                    <img alt="" src="./media/cupa.svg" />
+                    <p class="fs_14 fw_500 ps-2">World Rank:</p>
+                    <img alt="" src="./media/alert_notf.svg" class="ps-1" />
+                  </div>
+                  <div class="mt-1">
+                    <p class="fs_20 fw_600 color_black">563/9874</p>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="col-6 col-md-3 border-end d-flex ps-0 ps-md-3 mt-4 mt-md-0"
+              >
+                <div class="mt-3">
+                  <img alt="earth" src="./media/flag.svg" />
+                </div>
+                <div class="flex-column ps-3">
+                  <div class="d-flex justify-content-between">
+                    <img alt="" src="./media/cupa.svg" class="me-2" />
+                    <p class="fs_14 fw_500">Country Rank:</p>
+                    <img alt="" src="./media/alert_notf.svg" class="ps-1" />
+                  </div>
+                  <div class="mt-1">
+                    <p class="fs_20 fw_600 color_black">64/983</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 col-md-3 ps-3 d-flex mt-4 mt-md-0">
+                <div class="mt-2">
+                  <img alt="earth" src="./media/tree.svg" />
+                </div>
+                <div class="flex-column ps-3">
+                  <div class="d-flex justify-content-between">
+                    <img alt="" src="./media/cupa.svg" class="me-2" />
+                    <p class="fs_14 fw_500">Rank in School:</p>
+                    <img alt="" src="./media/alert_notf.svg" class="ps-1" />
+                  </div>
+                  <div class="mt-1">
+                    <p class="fs_20 fw_600 color_black">22/48</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="d-flex flex-wrap mt-5 justify-content-between">
+          <div class="col-12 col-md-5 pe-0 pe-md-2">
+            <div>
+              <div class="border stmc_card bg-white">
+                <div class="d-flex justify-content-between align-items-center">
+                  <p class="font_bold_6">Weekly Challenges</p>
+                  <div class="d-flex">
+                    <button
+                      class="rounded-circle border-0 me-1"
+                      onClick="swipingLeft()"
+                    >
+                      <img
+                        alt="left"
+                        src="./media/left.svg"
+                        class="rounded-circle"
+                      />
+                    </button>
+                    <div class="d-flex align-items-center overflow_x_h">
+                      <p class="my-auto w_60 font_bold_2" id="test"></p>
+                    </div>
+
+                    <button
+                      class="border-0 ms-1 rounded-circle"
+                      onClick="swipingRight()"
+                    >
+                      <img
+                        alt="right"
+                        src="./media/left.svg"
+                        class="rotateimg180"
+                      />
+                    </button>
+                  </div>
+                </div>
+
+                <p class="font_bold_8 text-uppercase blue_text mt-3">
+                  Challange name
+                </p>
+                <div class="d-flex pb-3 mt-2 border_bottom">
+                  <p class="me-1 px-2 py-1 b_rds_20 fs_12 topic_bg">heat</p>
+                  <p class="me-1 px-2 py-1 b_rds_20 fs_12 topic_bg">kinetics</p>
+                  <p class="me-1 px-2 py-1 b_rds_20 fs_12 topic_bg">dynamics</p>
+                </div>
+
+                <div class="mt-4">
+                  <p>Until the end</p>
+                  <p class="muted_txt mt-1">
+                    <span class="fs_20 fw_600 color_black me-3">24</span>:<span
+                      class="fs_20 fw_600 color_black me-3 ms-2"
+                      >16</span
+                    >:<span class="fs_20 fw_600 color_black me-4 ms-2">53</span
+                    >:<span class="fs_20 fw_600 color_black me-1 ms-2">03</span>
+                  </p>
+
+                  <p class="muted_txt fs_12">
+                    <span class="me-4">days</span><span class="me-3">hours</span
+                    ><span class="me-2">minutes</span
+                    ><span class="me-1">seconds</span>
+                  </p>
+
+                  <div class="user_icons color_black_light fs_12 mt-3">
+                    <img alt="" src="./media/Ellipse 11.svg" class="zindex_1" />
+                    <img alt="" src="./media/Ellipse 12.svg" class="zindex_2" />
+                    <img alt="" src="./media/Ellipse 13.svg" class="zindex_3" />
+                    <img alt="" src="./media/Ellipse 14.svg" class="zindex_4" />
+                    <img alt="" src="./media/Ellipse 15.svg" class="zindex_5" />
+                    <div class="circled_div">
+                      <p>+265</p>
+                    </div>
+                    <p class="zindex_6">Participiants</p>
+                  </div>
+                  <div class="d-flex align-items-center mt-3">
+                    <button type="button" class="btn_stc btn_primary">
+                      <img alt="" src="./media/play.svg" class="me-2" />
+                      Let’s Start
+                    </button>
+                    <button
+                      type="button"
+                      class="btn_stc outline_btn_primary ms-2"
+                    >
+                      Practice
+                    </button>
+                  </div>
+                  <img
+                    alt="books"
+                    src="./media/BACKGROUND 1.svg"
+                    class="ps_abs_r_b"
+                  />
+                </div>
+              </div>
+
+              <div class="border my-4 stmc_card bg-white">
+                <div
+                  class="d-flex justify-content-between align-items-center flex-wrap border_bottom"
+                >
+                  <p class="font_bold_6 color_black">Season competiton</p>
+                  <p class="verified_sticker font_bold_2 px-2 py-1">Started</p>
+                </div>
+                <div class="mt-4 d-flex">
+                  <img
+                    alt="Mathematics"
+                    src="./media//math_sings.svg"
+                    class="d-block"
+                  />
+                  <div class="my-auto ms-3">
+                    <p class="font_bold_12 blue_text text-uppercase">
+                      Mathematics
+                    </p>
+                    <p class="font_bold_2 muted_txt mt-1">
+                      League:&nbsp;Beginner
+                    </p>
+                  </div>
+                </div>
+
+                <div class="d-flex justify-content-between flex-wrap mt-4">
+                  <p class="my-auto fs_14 fw_500">Available:</p>
+                  <div class="d-flex justify-content-around">
+                    <div class="ps-2">
+                      <p class="fs_24 fw-bold text-uppercase">
+                        24 <span class="ms-4 muted_txt"> : </span>
+                      </p>
+                      <p class="fs_12 mt-1 muted_txt">days</p>
+                    </div>
+                    <div class="ps-2">
+                      <p class="fs_24 fw-bold text-uppercase">
+                        16 <span class="ms-4 muted_txt"> : </span>
+                      </p>
+                      <p class="fs_12 mt-1 muted_txt">hours</p>
+                    </div>
+                    <div class="ps-2">
+                      <p class="fs_24 fw-bold text-uppercase">
+                        53
+                        <span class="ms-4 ms-md-3 ms-lg-4 muted_txt"> : </span>
+                      </p>
+                      <p class="fs_12 mt-1 muted_txt">minutes</p>
+                    </div>
+                    <div class="ps-2">
+                      <p class="fs_24 fw-bold text-uppercase">
+                        03 <span class="ms-3 muted_txt"> </span>
+                      </p>
+                      <p class="fs_12 mt-1 muted_txt">seconds</p>
+                    </div>
+                  </div>
+                </div>
+                <button type="button" class="btn_stc btn_primary mt-3 w-100">
+                  I am Ready!
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-7 ps-0 ps-md-2 rounded-3 ps_rel">
+            <div class="tbl bg-white border stmc_card">
+              <div
+                class="fs_16 fw_600 d-flex justify-content-between color_black bg-white mb-2"
+              >
+                <p class="d-flex align-items-center px-2">
+                  Seasonal Leaderboard
+                </p>
+                <p class="p-2 fs_12 muted_txt">
+                  <img
+                    alt=""
+                    src="./media/tabler-icon-reload.svg"
+                    class="me-1"
+                  />
+                  Update after 00:06:23
+                </p>
+              </div>
+
+              <div class="w-100">
+                <ul
+                  class="nav nav-pills mb-3 bg_nav_tabs fit_content rounded-3 p-1"
+                  id="pills-tab"
+                  role="tablist"
+                >
+                  <li class="nav-item" role="presentation">
+                    <button
+                      class="nav-link active"
+                      id="pills-global-tab"
+                      data-bs-toggle="pill"
+                      data-bs-target="#pills-global"
+                      type="button"
+                      role="tab"
+                      aria-controls="pills-global"
+                      aria-selected="true"
+                    >
+                      Global
+                    </button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button
+                      class="nav-link"
+                      id="pills-country-tab"
+                      data-bs-toggle="pill"
+                      data-bs-target="#pills-country"
+                      type="button"
+                      role="tab"
+                      aria-controls="pills-country"
+                      aria-selected="false"
+                    >
+                      Country
+                    </button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button
+                      class="nav-link"
+                      id="pills-school-tab"
+                      data-bs-toggle="pill"
+                      data-bs-target="#pills-school"
+                      type="button"
+                      role="tab"
+                      aria-controls="pills-school"
+                      aria-selected="false"
+                    >
+                      School
+                    </button>
+                  </li>
+                </ul>
+                <div class="tab-content w-100" id="pills-tsbContent">
+                  <div
+                    class="tab-pane fade show active"
+                    id="pills-global"
+                    role="tabpanel"
+                    aria-label="pills-global-tab"
+                  >
+                    <div class="tbl_overf_s">
+                      <table class="table ps_rel">
+                        <thead class="ps_sticky_t_1 bg_nav_tabs">
+                          <tr>
+                            <th class="col-1 text-center">Rank</th>
+                            <th class="col-7">Besty</th>
+                            <th class="col-2 text-center">
+                              <img alt="" src="./media/byip.svg" />
+                            </th>
+                          </tr>
+                        </thead>
+
+                        <tbody>
+                          <div class="ps_rel">
+                            <tr>
+                              <th class="text-center">12</th>
+                              <td>
+                                <div class="d-flex">
+                                  <img
+                                    alt="student"
+                                    src="./media/student.svg"
+                                    class="d-block"
+                                  />
+                                  <div class="ms-3">
+                                    <p class="fs_12 text-start">
+                                      Ahror Mamatqulov
+                                    </p>
+                                    <p class="fs_12 muted_txt">
+                                      <img
+                                        alt="flag"
+                                        src="./media/country_flag.svg"
+                                      />
+                                      Presidential School in Gulistan
+                                    </p>
+                                  </div>
+                                </div>
+                              </td>
+                              <td>
+                                <p class="text-center fs_14 fw_500">
+                                  914,24
+                                  <img
+                                    alt="score"
+                                    src="./media/alert_notf.svg"
+                                    class="mb-1 ms-1"
+                                  />
+                                </p>
+                              </td>
+                            </tr>
+                            <tr>
+                              <th class="text-center">1</th>
+                              <td>
+                                <div class="d-flex">
+                                  <img
+                                    alt="student"
+                                    src="./media/student.svg"
+                                    class="d-block"
+                                  />
+                                  <div class="ms-3">
+                                    <p class="fs_12 text-start">
+                                      Ahror Mamatqulov
+                                    </p>
+                                    <p class="fs_12 muted_txt">
+                                      <img
+                                        alt="flag"
+                                        src="./media/country_flag.svg"
+                                      />
+                                      Presidential School in Gulistan
+                                    </p>
+                                  </div>
+                                </div>
+                              </td>
+                              <td>
+                                <p class="text-center fs_14 fw_500">
+                                  914,24
+                                  <img
+                                    alt="score"
+                                    src="./media/alert_notf.svg"
+                                    class="mb-1 ms-1"
+                                  />
+                                </p>
+                              </td>
+                            </tr>
+                            <tr>
+                              <th class="text-center">1</th>
+                              <td>
+                                <div class="d-flex">
+                                  <img
+                                    alt="student"
+                                    src="./media/student.svg"
+                                    class="d-block"
+                                  />
+                                  <div class="ms-3">
+                                    <p class="fs_12 text-start">
+                                      Ahror Mamatqulov
+                                    </p>
+                                    <p class="fs_12 muted_txt">
+                                      <img
+                                        alt="flag"
+                                        src="./media/country_flag.svg"
+                                      />
+                                      Presidential School in Gulistan
+                                    </p>
+                                  </div>
+                                </div>
+                              </td>
+                              <td>
+                                <p class="text-center fs_14 fw_500">
+                                  914,24
+                                  <img
+                                    alt="score"
+                                    src="./media/alert_notf.svg"
+                                    class="mb-1 ms-1"
+                                  />
+                                </p>
+                              </td>
+                            </tr>
+                            <tr>
+                              <th class="text-center">1</th>
+                              <td>
+                                <div class="d-flex">
+                                  <img
+                                    alt="student"
+                                    src="./media/student.svg"
+                                    class="d-block"
+                                  />
+                                  <div class="ms-3">
+                                    <p class="fs_12 text-start">
+                                      Ahror Mamatqulov
+                                    </p>
+                                    <p class="fs_12 muted_txt">
+                                      <img
+                                        alt="flag"
+                                        src="./media/country_flag.svg"
+                                      />
+                                      Presidential School in Gulistan
+                                    </p>
+                                  </div>
+                                </div>
+                              </td>
+                              <td>
+                                <p class="text-center fs_14 fw_500">
+                                  914,24
+                                  <img
+                                    alt="score"
+                                    src="./media/alert_notf.svg"
+                                    class="mb-1 ms-1"
+                                  />
+                                </p>
+                              </td>
+                            </tr>
+                            <tr>
+                              <th class="text-center">1</th>
+                              <td>
+                                <div class="d-flex">
+                                  <img
+                                    alt="student"
+                                    src="./media/student.svg"
+                                    class="d-block"
+                                  />
+                                  <div class="ms-3">
+                                    <p class="fs_12 text-start">
+                                      Ahror Mamatqulov
+                                    </p>
+                                    <p class="fs_12 muted_txt">
+                                      <img
+                                        alt="flag"
+                                        src="./media/country_flag.svg"
+                                      />
+                                      Presidential School in Gulistan
+                                    </p>
+                                  </div>
+                                </div>
+                              </td>
+                              <td>
+                                <p class="text-center fs_14 fw_500">
+                                  914,24
+                                  <img
+                                    alt="score"
+                                    src="./media/alert_notf.svg"
+                                    class="mb-1 ms-1"
+                                  />
+                                </p>
+                              </td>
+                            </tr>
+                            <tr>
+                              <th class="text-center">1</th>
+                              <td>
+                                <div class="d-flex">
+                                  <img
+                                    alt="student"
+                                    src="./media/student.svg"
+                                    class="d-block"
+                                  />
+                                  <div class="ms-3">
+                                    <p class="fs_12 text-start">
+                                      Ahror Mamatqulov
+                                    </p>
+                                    <p class="fs_12 muted_txt">
+                                      <img
+                                        alt="flag"
+                                        src="./media/country_flag.svg"
+                                      />
+                                      Presidential School in Gulistan
+                                    </p>
+                                  </div>
+                                </div>
+                              </td>
+                              <td>
+                                <p class="text-center fs_14 fw_500">
+                                  914,24
+                                  <img
+                                    alt="score"
+                                    src="./media/alert_notf.svg"
+                                    class="mb-1 ms-1"
+                                  />
+                                </p>
+                              </td>
+                            </tr>
+                            <tr>
+                              <th class="text-center">1</th>
+                              <td>
+                                <div class="d-flex">
+                                  <img
+                                    alt="student"
+                                    src="./media/student.svg"
+                                    class="d-block"
+                                  />
+                                  <div class="ms-3">
+                                    <p class="fs_12 text-start">
+                                      Ahror Mamatqulov
+                                    </p>
+                                    <p class="fs_12 muted_txt">
+                                      <img
+                                        alt="flag"
+                                        src="./media/country_flag.svg"
+                                      />
+                                      Presidential School in Gulistan
+                                    </p>
+                                  </div>
+                                </div>
+                              </td>
+                              <td>
+                                <p class="text-center fs_14 fw_500">
+                                  914,24
+                                  <img
+                                    alt="score"
+                                    src="./media/alert_notf.svg"
+                                    class="mb-1 ms-1"
+                                  />
+                                </p>
+                              </td>
+                            </tr>
+                            <tr>
+                              <th class="text-center">1</th>
+                              <td>
+                                <div class="d-flex">
+                                  <img
+                                    alt="student"
+                                    src="./media/student.svg"
+                                    class="d-block"
+                                  />
+                                  <div class="ms-3">
+                                    <p class="fs_12 text-start">
+                                      Ahror Mamatqulov
+                                    </p>
+                                    <p class="fs_12 muted_txt">
+                                      <img
+                                        alt="flag"
+                                        src="./media/country_flag.svg"
+                                      />
+                                      Presidential School in Gulistan
+                                    </p>
+                                  </div>
+                                </div>
+                              </td>
+                              <td>
+                                <p class="text-center fs_14 fw_500">
+                                  914,24
+                                  <img
+                                    alt="score"
+                                    src="./media/alert_notf.svg"
+                                    class="mb-1 ms-1"
+                                  />
+                                </p>
+                              </td>
+                            </tr>
+                            <tr>
+                              <th class="text-center">1</th>
+                              <td>
+                                <div class="d-flex">
+                                  <img
+                                    alt="student"
+                                    src="./media/student.svg"
+                                    class="d-block"
+                                  />
+                                  <div class="ms-3">
+                                    <p class="fs_12 text-start">
+                                      Ahror Mamatqulov
+                                    </p>
+                                    <p class="fs_12 muted_txt">
+                                      <img
+                                        alt="flag"
+                                        src="./media/country_flag.svg"
+                                      />
+                                      Presidential School in Gulistan
+                                    </p>
+                                  </div>
+                                </div>
+                              </td>
+                              <td>
+                                <p class="text-center fs_14 fw_500">
+                                  914,24
+                                  <img
+                                    alt="score"
+                                    src="./media/alert_notf.svg"
+                                    class="mb-1 ms-1"
+                                  />
+                                </p>
+                              </td>
+                            </tr>
+                            <tr>
+                              <th class="text-center">1</th>
+                              <td>
+                                <div class="d-flex">
+                                  <img
+                                    alt="student"
+                                    src="./media/student.svg"
+                                    class="d-block"
+                                  />
+                                  <div class="ms-3">
+                                    <p class="fs_12 text-start">
+                                      Ahror Mamatqulov
+                                    </p>
+                                    <p class="fs_12 muted_txt">
+                                      <img
+                                        alt="flag"
+                                        src="./media/country_flag.svg"
+                                      />
+                                      Presidential School in Gulistan
+                                    </p>
+                                  </div>
+                                </div>
+                              </td>
+                              <td>
+                                <p class="text-center fs_14 fw_500">
+                                  914,24
+                                  <img
+                                    alt="score"
+                                    src="./media/alert_notf.svg"
+                                    class="mb-1 ms-1"
+                                  />
+                                </p>
+                              </td>
+                            </tr>
+                            <tr>
+                              <th class="text-center">1</th>
+                              <td>
+                                <div class="d-flex">
+                                  <img
+                                    alt="student"
+                                    src="./media/student.svg"
+                                    class="d-block"
+                                  />
+                                  <div class="ms-3">
+                                    <p class="fs_12 text-start">
+                                      Ahror Mamatqulov
+                                    </p>
+                                    <p class="fs_12 muted_txt">
+                                      <img
+                                        alt="flag"
+                                        src="./media/country_flag.svg"
+                                      />
+                                      Presidential School in Gulistan
+                                    </p>
+                                  </div>
+                                </div>
+                              </td>
+                              <td>
+                                <p class="text-center fs_14 fw_500">
+                                  914,24
+                                  <img
+                                    alt="score"
+                                    src="./media/alert_notf.svg"
+                                    class="mb-1 ms-1"
+                                  />
+                                </p>
+                              </td>
+                            </tr>
+                            <tr>
+                              <th class="text-center">1</th>
+                              <td>
+                                <div class="d-flex">
+                                  <img
+                                    alt="student"
+                                    src="./media/student.svg"
+                                    class="d-block"
+                                  />
+                                  <div class="ms-3">
+                                    <p class="fs_12 text-start">
+                                      Ahror Mamatqulov
+                                    </p>
+                                    <p class="fs_12 muted_txt">
+                                      <img
+                                        alt="flag"
+                                        src="./media/country_flag.svg"
+                                      />
+                                      Presidential School in Gulistan
+                                    </p>
+                                  </div>
+                                </div>
+                              </td>
+                              <td>
+                                <p class="text-center fs_14 fw_500">
+                                  914,24
+                                  <img
+                                    alt="score"
+                                    src="./media/alert_notf.svg"
+                                    class="mb-1 ms-1"
+                                  />
+                                </p>
+                              </td>
+                            </tr>
+                            <tr>
+                              <th class="text-center">1</th>
+                              <td>
+                                <div class="d-flex">
+                                  <img
+                                    alt="student"
+                                    src="./media/student.svg"
+                                    class="d-block"
+                                  />
+                                  <div class="ms-3">
+                                    <p class="fs_12 text-start">
+                                      Ahror Mamatqulov
+                                    </p>
+                                    <p class="fs_12 muted_txt">
+                                      <img
+                                        alt="flag"
+                                        src="./media/country_flag.svg"
+                                      />
+                                      Presidential School in Gulistan
+                                    </p>
+                                  </div>
+                                </div>
+                              </td>
+                              <td>
+                                <p class="text-center fs_14 fw_500">
+                                  914,24
+                                  <img
+                                    alt="score"
+                                    src="./media/alert_notf.svg"
+                                    class="mb-1 ms-1"
+                                  />
+                                </p>
+                              </td>
+                            </tr>
+                            <tr>
+                              <th class="text-center">1</th>
+                              <td>
+                                <div class="d-flex">
+                                  <img
+                                    alt="student"
+                                    src="./media/student.svg"
+                                    class="d-block"
+                                  />
+                                  <div class="ms-3">
+                                    <p class="fs_12 text-start">
+                                      Ahror Mamatqulov
+                                    </p>
+                                    <p class="fs_12 muted_txt">
+                                      <img
+                                        alt="flag"
+                                        src="./media/country_flag.svg"
+                                      />
+                                      Presidential School in Gulistan
+                                    </p>
+                                  </div>
+                                </div>
+                              </td>
+                              <td>
+                                <p class="text-center fs_14 fw_500">
+                                  914,24
+                                  <img
+                                    alt="score"
+                                    src="./media/alert_notf.svg"
+                                    class="mb-1 ms-1"
+                                  />
+                                </p>
+                              </td>
+                            </tr>
+                            <tr>
+                              <th class="text-center">1</th>
+                              <td>
+                                <div class="d-flex">
+                                  <img
+                                    alt="student"
+                                    src="./media/student.svg"
+                                    class="d-block"
+                                  />
+                                  <div class="ms-3">
+                                    <p class="fs_12 text-start">
+                                      Ahror Mamatqulov
+                                    </p>
+                                    <p class="fs_12 muted_txt">
+                                      <img
+                                        alt="flag"
+                                        src="./media/country_flag.svg"
+                                      />
+                                      Presidential School in Gulistan
+                                    </p>
+                                  </div>
+                                </div>
+                              </td>
+                              <td>
+                                <p class="text-center fs_14 fw_500">
+                                  914,24
+                                  <img
+                                    alt="score"
+                                    src="./media/alert_notf.svg"
+                                    class="mb-1 ms-1"
+                                  />
+                                </p>
+                              </td>
+                            </tr>
+                            <tr class="ps_sticky_t_35">
+                              <th class="text-center">134</th>
+                              <td>
+                                <div class="d-flex">
+                                  <img
+                                    alt="student"
+                                    src="./media/student.svg"
+                                    class="d-block"
+                                  />
+                                  <div class="ms-3">
+                                    <p class="fs_12 text-start fw_600">
+                                      Ahror Mamatqulov
+                                    </p>
+                                    <p class="fs_12 muted_txt">
+                                      <img
+                                        alt="flag"
+                                        src="./media/country_flag.svg"
+                                      />
+                                      Presidential School in Gulistan
+                                    </p>
+                                  </div>
+                                </div>
+                              </td>
+                              <td>
+                                <p class="text-center fs_14 fw_500">
+                                  914,24
+                                  <img
+                                    alt="score"
+                                    src="./media/alert_notf.svg"
+                                    class="mb-1 ms-1"
+                                  />
+                                </p>
+                              </td>
+                            </tr>
+                            <tr>
+                              <th class="text-center">1</th>
+                              <td>
+                                <div class="d-flex">
+                                  <img
+                                    alt="student"
+                                    src="./media/student.svg"
+                                    class="d-block"
+                                  />
+                                  <div class="ms-3">
+                                    <p class="fs_12 text-start">
+                                      Ahror Mamatqulov
+                                    </p>
+                                    <p class="fs_12 muted_txt">
+                                      <img
+                                        alt="flag"
+                                        src="./media/country_flag.svg"
+                                      />
+                                      Presidential School in Gulistan
+                                    </p>
+                                  </div>
+                                </div>
+                              </td>
+                              <td>
+                                <p class="text-center fs_14 fw_500">
+                                  914,24
+                                  <img
+                                    alt="score"
+                                    src="./media/alert_notf.svg"
+                                    class="mb-1 ms-1"
+                                  />
+                                </p>
+                              </td>
+                            </tr>
+                            <tr>
+                              <th class="text-center">1</th>
+                              <td>
+                                <div class="d-flex">
+                                  <img
+                                    alt="student"
+                                    src="./media/student.svg"
+                                    class="d-block"
+                                  />
+                                  <div class="ms-3">
+                                    <p class="fs_12 text-start">
+                                      Ahror Mamatqulov
+                                    </p>
+                                    <p class="fs_12 muted_txt">
+                                      <img
+                                        alt="flag"
+                                        src="./media/country_flag.svg"
+                                      />
+                                      Presidential School in Gulistan
+                                    </p>
+                                  </div>
+                                </div>
+                              </td>
+                              <td>
+                                <p class="text-center fs_14 fw_500">
+                                  914,24
+                                  <img
+                                    alt="score"
+                                    src="./media/alert_notf.svg"
+                                    class="mb-1 ms-1"
+                                  />
+                                </p>
+                              </td>
+                            </tr>
+                            <tr>
+                              <th class="text-center">1</th>
+                              <td>
+                                <div class="d-flex">
+                                  <img
+                                    alt="student"
+                                    src="./media/student.svg"
+                                    class="d-block"
+                                  />
+                                  <div class="ms-3">
+                                    <p class="fs_12 text-start">
+                                      Ahror Mamatqulov
+                                    </p>
+                                    <p class="fs_12 muted_txt">
+                                      <img
+                                        alt="flag"
+                                        src="./media/country_flag.svg"
+                                      />
+                                      Presidential School in Gulistan
+                                    </p>
+                                  </div>
+                                </div>
+                              </td>
+                              <td>
+                                <p class="text-center fs_14 fw_500">
+                                  914,24
+                                  <img
+                                    alt="score"
+                                    src="./media/alert_notf.svg"
+                                    class="mb-1 ms-1"
+                                  />
+                                </p>
+                              </td>
+                            </tr>
+                            <tr>
+                              <th class="text-center">1</th>
+                              <td>
+                                <div class="d-flex">
+                                  <img
+                                    alt="student"
+                                    src="./media/student.svg"
+                                    class="d-block"
+                                  />
+                                  <div class="ms-3">
+                                    <p class="fs_12 text-start">
+                                      Ahror Mamatqulov
+                                    </p>
+                                    <p class="fs_12 muted_txt">
+                                      <img
+                                        alt="flag"
+                                        src="./media/country_flag.svg"
+                                      />
+                                      Presidential School in Gulistan
+                                    </p>
+                                  </div>
+                                </div>
+                              </td>
+                              <td>
+                                <p class="text-center fs_14 fw_500">
+                                  914,24
+                                  <img
+                                    alt="score"
+                                    src="./media/alert_notf.svg"
+                                    class="mb-1 ms-1"
+                                  />
+                                </p>
+                              </td>
+                            </tr>
+                            <tr>
+                              <th class="text-center">1</th>
+                              <td>
+                                <div class="d-flex">
+                                  <img
+                                    alt="student"
+                                    src="./media/student.svg"
+                                    class="d-block"
+                                  />
+                                  <div class="ms-3">
+                                    <p class="fs_12 text-start">
+                                      Ahror Mamatqulov
+                                    </p>
+                                    <p class="fs_12 muted_txt">
+                                      <img
+                                        alt="flag"
+                                        src="./media/country_flag.svg"
+                                      />
+                                      Presidential School in Gulistan
+                                    </p>
+                                  </div>
+                                </div>
+                              </td>
+                              <td>
+                                <p class="text-center fs_14 fw_500">
+                                  914,24
+                                  <img
+                                    alt="score"
+                                    src="./media/alert_notf.svg"
+                                    class="mb-1 ms-1"
+                                  />
+                                </p>
+                              </td>
+                            </tr>
+                            <tr>
+                              <th class="text-center">1</th>
+                              <td>
+                                <div class="d-flex">
+                                  <img
+                                    alt="student"
+                                    src="./media/student.svg"
+                                    class="d-block"
+                                  />
+                                  <div class="ms-3">
+                                    <p class="fs_12 text-start">
+                                      Ahror Mamatqulov
+                                    </p>
+                                    <p class="fs_12 muted_txt">
+                                      <img
+                                        alt="flag"
+                                        src="./media/country_flag.svg"
+                                      />
+                                      Presidential School in Gulistan
+                                    </p>
+                                  </div>
+                                </div>
+                              </td>
+                              <td>
+                                <p class="text-center fs_14 fw_500">
+                                  914,24
+                                  <img
+                                    alt="score"
+                                    src="./media/alert_notf.svg"
+                                    class="mb-1 ms-1"
+                                  />
+                                </p>
+                              </td>
+                            </tr>
+                            <tr>
+                              <th class="text-center">1</th>
+                              <td>
+                                <div class="d-flex">
+                                  <img
+                                    alt="student"
+                                    src="./media/student.svg"
+                                    class="d-block"
+                                  />
+                                  <div class="ms-3">
+                                    <p class="fs_12 text-start">
+                                      Ahror Mamatqulov
+                                    </p>
+                                    <p class="fs_12 muted_txt">
+                                      <img
+                                        alt="flag"
+                                        src="./media/country_flag.svg"
+                                      />
+                                      Presidential School in Gulistan
+                                    </p>
+                                  </div>
+                                </div>
+                              </td>
+                              <td>
+                                <p class="text-center fs_14 fw_500">
+                                  914,24
+                                  <img
+                                    alt="score"
+                                    src="./media/alert_notf.svg"
+                                    class="mb-1 ms-1"
+                                  />
+                                </p>
+                              </td>
+                            </tr>
+                            <tr>
+                              <th class="text-center">1</th>
+                              <td>
+                                <div class="d-flex">
+                                  <img
+                                    alt="student"
+                                    src="./media/student.svg"
+                                    class="d-block"
+                                  />
+                                  <div class="ms-3">
+                                    <p class="fs_12 text-start">
+                                      Ahror Mamatqulov
+                                    </p>
+                                    <p class="fs_12 muted_txt">
+                                      <img
+                                        alt="flag"
+                                        src="./media/country_flag.svg"
+                                      />
+                                      Presidential School in Gulistan
+                                    </p>
+                                  </div>
+                                </div>
+                              </td>
+                              <td>
+                                <p class="text-center fs_14 fw_500">
+                                  914,24
+                                  <img
+                                    alt="score"
+                                    src="./media/alert_notf.svg"
+                                    class="mb-1 ms-1"
+                                  />
+                                </p>
+                              </td>
+                            </tr>
+                            <tr>
+                              <th class="text-center">1</th>
+                              <td>
+                                <div class="d-flex">
+                                  <img
+                                    alt="student"
+                                    src="./media/student.svg"
+                                    class="d-block"
+                                  />
+                                  <div class="ms-3">
+                                    <p class="fs_12 text-start">
+                                      Ahror Mamatqulov
+                                    </p>
+                                    <p class="fs_12 muted_txt">
+                                      <img
+                                        alt="flag"
+                                        src="./media/country_flag.svg"
+                                      />
+                                      Presidential School in Gulistan
+                                    </p>
+                                  </div>
+                                </div>
+                              </td>
+                              <td>
+                                <p class="text-center fs_14 fw_500">
+                                  914,24
+                                  <img
+                                    alt="score"
+                                    src="./media/alert_notf.svg"
+                                    class="mb-1 ms-1"
+                                  />
+                                </p>
+                              </td>
+                            </tr>
+                            <tr>
+                              <th class="text-center">1</th>
+                              <td>
+                                <div class="d-flex">
+                                  <img
+                                    alt="student"
+                                    src="./media/student.svg"
+                                    class="d-block"
+                                  />
+                                  <div class="ms-3">
+                                    <p class="fs_12 text-start">
+                                      Ahror Mamatqulov
+                                    </p>
+                                    <p class="fs_12 muted_txt">
+                                      <img
+                                        alt="flag"
+                                        src="./media/country_flag.svg"
+                                      />
+                                      Presidential School in Gulistan
+                                    </p>
+                                  </div>
+                                </div>
+                              </td>
+                              <td>
+                                <p class="text-center fs_14 fw_500">
+                                  914,24
+                                  <img
+                                    alt="score"
+                                    src="./media/alert_notf.svg"
+                                    class="mb-1 ms-1"
+                                  />
+                                </p>
+                              </td>
+                            </tr>
+                            <tr>
+                              <th class="text-center">1</th>
+                              <td>
+                                <div class="d-flex">
+                                  <img
+                                    alt="student"
+                                    src="./media/student.svg"
+                                    class="d-block"
+                                  />
+                                  <div class="ms-3">
+                                    <p class="fs_12 text-start">
+                                      Ahror Mamatqulov
+                                    </p>
+                                    <p class="fs_12 muted_txt">
+                                      <img
+                                        alt="flag"
+                                        src="./media/country_flag.svg"
+                                      />
+                                      Presidential School in Gulistan
+                                    </p>
+                                  </div>
+                                </div>
+                              </td>
+                              <td>
+                                <p class="text-center fs_14 fw_500">
+                                  914,24
+                                  <img
+                                    alt="score"
+                                    src="./media/alert_notf.svg"
+                                    class="mb-1 ms-1"
+                                  />
+                                </p>
+                              </td>
+                            </tr>
+                            <tr>
+                              <th class="text-center">1</th>
+                              <td>
+                                <div class="d-flex">
+                                  <img
+                                    alt="student"
+                                    src="./media/student.svg"
+                                    class="d-block"
+                                  />
+                                  <div class="ms-3">
+                                    <p class="fs_12 text-start">
+                                      Ahror Mamatqulov
+                                    </p>
+                                    <p class="fs_12 muted_txt">
+                                      <img
+                                        alt="flag"
+                                        src="./media/country_flag.svg"
+                                      />
+                                      Presidential School in Gulistan
+                                    </p>
+                                  </div>
+                                </div>
+                              </td>
+                              <td>
+                                <p class="text-center fs_14 fw_500">
+                                  914,24
+                                  <img
+                                    alt="score"
+                                    src="./media/alert_notf.svg"
+                                    class="mb-1 ms-1"
+                                  />
+                                </p>
+                              </td>
+                            </tr>
+                            <tr>
+                              <th class="text-center">1</th>
+                              <td>
+                                <div class="d-flex">
+                                  <img
+                                    alt="student"
+                                    src="./media/student.svg"
+                                    class="d-block"
+                                  />
+                                  <div class="ms-3">
+                                    <p class="fs_12 text-start">
+                                      Ahror Mamatqulov
+                                    </p>
+                                    <p class="fs_12 muted_txt">
+                                      <img
+                                        alt="flag"
+                                        src="./media/country_flag.svg"
+                                      />
+                                      Presidential School in Gulistan
+                                    </p>
+                                  </div>
+                                </div>
+                              </td>
+                              <td>
+                                <p class="text-center fs_14 fw_500">
+                                  914,24
+                                  <img
+                                    alt="score"
+                                    src="./media/alert_notf.svg"
+                                    class="mb-1 ms-1"
+                                  />
+                                </p>
+                              </td>
+                            </tr>
+                            <tr>
+                              <th class="text-center">1</th>
+                              <td>
+                                <div class="d-flex">
+                                  <img
+                                    alt="student"
+                                    src="./media/student.svg"
+                                    class="d-block"
+                                  />
+                                  <div class="ms-3">
+                                    <p class="fs_12 text-start">
+                                      Ahror Mamatqulov
+                                    </p>
+                                    <p class="fs_12 muted_txt">
+                                      <img
+                                        alt="flag"
+                                        src="./media/country_flag.svg"
+                                      />
+                                      Presidential School in Gulistan
+                                    </p>
+                                  </div>
+                                </div>
+                              </td>
+                              <td>
+                                <p class="text-center fs_14 fw_500">
+                                  914,24
+                                  <img
+                                    alt="score"
+                                    src="./media/alert_notf.svg"
+                                    class="mb-1 ms-1"
+                                  />
+                                </p>
+                              </td>
+                            </tr>
+                            <tr>
+                              <th class="text-center">1</th>
+                              <td>
+                                <div class="d-flex">
+                                  <img
+                                    alt="student"
+                                    src="./media/student.svg"
+                                    class="d-block"
+                                  />
+                                  <div class="ms-3">
+                                    <p class="fs_12 text-start">
+                                      Ahror Mamatqulov
+                                    </p>
+                                    <p class="fs_12 muted_txt">
+                                      <img
+                                        alt="flag"
+                                        src="./media/country_flag.svg"
+                                      />
+                                      Presidential School in Gulistan
+                                    </p>
+                                  </div>
+                                </div>
+                              </td>
+                              <td>
+                                <p class="text-center fs_14 fw_500">
+                                  914,24
+                                  <img
+                                    alt="score"
+                                    src="./media/alert_notf.svg"
+                                    class="mb-1 ms-1"
+                                  />
+                                </p>
+                              </td>
+                            </tr>
+                            <tr>
+                              <th class="text-center">1</th>
+                              <td>
+                                <div class="d-flex">
+                                  <img
+                                    alt="student"
+                                    src="./media/student.svg"
+                                    class="d-block"
+                                  />
+                                  <div class="ms-3">
+                                    <p class="fs_12 text-start">
+                                      Ahror Mamatqulov
+                                    </p>
+                                    <p class="fs_12 muted_txt">
+                                      <img
+                                        alt="flag"
+                                        src="./media/country_flag.svg"
+                                      />
+                                      Presidential School in Gulistan
+                                    </p>
+                                  </div>
+                                </div>
+                              </td>
+                              <td>
+                                <p class="text-center fs_14 fw_500">
+                                  914,24
+                                  <img
+                                    alt="score"
+                                    src="./media/alert_notf.svg"
+                                    class="mb-1 ms-1"
+                                  />
+                                </p>
+                              </td>
+                            </tr>
+                            <tr>
+                              <th class="text-center py-2">2</th>
+                              <td>
+                                <div class="d-flex">
+                                  <img
+                                    alt="student"
+                                    src="./media/student.svg"
+                                    class="d-block"
+                                  />
+                                  <div class="ms-3">
+                                    <p class="fs_12 text-start">
+                                      Ahror Mamatqulov
+                                    </p>
+                                    <p class="fs_12 muted_txt">
+                                      <img
+                                        alt="flag"
+                                        src="./media/country_flag.svg"
+                                      />
+                                      Presidential School in Gulistan
+                                    </p>
+                                  </div>
+                                </div>
+                              </td>
+                              <td>
+                                <p class="text-center fs_14 fw_500">
+                                  914,24
+                                  <img
+                                    alt="score"
+                                    src="./media/alert_notf.svg"
+                                    class="mb-1 ms-1"
+                                  />
+                                </p>
+                              </td>
+                            </tr>
+                          </div>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                  <div
+                    class="tab-pane fade"
+                    id="pills-country"
+                    role="tabpanel"
+                    aria-label="pills-country-tab"
+                  >
+                    <div class="tbl_overf_s">
+                      <table class="table ps_rel">
+                        <thead class="ps_sticky_t_1 bg_nav_tabs">
+                          <tr>
+                            <th class="col-1 text-center">Rank</th>
+                            <th class="col-7">Besty</th>
+                            <th class="col-2 text-center">
+                              <img alt="" src="./media/byip.svg" />
+                            </th>
+                          </tr>
+                        </thead>
+
+                        <tbody>
+                          <div class="ps_rel">
+                            <tr>
+                              <th class="text-center">12</th>
+                              <td>
+                                <div class="d-flex">
+                                  <img
+                                    alt="student"
+                                    src="./media/student.svg"
+                                    class="d-block"
+                                  />
+                                  <div class="ms-3">
+                                    <p class="fs_12 text-start">
+                                      Ahror Mamatqulov
+                                    </p>
+                                    <p class="fs_12 muted_txt">
+                                      <img
+                                        alt="flag"
+                                        src="./media/country_flag.svg"
+                                      />
+                                      Presidential School in Gulistan
+                                    </p>
+                                  </div>
+                                </div>
+                              </td>
+                              <td>
+                                <p class="text-center fs_14 fw_500">
+                                  914,24
+                                  <img
+                                    alt="score"
+                                    src="./media/alert_notf.svg"
+                                    class="mb-1 ms-1"
+                                  />
+                                </p>
+                              </td>
+                            </tr>
+                            <tr>
+                              <th class="text-center">1</th>
+                              <td>
+                                <div class="d-flex">
+                                  <img
+                                    alt="student"
+                                    src="./media/student.svg"
+                                    class="d-block"
+                                  />
+                                  <div class="ms-3">
+                                    <p class="fs_12 text-start">
+                                      Ahror Mamatqulov
+                                    </p>
+                                    <p class="fs_12 muted_txt">
+                                      <img
+                                        alt="flag"
+                                        src="./media/country_flag.svg"
+                                      />
+                                      Presidential School in Gulistan
+                                    </p>
+                                  </div>
+                                </div>
+                              </td>
+                              <td>
+                                <p class="text-center fs_14 fw_500">
+                                  914,24
+                                  <img
+                                    alt="score"
+                                    src="./media/alert_notf.svg"
+                                    class="mb-1 ms-1"
+                                  />
+                                </p>
+                              </td>
+                            </tr>
+                            <tr>
+                              <th class="text-center">1</th>
+                              <td>
+                                <div class="d-flex">
+                                  <img
+                                    alt="student"
+                                    src="./media/student.svg"
+                                    class="d-block"
+                                  />
+                                  <div class="ms-3">
+                                    <p class="fs_12 text-start">
+                                      Ahror Mamatqulov
+                                    </p>
+                                    <p class="fs_12 muted_txt">
+                                      <img
+                                        alt="flag"
+                                        src="./media/country_flag.svg"
+                                      />
+                                      Presidential School in Gulistan
+                                    </p>
+                                  </div>
+                                </div>
+                              </td>
+                              <td>
+                                <p class="text-center fs_14 fw_500">
+                                  914,24
+                                  <img
+                                    alt="score"
+                                    src="./media/alert_notf.svg"
+                                    class="mb-1 ms-1"
+                                  />
+                                </p>
+                              </td>
+                            </tr>
+                            <tr>
+                              <th class="text-center">1</th>
+                              <td>
+                                <div class="d-flex">
+                                  <img
+                                    alt="student"
+                                    src="./media/student.svg"
+                                    class="d-block"
+                                  />
+                                  <div class="ms-3">
+                                    <p class="fs_12 text-start">
+                                      Ahror Mamatqulov
+                                    </p>
+                                    <p class="fs_12 muted_txt">
+                                      <img
+                                        alt="flag"
+                                        src="./media/country_flag.svg"
+                                      />
+                                      Presidential School in Gulistan
+                                    </p>
+                                  </div>
+                                </div>
+                              </td>
+                              <td>
+                                <p class="text-center fs_14 fw_500">
+                                  914,24
+                                  <img
+                                    alt="score"
+                                    src="./media/alert_notf.svg"
+                                    class="mb-1 ms-1"
+                                  />
+                                </p>
+                              </td>
+                            </tr>
+                            <tr>
+                              <th class="text-center">1</th>
+                              <td>
+                                <div class="d-flex">
+                                  <img
+                                    alt="student"
+                                    src="./media/student.svg"
+                                    class="d-block"
+                                  />
+                                  <div class="ms-3">
+                                    <p class="fs_12 text-start">
+                                      Ahror Mamatqulov
+                                    </p>
+                                    <p class="fs_12 muted_txt">
+                                      <img
+                                        alt="flag"
+                                        src="./media/country_flag.svg"
+                                      />
+                                      Presidential School in Gulistan
+                                    </p>
+                                  </div>
+                                </div>
+                              </td>
+                              <td>
+                                <p class="text-center fs_14 fw_500">
+                                  914,24
+                                  <img
+                                    alt="score"
+                                    src="./media/alert_notf.svg"
+                                    class="mb-1 ms-1"
+                                  />
+                                </p>
+                              </td>
+                            </tr>
+                            <tr>
+                              <th class="text-center">1</th>
+                              <td>
+                                <div class="d-flex">
+                                  <img
+                                    alt="student"
+                                    src="./media/student.svg"
+                                    class="d-block"
+                                  />
+                                  <div class="ms-3">
+                                    <p class="fs_12 text-start">
+                                      Ahror Mamatqulov
+                                    </p>
+                                    <p class="fs_12 muted_txt">
+                                      <img
+                                        alt="flag"
+                                        src="./media/country_flag.svg"
+                                      />
+                                      Presidential School in Gulistan
+                                    </p>
+                                  </div>
+                                </div>
+                              </td>
+                              <td>
+                                <p class="text-center fs_14 fw_500">
+                                  914,24
+                                  <img
+                                    alt="score"
+                                    src="./media/alert_notf.svg"
+                                    class="mb-1 ms-1"
+                                  />
+                                </p>
+                              </td>
+                            </tr>
+                            <tr>
+                              <th class="text-center">1</th>
+                              <td>
+                                <div class="d-flex">
+                                  <img
+                                    alt="student"
+                                    src="./media/student.svg"
+                                    class="d-block"
+                                  />
+                                  <div class="ms-3">
+                                    <p class="fs_12 text-start">
+                                      Ahror Mamatqulov
+                                    </p>
+                                    <p class="fs_12 muted_txt">
+                                      <img
+                                        alt="flag"
+                                        src="./media/country_flag.svg"
+                                      />
+                                      Presidential School in Gulistan
+                                    </p>
+                                  </div>
+                                </div>
+                              </td>
+                              <td>
+                                <p class="text-center fs_14 fw_500">
+                                  914,24
+                                  <img
+                                    alt="score"
+                                    src="./media/alert_notf.svg"
+                                    class="mb-1 ms-1"
+                                  />
+                                </p>
+                              </td>
+                            </tr>
+                            <tr>
+                              <th class="text-center">1</th>
+                              <td>
+                                <div class="d-flex">
+                                  <img
+                                    alt="student"
+                                    src="./media/student.svg"
+                                    class="d-block"
+                                  />
+                                  <div class="ms-3">
+                                    <p class="fs_12 text-start">
+                                      Ahror Mamatqulov
+                                    </p>
+                                    <p class="fs_12 muted_txt">
+                                      <img
+                                        alt="flag"
+                                        src="./media/country_flag.svg"
+                                      />
+                                      Presidential School in Gulistan
+                                    </p>
+                                  </div>
+                                </div>
+                              </td>
+                              <td>
+                                <p class="text-center fs_14 fw_500">
+                                  914,24
+                                  <img
+                                    alt="score"
+                                    src="./media/alert_notf.svg"
+                                    class="mb-1 ms-1"
+                                  />
+                                </p>
+                              </td>
+                            </tr>
+                            <tr>
+                              <th class="text-center">1</th>
+                              <td>
+                                <div class="d-flex">
+                                  <img
+                                    alt="student"
+                                    src="./media/student.svg"
+                                    class="d-block"
+                                  />
+                                  <div class="ms-3">
+                                    <p class="fs_12 text-start">
+                                      Ahror Mamatqulov
+                                    </p>
+                                    <p class="fs_12 muted_txt">
+                                      <img
+                                        alt="flag"
+                                        src="./media/country_flag.svg"
+                                      />
+                                      Presidential School in Gulistan
+                                    </p>
+                                  </div>
+                                </div>
+                              </td>
+                              <td>
+                                <p class="text-center fs_14 fw_500">
+                                  914,24
+                                  <img
+                                    alt="score"
+                                    src="./media/alert_notf.svg"
+                                    class="mb-1 ms-1"
+                                  />
+                                </p>
+                              </td>
+                            </tr>
+                            <tr>
+                              <th class="text-center">1</th>
+                              <td>
+                                <div class="d-flex">
+                                  <img
+                                    alt="student"
+                                    src="./media/student.svg"
+                                    class="d-block"
+                                  />
+                                  <div class="ms-3">
+                                    <p class="fs_12 text-start">
+                                      Ahror Mamatqulov
+                                    </p>
+                                    <p class="fs_12 muted_txt">
+                                      <img
+                                        alt="flag"
+                                        src="./media/country_flag.svg"
+                                      />
+                                      Presidential School in Gulistan
+                                    </p>
+                                  </div>
+                                </div>
+                              </td>
+                              <td>
+                                <p class="text-center fs_14 fw_500">
+                                  914,24
+                                  <img
+                                    alt="score"
+                                    src="./media/alert_notf.svg"
+                                    class="mb-1 ms-1"
+                                  />
+                                </p>
+                              </td>
+                            </tr>
+                            <tr>
+                              <th class="text-center">1</th>
+                              <td>
+                                <div class="d-flex">
+                                  <img
+                                    alt="student"
+                                    src="./media/student.svg"
+                                    class="d-block"
+                                  />
+                                  <div class="ms-3">
+                                    <p class="fs_12 text-start">
+                                      Ahror Mamatqulov
+                                    </p>
+                                    <p class="fs_12 muted_txt">
+                                      <img
+                                        alt="flag"
+                                        src="./media/country_flag.svg"
+                                      />
+                                      Presidential School in Gulistan
+                                    </p>
+                                  </div>
+                                </div>
+                              </td>
+                              <td>
+                                <p class="text-center fs_14 fw_500">
+                                  914,24
+                                  <img
+                                    alt="score"
+                                    src="./media/alert_notf.svg"
+                                    class="mb-1 ms-1"
+                                  />
+                                </p>
+                              </td>
+                            </tr>
+                            <tr>
+                              <th class="text-center">1</th>
+                              <td>
+                                <div class="d-flex">
+                                  <img
+                                    alt="student"
+                                    src="./media/student.svg"
+                                    class="d-block"
+                                  />
+                                  <div class="ms-3">
+                                    <p class="fs_12 text-start">
+                                      Ahror Mamatqulov
+                                    </p>
+                                    <p class="fs_12 muted_txt">
+                                      <img
+                                        alt="flag"
+                                        src="./media/country_flag.svg"
+                                      />
+                                      Presidential School in Gulistan
+                                    </p>
+                                  </div>
+                                </div>
+                              </td>
+                              <td>
+                                <p class="text-center fs_14 fw_500">
+                                  914,24
+                                  <img
+                                    alt="score"
+                                    src="./media/alert_notf.svg"
+                                    class="mb-1 ms-1"
+                                  />
+                                </p>
+                              </td>
+                            </tr>
+                            <tr>
+                              <th class="text-center">1</th>
+                              <td>
+                                <div class="d-flex">
+                                  <img
+                                    alt="student"
+                                    src="./media/student.svg"
+                                    class="d-block"
+                                  />
+                                  <div class="ms-3">
+                                    <p class="fs_12 text-start">
+                                      Ahror Mamatqulov
+                                    </p>
+                                    <p class="fs_12 muted_txt">
+                                      <img
+                                        alt="flag"
+                                        src="./media/country_flag.svg"
+                                      />
+                                      Presidential School in Gulistan
+                                    </p>
+                                  </div>
+                                </div>
+                              </td>
+                              <td>
+                                <p class="text-center fs_14 fw_500">
+                                  914,24
+                                  <img
+                                    alt="score"
+                                    src="./media/alert_notf.svg"
+                                    class="mb-1 ms-1"
+                                  />
+                                </p>
+                              </td>
+                            </tr>
+                            <tr>
+                              <th class="text-center">1</th>
+                              <td>
+                                <div class="d-flex">
+                                  <img
+                                    alt="student"
+                                    src="./media/student.svg"
+                                    class="d-block"
+                                  />
+                                  <div class="ms-3">
+                                    <p class="fs_12 text-start">
+                                      Ahror Mamatqulov
+                                    </p>
+                                    <p class="fs_12 muted_txt">
+                                      <img
+                                        alt="flag"
+                                        src="./media/country_flag.svg"
+                                      />
+                                      Presidential School in Gulistan
+                                    </p>
+                                  </div>
+                                </div>
+                              </td>
+                              <td>
+                                <p class="text-center fs_14 fw_500">
+                                  914,24
+                                  <img
+                                    alt="score"
+                                    src="./media/alert_notf.svg"
+                                    class="mb-1 ms-1"
+                                  />
+                                </p>
+                              </td>
+                            </tr>
+                            <tr>
+                              <th class="text-center">1</th>
+                              <td>
+                                <div class="d-flex">
+                                  <img
+                                    alt="student"
+                                    src="./media/student.svg"
+                                    class="d-block"
+                                  />
+                                  <div class="ms-3">
+                                    <p class="fs_12 text-start">
+                                      Ahror Mamatqulov
+                                    </p>
+                                    <p class="fs_12 muted_txt">
+                                      <img
+                                        alt="flag"
+                                        src="./media/country_flag.svg"
+                                      />
+                                      Presidential School in Gulistan
+                                    </p>
+                                  </div>
+                                </div>
+                              </td>
+                              <td>
+                                <p class="text-center fs_14 fw_500">
+                                  914,24
+                                  <img
+                                    alt="score"
+                                    src="./media/alert_notf.svg"
+                                    class="mb-1 ms-1"
+                                  />
+                                </p>
+                              </td>
+                            </tr>
+                            <tr class="ps_sticky_t_35">
+                              <th class="text-center">134</th>
+                              <td>
+                                <div class="d-flex">
+                                  <img
+                                    alt="student"
+                                    src="./media/student.svg"
+                                    class="d-block"
+                                  />
+                                  <div class="ms-3">
+                                    <p class="fs_12 text-start fw_600">
+                                      Ahror Mamatqulov
+                                    </p>
+                                    <p class="fs_12 muted_txt">
+                                      <img
+                                        alt="flag"
+                                        src="./media/country_flag.svg"
+                                      />
+                                      Presidential School in Gulistan
+                                    </p>
+                                  </div>
+                                </div>
+                              </td>
+                              <td>
+                                <p class="text-center fs_14 fw_500">
+                                  914,24
+                                  <img
+                                    alt="score"
+                                    src="./media/alert_notf.svg"
+                                    class="mb-1 ms-1"
+                                  />
+                                </p>
+                              </td>
+                            </tr>
+                            <tr>
+                              <th class="text-center">1</th>
+                              <td>
+                                <div class="d-flex">
+                                  <img
+                                    alt="student"
+                                    src="./media/student.svg"
+                                    class="d-block"
+                                  />
+                                  <div class="ms-3">
+                                    <p class="fs_12 text-start">
+                                      Ahror Mamatqulov
+                                    </p>
+                                    <p class="fs_12 muted_txt">
+                                      <img
+                                        alt="flag"
+                                        src="./media/country_flag.svg"
+                                      />
+                                      Presidential School in Gulistan
+                                    </p>
+                                  </div>
+                                </div>
+                              </td>
+                              <td>
+                                <p class="text-center fs_14 fw_500">
+                                  914,24
+                                  <img
+                                    alt="score"
+                                    src="./media/alert_notf.svg"
+                                    class="mb-1 ms-1"
+                                  />
+                                </p>
+                              </td>
+                            </tr>
+                            <tr>
+                              <th class="text-center">1</th>
+                              <td>
+                                <div class="d-flex">
+                                  <img
+                                    alt="student"
+                                    src="./media/student.svg"
+                                    class="d-block"
+                                  />
+                                  <div class="ms-3">
+                                    <p class="fs_12 text-start">
+                                      Ahror Mamatqulov
+                                    </p>
+                                    <p class="fs_12 muted_txt">
+                                      <img
+                                        alt="flag"
+                                        src="./media/country_flag.svg"
+                                      />
+                                      Presidential School in Gulistan
+                                    </p>
+                                  </div>
+                                </div>
+                              </td>
+                              <td>
+                                <p class="text-center fs_14 fw_500">
+                                  914,24
+                                  <img
+                                    alt="score"
+                                    src="./media/alert_notf.svg"
+                                    class="mb-1 ms-1"
+                                  />
+                                </p>
+                              </td>
+                            </tr>
+                            <tr>
+                              <th class="text-center">1</th>
+                              <td>
+                                <div class="d-flex">
+                                  <img
+                                    alt="student"
+                                    src="./media/student.svg"
+                                    class="d-block"
+                                  />
+                                  <div class="ms-3">
+                                    <p class="fs_12 text-start">
+                                      Ahror Mamatqulov
+                                    </p>
+                                    <p class="fs_12 muted_txt">
+                                      <img
+                                        alt="flag"
+                                        src="./media/country_flag.svg"
+                                      />
+                                      Presidential School in Gulistan
+                                    </p>
+                                  </div>
+                                </div>
+                              </td>
+                              <td>
+                                <p class="text-center fs_14 fw_500">
+                                  914,24
+                                  <img
+                                    alt="score"
+                                    src="./media/alert_notf.svg"
+                                    class="mb-1 ms-1"
+                                  />
+                                </p>
+                              </td>
+                            </tr>
+                            <tr>
+                              <th class="text-center">1</th>
+                              <td>
+                                <div class="d-flex">
+                                  <img
+                                    alt="student"
+                                    src="./media/student.svg"
+                                    class="d-block"
+                                  />
+                                  <div class="ms-3">
+                                    <p class="fs_12 text-start">
+                                      Ahror Mamatqulov
+                                    </p>
+                                    <p class="fs_12 muted_txt">
+                                      <img
+                                        alt="flag"
+                                        src="./media/country_flag.svg"
+                                      />
+                                      Presidential School in Gulistan
+                                    </p>
+                                  </div>
+                                </div>
+                              </td>
+                              <td>
+                                <p class="text-center fs_14 fw_500">
+                                  914,24
+                                  <img
+                                    alt="score"
+                                    src="./media/alert_notf.svg"
+                                    class="mb-1 ms-1"
+                                  />
+                                </p>
+                              </td>
+                            </tr>
+                            <tr>
+                              <th class="text-center">1</th>
+                              <td>
+                                <div class="d-flex">
+                                  <img
+                                    alt="student"
+                                    src="./media/student.svg"
+                                    class="d-block"
+                                  />
+                                  <div class="ms-3">
+                                    <p class="fs_12 text-start">
+                                      Ahror Mamatqulov
+                                    </p>
+                                    <p class="fs_12 muted_txt">
+                                      <img
+                                        alt="flag"
+                                        src="./media/country_flag.svg"
+                                      />
+                                      Presidential School in Gulistan
+                                    </p>
+                                  </div>
+                                </div>
+                              </td>
+                              <td>
+                                <p class="text-center fs_14 fw_500">
+                                  914,24
+                                  <img
+                                    alt="score"
+                                    src="./media/alert_notf.svg"
+                                    class="mb-1 ms-1"
+                                  />
+                                </p>
+                              </td>
+                            </tr>
+                            <tr>
+                              <th class="text-center">1</th>
+                              <td>
+                                <div class="d-flex">
+                                  <img
+                                    alt="student"
+                                    src="./media/student.svg"
+                                    class="d-block"
+                                  />
+                                  <div class="ms-3">
+                                    <p class="fs_12 text-start">
+                                      Ahror Mamatqulov
+                                    </p>
+                                    <p class="fs_12 muted_txt">
+                                      <img
+                                        alt="flag"
+                                        src="./media/country_flag.svg"
+                                      />
+                                      Presidential School in Gulistan
+                                    </p>
+                                  </div>
+                                </div>
+                              </td>
+                              <td>
+                                <p class="text-center fs_14 fw_500">
+                                  914,24
+                                  <img
+                                    alt="score"
+                                    src="./media/alert_notf.svg"
+                                    class="mb-1 ms-1"
+                                  />
+                                </p>
+                              </td>
+                            </tr>
+                            <tr>
+                              <th class="text-center">1</th>
+                              <td>
+                                <div class="d-flex">
+                                  <img
+                                    alt="student"
+                                    src="./media/student.svg"
+                                    class="d-block"
+                                  />
+                                  <div class="ms-3">
+                                    <p class="fs_12 text-start">
+                                      Ahror Mamatqulov
+                                    </p>
+                                    <p class="fs_12 muted_txt">
+                                      <img
+                                        alt="flag"
+                                        src="./media/country_flag.svg"
+                                      />
+                                      Presidential School in Gulistan
+                                    </p>
+                                  </div>
+                                </div>
+                              </td>
+                              <td>
+                                <p class="text-center fs_14 fw_500">
+                                  914,24
+                                  <img
+                                    alt="score"
+                                    src="./media/alert_notf.svg"
+                                    class="mb-1 ms-1"
+                                  />
+                                </p>
+                              </td>
+                            </tr>
+                            <tr>
+                              <th class="text-center">1</th>
+                              <td>
+                                <div class="d-flex">
+                                  <img
+                                    alt="student"
+                                    src="./media/student.svg"
+                                    class="d-block"
+                                  />
+                                  <div class="ms-3">
+                                    <p class="fs_12 text-start">
+                                      Ahror Mamatqulov
+                                    </p>
+                                    <p class="fs_12 muted_txt">
+                                      <img
+                                        alt="flag"
+                                        src="./media/country_flag.svg"
+                                      />
+                                      Presidential School in Gulistan
+                                    </p>
+                                  </div>
+                                </div>
+                              </td>
+                              <td>
+                                <p class="text-center fs_14 fw_500">
+                                  914,24
+                                  <img
+                                    alt="score"
+                                    src="./media/alert_notf.svg"
+                                    class="mb-1 ms-1"
+                                  />
+                                </p>
+                              </td>
+                            </tr>
+                            <tr>
+                              <th class="text-center">1</th>
+                              <td>
+                                <div class="d-flex">
+                                  <img
+                                    alt="student"
+                                    src="./media/student.svg"
+                                    class="d-block"
+                                  />
+                                  <div class="ms-3">
+                                    <p class="fs_12 text-start">
+                                      Ahror Mamatqulov
+                                    </p>
+                                    <p class="fs_12 muted_txt">
+                                      <img
+                                        alt="flag"
+                                        src="./media/country_flag.svg"
+                                      />
+                                      Presidential School in Gulistan
+                                    </p>
+                                  </div>
+                                </div>
+                              </td>
+                              <td>
+                                <p class="text-center fs_14 fw_500">
+                                  914,24
+                                  <img
+                                    alt="score"
+                                    src="./media/alert_notf.svg"
+                                    class="mb-1 ms-1"
+                                  />
+                                </p>
+                              </td>
+                            </tr>
+                            <tr>
+                              <th class="text-center">1</th>
+                              <td>
+                                <div class="d-flex">
+                                  <img
+                                    alt="student"
+                                    src="./media/student.svg"
+                                    class="d-block"
+                                  />
+                                  <div class="ms-3">
+                                    <p class="fs_12 text-start">
+                                      Ahror Mamatqulov
+                                    </p>
+                                    <p class="fs_12 muted_txt">
+                                      <img
+                                        alt="flag"
+                                        src="./media/country_flag.svg"
+                                      />
+                                      Presidential School in Gulistan
+                                    </p>
+                                  </div>
+                                </div>
+                              </td>
+                              <td>
+                                <p class="text-center fs_14 fw_500">
+                                  914,24
+                                  <img
+                                    alt="score"
+                                    src="./media/alert_notf.svg"
+                                    class="mb-1 ms-1"
+                                  />
+                                </p>
+                              </td>
+                            </tr>
+                            <tr>
+                              <th class="text-center">1</th>
+                              <td>
+                                <div class="d-flex">
+                                  <img
+                                    alt="student"
+                                    src="./media/student.svg"
+                                    class="d-block"
+                                  />
+                                  <div class="ms-3">
+                                    <p class="fs_12 text-start">
+                                      Ahror Mamatqulov
+                                    </p>
+                                    <p class="fs_12 muted_txt">
+                                      <img
+                                        alt="flag"
+                                        src="./media/country_flag.svg"
+                                      />
+                                      Presidential School in Gulistan
+                                    </p>
+                                  </div>
+                                </div>
+                              </td>
+                              <td>
+                                <p class="text-center fs_14 fw_500">
+                                  914,24
+                                  <img
+                                    alt="score"
+                                    src="./media/alert_notf.svg"
+                                    class="mb-1 ms-1"
+                                  />
+                                </p>
+                              </td>
+                            </tr>
+                            <tr>
+                              <th class="text-center">1</th>
+                              <td>
+                                <div class="d-flex">
+                                  <img
+                                    alt="student"
+                                    src="./media/student.svg"
+                                    class="d-block"
+                                  />
+                                  <div class="ms-3">
+                                    <p class="fs_12 text-start">
+                                      Ahror Mamatqulov
+                                    </p>
+                                    <p class="fs_12 muted_txt">
+                                      <img
+                                        alt="flag"
+                                        src="./media/country_flag.svg"
+                                      />
+                                      Presidential School in Gulistan
+                                    </p>
+                                  </div>
+                                </div>
+                              </td>
+                              <td>
+                                <p class="text-center fs_14 fw_500">
+                                  914,24
+                                  <img
+                                    alt="score"
+                                    src="./media/alert_notf.svg"
+                                    class="mb-1 ms-1"
+                                  />
+                                </p>
+                              </td>
+                            </tr>
+                            <tr>
+                              <th class="text-center">1</th>
+                              <td>
+                                <div class="d-flex">
+                                  <img
+                                    alt="student"
+                                    src="./media/student.svg"
+                                    class="d-block"
+                                  />
+                                  <div class="ms-3">
+                                    <p class="fs_12 text-start">
+                                      Ahror Mamatqulov
+                                    </p>
+                                    <p class="fs_12 muted_txt">
+                                      <img
+                                        alt="flag"
+                                        src="./media/country_flag.svg"
+                                      />
+                                      Presidential School in Gulistan
+                                    </p>
+                                  </div>
+                                </div>
+                              </td>
+                              <td>
+                                <p class="text-center fs_14 fw_500">
+                                  914,24
+                                  <img
+                                    alt="score"
+                                    src="./media/alert_notf.svg"
+                                    class="mb-1 ms-1"
+                                  />
+                                </p>
+                              </td>
+                            </tr>
+                            <tr>
+                              <th class="text-center">1</th>
+                              <td>
+                                <div class="d-flex">
+                                  <img
+                                    alt="student"
+                                    src="./media/student.svg"
+                                    class="d-block"
+                                  />
+                                  <div class="ms-3">
+                                    <p class="fs_12 text-start">
+                                      Ahror Mamatqulov
+                                    </p>
+                                    <p class="fs_12 muted_txt">
+                                      <img
+                                        alt="flag"
+                                        src="./media/country_flag.svg"
+                                      />
+                                      Presidential School in Gulistan
+                                    </p>
+                                  </div>
+                                </div>
+                              </td>
+                              <td>
+                                <p class="text-center fs_14 fw_500">
+                                  914,24
+                                  <img
+                                    alt="score"
+                                    src="./media/alert_notf.svg"
+                                    class="mb-1 ms-1"
+                                  />
+                                </p>
+                              </td>
+                            </tr>
+                            <tr>
+                              <th class="text-center">1</th>
+                              <td>
+                                <div class="d-flex">
+                                  <img
+                                    alt="student"
+                                    src="./media/student.svg"
+                                    class="d-block"
+                                  />
+                                  <div class="ms-3">
+                                    <p class="fs_12 text-start">
+                                      Ahror Mamatqulov
+                                    </p>
+                                    <p class="fs_12 muted_txt">
+                                      <img
+                                        alt="flag"
+                                        src="./media/country_flag.svg"
+                                      />
+                                      Presidential School in Gulistan
+                                    </p>
+                                  </div>
+                                </div>
+                              </td>
+                              <td>
+                                <p class="text-center fs_14 fw_500">
+                                  914,24
+                                  <img
+                                    alt="score"
+                                    src="./media/alert_notf.svg"
+                                    class="mb-1 ms-1"
+                                  />
+                                </p>
+                              </td>
+                            </tr>
+                            <tr>
+                              <th class="text-center">1</th>
+                              <td>
+                                <div class="d-flex">
+                                  <img
+                                    alt="student"
+                                    src="./media/student.svg"
+                                    class="d-block"
+                                  />
+                                  <div class="ms-3">
+                                    <p class="fs_12 text-start">
+                                      Ahror Mamatqulov
+                                    </p>
+                                    <p class="fs_12 muted_txt">
+                                      <img
+                                        alt="flag"
+                                        src="./media/country_flag.svg"
+                                      />
+                                      Presidential School in Gulistan
+                                    </p>
+                                  </div>
+                                </div>
+                              </td>
+                              <td>
+                                <p class="text-center fs_14 fw_500">
+                                  914,24
+                                  <img
+                                    alt="score"
+                                    src="./media/alert_notf.svg"
+                                    class="mb-1 ms-1"
+                                  />
+                                </p>
+                              </td>
+                            </tr>
+                            <tr>
+                              <th class="text-center py-2">2</th>
+                              <td>
+                                <div class="d-flex">
+                                  <img
+                                    alt="student"
+                                    src="./media/student.svg"
+                                    class="d-block"
+                                  />
+                                  <div class="ms-3">
+                                    <p class="fs_12 text-start">
+                                      Ahror Mamatqulov
+                                    </p>
+                                    <p class="fs_12 muted_txt">
+                                      <img
+                                        alt="flag"
+                                        src="./media/country_flag.svg"
+                                      />
+                                      Presidential School in Gulistan
+                                    </p>
+                                  </div>
+                                </div>
+                              </td>
+                              <td>
+                                <p class="text-center fs_14 fw_500">
+                                  914,24
+                                  <img
+                                    alt="score"
+                                    src="./media/alert_notf.svg"
+                                    class="mb-1 ms-1"
+                                  />
+                                </p>
+                              </td>
+                            </tr>
+                          </div>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                  <div
+                    class="tab-pane fade"
+                    id="pills-school"
+                    role="tabpanel"
+                    aria-labelledby="pills-school-tab"
+                  >
+                    <div class="tbl_overf_s">
+                      <table class="table ps_rel">
+                        <thead class="ps_sticky_t_1 bg_nav_tabs">
+                          <tr>
+                            <th class="col-1 text-center">Rank</th>
+                            <th class="col-7">Besty</th>
+                            <th class="col-2 text-center">
+                              <img alt="" src="./media/byip.svg" />
+                            </th>
+                          </tr>
+                        </thead>
+
+                        <tbody>
+                          <div class="ps_rel">
+                            <tr>
+                              <th class="text-center">12</th>
+                              <td>
+                                <div class="d-flex">
+                                  <img
+                                    alt="student"
+                                    src="./media/student.svg"
+                                    class="d-block"
+                                  />
+                                  <div class="ms-3">
+                                    <p class="fs_12 text-start">
+                                      Ahror Mamatqulov
+                                    </p>
+                                    <p class="fs_12 muted_txt">
+                                      <img
+                                        alt="flag"
+                                        src="./media/country_flag.svg"
+                                      />
+                                      Presidential School in Gulistan
+                                    </p>
+                                  </div>
+                                </div>
+                              </td>
+                              <td>
+                                <p class="text-center fs_14 fw_500">
+                                  914,24
+                                  <img
+                                    alt="score"
+                                    src="./media/alert_notf.svg"
+                                    class="mb-1 ms-1"
+                                  />
+                                </p>
+                              </td>
+                            </tr>
+                            <tr>
+                              <th class="text-center">1</th>
+                              <td>
+                                <div class="d-flex">
+                                  <img
+                                    alt="student"
+                                    src="./media/student.svg"
+                                    class="d-block"
+                                  />
+                                  <div class="ms-3">
+                                    <p class="fs_12 text-start">
+                                      Ahror Mamatqulov
+                                    </p>
+                                    <p class="fs_12 muted_txt">
+                                      <img
+                                        alt="flag"
+                                        src="./media/country_flag.svg"
+                                      />
+                                      Presidential School in Gulistan
+                                    </p>
+                                  </div>
+                                </div>
+                              </td>
+                              <td>
+                                <p class="text-center fs_14 fw_500">
+                                  914,24
+                                  <img
+                                    alt="score"
+                                    src="./media/alert_notf.svg"
+                                    class="mb-1 ms-1"
+                                  />
+                                </p>
+                              </td>
+                            </tr>
+                            <tr>
+                              <th class="text-center">1</th>
+                              <td>
+                                <div class="d-flex">
+                                  <img
+                                    alt="student"
+                                    src="./media/student.svg"
+                                    class="d-block"
+                                  />
+                                  <div class="ms-3">
+                                    <p class="fs_12 text-start">
+                                      Ahror Mamatqulov
+                                    </p>
+                                    <p class="fs_12 muted_txt">
+                                      <img
+                                        alt="flag"
+                                        src="./media/country_flag.svg"
+                                      />
+                                      Presidential School in Gulistan
+                                    </p>
+                                  </div>
+                                </div>
+                              </td>
+                              <td>
+                                <p class="text-center fs_14 fw_500">
+                                  914,24
+                                  <img
+                                    alt="score"
+                                    src="./media/alert_notf.svg"
+                                    class="mb-1 ms-1"
+                                  />
+                                </p>
+                              </td>
+                            </tr>
+                            <tr>
+                              <th class="text-center">1</th>
+                              <td>
+                                <div class="d-flex">
+                                  <img
+                                    alt="student"
+                                    src="./media/student.svg"
+                                    class="d-block"
+                                  />
+                                  <div class="ms-3">
+                                    <p class="fs_12 text-start">
+                                      Ahror Mamatqulov
+                                    </p>
+                                    <p class="fs_12 muted_txt">
+                                      <img
+                                        alt="flag"
+                                        src="./media/country_flag.svg"
+                                      />
+                                      Presidential School in Gulistan
+                                    </p>
+                                  </div>
+                                </div>
+                              </td>
+                              <td>
+                                <p class="text-center fs_14 fw_500">
+                                  914,24
+                                  <img
+                                    alt="score"
+                                    src="./media/alert_notf.svg"
+                                    class="mb-1 ms-1"
+                                  />
+                                </p>
+                              </td>
+                            </tr>
+                            <tr>
+                              <th class="text-center">1</th>
+                              <td>
+                                <div class="d-flex">
+                                  <img
+                                    alt="student"
+                                    src="./media/student.svg"
+                                    class="d-block"
+                                  />
+                                  <div class="ms-3">
+                                    <p class="fs_12 text-start">
+                                      Ahror Mamatqulov
+                                    </p>
+                                    <p class="fs_12 muted_txt">
+                                      <img
+                                        alt="flag"
+                                        src="./media/country_flag.svg"
+                                      />
+                                      Presidential School in Gulistan
+                                    </p>
+                                  </div>
+                                </div>
+                              </td>
+                              <td>
+                                <p class="text-center fs_14 fw_500">
+                                  914,24
+                                  <img
+                                    alt="score"
+                                    src="./media/alert_notf.svg"
+                                    class="mb-1 ms-1"
+                                  />
+                                </p>
+                              </td>
+                            </tr>
+                            <tr>
+                              <th class="text-center">1</th>
+                              <td>
+                                <div class="d-flex">
+                                  <img
+                                    alt="student"
+                                    src="./media/student.svg"
+                                    class="d-block"
+                                  />
+                                  <div class="ms-3">
+                                    <p class="fs_12 text-start">
+                                      Ahror Mamatqulov
+                                    </p>
+                                    <p class="fs_12 muted_txt">
+                                      <img
+                                        alt="flag"
+                                        src="./media/country_flag.svg"
+                                      />
+                                      Presidential School in Gulistan
+                                    </p>
+                                  </div>
+                                </div>
+                              </td>
+                              <td>
+                                <p class="text-center fs_14 fw_500">
+                                  914,24
+                                  <img
+                                    alt="score"
+                                    src="./media/alert_notf.svg"
+                                    class="mb-1 ms-1"
+                                  />
+                                </p>
+                              </td>
+                            </tr>
+                            <tr>
+                              <th class="text-center">1</th>
+                              <td>
+                                <div class="d-flex">
+                                  <img
+                                    alt="student"
+                                    src="./media/student.svg"
+                                    class="d-block"
+                                  />
+                                  <div class="ms-3">
+                                    <p class="fs_12 text-start">
+                                      Ahror Mamatqulov
+                                    </p>
+                                    <p class="fs_12 muted_txt">
+                                      <img
+                                        alt="flag"
+                                        src="./media/country_flag.svg"
+                                      />
+                                      Presidential School in Gulistan
+                                    </p>
+                                  </div>
+                                </div>
+                              </td>
+                              <td>
+                                <p class="text-center fs_14 fw_500">
+                                  914,24
+                                  <img
+                                    alt="score"
+                                    src="./media/alert_notf.svg"
+                                    class="mb-1 ms-1"
+                                  />
+                                </p>
+                              </td>
+                            </tr>
+                            <tr>
+                              <th class="text-center">1</th>
+                              <td>
+                                <div class="d-flex">
+                                  <img
+                                    alt="student"
+                                    src="./media/student.svg"
+                                    class="d-block"
+                                  />
+                                  <div class="ms-3">
+                                    <p class="fs_12 text-start">
+                                      Ahror Mamatqulov
+                                    </p>
+                                    <p class="fs_12 muted_txt">
+                                      <img
+                                        alt="flag"
+                                        src="./media/country_flag.svg"
+                                      />
+                                      Presidential School in Gulistan
+                                    </p>
+                                  </div>
+                                </div>
+                              </td>
+                              <td>
+                                <p class="text-center fs_14 fw_500">
+                                  914,24
+                                  <img
+                                    alt="score"
+                                    src="./media/alert_notf.svg"
+                                    class="mb-1 ms-1"
+                                  />
+                                </p>
+                              </td>
+                            </tr>
+                            <tr>
+                              <th class="text-center">1</th>
+                              <td>
+                                <div class="d-flex">
+                                  <img
+                                    alt="student"
+                                    src="./media/student.svg"
+                                    class="d-block"
+                                  />
+                                  <div class="ms-3">
+                                    <p class="fs_12 text-start">
+                                      Ahror Mamatqulov
+                                    </p>
+                                    <p class="fs_12 muted_txt">
+                                      <img
+                                        alt="flag"
+                                        src="./media/country_flag.svg"
+                                      />
+                                      Presidential School in Gulistan
+                                    </p>
+                                  </div>
+                                </div>
+                              </td>
+                              <td>
+                                <p class="text-center fs_14 fw_500">
+                                  914,24
+                                  <img
+                                    alt="score"
+                                    src="./media/alert_notf.svg"
+                                    class="mb-1 ms-1"
+                                  />
+                                </p>
+                              </td>
+                            </tr>
+                            <tr>
+                              <th class="text-center">1</th>
+                              <td>
+                                <div class="d-flex">
+                                  <img
+                                    alt="student"
+                                    src="./media/student.svg"
+                                    class="d-block"
+                                  />
+                                  <div class="ms-3">
+                                    <p class="fs_12 text-start">
+                                      Ahror Mamatqulov
+                                    </p>
+                                    <p class="fs_12 muted_txt">
+                                      <img
+                                        alt="flag"
+                                        src="./media/country_flag.svg"
+                                      />
+                                      Presidential School in Gulistan
+                                    </p>
+                                  </div>
+                                </div>
+                              </td>
+                              <td>
+                                <p class="text-center fs_14 fw_500">
+                                  914,24
+                                  <img
+                                    alt="score"
+                                    src="./media/alert_notf.svg"
+                                    class="mb-1 ms-1"
+                                  />
+                                </p>
+                              </td>
+                            </tr>
+                            <tr>
+                              <th class="text-center">1</th>
+                              <td>
+                                <div class="d-flex">
+                                  <img
+                                    alt="student"
+                                    src="./media/student.svg"
+                                    class="d-block"
+                                  />
+                                  <div class="ms-3">
+                                    <p class="fs_12 text-start">
+                                      Ahror Mamatqulov
+                                    </p>
+                                    <p class="fs_12 muted_txt">
+                                      <img
+                                        alt="flag"
+                                        src="./media/country_flag.svg"
+                                      />
+                                      Presidential School in Gulistan
+                                    </p>
+                                  </div>
+                                </div>
+                              </td>
+                              <td>
+                                <p class="text-center fs_14 fw_500">
+                                  914,24
+                                  <img
+                                    alt="score"
+                                    src="./media/alert_notf.svg"
+                                    class="mb-1 ms-1"
+                                  />
+                                </p>
+                              </td>
+                            </tr>
+                            <tr>
+                              <th class="text-center">1</th>
+                              <td>
+                                <div class="d-flex">
+                                  <img
+                                    alt="student"
+                                    src="./media/student.svg"
+                                    class="d-block"
+                                  />
+                                  <div class="ms-3">
+                                    <p class="fs_12 text-start">
+                                      Ahror Mamatqulov
+                                    </p>
+                                    <p class="fs_12 muted_txt">
+                                      <img
+                                        alt="flag"
+                                        src="./media/country_flag.svg"
+                                      />
+                                      Presidential School in Gulistan
+                                    </p>
+                                  </div>
+                                </div>
+                              </td>
+                              <td>
+                                <p class="text-center fs_14 fw_500">
+                                  914,24
+                                  <img
+                                    alt="score"
+                                    src="./media/alert_notf.svg"
+                                    class="mb-1 ms-1"
+                                  />
+                                </p>
+                              </td>
+                            </tr>
+                            <tr>
+                              <th class="text-center">1</th>
+                              <td>
+                                <div class="d-flex">
+                                  <img
+                                    alt="student"
+                                    src="./media/student.svg"
+                                    class="d-block"
+                                  />
+                                  <div class="ms-3">
+                                    <p class="fs_12 text-start">
+                                      Ahror Mamatqulov
+                                    </p>
+                                    <p class="fs_12 muted_txt">
+                                      <img
+                                        alt="flag"
+                                        src="./media/country_flag.svg"
+                                      />
+                                      Presidential School in Gulistan
+                                    </p>
+                                  </div>
+                                </div>
+                              </td>
+                              <td>
+                                <p class="text-center fs_14 fw_500">
+                                  914,24
+                                  <img
+                                    alt="score"
+                                    src="./media/alert_notf.svg"
+                                    class="mb-1 ms-1"
+                                  />
+                                </p>
+                              </td>
+                            </tr>
+                            <tr>
+                              <th class="text-center">1</th>
+                              <td>
+                                <div class="d-flex">
+                                  <img
+                                    alt="student"
+                                    src="./media/student.svg"
+                                    class="d-block"
+                                  />
+                                  <div class="ms-3">
+                                    <p class="fs_12 text-start">
+                                      Ahror Mamatqulov
+                                    </p>
+                                    <p class="fs_12 muted_txt">
+                                      <img
+                                        alt="flag"
+                                        src="./media/country_flag.svg"
+                                      />
+                                      Presidential School in Gulistan
+                                    </p>
+                                  </div>
+                                </div>
+                              </td>
+                              <td>
+                                <p class="text-center fs_14 fw_500">
+                                  914,24
+                                  <img
+                                    alt="score"
+                                    src="./media/alert_notf.svg"
+                                    class="mb-1 ms-1"
+                                  />
+                                </p>
+                              </td>
+                            </tr>
+                            <tr>
+                              <th class="text-center">1</th>
+                              <td>
+                                <div class="d-flex">
+                                  <img
+                                    alt="student"
+                                    src="./media/student.svg"
+                                    class="d-block"
+                                  />
+                                  <div class="ms-3">
+                                    <p class="fs_12 text-start">
+                                      Ahror Mamatqulov
+                                    </p>
+                                    <p class="fs_12 muted_txt">
+                                      <img
+                                        alt="flag"
+                                        src="./media/country_flag.svg"
+                                      />
+                                      Presidential School in Gulistan
+                                    </p>
+                                  </div>
+                                </div>
+                              </td>
+                              <td>
+                                <p class="text-center fs_14 fw_500">
+                                  914,24
+                                  <img
+                                    alt="score"
+                                    src="./media/alert_notf.svg"
+                                    class="mb-1 ms-1"
+                                  />
+                                </p>
+                              </td>
+                            </tr>
+                            <tr class="ps_sticky_t_35">
+                              <th class="text-center">134</th>
+                              <td>
+                                <div class="d-flex">
+                                  <img
+                                    alt="student"
+                                    src="./media/student.svg"
+                                    class="d-block"
+                                  />
+                                  <div class="ms-3">
+                                    <p class="fs_12 text-start fw_600">
+                                      Ahror Mamatqulov
+                                    </p>
+                                    <p class="fs_12 muted_txt">
+                                      <img
+                                        alt="flag"
+                                        src="./media/country_flag.svg"
+                                      />
+                                      Presidential School in Gulistan
+                                    </p>
+                                  </div>
+                                </div>
+                              </td>
+                              <td>
+                                <p class="text-center fs_14 fw_500">
+                                  914,24
+                                  <img
+                                    alt="score"
+                                    src="./media/alert_notf.svg"
+                                    class="mb-1 ms-1"
+                                  />
+                                </p>
+                              </td>
+                            </tr>
+                            <tr>
+                              <th class="text-center">1</th>
+                              <td>
+                                <div class="d-flex">
+                                  <img
+                                    alt="student"
+                                    src="./media/student.svg"
+                                    class="d-block"
+                                  />
+                                  <div class="ms-3">
+                                    <p class="fs_12 text-start">
+                                      Ahror Mamatqulov
+                                    </p>
+                                    <p class="fs_12 muted_txt">
+                                      <img
+                                        alt="flag"
+                                        src="./media/country_flag.svg"
+                                      />
+                                      Presidential School in Gulistan
+                                    </p>
+                                  </div>
+                                </div>
+                              </td>
+                              <td>
+                                <p class="text-center fs_14 fw_500">
+                                  914,24
+                                  <img
+                                    alt="score"
+                                    src="./media/alert_notf.svg"
+                                    class="mb-1 ms-1"
+                                  />
+                                </p>
+                              </td>
+                            </tr>
+                            <tr>
+                              <th class="text-center">1</th>
+                              <td>
+                                <div class="d-flex">
+                                  <img
+                                    alt="student"
+                                    src="./media/student.svg"
+                                    class="d-block"
+                                  />
+                                  <div class="ms-3">
+                                    <p class="fs_12 text-start">
+                                      Ahror Mamatqulov
+                                    </p>
+                                    <p class="fs_12 muted_txt">
+                                      <img
+                                        alt="flag"
+                                        src="./media/country_flag.svg"
+                                      />
+                                      Presidential School in Gulistan
+                                    </p>
+                                  </div>
+                                </div>
+                              </td>
+                              <td>
+                                <p class="text-center fs_14 fw_500">
+                                  914,24
+                                  <img
+                                    alt="score"
+                                    src="./media/alert_notf.svg"
+                                    class="mb-1 ms-1"
+                                  />
+                                </p>
+                              </td>
+                            </tr>
+                            <tr>
+                              <th class="text-center">1</th>
+                              <td>
+                                <div class="d-flex">
+                                  <img
+                                    alt="student"
+                                    src="./media/student.svg"
+                                    class="d-block"
+                                  />
+                                  <div class="ms-3">
+                                    <p class="fs_12 text-start">
+                                      Ahror Mamatqulov
+                                    </p>
+                                    <p class="fs_12 muted_txt">
+                                      <img
+                                        alt="flag"
+                                        src="./media/country_flag.svg"
+                                      />
+                                      Presidential School in Gulistan
+                                    </p>
+                                  </div>
+                                </div>
+                              </td>
+                              <td>
+                                <p class="text-center fs_14 fw_500">
+                                  914,24
+                                  <img
+                                    alt="score"
+                                    src="./media/alert_notf.svg"
+                                    class="mb-1 ms-1"
+                                  />
+                                </p>
+                              </td>
+                            </tr>
+                            <tr>
+                              <th class="text-center">1</th>
+                              <td>
+                                <div class="d-flex">
+                                  <img
+                                    alt="student"
+                                    src="./media/student.svg"
+                                    class="d-block"
+                                  />
+                                  <div class="ms-3">
+                                    <p class="fs_12 text-start">
+                                      Ahror Mamatqulov
+                                    </p>
+                                    <p class="fs_12 muted_txt">
+                                      <img
+                                        alt="flag"
+                                        src="./media/country_flag.svg"
+                                      />
+                                      Presidential School in Gulistan
+                                    </p>
+                                  </div>
+                                </div>
+                              </td>
+                              <td>
+                                <p class="text-center fs_14 fw_500">
+                                  914,24
+                                  <img
+                                    alt="score"
+                                    src="./media/alert_notf.svg"
+                                    class="mb-1 ms-1"
+                                  />
+                                </p>
+                              </td>
+                            </tr>
+                            <tr>
+                              <th class="text-center">1</th>
+                              <td>
+                                <div class="d-flex">
+                                  <img
+                                    alt="student"
+                                    src="./media/student.svg"
+                                    class="d-block"
+                                  />
+                                  <div class="ms-3">
+                                    <p class="fs_12 text-start">
+                                      Ahror Mamatqulov
+                                    </p>
+                                    <p class="fs_12 muted_txt">
+                                      <img
+                                        alt="flag"
+                                        src="./media/country_flag.svg"
+                                      />
+                                      Presidential School in Gulistan
+                                    </p>
+                                  </div>
+                                </div>
+                              </td>
+                              <td>
+                                <p class="text-center fs_14 fw_500">
+                                  914,24
+                                  <img
+                                    alt="score"
+                                    src="./media/alert_notf.svg"
+                                    class="mb-1 ms-1"
+                                  />
+                                </p>
+                              </td>
+                            </tr>
+                            <tr>
+                              <th class="text-center">1</th>
+                              <td>
+                                <div class="d-flex">
+                                  <img
+                                    alt="student"
+                                    src="./media/student.svg"
+                                    class="d-block"
+                                  />
+                                  <div class="ms-3">
+                                    <p class="fs_12 text-start">
+                                      Ahror Mamatqulov
+                                    </p>
+                                    <p class="fs_12 muted_txt">
+                                      <img
+                                        alt="flag"
+                                        src="./media/country_flag.svg"
+                                      />
+                                      Presidential School in Gulistan
+                                    </p>
+                                  </div>
+                                </div>
+                              </td>
+                              <td>
+                                <p class="text-center fs_14 fw_500">
+                                  914,24
+                                  <img
+                                    alt="score"
+                                    src="./media/alert_notf.svg"
+                                    class="mb-1 ms-1"
+                                  />
+                                </p>
+                              </td>
+                            </tr>
+                            <tr>
+                              <th class="text-center">1</th>
+                              <td>
+                                <div class="d-flex">
+                                  <img
+                                    alt="student"
+                                    src="./media/student.svg"
+                                    class="d-block"
+                                  />
+                                  <div class="ms-3">
+                                    <p class="fs_12 text-start">
+                                      Ahror Mamatqulov
+                                    </p>
+                                    <p class="fs_12 muted_txt">
+                                      <img
+                                        alt="flag"
+                                        src="./media/country_flag.svg"
+                                      />
+                                      Presidential School in Gulistan
+                                    </p>
+                                  </div>
+                                </div>
+                              </td>
+                              <td>
+                                <p class="text-center fs_14 fw_500">
+                                  914,24
+                                  <img
+                                    alt="score"
+                                    src="./media/alert_notf.svg"
+                                    class="mb-1 ms-1"
+                                  />
+                                </p>
+                              </td>
+                            </tr>
+                            <tr>
+                              <th class="text-center">1</th>
+                              <td>
+                                <div class="d-flex">
+                                  <img
+                                    alt="student"
+                                    src="./media/student.svg"
+                                    class="d-block"
+                                  />
+                                  <div class="ms-3">
+                                    <p class="fs_12 text-start">
+                                      Ahror Mamatqulov
+                                    </p>
+                                    <p class="fs_12 muted_txt">
+                                      <img
+                                        alt="flag"
+                                        src="./media/country_flag.svg"
+                                      />
+                                      Presidential School in Gulistan
+                                    </p>
+                                  </div>
+                                </div>
+                              </td>
+                              <td>
+                                <p class="text-center fs_14 fw_500">
+                                  914,24
+                                  <img
+                                    alt="score"
+                                    src="./media/alert_notf.svg"
+                                    class="mb-1 ms-1"
+                                  />
+                                </p>
+                              </td>
+                            </tr>
+                            <tr>
+                              <th class="text-center">1</th>
+                              <td>
+                                <div class="d-flex">
+                                  <img
+                                    alt="student"
+                                    src="./media/student.svg"
+                                    class="d-block"
+                                  />
+                                  <div class="ms-3">
+                                    <p class="fs_12 text-start">
+                                      Ahror Mamatqulov
+                                    </p>
+                                    <p class="fs_12 muted_txt">
+                                      <img
+                                        alt="flag"
+                                        src="./media/country_flag.svg"
+                                      />
+                                      Presidential School in Gulistan
+                                    </p>
+                                  </div>
+                                </div>
+                              </td>
+                              <td>
+                                <p class="text-center fs_14 fw_500">
+                                  914,24
+                                  <img
+                                    alt="score"
+                                    src="./media/alert_notf.svg"
+                                    class="mb-1 ms-1"
+                                  />
+                                </p>
+                              </td>
+                            </tr>
+                            <tr>
+                              <th class="text-center">1</th>
+                              <td>
+                                <div class="d-flex">
+                                  <img
+                                    alt="student"
+                                    src="./media/student.svg"
+                                    class="d-block"
+                                  />
+                                  <div class="ms-3">
+                                    <p class="fs_12 text-start">
+                                      Ahror Mamatqulov
+                                    </p>
+                                    <p class="fs_12 muted_txt">
+                                      <img
+                                        alt="flag"
+                                        src="./media/country_flag.svg"
+                                      />
+                                      Presidential School in Gulistan
+                                    </p>
+                                  </div>
+                                </div>
+                              </td>
+                              <td>
+                                <p class="text-center fs_14 fw_500">
+                                  914,24
+                                  <img
+                                    alt="score"
+                                    src="./media/alert_notf.svg"
+                                    class="mb-1 ms-1"
+                                  />
+                                </p>
+                              </td>
+                            </tr>
+                            <tr>
+                              <th class="text-center">1</th>
+                              <td>
+                                <div class="d-flex">
+                                  <img
+                                    alt="student"
+                                    src="./media/student.svg"
+                                    class="d-block"
+                                  />
+                                  <div class="ms-3">
+                                    <p class="fs_12 text-start">
+                                      Ahror Mamatqulov
+                                    </p>
+                                    <p class="fs_12 muted_txt">
+                                      <img
+                                        alt="flag"
+                                        src="./media/country_flag.svg"
+                                      />
+                                      Presidential School in Gulistan
+                                    </p>
+                                  </div>
+                                </div>
+                              </td>
+                              <td>
+                                <p class="text-center fs_14 fw_500">
+                                  914,24
+                                  <img
+                                    alt="score"
+                                    src="./media/alert_notf.svg"
+                                    class="mb-1 ms-1"
+                                  />
+                                </p>
+                              </td>
+                            </tr>
+                            <tr>
+                              <th class="text-center">1</th>
+                              <td>
+                                <div class="d-flex">
+                                  <img
+                                    alt="student"
+                                    src="./media/student.svg"
+                                    class="d-block"
+                                  />
+                                  <div class="ms-3">
+                                    <p class="fs_12 text-start">
+                                      Ahror Mamatqulov
+                                    </p>
+                                    <p class="fs_12 muted_txt">
+                                      <img
+                                        alt="flag"
+                                        src="./media/country_flag.svg"
+                                      />
+                                      Presidential School in Gulistan
+                                    </p>
+                                  </div>
+                                </div>
+                              </td>
+                              <td>
+                                <p class="text-center fs_14 fw_500">
+                                  914,24
+                                  <img
+                                    alt="score"
+                                    src="./media/alert_notf.svg"
+                                    class="mb-1 ms-1"
+                                  />
+                                </p>
+                              </td>
+                            </tr>
+                            <tr>
+                              <th class="text-center">1</th>
+                              <td>
+                                <div class="d-flex">
+                                  <img
+                                    alt="student"
+                                    src="./media/student.svg"
+                                    class="d-block"
+                                  />
+                                  <div class="ms-3">
+                                    <p class="fs_12 text-start">
+                                      Ahror Mamatqulov
+                                    </p>
+                                    <p class="fs_12 muted_txt">
+                                      <img
+                                        alt="flag"
+                                        src="./media/country_flag.svg"
+                                      />
+                                      Presidential School in Gulistan
+                                    </p>
+                                  </div>
+                                </div>
+                              </td>
+                              <td>
+                                <p class="text-center fs_14 fw_500">
+                                  914,24
+                                  <img
+                                    alt="score"
+                                    src="./media/alert_notf.svg"
+                                    class="mb-1 ms-1"
+                                  />
+                                </p>
+                              </td>
+                            </tr>
+                            <tr>
+                              <th class="text-center">1</th>
+                              <td>
+                                <div class="d-flex">
+                                  <img
+                                    alt="student"
+                                    src="./media/student.svg"
+                                    class="d-block"
+                                  />
+                                  <div class="ms-3">
+                                    <p class="fs_12 text-start">
+                                      Ahror Mamatqulov
+                                    </p>
+                                    <p class="fs_12 muted_txt">
+                                      <img
+                                        alt="flag"
+                                        src="./media/country_flag.svg"
+                                      />
+                                      Presidential School in Gulistan
+                                    </p>
+                                  </div>
+                                </div>
+                              </td>
+                              <td>
+                                <p class="text-center fs_14 fw_500">
+                                  914,24
+                                  <img
+                                    alt="score"
+                                    src="./media/alert_notf.svg"
+                                    class="mb-1 ms-1"
+                                  />
+                                </p>
+                              </td>
+                            </tr>
+                            <tr>
+                              <th class="text-center">1</th>
+                              <td>
+                                <div class="d-flex">
+                                  <img
+                                    alt="student"
+                                    src="./media/student.svg"
+                                    class="d-block"
+                                  />
+                                  <div class="ms-3">
+                                    <p class="fs_12 text-start">
+                                      Ahror Mamatqulov
+                                    </p>
+                                    <p class="fs_12 muted_txt">
+                                      <img
+                                        alt="flag"
+                                        src="./media/country_flag.svg"
+                                      />
+                                      Presidential School in Gulistan
+                                    </p>
+                                  </div>
+                                </div>
+                              </td>
+                              <td>
+                                <p class="text-center fs_14 fw_500">
+                                  914,24
+                                  <img
+                                    alt="score"
+                                    src="./media/alert_notf.svg"
+                                    class="mb-1 ms-1"
+                                  />
+                                </p>
+                              </td>
+                            </tr>
+                            <tr>
+                              <th class="text-center">1</th>
+                              <td>
+                                <div class="d-flex">
+                                  <img
+                                    alt="student"
+                                    src="./media/student.svg"
+                                    class="d-block"
+                                  />
+                                  <div class="ms-3">
+                                    <p class="fs_12 text-start">
+                                      Ahror Mamatqulov
+                                    </p>
+                                    <p class="fs_12 muted_txt">
+                                      <img
+                                        alt="flag"
+                                        src="./media/country_flag.svg"
+                                      />
+                                      Presidential School in Gulistan
+                                    </p>
+                                  </div>
+                                </div>
+                              </td>
+                              <td>
+                                <p class="text-center fs_14 fw_500">
+                                  914,24
+                                  <img
+                                    alt="score"
+                                    src="./media/alert_notf.svg"
+                                    class="mb-1 ms-1"
+                                  />
+                                </p>
+                              </td>
+                            </tr>
+                            <tr>
+                              <th class="text-center py-2">2</th>
+                              <td>
+                                <div class="d-flex">
+                                  <img
+                                    alt="student"
+                                    src="./media/student.svg"
+                                    class="d-block"
+                                  />
+                                  <div class="ms-3">
+                                    <p class="fs_12 text-start">
+                                      Ahror Mamatqulov
+                                    </p>
+                                    <p class="fs_12 muted_txt">
+                                      <img
+                                        alt="flag"
+                                        src="./media/country_flag.svg"
+                                      />
+                                      Presidential School in Gulistan
+                                    </p>
+                                  </div>
+                                </div>
+                              </td>
+                              <td>
+                                <p class="text-center fs_14 fw_500">
+                                  914,24
+                                  <img
+                                    alt="score"
+                                    src="./media/alert_notf.svg"
+                                    class="mb-1 ms-1"
+                                  />
+                                </p>
+                              </td>
+                            </tr>
+                          </div>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script>
+      let score = 70;
+      let progress = document.getElementById("progress");
+      progress.style.height = `${score}%`;
+    </script>
+    <script src="bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+    <script src="./swiping.js"></script>
+  </body>
+</html>
