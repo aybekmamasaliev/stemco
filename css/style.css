@@ -25,6 +25,7 @@
   --gray_txt:#636F81;
   --black_text_light: #36454f;
   --black_text: #1a1a1a;
+  --black_26_1:rgba(26, 26, 26, 1);
   --full_black: #000;
   --like_muted: #4B6A7E;
   --student_text: #7792ab;
@@ -126,6 +127,10 @@ p {
 
 .bg_gold {
   background-color: var(--gold_bg);
+}
+
+.black_26_1{
+  color: var(--black_26_1) !important;
 }
 
 .gold_card{
@@ -1094,7 +1099,7 @@ p {
 }
 
 .w_60 {
-  width: 90px;
+  width: 140px;
   text-align: center;
   white-space: nowrap;
 }
@@ -1193,7 +1198,7 @@ p {
 .active {
   font-weight: 700;
   border-bottom: 2px solid white;
-  color: white;
+  /* color: white; */
 }
 
 .rotateimg180 {

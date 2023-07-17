@@ -1,7 +1,7 @@
 let selectBox = document.getElementById("selectBox");
-let selectAllChecks = document.getElementById("ones");
+let selectAllChecks = document.getElementById("selectBox");
+let checkboxes = document.getElementById("checkboxes");
 function showCheckboxes() {
-  let checkboxes = document.getElementById("checkboxes");
   checkboxes.classList.toggle("visible");
 }
 
@@ -12,6 +12,13 @@ function selectAllSeasond(source) {
   }
 }
 
+function ClickEmptySpase2(e){
+  let x = e.target;
+  if(!checkboxes.contains(x) && !selectBox.contains(x)){
+    checkboxes.classList.remove("visible");
+  }
+}
+document.addEventListener("click", ClickEmptySpase2);
+
 
 selectBox.addEventListener("click", showCheckboxes);
-// selectAllChecks.addEventListener("click", selectAll)
